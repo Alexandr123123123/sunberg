@@ -1,0 +1,63 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 32px;
+  font-weight: 500;
+  font-size: 0.88rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: none;
+  text-decoration: none;
+}
+
+.primary {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.primary:hover {
+  background: var(--color-accent-hover);
+  box-shadow: 0 4px 16px rgba(26, 26, 26, 0.08);
+}
+
+.outline {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  background: transparent;
+}
+
+.outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.outlineDark {
+  border-color: var(--color-border);
+  color: var(--color-text);
+  background: transparent;
+}
+
+.outlineDark:hover {
+  border-color: var(--color-text);
+}
+
+/* Дополнительные размеры, если понадобятся */
+.sm {
+  padding: 8px 20px;
+  font-size: 0.8rem;
+}
+
+.lg {
+  padding: 18px 48px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
