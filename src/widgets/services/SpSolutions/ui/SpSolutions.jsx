@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { specializedSolutions } from '../../../../entities/services/model/servicesData';
+import { specializedSolutions } from '../../../../shared/config/services/servicesData';
 import { IconCheck } from '../../../../shared/ui/icon';
 import { Button } from '../../../../shared/ui/Button';
 import styles from '../SpSolutions.module.css';

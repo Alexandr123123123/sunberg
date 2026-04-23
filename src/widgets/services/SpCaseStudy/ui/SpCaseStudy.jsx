@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { caseStudyData } from '../../../../entities/services/model/servicesData';
+import { caseStudyData } from '../../../../shared/config/services/servicesData';
 import { IconArrowRight } from '../../../../shared/ui/icon';
 import styles from '../SpCaseStudy.module.css';
 

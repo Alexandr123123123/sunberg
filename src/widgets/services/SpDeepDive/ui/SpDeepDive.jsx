@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { deepDiveBlocks } from '../../../../entities/services/model/servicesData';
+import { deepDiveBlocks } from '../../../../shared/config/services/servicesData';
 import { IconCheck } from '../../../../shared/ui/icon';
 import styles from '../SpDeepDive.module.css';
 

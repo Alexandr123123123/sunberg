@@ -1,7 +1,24 @@
 .hero {
-  padding: 120px 0 80px;
-  background: var(--color-bg);
+  padding: 120px 0 100px;
+  background-color: #FFFFFF;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.birdWrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 280px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bird {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .content {
@@ -38,7 +55,18 @@
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .birdWrapper {
+    width: 220px;
+    left: 0;
+  }
+}
+
 @media (max-width: 900px) {
+  .birdWrapper {
+    display: none;
+  }
+  
   .title {
     font-size: 2.8rem;
   }

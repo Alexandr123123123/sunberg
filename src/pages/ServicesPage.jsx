@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SpHero } from '../widgets/services/SpHero';
 import { SpSectors } from '../widgets/services/SpSectors';
 import { SpTechBanner } from '../widgets/services/SpTechBanner';
@@ -8,6 +8,8 @@ import { SpHardware } from '../widgets/services/SpHardware';
 import { SpCaseStudy } from '../widgets/services/SpCaseStudy';
 import { Faq } from '../widgets/support/Faq';
 import { SpBottomCta } from '../widgets/services/SpBottomCta';
+import { useSmoothScroll } from '../features/navigation-scroll';
+import { useServiceTabs } from '../features/service-tabs-control';
 
 /* ── Animation Variants ───────────────────────── */
 const fadeUp = {
@@ -21,29 +23,12 @@ const fadeUp = {
 
 /* ── Component ────────────────────────────────── */
 const ServicesPage = () => {
-  const [activeTabs, setActiveTabs] = useState({
+  const { scrollToSection } = useSmoothScroll();
+  const { activeTabs, handleTabChange } = useServiceTabs({
     'design-block': 'analysis',
     'integration-block': 'modules',
     'analytics-block': 'monitoring',
   });
-
-  const handleTabChange = (blockId, tabId) => {
-    setActiveTabs(prev => ({ ...prev, [blockId]: tabId }));
-  };
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const headerOffset = 100;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
 
   return (
     <main className="services-page">

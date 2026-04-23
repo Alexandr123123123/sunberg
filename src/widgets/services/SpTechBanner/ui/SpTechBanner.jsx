@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { spTechHighlightImgExport } from '../../../../entities/services/model/servicesData';
+import { spTechHighlightImgExport } from '../../../../shared/config/services/servicesData';
 import styles from '../SpTechBanner.module.css';
 
 export const SpTechBanner = () => (

@@ -1,9 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../SpHero.module.css';
+import birdImg from '../../../../assets/images/sp-hero-bird.png';
 
 const SpHero = () => (
   <section className={styles.hero}>
+    <div className={styles.birdWrapper}>
+      <motion.img 
+        src={birdImg} 
+        alt="Natural Element" 
+        className={styles.bird}
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.2, delay: 0.4 }}
+      />
+    </div>
+    
     <div className="container">
       <motion.div
         className={styles.content}

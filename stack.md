@@ -5,11 +5,12 @@
 ## Core Stack
 - **Framework**: React 18+
 - **Build Tool**: Vite (обеспечивает мгновенную перезагрузку и быструю сборку).
-- **Architecture**: Feature-Sliced Design (FSD).
+- **Architecture**: Feature-Sliced Design (FSD) — модульная архитектура для легкого масштабирования.
 
 ## Styling & Animation
-- **CSS**: CSS Modules (изоляция стилей).
-- **Naming**: BEM (Block-Element-Modifier).
+- **CSS**: CSS Modules (строгая изоляция стилей для каждого виджета).
+- **Design System**: Shared UI (переиспользуемые компоненты в слое `shared`).
+- **Naming**: BEM-like (внутри модулей) + PascalCase для компонентов.
 - **Animations**: Framer Motion (сложные интерактивные переходы и каскадные анимации).
 
 ## Icons & Assets

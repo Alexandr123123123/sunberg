@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { hardwarePartners } from '../../../../entities/services/model/servicesData';
+import { hardwarePartners } from '../../../../shared/config/services/servicesData';
 import styles from '../SpHardware.module.css';
 
 const SpHardware = ({ fadeUp }) => (

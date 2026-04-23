@@ -4,6 +4,7 @@ import { Header } from './widgets/layout/Header';
 import { Footer } from './widgets/layout/Footer';
 import Home from './pages/Home';
 import ServicesPage from './pages/ServicesPage';
+import ProjectsPage from './pages/ProjectsPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
       <Footer />
     </>

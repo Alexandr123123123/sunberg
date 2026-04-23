@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { serviceSectors } from '../../../../entities/services/model/servicesData';
+import { serviceSectors } from '../../../../shared/config/services/servicesData';
 import { IconArrowRight } from '../../../../shared/ui/icon';
 import styles from '../SpSectors.module.css';
 

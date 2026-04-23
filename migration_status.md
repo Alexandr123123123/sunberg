@@ -23,8 +23,13 @@
 | **Icons** | Shared | ✅ Migrated | `shared/ui/icon/` |
 | **Header** | Widget | ✅ Migrated | `widgets/layout/Header` |
 | **Footer** | Widget | ✅ Migrated | `widgets/layout/Footer` |
-| **ServicesData**| Entity | ✅ Migrated | `entities/services/model` |
+| **ServicesData**| Config | ✅ Migrated | `shared/config/services` |
 
----
-**Последнее обновление**: 2026-04-22
-**Статус**: Миграция страницы услуг полностью завершена. Все компоненты переведены на CSS Modules и FSD-структуру.
+## Документация и Стандарты
+
+| Файл | Статус | Описание |
+| :--- | :--- | :--- |
+| **architecture.md** | ✅ Updated | Описание слоев и правил FSD |
+| **file_structure.md**| ✅ Updated | Карта проекта после миграции |
+| **stack.md** | ✅ Updated | Актуальный тех-стек и дизайн-система |
+| **README.md** | ✅ Updated | Вводная информация о проекте |
