@@ -1,6 +1,23 @@
 .process {
   padding: 148px 0;
   background: var(--color-surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.leafWrapper {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 320px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.leaf {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .header {

@@ -1,11 +1,33 @@
 .deepDive {
   padding: 180px 0;
   background: var(--color-surface);
+  position: relative;
 }
 
 .header {
   text-align: left;
   margin-bottom: 120px;
+  position: relative;
+  z-index: 2;
+}
+
+.headerContent {
+  max-width: 600px;
+}
+
+.branchWrapper {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 420px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.branch {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .intro {
@@ -247,6 +269,17 @@
 }
 
 @media (max-width: 900px) {
+  .headerInner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .branchWrapper {
+    width: 280px;
+    margin-bottom: 0;
+  }
+
   .cascadeBlock {
     grid-template-columns: 1fr;
     gap: 40px;

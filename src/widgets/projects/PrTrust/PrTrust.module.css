@@ -1,0 +1,42 @@
+.trust {
+  padding: 120px 0 60px;
+  background-color: var(--color-bg);
+  text-align: center;
+}
+
+.phrase {
+  font-family: var(--font-base);
+  font-size: 0.78rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  max-width: 1100px;
+  margin: 0 auto;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .phrase {
+    white-space: normal;
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .phrase {
+    font-size: 2rem;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .phrase {
+    font-size: 1.5rem;
+    padding: 0 24px;
+  }
+  .trust {
+    padding: 100px 0;
+  }
+}

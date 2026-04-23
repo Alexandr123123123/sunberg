@@ -128,3 +128,42 @@ export const impactStats = [
     desc: 'Successfully delivered high-performance ecosystems.' 
   },
 ];
+
+export const featuredProject = {
+  id: 'flagship-1',
+  title: 'Arctic Data Sync',
+  location: 'Luleå, Sweden',
+  client: 'Vortex Computing',
+  quote: "Sunberg didn't just install panels; they engineered a zero-emission heartbeat for our most critical infrastructure.",
+  author: "Erik Solberg, CTO",
+  specs: [
+    { label: 'System Size', value: '2.4 MWp' },
+    { label: 'Technology', value: 'N-Type Bifacial' },
+    { label: 'Storage', value: '1.2 MWh' }
+  ],
+  description: 'Our most ambitious industrial project to date, providing 100% renewable energy for a hyperscale data center in the sub-arctic region.'
+};
+
+export const testimonials = [
+  {
+    id: 1,
+    content: "Sunberg's precision in modeling and installation was beyond anything we've seen. Our energy independence is now a reality, not just a goal.",
+    author: "Elena Rossi",
+    role: "Private Homeowner, Tuscany",
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200'
+  },
+  {
+    id: 2,
+    content: "Integrating solar into our warehouse logistics was a complex challenge. Sunberg handled the technical constraints with ease and delivered on time.",
+    author: "Marc Werner",
+    role: "Logistics Director, Hamburg",
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200'
+  },
+  {
+    id: 3,
+    content: "The aesthetic integration of the panels was crucial for our historic property. The result is seamless and highly efficient.",
+    author: "Sarah Jenkins",
+    role: "Estate Manager, Oxford",
+    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200'
+  }
+];

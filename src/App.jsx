@@ -5,6 +5,7 @@ import { Footer } from './widgets/layout/Footer';
 import Home from './pages/Home';
 import ServicesPage from './pages/ServicesPage';
 import ProjectsPage from './pages/ProjectsPage';
+import AboutPage from './pages/AboutPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
       <Footer />
     </>

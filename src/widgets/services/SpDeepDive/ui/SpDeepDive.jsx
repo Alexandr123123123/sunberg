@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { deepDiveBlocks } from '../../../../shared/config/services/servicesData';
 import { IconCheck } from '../../../../shared/ui/icon';
 import styles from '../SpDeepDive.module.css';
+import branchImg from '../../../../assets/images/services-deep-dive-branch.png';
 
 // Helper to map block IDs to CSS Module classes
 const getBlockClass = (id) => {
@@ -16,6 +17,17 @@ const getBlockClass = (id) => {
 
 const SpDeepDive = ({ fadeUp, activeTabs, handleTabChange }) => (
   <section className={styles.deepDive}>
+    <div className={styles.branchWrapper}>
+      <motion.img 
+        src={branchImg} 
+        alt="Natural Element" 
+        className={styles.branch}
+        initial={{ opacity: 0, x: 50, rotate: 5 }}
+        whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.2, delay: 0.1 }}
+      />
+    </div>
     <div className="container">
       <motion.div
         className={styles.header}
@@ -24,12 +36,14 @@ const SpDeepDive = ({ fadeUp, activeTabs, handleTabChange }) => (
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <span className="section-label">Engineering Journey</span>
-        <h2 className="section-title">Technical Deep Dive</h2>
-        <p className={styles.intro}>
-          Explore the rigorous phases of our engineering process, from LiDAR-based
-          terrain mapping to AI-driven ecosystem care.
-        </p>
+        <div className={styles.headerContent}>
+          <span className="section-label">Engineering Journey</span>
+          <h2 className="section-title">Technical Deep Dive</h2>
+          <p className={styles.intro}>
+            Explore the rigorous phases of our engineering process, from LiDAR-based
+            terrain mapping to AI-driven ecosystem care.
+          </p>
+        </div>
       </motion.div>
 
       <div className={styles.narrative}>

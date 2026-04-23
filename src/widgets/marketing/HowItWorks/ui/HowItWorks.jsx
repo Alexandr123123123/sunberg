@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../HowItWorks.module.css';
+import leafImg from '../../../../assets/images/how-it-works-leaf.png';
 
 const steps = [
   {
@@ -43,6 +44,17 @@ const HowItWorks = () => {
 
   return (
     <section className={styles.process} id="process">
+      <div className={styles.leafWrapper}>
+        <motion.img 
+          src={leafImg} 
+          alt="Natural Element" 
+          className={styles.leaf}
+          initial={{ opacity: 0, x: 30, rotate: 10 }}
+          whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.5, delay: 0.2 }}
+        />
+      </div>
       <div className="container">
         <div className={styles.header}>
           <span className="section-label">How It Works</span>

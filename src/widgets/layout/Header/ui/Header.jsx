@@ -8,7 +8,7 @@ const Header = () => (
     <div className={`container ${styles.inner}`}>
       <Link to="/" className={styles.logo}>Sun<span>berg</span></Link>
       <nav className={styles.nav}>
-        <a href="/#about" className={styles.link}>About</a>
+        <Link to="/about" className={styles.link}>About</Link>
         <Link to="/services" className={styles.link}>Services</Link>
         <Link to="/projects" className={styles.link}>Projects</Link>
         <a href="/#contact" className={styles.link}>Contact</a>
