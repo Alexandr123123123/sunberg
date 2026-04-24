@@ -1,5 +1,5 @@
 .hero {
-  padding: 180px 0 100px;
+  padding: 140px 0 120px;
   background-color: var(--color-bg, #fff);
   position: relative;
   overflow: hidden;
@@ -23,7 +23,7 @@
 .inner {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 40px;
 }
 
 .top {

@@ -1,19 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../AbPhilosophy.module.css';
+import leafImg from '../../../../assets/images/ab-organic-accent.png';
+import structuralImg from '../../../../assets/images/ab-philosophy-structural.png';
+import longevityImg from '../../../../assets/images/ab-philosophy-longevity.png';
+import ecosystemImg from '../../../../assets/images/ab-philosophy-ecosystem.png';
 
 const principles = [
   {
     title: 'Structural Respect',
-    text: 'We don’t just mount systems; we integrate them. Every design respects the architectural integrity and aesthetic flow of your property.'
+    text: 'We don’t just mount systems; we integrate them. Every design respects the architectural integrity and aesthetic flow of your property.',
+    image: structuralImg
   },
   {
     title: 'Longevity First',
-    text: 'We engineer for the decades, not the years. Our systems are built to outlast a generation using the most resilient materials and components.'
+    text: 'We engineer for the decades, not the years. Our systems are built to outlast a generation using the most resilient materials and components.',
+    image: longevityImg
   },
   {
     title: 'Ecosystem Mindset',
-    text: 'Environmental stewardship is at our core. We minimize carbon footprint at every stage of the engineering and installation process.'
+    text: 'Environmental stewardship is at our core. We minimize carbon footprint at every stage of the engineering and installation process.',
+    image: ecosystemImg
   }
 ];
 
@@ -54,6 +61,9 @@ export const AbPhilosophy = () => {
               the aesthetic and structural value of your property. Our approach 
               combines Swedish minimalist design with rigorous engineering standards.
             </p>
+            <div className={styles.leafWrapper}>
+              <img src={leafImg} alt="" className={styles.leaf} />
+            </div>
           </motion.div>
 
           <motion.div 
@@ -65,7 +75,12 @@ export const AbPhilosophy = () => {
           >
             {principles.map((p, i) => (
               <motion.div className={styles.principle} key={i} variants={itemVariants}>
-                <h3 className={styles.principleTitle}>{p.title}</h3>
+                <div className={styles.principleHeader}>
+                  <div className={styles.principleIcon}>
+                    <img src={p.image} alt="" />
+                  </div>
+                  <h3 className={styles.principleTitle}>{p.title}</h3>
+                </div>
                 <p className={styles.principleText}>{p.text}</p>
               </motion.div>
             ))}

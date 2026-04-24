@@ -36,4 +36,11 @@
 - **Status**: Documentation fully synchronized. Migration of `SpSolutions` and `SpBottomCta` confirmed as stable patterns.
 
 ---
-*Log updated: 2026-04-22*
+*Log updated: 2026-04-24*
+
+## 8. State Rollback (Stability Check)
+- **Action**: Rolled back to commit `a2de609` from `de81758`.
+- **Current Commit**: `a2de609583b468b47807648d61640a790d4d671a`
+- **Previous Commit**: `de81758`
+- **Creation Date (Current)**: 2026-04-23 18:39:41 +0300
+- **Status**: Temporary rollback to a previous stable state for refinement of the About page and Projects widgets.
