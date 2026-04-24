@@ -16,11 +16,26 @@
 | **SpSolutions** | Widget | ✅ Verified | `widgets/services/SpSolutions` |
 | **SpDeepDive** | Widget | ✅ Verified | `widgets/services/SpDeepDive` |
 
+## Страница "О нас" (About Page)
+
+| Компонент | Тип | Статус | Назначение (FSD) |
+| :--- | :--- | :--- | :--- |
+| **AbHero** | Widget | ✅ Migrated | `widgets/about/AbHero` |
+| **AbPhilosophy** | Widget | ✅ Migrated | `widgets/about/AbPhilosophy` |
+| **AbManifesto** | Widget | ✅ Migrated | `widgets/about/AbManifesto` |
+| **AbTech** | Widget | ✅ Migrated | `widgets/about/AbTech` |
+| **AbValues** | Widget | ✅ Migrated | `widgets/about/AbValues` |
+| **AbStats** | Widget | ✅ Migrated | `widgets/about/AbStats` |
+| **AbTeam** | Widget | ✅ Migrated | `widgets/about/AbTeam` |
+| **AbTestimonials**| Widget | ✅ Migrated | `widgets/about/AbTestimonials` |
+| **AbCta** | Widget | ✅ Migrated | `widgets/about/AbCta` |
+
 ## Общие компоненты (Shared / Layout)
 
 | Компонент | Тип | Статус | Назначение (FSD) |
 | :--- | :--- | :--- | :--- |
 | **Icons** | Shared | ✅ Migrated | `shared/ui/icon/` |
+| **Counter** | Shared | ✅ Migrated | `shared/ui/Counter/` |
 | **Header** | Widget | ✅ Migrated | `widgets/layout/Header` |
 | **Footer** | Widget | ✅ Migrated | `widgets/layout/Footer` |
 | **ServicesData**| Config | ✅ Migrated | `shared/config/services` |
@@ -33,3 +48,4 @@
 | **file_structure.md**| ✅ Updated | Карта проекта после миграции |
 | **stack.md** | ✅ Updated | Актуальный тех-стек и дизайн-система |
 | **README.md** | ✅ Updated | Вводная информация о проекте |
+| **migration_log.md** | ✅ Updated | Журнал изменений и решений |

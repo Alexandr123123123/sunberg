@@ -9,18 +9,19 @@ src/
 │   └── App.jsx           # Корневой роутинг и структура
 ├── entities/             # Бизнес-сущности (пока пусто)
 ├── shared/               # Переиспользуемый код (инструменты)
-│   ├── config/           # Глобальные конфигурации и контент (servicesData)
-│   │   └── services/
-│   ├── ui/               # Дизайн-система (Button, Icon)
+│   ├── config/           # Глобальные конфигурации и контент
+│   ├── ui/               # Дизайн-система (Button, Icon, Counter)
 │   └── lib/              # Утилиты (hooks, helpers)
 ├── widgets/              # Композиционные блоки (крупные секции)
 │   ├── layout/           # Header, Footer
-│   ├── services/         # Виджеты страницы услуг (Hero, Sectors, etc.)
+│   ├── services/         # Виджеты страницы услуг
+│   ├── about/            # Виджеты страницы "О нас" (Philosophy, Tech, Team, etc.)
 │   ├── marketing/        # Маркетинговые блоки главной страницы
 │   └── support/          # FAQ и поддержка
 ├── pages/                # Целые страницы (композиция виджетов)
 │   ├── Home.jsx          # Главная страница
-│   └── ServicesPage.jsx  # Страница услуг
+│   ├── ServicesPage.jsx  # Страница услуг
+│   └── AboutPage.jsx     # Страница "О нас"
 └── main.jsx              # Точка входа
 ```
 
