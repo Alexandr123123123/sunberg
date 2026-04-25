@@ -11,8 +11,8 @@ const Header = () => (
         <Link to="/about" className={styles.link}>About</Link>
         <Link to="/services" className={styles.link}>Services</Link>
         <Link to="/projects" className={styles.link}>Projects</Link>
-        <a href="/#contact" className={styles.link}>Contact</a>
-        <Button href="/#contact" variant="primary" size="sm">Get a Quote</Button>
+        <Link to="/tech" className={styles.link}>Solar Tech</Link>
+        <Button to="/contact" variant="primary" size="sm">Contact Us</Button>
       </nav>
     </div>
   </header>

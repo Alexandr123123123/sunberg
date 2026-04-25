@@ -1,0 +1,77 @@
+.hero {
+  padding: 160px 0 100px;
+  background-color: var(--color-bg);
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.birdWrapper {
+  position: absolute;
+  top: 22%; /* Slightly above middle */
+  right: -5%; /* Stick to the right edge */
+  width: 540px; /* 3x larger */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bird {
+  width: 100%;
+  height: auto;
+  opacity: 1; /* No longer a watermark */
+}
+
+.watermark {
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  font-family: var(--font-heading);
+  font-size: 20rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.02);
+  pointer-events: none;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.content {
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: 24px;
+  margin-bottom: 32px;
+  letter-spacing: -0.04em;
+}
+
+.title span {
+  color: var(--color-primary);
+}
+
+.desc {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 0 80px;
+  }
+  
+  .watermark {
+    font-size: 10rem;
+    top: 20px;
+  }
+}

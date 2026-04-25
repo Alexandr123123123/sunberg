@@ -1,0 +1,48 @@
+.hero {
+  padding: 160px 0 100px;
+  background-color: var(--color-bg);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.birdWrapper {
+  position: absolute;
+  top: 25%; /* Slightly above middle */
+  right: -5%; /* Stick to the right edge with a small bleed for dynamism */
+  width: 540px; /* 3x original 180px */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bird {
+  width: 100%;
+  height: auto;
+  opacity: 1; /* No longer a watermark */
+}
+
+.content {
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: 20px;
+  margin-bottom: 30px;
+  letter-spacing: -0.04em;
+}
+
+.desc {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  max-width: 600px;
+}
