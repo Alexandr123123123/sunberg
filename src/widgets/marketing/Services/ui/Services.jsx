@@ -16,7 +16,7 @@ const services = [
   {
     num: '02',
     title: 'Deployment & Grid Integration',
-    text: 'Precision panel mounting, inverter calibration, and flawless grid connection. We execute with minimal disruption and uncompromising safety standards.',
+    text: 'Precision panel mounting, inverter calibration, and flawless grid integration. We prioritize operational speed and technical rigor, maintaining uncompromising safety standards across every project.',
     image: installImg,
   },
   {
@@ -46,7 +46,7 @@ const Services = () => (
         <span className="section-label">What We Do</span>
         <h2 className="section-title">Full-Cycle Solar Solutions</h2>
         <p className="section-subtitle">
-          From the first sketch to decades of clean energy production — we handle every
+          From the first sketch to proactive lifetime optimization — we handle every
           step of your solar journey.
         </p>
       </motion.div>

@@ -12,7 +12,7 @@ const testimonials = [
   {
     text: "We needed a reliable partner for our office park installation. Sunberg delivered a 340 kW system on schedule and under budget. Their monitoring platform is outstanding.",
     name: 'Erik Johansson',
-    role: 'Facilities Director, Nordic Properties',
+    role: 'Facilities Director, Lumina Estate Group',
     rating: 5,
   },
   {
@@ -55,17 +55,15 @@ const Testimonials = () => {
         >
           {testimonials.map((t, i) => (
             <motion.div className={styles.card} key={i} variants={item}>
-              <div className={styles.stars}>
-                {'★'.repeat(t.rating)}
-              </div>
-              <blockquote className={styles.text}>"{t.text}"</blockquote>
+              <div className={styles.quoteIcon}>“</div>
+              <blockquote className={styles.text}>{t.text}</blockquote>
               <div className={styles.author}>
                 <div className={styles.avatar}>
                   {t.name.split(' ').map(n => n[0]).join('')}
                 </div>
-                <div>
-                  <div className={styles.name}>{t.name}</div>
-                  <div className={styles.role}>{t.role}</div>
+                <div className={styles.authorInfo}>
+                  <span className={styles.authorName}>{t.name}</span>
+                  <span className={styles.role}>{t.role}</span>
                 </div>
               </div>
             </motion.div>

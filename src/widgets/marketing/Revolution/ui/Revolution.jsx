@@ -138,7 +138,7 @@ const Revolution = () => {
               <div className={styles.accent}>
                 Solar pays you twice: first on your utility bills, and finally on your property valuation.
               </div>
-              <Button href="#contact" variant="primary">Calculate Your Savings</Button>
+              <Button href="#contact" variant="primary">Request a Consultation</Button>
             </div>
           </motion.div>
         </div>

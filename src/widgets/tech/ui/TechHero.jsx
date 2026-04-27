@@ -8,7 +8,7 @@ export const TechHero = () => (
     <div className={styles.birdWrapper}>
       <motion.img 
         src={birdImg} 
-        alt="Nordic Bird" 
+        alt="Sunberg Icon" 
         className={styles.bird}
         initial={{ opacity: 0, x: -30, rotate: -5 }}
         animate={{ opacity: 1, x: 0, rotate: 0 }}
@@ -21,7 +21,7 @@ export const TechHero = () => (
         <h1 className={styles.title}>The Future of Solar Technology</h1>
         <p className={styles.desc}>
           At Sunberg, we push the boundaries of energy efficiency through advanced materials, 
-          precision engineering, and Nordic innovation.
+          precision engineering, and technical innovation.
         </p>
       </div>
     </div>

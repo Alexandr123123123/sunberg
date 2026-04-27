@@ -9,7 +9,7 @@ export const AbHero = () => {
       <div className={styles.birdWrapper}>
         <motion.img 
           src={birdImg} 
-          alt="Nordic Bird" 
+          alt="Sunberg Icon" 
           className={styles.bird}
           initial={{ opacity: 0, x: -30, rotate: -5 }}
           animate={{ opacity: 1, x: 0, rotate: 0 }}
@@ -47,7 +47,7 @@ export const AbHero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <p className={styles.desc}>
-              Founded on the principles of Nordic precision and environmental stewardship, 
+              Founded on the principles of technical rigor and environmental stewardship, 
               Sunberg is more than a solar provider. We are architects of energy independence, 
               bridging the gap between high-end engineering and sustainable living.
             </p>

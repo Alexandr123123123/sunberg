@@ -4,10 +4,10 @@ import { Counter } from '../../../../shared/ui/Counter';
 import styles from '../AbStats.module.css';
 
 const stats = [
-  { value: 12, unit: '+', label: 'Experience', desc: 'Years of industry leadership and technical expertise.' },
-  { value: 500, unit: '+', label: 'Portfolio', desc: 'Successfully completed projects across Europe.' },
-  { value: 25, unit: 'MW', label: 'Capacity', desc: 'Total solar power installed and managed globally.' },
-  { value: 98, unit: '%', label: 'Trust', desc: 'Client satisfaction and recommendation rate.' }
+  { value: 500, unit: 'B$', label: 'Capital Shift', desc: "Annual global investment in solar power has surpassed $500 billion, outstripping all other generation sources." },
+  { value: 600, unit: 'GW', label: 'Annual Growth', desc: 'Total solar power capacity added to the global grid in the last 12 months.' },
+  { value: 64, unit: '%', label: 'Market Surge', desc: 'Growth rate of new solar installations in early 2025 compared to 2024.' },
+  { value: 100, unit: '%', label: 'Demand Engine', desc: 'Solar and wind met the entirety of new global electricity demand in 2025.' }
 ];
 
 export const AbStats = () => {

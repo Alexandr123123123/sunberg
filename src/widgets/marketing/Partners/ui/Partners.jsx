@@ -5,7 +5,7 @@ const Partners = () => (
   <section className={styles.partners}>
     <div className="container">
       <div className={styles.inner}>
-        <span className={styles.label}>Trusted by 200+ homeowners and businesses across Europe and the US</span>
+        <span className={styles.label}>Defining the standard for technical excellence in solar infrastructure</span>
       </div>
     </div>
   </section>

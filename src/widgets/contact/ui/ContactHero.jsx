@@ -9,7 +9,7 @@ export const ContactHero = () => {
       <div className={styles.birdWrapper}>
         <motion.img 
           src={birdImg} 
-          alt="Nordic Bird" 
+          alt="Sunberg Icon" 
           className={styles.bird}
           initial={{ opacity: 0, x: -30, rotate: -5 }}
           animate={{ opacity: 1, x: 0, rotate: 0 }}

@@ -211,16 +211,20 @@ export const faqItems = [
     a: 'Systems equipped with our hybrid inverter and battery package automatically switch to island mode within 20 milliseconds — fast enough that most appliances won\'t even register the outage. Standard grid-tied systems without storage will shut down per regulatory requirements.',
   },
   {
-    q: 'What specific sensors are used in your monitoring system?',
-    a: 'Each installation includes panel-level power optimizers with individual MPPT tracking, ambient and module temperature sensors, irradiance meters, and bi-directional grid meters. All data feeds into our centralized AI platform with 5-second polling intervals.',
+    q: 'How does the system perform during cloudy days or in winter?',
+    a: 'Modern TOPCon modules are highly sensitive to the full light spectrum, meaning they generate power even on overcast days. While production is lower in winter due to shorter days, our system architecture is optimized for low-light efficiency, ensuring a steady energy flow year-round.',
+  },
+  {
+    q: 'Do I need to manually clean the panels or perform any maintenance?',
+    a: 'Sunberg systems are designed for minimal maintenance. In most climates, rainfall is sufficient to keep panels clean. However, our Proactive Care program includes bi-annual professional inspections and thermal imaging to ensure no dirt buildup or micro-cracks are affecting your yield.',
+  },
+  {
+    q: 'Can I integrate my electric vehicle (EV) charging into the solar ecosystem?',
+    a: 'Absolutely. Our smart-home energy sync allows you to prioritize EV charging when solar production is at its peak. This "Solar-to-EV" logic ensures your car is powered by the cleanest and cheapest energy available, maximizing your savings.',
   },
   {
     q: 'How do you calculate ROI projections and what assumptions do you use?',
     a: 'Our projections use 10-year localized irradiance data from satellite sources, actual utility rate escalation trends (typically 3–5% annually), verified panel degradation curves, and your real consumption profile. We deliberately model conservative scenarios — our clients typically outperform projections by 8–12%.',
-  },
-  {
-    q: 'What is your installation defect rate compared to industry average?',
-    a: 'Our post-installation defect rate is 0.3%, versus the industry average of 2.1%. This is achieved through our triple-inspection protocol: self-inspection by the installation crew, independent QA review by our engineering team, and a final thermal imaging scan 30 days post-activation.',
   },
 ];
 

@@ -15,8 +15,8 @@ const values = [
     icon: <IconIntegration />
   },
   {
-    title: 'Nordic Precision',
-    desc: 'Swedish engineering standards applied to every calculation, ensuring maximum yield and unmatched system longevity.',
+    title: 'Precision Engineering',
+    desc: 'Advanced engineering standards applied to every calculation, ensuring maximum yield and unmatched system longevity.',
     icon: <IconAnalytics />
   },
   {
@@ -30,24 +30,23 @@ export const AbValues = () => {
   return (
     <section className={styles.section}>
       <div className="container">
-        <div className={styles.grid}>
+        <motion.div 
+          className={styles.grid}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           {values.map((val, i) => (
-            <motion.div 
-              key={i}
-              className={styles.card}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-            >
+            <div key={i} className={styles.card}>
               <div className={styles.iconWrapper}>
                 {val.icon}
               </div>
               <h3 className={styles.title}>{val.title}</h3>
               <p className={styles.desc}>{val.desc}</p>
-            </motion.div>
+            </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

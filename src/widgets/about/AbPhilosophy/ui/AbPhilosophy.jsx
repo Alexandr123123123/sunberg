@@ -18,8 +18,8 @@ const principles = [
     image: longevityImg
   },
   {
-    title: 'Ecosystem Mindset',
-    text: 'Environmental stewardship is at our core. We minimize carbon footprint at every stage of the engineering and installation process.',
+    title: 'Strategic Freedom',
+    text: 'For Sunberg, energy independence is the ultimate expression of freedom. We design resilient ecosystems that empower you with total sovereignty over your power production, providing autonomy from grid constraints and a clear path to a self-sufficient future.',
     image: ecosystemImg
   }
 ];
@@ -59,7 +59,7 @@ export const AbPhilosophy = () => {
             <p className={styles.desc}>
               We believe that solar energy should enhance, not compromise, 
               the aesthetic and structural value of your property. Our approach 
-              combines Swedish minimalist design with rigorous engineering standards.
+              combines refined minimalist design with rigorous engineering standards.
             </p>
             <div className={styles.leafWrapper}>
               <img src={leafImg} alt="" className={styles.leaf} />

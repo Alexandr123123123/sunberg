@@ -16,6 +16,17 @@
 | **SpSolutions** | Widget | ✅ Verified | `widgets/services/SpSolutions` |
 | **SpDeepDive** | Widget | ✅ Verified | `widgets/services/SpDeepDive` |
 
+## Страница проектов (Projects Page)
+
+| Компонент | Тип | Статус | Назначение (FSD) |
+| :--- | :--- | :--- | :--- |
+| **PrIntro** | Widget | ✅ Migrated | `widgets/projects/PrIntro` |
+| **PrImpact** | Widget | ✅ Migrated | `widgets/projects/PrImpact` |
+| **PrFeatured** | Widget | ✅ Migrated | `widgets/projects/PrFeatured` |
+| **PrTrust** | Widget | ✅ Migrated | `widgets/projects/PrTrust` |
+| **PrGrid** | Widget | ✅ Migrated | `widgets/projects/PrGrid` |
+| **PrTestimonials**| Widget | ✅ Migrated | `widgets/projects/PrTestimonials` |
+
 ## Страница "О нас" (About Page)
 
 | Компонент | Тип | Статус | Назначение (FSD) |

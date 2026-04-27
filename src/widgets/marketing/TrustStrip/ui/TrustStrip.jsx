@@ -4,16 +4,16 @@ import styles from '../TrustStrip.module.css';
 
 const stats = [
   {
-    number: '10+ Years',
-    label: 'Industry Experience',
+    number: '2 TW',
+    label: 'Cumulative Global Capacity',
   },
   {
-    number: '500k+',
-    label: 'CO2 Tons Offset',
+    number: '55%',
+    label: "China's Global Solar Share",
   },
   {
-    number: 'Tier 1',
-    label: 'Certified Technology',
+    number: '90%',
+    label: 'Solar Cost Drop Since 2010',
   },
 ];
 

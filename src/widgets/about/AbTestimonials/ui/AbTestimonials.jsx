@@ -24,7 +24,7 @@ const testimonials = [
     id: 3,
     content: "Working with Erik and his team was a seamless experience. They don't just sell panels; they design long-term energy independence.",
     author: "Anders Holm",
-    role: "Founder, Nordic Heights",
+    role: "Founder, Alpine Heights",
     avatar: avatar3
   }
 ];

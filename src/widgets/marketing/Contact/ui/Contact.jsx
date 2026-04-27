@@ -10,7 +10,7 @@ const Contact = () => (
           <h2 className={styles.title}>Let's Build Your Solar Future</h2>
           <p className={styles.desc}>
             Whether you're exploring options or ready to start — reach out to our team
-            for a free consultation and site assessment.
+            for project assessment.
           </p>
           <div className={styles.details}>
             <div className={styles.detail}>

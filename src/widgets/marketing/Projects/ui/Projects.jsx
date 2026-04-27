@@ -4,6 +4,7 @@ import p1 from '../../../../assets/rev1_gen.png';
 import p2 from '../../../../assets/rev2_gen.png';
 import p3 from '../../../../assets/rev3_gen.png';
 import p4 from '../../../../assets/rev4_gen.png';
+import p5 from '../../../../assets/rev5_gen.png';
 import { Button } from '../../../../shared/ui/Button';
 import styles from '../Projects.module.css';
 
@@ -16,8 +17,8 @@ const projects = [
     featured: true,
   },
   {
-    title: 'Nordic Office Park',
-    location: 'Stockholm, Sweden',
+    title: 'Alpine Office Park',
+    location: 'Munich, Germany',
     capacity: '340 kW',
     image: p2,
   },
@@ -32,6 +33,12 @@ const projects = [
     location: 'Munich, Germany',
     capacity: '1.2 MW',
     image: p4,
+  },
+  {
+    title: 'Berlin Logistics Hub',
+    location: 'Berlin, Germany',
+    capacity: '850 kW',
+    image: p5,
   },
 ];
 
@@ -53,7 +60,7 @@ const Projects = () => {
               we've delivered across Europe and the US.
             </p>
           </div>
-          <Button href="#contact" variant="outlineDark">Discuss Your Project</Button>
+          <Button href="#contact" variant="outlineDark">Request a Consultation</Button>
         </div>
 
         {projects.filter(p => p.featured).map((p, i) => (

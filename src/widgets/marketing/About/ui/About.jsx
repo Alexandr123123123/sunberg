@@ -21,27 +21,28 @@ const About = () => {
             variants={fadeUp}
           >
             <span className="section-label">About Sunberg</span>
-            <h2 className="section-title">Engineering a Cleaner Future, One Roof at a Time</h2>
+            <h2 className="section-title">Engineering a Cleaner Future</h2>
 
             <div className={styles.body}>
               <div className={styles.description}>
                 <p className={styles.text}>
                   <strong>Sunberg</strong> bridges high-performance engineering with sustainable design 
                   to construct the clean energy infrastructure of tomorrow. We believe the transition to 
-                  renewables should be an effortless elevation of your property's value, not a complex compromise.
+                  solar should be an effortless evolution—where professional system architecture 
+                  eliminates the common pitfalls of mismatched components and inefficient design, 
+                  ensuring absolute performance from day one.
                 </p>
                 <ul className={styles.list}>
                   <li className={styles.listItem}>
                     <strong>Turnkey Solar Infrastructure</strong>
-                    We manage the entire project lifecycle in-house. From structural analysis and custom 
-                    system architecture to certified installation and direct grid integration — we leave 
-                    no detail to third parties.
+                    We manage the entire lifecycle in-house—ensuring flawless system architecture and 
+                    precision execution—to guarantee the highest standards of technical quality 
+                    and long-term performance.
                   </li>
                   <li className={styles.listItem}>
                     <strong>Data-Driven Scalability</strong>
-                    Whether powering a private residence or a multi-megawatt commercial facility, we deliver 
-                    tier-1 hardware, precise yield calculations, and proactive monitoring to ensure decades 
-                    of uninterrupted performance.
+                    Delivering Tier-1 hardware and precise yield calculations for projects 
+                    ranging from private residences to commercial facilities.
                   </li>
                 </ul>
               </div>
@@ -61,16 +62,13 @@ const About = () => {
             
             <div className={styles.milestones}>
               <div className={styles.milestone}>
-                <span className={styles.milestoneNumber}>200+</span>
-                <span className={styles.milestoneLabel}>Projects</span>
+                <span className={styles.milestoneNumber}>Reliability</span>
               </div>
               <div className={styles.milestone}>
-                <span className={styles.milestoneNumber}>15 MW</span>
-                <span className={styles.milestoneLabel}>Installed</span>
+                <span className={styles.milestoneNumber}>Precision</span>
               </div>
               <div className={styles.milestone}>
-                <span className={styles.milestoneNumber}>98%</span>
-                <span className={styles.milestoneLabel}>Satisfaction</span>
+                <span className={styles.milestoneNumber}>Innovation</span>
               </div>
             </div>
           </motion.div>

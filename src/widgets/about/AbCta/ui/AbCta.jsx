@@ -15,9 +15,12 @@ export const AbCta = () => {
           transition={{ duration: 0.6 }}
         >
           <div className={styles.content}>
-            <h3 className={styles.title}>Ready to transform your energy landscape?</h3>
+            <h3 className={styles.title}>Ready to engineer your energy independence?</h3>
+            <p className={styles.description}>
+              Get a professional solar performance forecast and custom system architecture within 48 hours.
+            </p>
           </div>
-          <Button href="/contact" variant="primary">Start Your Project</Button>
+          <Button href="/contact" variant="primary">Request a Consultation</Button>
         </motion.div>
       </div>
     </section>

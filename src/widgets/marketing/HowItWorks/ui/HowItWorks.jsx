@@ -7,7 +7,7 @@ const steps = [
   {
     num: '01',
     title: 'Consultation',
-    desc: 'We discuss your energy goals, evaluate your property remotely, and provide an initial cost estimate — completely free.',
+    desc: 'We discuss your energy efficiency goals and provide a preliminary cost estimate — completely free of charge.',
   },
   {
     num: '02',
@@ -22,7 +22,7 @@ const steps = [
   {
     num: '04',
     title: 'Activation & Support',
-    desc: 'Your system goes live and starts generating savings immediately. We provide 24/7 monitoring and ongoing maintenance support.',
+    desc: 'Your system goes live and starts generating savings immediately. We provide ongoing maintenance and technical support.',
   },
 ];
 

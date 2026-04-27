@@ -31,7 +31,7 @@ export const projects = [
   {
     id: 2,
     category: 'commercial',
-    title: 'Nordic Logistics Hub',
+    title: 'Metropark Logistics Hub',
     location: 'Gothenburg',
     specs: '250 kWp | Grid Sync',
     image: proj1,
@@ -99,7 +99,7 @@ export const projects = [
     layout: 'overlay',
     aspects: [
       { id: 'overview', label: 'Overview', content: 'Powering critical cooling infrastructure with sustainable energy.' },
-      { id: 'tech', label: 'Tech', content: 'High-efficiency modules optimized for low-angle Arctic sun.' },
+      { id: 'tech', label: 'Tech', content: 'High-efficiency modules optimized for low-angle solar trajectory.' },
       { id: 'result', label: 'Impact', content: 'Zero-carbon cooling milestones reached for our enterprise client.' }
     ]
   },
@@ -111,7 +111,7 @@ export const impactStats = [
     label: 'Installed Capacity', 
     value: 8.4, 
     unit: 'MWp', 
-    desc: 'Total clean energy production across Nordic regions.' 
+    desc: 'Total clean energy production across European regions.' 
   },
   { 
     id: 'co2', 

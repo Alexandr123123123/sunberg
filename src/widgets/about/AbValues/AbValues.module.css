@@ -6,56 +6,114 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--color-bg);
+  position: relative; /* For absolute lines */
+}
+
+/* Vertical Gradient Line */
+.grid::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(to bottom, 
+    transparent 0%, 
+    rgba(0, 0, 0, 0.08) 20%, 
+    rgba(0, 0, 0, 0.08) 80%, 
+    transparent 100%);
+  z-index: 1;
+}
+
+/* Horizontal Gradient Line */
+.grid::after {
+  content: '';
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(to right, 
+    transparent 0%, 
+    rgba(0, 0, 0, 0.08) 20%, 
+    rgba(0, 0, 0, 0.08) 80%, 
+    transparent 100%);
+  z-index: 1;
 }
 
 .card {
-  background: var(--color-bg);
-  padding: 60px 50px;
-  border-radius: var(--radius);
-  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-  border: 1px solid var(--color-border);
+  padding: 80px 60px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  transition: background-color 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.01);
 }
 
 .iconWrapper {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-text-muted);
+  opacity: 0.6;
   transition: all 0.4s ease;
 }
 
 .card:hover .iconWrapper {
   color: var(--color-primary);
-  transform: translateY(-8px);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .title {
   font-family: var(--font-heading);
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 600;
   color: var(--color-text);
   letter-spacing: -0.02em;
 }
 
 .desc {
-  font-size: 0.95rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.6;
   color: var(--color-text-muted);
+  max-width: 380px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .card {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid::before,
+  .grid::after {
+    display: none; /* Hide grid lines on mobile stack */
+  }
+
   .grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    border-radius: 4px;
+  }
+  
+  .card:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
   
   .card {
-    padding: 40px 30px;
+    padding: 48px 32px;
   }
 }

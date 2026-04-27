@@ -14,12 +14,13 @@ const CtaBanner = () => (
         transition={{ duration: 0.6 }}
       >
         <div className={styles.content}>
-          <h3 className={styles.title}>Ready to harness the power of the sun?</h3>
+          <h3 className={styles.title}>Ready to engineer your energy independence?</h3>
           <p className={styles.desc}>
-            Get a free, no-obligation site assessment and custom solar proposal within 48 hours.
+            Get a professional solar performance forecast and custom system architecture 
+            within 48 hours.
           </p>
         </div>
-        <Button href="#contact" variant="primary">Get a Free Quote</Button>
+        <Button href="#contact" variant="primary">Request a Consultation</Button>
       </motion.div>
     </div>
   </section>

@@ -16,7 +16,7 @@
 }
 
 .body {
-  margin-top: 48px;
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -29,7 +29,7 @@
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.12rem;
   color: var(--color-text-muted);
   line-height: 1.8;
 }
@@ -103,27 +103,32 @@
 .milestones {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: -40px;
+  margin-top: -20px;
+  width: 90%;
+  align-self: center;
   position: relative;
   z-index: 2;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0; /* Square corners as requested */
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
 }
 
 .milestone {
-  background: var(--color-surface);
-  padding: 20px 16px;
-  border-radius: var(--radius);
+  padding: 24px 16px;
   text-align: center;
-  border: 1px solid var(--color-border);
 }
 
 .milestoneNumber {
   display: block;
   font-family: var(--font-heading);
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   color: var(--color-primary);
-  margin-bottom: 4px;
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .milestoneLabel {
@@ -184,11 +189,12 @@
     font-size: 1.4rem;
   }
   
-  .milestone {
-    padding: 20px 16px;
+  .milestones {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
   }
-  
-  .milestoneNumber {
-    font-size: 1.4rem;
+
+  .milestone {
+    padding: 16px;
   }
 }

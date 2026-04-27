@@ -1,23 +1,8 @@
 .section {
-  padding: 120px 0;
-  background-color: var(--color-bg);
+  padding: 120px 0 160px;
+  background-color: var(--color-surface);
   position: relative;
   overflow: hidden;
-}
-
-.section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  opacity: 0.03;
-  background-image: 
-    linear-gradient(rgba(91, 126, 95, 0.2) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(91, 126, 95, 0.2) 1px, transparent 1px);
-  background-size: 50px 50px;
 }
 
 .grid {
