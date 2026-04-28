@@ -1,7 +1,7 @@
 .section {
   padding: 0 0 80px;
   background-color: var(--color-bg);
-  margin-top: -40px; /* Overlap with hero for tighter look */
+  margin-top: 80px;
   position: relative;
   z-index: 2;
 }
@@ -20,13 +20,38 @@
   align-items: center;
   gap: 24px;
   text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  position: relative;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  border-color: var(--color-primary-light, rgba(91, 126, 95, 0.2));
+}
+
+.copyIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--color-text-muted);
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.card:hover .copyIcon {
+  opacity: 1;
+}
+
+.copiedText {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .icon {

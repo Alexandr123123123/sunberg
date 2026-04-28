@@ -61,3 +61,12 @@
   letter-spacing: 0.08em;
 }
 
+
+.dark {
+  background: #1A1A1A !important;
+  color: #FFFFFF !important;
+}
+
+.dark:hover {
+  background: #000000 !important;
+}

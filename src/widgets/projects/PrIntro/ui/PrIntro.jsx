@@ -42,8 +42,8 @@ const PrIntro = () => {
           >
             <p className={styles.desc}>
               A showcase of our technical expertise in solar energy. 
-              From high-efficiency residential systems to complex 
-              industrial deployments across Europe.
+              From high-efficiency residential systems to versatile 
+              commercial and specialized energy deployments.
             </p>
           </motion.div>
         </div>

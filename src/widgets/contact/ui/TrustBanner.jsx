@@ -14,7 +14,7 @@ export const TrustBanner = () => {
           transition={{ duration: 0.8 }}
         >
           <span className={styles.label}>
-            Trusted by 200+ homeowners and businesses across Europe and the US
+            Empowering Your Sustainable Future: Join a community of forward-thinking clients achieving energy autonomy through our precision-engineered solar ecosystems.
           </span>
         </motion.div>
       </div>

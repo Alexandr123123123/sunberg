@@ -21,26 +21,26 @@ export const SpTechBanner = () => (
         <div className={styles.main}>
           <span className="section-label text-white">Engineering Focus</span>
           <h2 className={styles.title}>
-            N-Type <span className="text-primary">TOPCon</span> Efficiency
+            Agrivoltaic <span className="text-primary">Synergy</span>
           </h2>
           <p className={styles.desc}>
-            Next-generation Tunnel Oxide Passivated Contact modules achieving
-            unmatched conversion rates and long-term stability.
+            Simultaneous land use for solar generation and crop cultivation, 
+            reducing irrigation needs by 30% and increasing overall land productivity by 60%.
           </p>
         </div>
 
         <div className={styles.stats}>
           <div className={styles.stat}>
-            <span className={styles.val}>22.5%</span>
-            <span className={styles.lab}>Peak Efficiency</span>
+            <span className={styles.val}>-30%</span>
+            <span className={styles.lab}>Irrigation Demand</span>
           </div>
           <div className={styles.stat}>
-            <span className={styles.val}>-0.4%</span>
-            <span className={styles.lab}>Yearly Degradation</span>
+            <span className={styles.val}>+60%</span>
+            <span className={styles.lab}>Land Efficiency</span>
           </div>
           <div className={styles.stat}>
-            <span className={styles.val}>30Y</span>
-            <span className={styles.lab}>Linear Warranty</span>
+            <span className={styles.val}>Dual-Use</span>
+            <span className={styles.lab}>Optimized Yield</span>
           </div>
         </div>
       </motion.div>

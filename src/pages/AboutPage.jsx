@@ -6,7 +6,7 @@ import { AbTech } from '../widgets/about/AbTech';
 import { AbStats } from '../widgets/about/AbStats';
 import { AbTeam } from '../widgets/about/AbTeam';
 import { AbTestimonials } from '../widgets/about/AbTestimonials';
-import { AbCta } from '../widgets/about/AbCta';
+import { CtaBlock } from '../widgets/marketing/CtaBlock';
 
 const AboutPage = () => {
   return (
@@ -19,7 +19,7 @@ const AboutPage = () => {
       <AbStats />
       <AbTeam />
       <AbTestimonials />
-      <AbCta />
+      <CtaBlock variant="surface" />
     </main>
   );
 };

@@ -107,25 +107,25 @@ export const projects = [
 
 export const impactStats = [
   { 
-    id: 'power', 
-    label: 'Installed Capacity', 
-    value: 8.4, 
-    unit: 'MWp', 
-    desc: 'Total clean energy production across European regions.' 
+    id: 'target', 
+    label: 'Net Zero Target', 
+    value: 6, 
+    unit: 'TW', 
+    desc: 'The required global solar capacity by 2030 to achieve international climate milestones.' 
   },
   { 
-    id: 'co2', 
-    label: 'CO2 Offset', 
-    value: 1240, 
-    unit: 'Tons', 
-    desc: 'Annual reduction in carbon footprint through our systems.' 
+    id: 'recycling', 
+    label: 'Recyclability', 
+    value: 95, 
+    unit: '%', 
+    desc: 'Modern premium modules feature high recyclability, underscoring the industry\'s environmental commitment.' 
   },
   { 
-    id: 'projects', 
-    label: 'Solar Objects', 
-    value: 450, 
-    unit: '+', 
-    desc: 'Successfully delivered high-performance ecosystems.' 
+    id: 'potential', 
+    label: 'Solar Potential', 
+    value: 10000, 
+    unit: 'x', 
+    desc: 'The solar energy reaching Earth every hour exceeds total global annual consumption, making it our most reliable resource.' 
   },
 ];
 

@@ -1,12 +1,11 @@
 import React from 'react';
-import { TechHero, TechHighlight } from '../widgets/tech';
+import { TechHero, TechHistory } from '../widgets/tech';
 
 const SolarTechPage = () => {
   return (
     <main className="tech-page">
       <TechHero />
-      <TechHighlight />
-      {/* Additional sections will be added here */}
+      <TechHistory />
     </main>
   );
 };

@@ -5,6 +5,8 @@ import spAnalyticsImg from '../../../assets/sp_analytics.png';
 import spCaseStudyImg from '../../../assets/sp_casestudy.png';
 import spCommercialImg from '../../../assets/sp_commercial.png';
 import spTechHighlightImg from '../../../assets/sp_tech_highlight_blue_modern_euro_green.png';
+import spAgrivoltaicsImg from '../../../assets/sp_agrivoltaics_v2.png';
+import spFloatovoltaicsImg from '../../../assets/sp_floatovoltaics.png';
 
 import {
   IconDesign,
@@ -22,20 +24,20 @@ import {
 export const serviceSectors = [
   {
     icon: <IconDesign />,
-    title: 'Архитектура и дизайн',
-    desc: 'Анализ затенения, 3D-моделирование и проектирование конструкций для максимального использования потенциала вашей крыши.',
+    title: 'Architecture & Design',
+    desc: 'Shading analysis, 3D modeling, and structural design to maximize your roof\'s solar potential.',
     targetId: 'design-block',
   },
   {
     icon: <IconIntegration />,
-    title: 'Развертывание и интеграция',
-    desc: 'Профессиональная установка модулей первого уровня и гибридных инверторов с полной синхронизацией с сетью и системой «умный дом».',
+    title: 'Deployment & Integration',
+    desc: 'Professional installation of Tier-1 modules and hybrid inverters with full grid and smart-home synchronization.',
     targetId: 'integration-block',
   },
   {
     icon: <IconAnalytics />,
-    title: 'Аналитика и управление',
-    desc: 'Непрерывный мониторинг с помощью ИИ и упреждающее техническое обслуживание гарантируют максимальную эффективность на протяжении десятилетий.',
+    title: 'Analytics & Management',
+    desc: 'Monitoring and proactive maintenance ensure peak efficiency for decades to come.',
     targetId: 'analytics-block',
   },
 ];
@@ -69,37 +71,25 @@ export const deepDiveBlocks = [
       {
         id: 'analysis',
         label: 'Analysis',
-        title: 'LiDAR Terrain Mapping',
-        text: 'Every Sunberg project begins with a comprehensive site analysis. We combine drone-captured aerial imagery with proprietary shading simulation software to model your roof\'s solar potential down to the square centimeter.',
-        stat: { value: '1cm²', label: 'Modeling precision' },
+        title: 'Advanced Site Mapping',
+        text: 'Every Sunberg project begins with an exhaustive site analysis. Our engineers utilize advanced simulation software to evaluate shading dynamics and environmental factors, optimizing your roof\'s solar potential with absolute precision.',
+        stat: { value: '15+', label: 'Data Parameters' },
         features: [
-          'LiDAR-based terrain analysis',
-          '3D digital twin generation',
+          'High-precision terrain analysis',
+          'Generation potential analysis',
           'Solar radiance mapping'
         ]
       },
       {
-        id: 'model',
-        label: 'Model',
-        title: 'BIM-Integrated Design',
-        text: 'Our structural engineers calculate wind, snow, and dead-load factors to ensure decades of integrity. We create a complete Building Information Model (BIM) to optimize panel placement and wiring infrastructure.',
-        stat: { value: '100%', label: 'BIM Compliance' },
+        id: 'design',
+        label: 'Design',
+        title: 'Architectural Concept',
+        text: 'We prioritize aesthetic harmony, selecting premium components that complement your property\'s architecture while maximizing energy harvest through advanced geometry.',
+        stat: { value: 'Custom', label: 'Design Aesthetic' },
         features: [
-          'Full structural load calculations',
-          'Optimized electrical schematics',
-          'Virtual installation walkthrough'
-        ]
-      },
-      {
-        id: 'logic',
-        label: 'Logic',
-        title: 'Architectural Synergy',
-        text: 'We believe solar should enhance your architecture, not obscure it. Our design logic prioritizes sleek aesthetics and minimal visual impact while maximizing energy harvest through advanced geometry.',
-        stat: { value: 'Zero', label: 'Visible wiring' },
-        features: [
-          'Invisible mounting solutions',
-          'Custom color-matched components',
-          'Landscape-integrated design'
+          'Bespoke component selection',
+          'Visual impact assessment',
+          'Seamless structural integration'
         ]
       }
     ],
@@ -112,13 +102,13 @@ export const deepDiveBlocks = [
       {
         id: 'modules',
         label: 'Modules',
-        title: 'N-Type TOPCon Efficiency',
-        text: 'We exclusively deploy N-type TOPCon modules with industry-leading efficiency ratings. These panels offer superior low-light performance and minimal degradation over their 25-year lifespan.',
-        stat: { value: '22.5%', label: 'Peak efficiency' },
+        title: 'Premium Module Engineering',
+        text: 'We utilize advanced photovoltaic modules with industry-leading efficiency, designed for superior performance and minimal degradation over their extended lifespan.',
+        stat: { value: '22.5%+', label: 'Peak Efficiency' },
         features: [
-          'High-density cell packaging',
-          'Superior bifacial energy gain',
-          'Industry-best temperature coefficient'
+          'High-Efficiency Cell Architecture',
+          'Advanced Photovoltaic Systems',
+          'Superior Climate Resilience'
         ]
       },
       {
@@ -128,16 +118,16 @@ export const deepDiveBlocks = [
         text: 'Our hybrid inverters are the brains of your system, capable of seamless battery integration and millisecond-fast backup transitions. Efficiency is prioritized at every stage of power conversion.',
         stat: { value: '97.8%', label: 'Conversion rate' },
         features: [
-          'Direct-to-battery DC coupling',
-          'Advanced MPPT tracking',
-          'Grid-independent backup mode'
+          'Optimized Battery Link',
+          'Smart Energy Optimization',
+          'Seamless Backup Transition'
         ]
       },
       {
         id: 'mounting',
         label: 'Mounting',
         title: 'Wind-Rated Integrity',
-        text: 'Our anodized aluminum mounting systems are wind-tunnel tested to withstand extreme conditions. Every fastener is engineered for maximum pull-out resistance and long-term durability.',
+        text: 'Our anodized aluminum mounting systems are engineered to withstand extreme conditions. Every fastener is designed for maximum pull-out resistance and long-term structural integrity.',
         stat: { value: '200km/h', label: 'Wind resistance' },
         features: [
           'Corrosion-resistant anodized AL',
@@ -153,44 +143,32 @@ export const deepDiveBlocks = [
     phase: '03',
     tabs: [
       {
-        id: 'monitoring',
-        label: 'Monitoring',
-        title: 'AI-Driven Vigilance',
-        text: 'Post-installation, your system enters our AI-driven monitoring ecosystem. Anomalies are detected before they become failures, with real-time reporting accessible from any device.',
-        stat: { value: '24/7', label: 'Active monitoring' },
+        id: 'support',
+        label: 'Support',
+        title: 'Unwavering Partnership',
+        text: 'Our commitment to your energy independence doesn\'t end with installation. We stand by our work, ensuring you\'re never left alone and that expert help is always just a call away.',
+        stat: { value: 'Always', label: 'Ready to Help' },
         features: [
-          'Real-time energy flow tracking',
-          'Machine-learning fault detection',
-          'Instant mobile notifications'
+          'Expert Phone Support',
+          'Comprehensive system training',
+          'Rapid Technical Response'
         ]
       },
       {
-        id: 'care',
-        label: 'Care',
-        title: 'Proactive Maintenance',
-        text: 'We don\'t wait for issues to arise. Our proactive care program includes thermal imaging inspections, automated cleaning schedules, and detailed health checks twice a year.',
-        stat: { value: '2x', label: 'Yearly inspections' },
+        id: 'evolution',
+        label: 'Evolution',
+        title: 'Technological Lifecycle',
+        text: 'We maintain a complete digital blueprint of your system configuration. As solar technology advances, we proactively reach out with modernization options to keep your investment at the cutting edge.',
+        stat: { value: 'Future', label: 'Ready' },
         features: [
-          'IR thermal panel analysis',
-          'Professional deep cleaning',
-          'Electrical torque verification'
+          'Digital Configuration Ledger',
+          'Next-Gen Tech Integration',
+          'Strategic System Evolution'
         ]
       },
-      {
-        id: 'returns',
-        label: 'Returns',
-        title: 'Yield Optimization',
-        text: 'Quarterly performance reports ensure your investment operates at peak efficiency. We analyze environmental data to suggest optimizations that maximize your long-term ROI.',
-        stat: { value: '30y', label: 'Design lifespan' },
-        features: [
-          'Performance benchmarking',
-          'Seasonal tilt optimization',
-          'Financial yield reporting'
-        ]
-      }
     ],
     image: spAnalyticsImg,
-  },
+  }
 ];
 
 export const hardwarePartners = [
@@ -199,12 +177,19 @@ export const hardwarePartners = [
   { name: 'SolarEdge', tagline: 'Optimizers' },
   { name: 'Victron', tagline: 'Storage' },
   { name: 'K2 Systems', tagline: 'Mounting' },
+  { name: 'Fronius', tagline: 'Inverters' },
+  { name: 'BYD', tagline: 'Storage' },
+  { name: 'Enphase', tagline: 'Micro-Inverters' },
+  { name: 'Tesla', tagline: 'Powerwall' },
+  { name: 'Trina Solar', tagline: 'Modules' },
+  { name: 'Meyer Burger', tagline: 'Modules' },
+  { name: 'Mounting Systems', tagline: 'Mounting' },
 ];
 
 export const faqItems = [
   {
     q: 'What happens to panel efficiency after 10 years of operation?',
-    a: 'Our N-type TOPCon modules have a degradation rate of just 0.4% per year — significantly below the industry average of 0.7%. After 10 years, your system will still operate at approximately 96% of its original capacity. After 25 years, we guarantee a minimum of 87.4% output.',
+    a: 'Our premium photovoltaic modules have a degradation rate of just 0.4% per year — significantly below the industry average of 0.7%. After 10 years, your system will still operate at approximately 96% of its original capacity. After 25 years, we guarantee a minimum of 87.4% output.',
   },
   {
     q: 'How does the system perform during a full grid blackout?',
@@ -212,11 +197,11 @@ export const faqItems = [
   },
   {
     q: 'How does the system perform during cloudy days or in winter?',
-    a: 'Modern TOPCon modules are highly sensitive to the full light spectrum, meaning they generate power even on overcast days. While production is lower in winter due to shorter days, our system architecture is optimized for low-light efficiency, ensuring a steady energy flow year-round.',
+    a: 'Modern high-efficiency modules are highly sensitive to the full light spectrum, meaning they generate power even on overcast days. While production is lower in winter due to shorter days, our system architecture is optimized for low-light efficiency, ensuring a steady energy flow year-round.',
   },
   {
     q: 'Do I need to manually clean the panels or perform any maintenance?',
-    a: 'Sunberg systems are designed for minimal maintenance. In most climates, rainfall is sufficient to keep panels clean. However, our Proactive Care program includes bi-annual professional inspections and thermal imaging to ensure no dirt buildup or micro-cracks are affecting your yield.',
+    a: 'Sunberg systems are designed for minimal maintenance. In most climates, rainfall is sufficient to keep panels clean. However, our technical support and modernization programs ensure that your system remains in peak condition with periodic expert health checks.',
   },
   {
     q: 'Can I integrate my electric vehicle (EV) charging into the solar ecosystem?',
@@ -225,6 +210,14 @@ export const faqItems = [
   {
     q: 'How do you calculate ROI projections and what assumptions do you use?',
     a: 'Our projections use 10-year localized irradiance data from satellite sources, actual utility rate escalation trends (typically 3–5% annually), verified panel degradation curves, and your real consumption profile. We deliberately model conservative scenarios — our clients typically outperform projections by 8–12%.',
+  },
+  {
+    q: 'What warranties are provided for the system components?',
+    a: 'We only partner with Tier 1 manufacturers, providing a standard 25-year linear performance warranty for modules and 10-to-15 year warranties for inverters and storage systems. Additionally, Sunberg provides a comprehensive structural integrity guarantee for the entire installation.',
+  },
+  {
+    q: 'Is it possible to expand the system capacity in the future?',
+    a: 'Yes. Our modular architecture is designed for scalability. We can easily add more storage capacity or integrate additional panels as your energy needs evolve, ensuring your investment grows with you.',
   },
 ];
 
@@ -240,4 +233,15 @@ export const caseStudyData = {
   ],
 };
 
-export const spTechHighlightImgExport = spTechHighlightImg;
+export const spTechHighlightImgExport = spAgrivoltaicsImg;
+
+export const floatovoltaicsData = {
+  title: 'Floatovoltaic Innovation',
+  desc: 'Installation of floating solar farms on reservoirs. Water naturally cools the modules, increasing energy output by 5-10% while reducing evaporation by 70%.',
+  image: spFloatovoltaicsImg,
+  stats: [
+    { value: '+10%', label: 'Energy Yield' },
+    { value: '-70%', label: 'Water Evaporation' },
+    { value: 'Natural', label: 'Cooling Effect' }
+  ]
+};

@@ -5,7 +5,7 @@ import { PrFeatured } from '../widgets/projects/PrFeatured';
 import { PrTrust } from '../widgets/projects/PrTrust';
 import { PrGrid } from '../widgets/projects/PrGrid';
 import { PrTestimonials } from '../widgets/projects/PrTestimonials';
-import { CtaBanner } from '../widgets/marketing/CtaBanner';
+import { CtaBlock } from '../widgets/marketing/CtaBlock';
 
 const ProjectsPage = () => {
   return (
@@ -16,10 +16,10 @@ const ProjectsPage = () => {
       <PrTrust />
       <PrGrid />
       <PrTestimonials />
-      <PrTrust paddingTop="25px">
-        A partnership for the long term: We provide lifetime monitoring and technical support for every project we deliver.
+      <PrTrust>
+        Sustaining the Future: We don’t just install technology; we engineer a lifelong promise of performance and unwavering partnership.
       </PrTrust>
-      <CtaBanner />
+      <CtaBlock variant="surface" btnVariant="dark" />
     </main>
   );
 };

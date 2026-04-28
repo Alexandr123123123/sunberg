@@ -3,7 +3,7 @@ import { Hero } from '../widgets/marketing/Hero';
 import { Revolution } from '../widgets/marketing/Revolution';
 import { About } from '../widgets/marketing/About';
 import { Partners } from '../widgets/marketing/Partners';
-import { CtaBanner } from '../widgets/marketing/CtaBanner';
+import { CtaBlock } from '../widgets/marketing/CtaBlock';
 import { Services } from '../widgets/marketing/Services';
 import { TrustStrip } from '../widgets/marketing/TrustStrip';
 import { HowItWorks } from '../widgets/marketing/HowItWorks';
@@ -18,7 +18,7 @@ const Home = () => (
     <Revolution />
     <Partners />
     <About />
-    <CtaBanner />
+    <CtaBlock variant="surface" />
     <Services />
     <TrustStrip />
     <HowItWorks />

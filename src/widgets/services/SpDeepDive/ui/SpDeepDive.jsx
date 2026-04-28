@@ -40,8 +40,8 @@ const SpDeepDive = ({ fadeUp, activeTabs, handleTabChange }) => (
           <span className="section-label">Engineering Journey</span>
           <h2 className="section-title">Technical Deep Dive</h2>
           <p className={styles.intro}>
-            Explore the rigorous phases of our engineering process, from LiDAR-based
-            terrain mapping to AI-driven ecosystem care.
+            Explore the rigorous phases of our engineering process, from advanced design 
+            modeling to proactive system maintenance.
           </p>
         </div>
       </motion.div>

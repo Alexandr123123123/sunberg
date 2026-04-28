@@ -2,12 +2,13 @@ import React from 'react';
 import { SpHero } from '../widgets/services/SpHero';
 import { SpSectors } from '../widgets/services/SpSectors';
 import { SpTechBanner } from '../widgets/services/SpTechBanner';
+import { SpFloatBanner } from '../widgets/services/SpFloatBanner';
 import { SpSolutions } from '../widgets/services/SpSolutions';
 import { SpDeepDive } from '../widgets/services/SpDeepDive';
 import { SpHardware } from '../widgets/services/SpHardware';
 import { SpCaseStudy } from '../widgets/services/SpCaseStudy';
 import { Faq } from '../widgets/support/Faq';
-import { SpBottomCta } from '../widgets/services/SpBottomCta';
+import { CtaBlock } from '../widgets/marketing/CtaBlock';
 import { useSmoothScroll } from '../features/navigation-scroll';
 import { useServiceTabs } from '../features/service-tabs-control';
 
@@ -27,7 +28,7 @@ const ServicesPage = () => {
   const { activeTabs, handleTabChange } = useServiceTabs({
     'design-block': 'analysis',
     'integration-block': 'modules',
-    'analytics-block': 'monitoring',
+    'analytics-block': 'support',
   });
 
   return (
@@ -41,10 +42,11 @@ const ServicesPage = () => {
         activeTabs={activeTabs}
         handleTabChange={handleTabChange}
       />
+      <SpFloatBanner />
       <SpHardware fadeUp={fadeUp} />
-      <SpCaseStudy fadeUp={fadeUp} />
+      {/* <SpCaseStudy fadeUp={fadeUp} /> */}
       <Faq fadeUp={fadeUp} />
-      <SpBottomCta fadeUp={fadeUp} />
+      <CtaBlock variant="primary" />
     </main>
   );
 };

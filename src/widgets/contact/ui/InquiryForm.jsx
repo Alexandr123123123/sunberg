@@ -24,15 +24,15 @@ export const InquiryForm = () => {
             <ul className={styles.benefits}>
               <li>
                 <strong>Preliminary Audit</strong>
-                <span>We analyze your site's solar potential using advanced satellite data.</span>
+                <span>Precision analysis of your site’s solar potential based on localized irradiation modeling.</span>
               </li>
               <li>
                 <strong>Technical Design</strong>
-                <span>Receive a draft system architecture tailored to your property.</span>
+                <span>A bespoke system architecture project designed to integrate seamlessly with your property.</span>
               </li>
               <li>
                 <strong>Financial Model</strong>
-                <span>Detailed ROI and savings projections based on local energy rates.</span>
+                <span>Data-driven ROI and savings projections calculated using current local energy tariffs.</span>
               </li>
             </ul>
           </motion.div>

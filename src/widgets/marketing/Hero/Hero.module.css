@@ -79,3 +79,19 @@
     padding: 60px 0;
   }
 }
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .actions > * {
+    width: 100%;
+    text-align: center;
+  }
+}

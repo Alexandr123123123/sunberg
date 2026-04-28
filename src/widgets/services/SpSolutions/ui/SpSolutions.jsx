@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { specializedSolutions } from '../../../../shared/config/services/servicesData';
 import { IconCheck } from '../../../../shared/ui/icon';
-import { Button } from '../../../../shared/ui/Button';
+import { CtaBlock } from '../../../marketing/CtaBlock';
 import styles from '../SpSolutions.module.css';
 
 const SpSolutions = ({ fadeUp }) => (
@@ -45,29 +45,11 @@ const SpSolutions = ({ fadeUp }) => (
       </div>
 
       {/* ── Inline CTA (Integrated & Refined) ── */}
-      <div className={styles.ctaWrapper}>
-        <motion.div 
-          className={styles.ctaInner}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className={styles.ctaGrid}>
-            <div className={styles.ctaStat}>48H</div>
-            
-            <div className={styles.ctaContent}>
-              <h2 className={styles.ctaTitle}>Ready to harness the power of the sun?</h2>
-              <p className={styles.ctaDesc}>
-                Get a free, no-obligation site assessment and custom solar proposal.
-              </p>
-            </div>
-            
-            <Button variant="primary" size="lg" uppercase>
-              Get a Free Quote
-            </Button>
-          </div>
-        </motion.div>
+      <div style={{ marginTop: '80px' }}>
+        <CtaBlock 
+          noWrapper={true}
+          variant="dark"
+        />
       </div>
     </div>
   </section>

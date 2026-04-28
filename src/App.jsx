@@ -17,9 +17,13 @@ function ScrollToTop() {
   return null;
 }
 
+import { BookingModalProvider } from './app/providers/BookingModalProvider';
+
+import { ChatWidget } from './widgets/marketing/ChatWidget';
+
 function App() {
   return (
-    <>
+    <BookingModalProvider>
       <ScrollToTop />
       <Header />
       <Routes>
@@ -31,7 +35,8 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
-    </>
+      <ChatWidget />
+    </BookingModalProvider>
   )
 }
 
