@@ -1,0 +1,168 @@
+.about {
+  padding: 100px 0;
+  background: var(--color-bg);
+  overflow-x: hidden;
+}
+
+.headerArea {
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.headerArea :global(.section-title) {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.imageCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08);
+  min-height: 360px;
+  aspect-ratio: 18 / 9;
+}
+
+.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.milestones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+}
+
+.milestone {
+  padding: 24px 16px;
+  text-align: center;
+  border-right: 1px solid var(--color-border);
+}
+
+.milestone:last-child {
+  border-right: none;
+}
+
+.milestoneNumber {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.contentCol {
+  padding-top: 40px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.largeTabletGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+.sidePoints {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.text {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.pointsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 40px;
+}
+
+.pointItem {
+  position: relative;
+}
+
+.pointItem strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+  line-height: 1.3;
+  padding-left: 20px;
+  position: relative;
+}
+
+.pointItem strong::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.pointItem p {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.manifesto {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.manifestoText {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.signature {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

@@ -3,6 +3,7 @@
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
   margin: 0;
+  overflow-x: hidden;
 }
 
 .grid {
@@ -37,6 +38,141 @@
   line-height: 1.5;
 }
 
+.sliderWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliderMain {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sliderContainer {
+  overflow: hidden;
+  width: 100%;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  padding: 12px;
+  z-index: 10;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.navBtn svg {
+  width: 28px;
+  height: 28px;
+}
+
+.navBtn:hover {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.prevBtn {
+  left: -60px;
+}
+
+.nextBtn {
+  right: -60px;
+}
+
+@media (max-width: 1400px) {
+  .prevBtn {
+    left: 10px;
+  }
+  .nextBtn {
+    right: 10px;
+  }
+  .navBtn {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.sliderTrack {
+  display: flex;
+  gap: 0;
+}
+
+@media (max-width: 900px) {
+  .navBtn svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navBtn {
+    display: none;
+  }
+}
+
+.tabletItem {
+  min-width: 50%;
+  flex-shrink: 0;
+}
+
+.mobileItem {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-border);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dotActive {
+  width: 24px;
+  border-radius: 3px;
+  background: var(--color-primary);
+}
+
+@media (max-width: 1024px) {
+  .trustStrip {
+    padding: 60px 0 100px;
+  }
+  
+  .sliderContainer {
+    overflow: hidden;
+  }
+
+  .number {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 900px) {
   .trustStrip {
     padding-bottom: 80px;
@@ -48,6 +184,10 @@
 }
 
 @media (max-width: 600px) {
+  .trustStrip {
+    padding: 48px 0 80px;
+  }
+
   .grid {
     flex-direction: column;
     gap: 40px;

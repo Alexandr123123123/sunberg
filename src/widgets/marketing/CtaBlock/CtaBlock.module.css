@@ -1,22 +1,24 @@
 .section {
-  padding: 80px 0 160px;
+  padding: 100px 0 140px;
 }
 
 .inner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 48px;
-  padding: 48px 64px;
+  gap: 56px;
+  padding: 56px 72px;
   border-radius: var(--radius);
-  transition: all 0.4s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
 /* Background Variants */
 .variant_surface {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.03);
 }
 
 .variant_primary {
@@ -25,7 +27,7 @@
 }
 
 .variant_dark {
-  background: #1A1A1A;
+  background: #111;
   color: white;
 }
 
@@ -34,51 +36,102 @@
   border: 1px solid var(--color-border);
 }
 
+/* Watermark Effect */
+.inner::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+  background: url('../../../../assets/bird-white.svg') no-repeat center/contain;
+  opacity: 0.03;
+  pointer-events: none;
+  transform: rotate(-15deg);
+}
+
+.variant_surface::after {
+  opacity: 0.05;
+  filter: invert(1);
+}
+
 /* Text Styles */
 .content {
   flex: 1;
   text-align: left;
+  position: relative;
+  z-index: 1;
 }
 
 .title {
   font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
   font-weight: 500;
-  letter-spacing: -0.03em;
-  margin-bottom: 12px;
-  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  line-height: 1.1;
 }
 
 .description {
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+  line-height: 1.6;
   margin: 0;
-  max-width: 520px;
-  opacity: 0.9;
+  max-width: 580px;
+  color: var(--color-text-muted);
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+.variant_primary .description,
+.variant_dark .description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Tablet Layout (601px - 1024px) */
+@media (max-width: 1024px) {
   .section {
-    padding: 60px 0 120px;
+    padding: 80px 0 120px;
   }
 
   .inner {
     flex-direction: column;
     text-align: center;
-    gap: 32px;
-    padding: 40px 32px;
+    gap: 40px;
+    padding: 56px 40px;
   }
   
   .content {
     text-align: center;
   }
 
-  .title {
-    font-size: 1.5rem;
-  }
-
   .description {
     max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Mid-tablet refinement (max-width: 800px) */
+@media (max-width: 800px) {
+  /* Font size is handled by clamp() */
+}
+
+/* Mobile Layout (<= 600px) */
+@media (max-width: 600px) {
+  .section {
+    padding: 60px 0 100px;
+  }
+
+  .inner {
+    padding: 48px 24px;
+    gap: 32px;
+  }
+
+  .title {
+    margin-bottom: 12px;
+  }
+  
+  .inner::after {
+    width: 250px;
+    height: 250px;
+    right: -10%;
+    top: -10%;
   }
 }

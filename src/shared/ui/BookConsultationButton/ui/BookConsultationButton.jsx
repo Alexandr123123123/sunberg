@@ -5,6 +5,7 @@ import { useBookingModal } from '../../../../app/providers/BookingModalProvider'
 export const BookConsultationButton = ({ 
   variant = 'primary', 
   className = '',
+  fullWidth = false,
   ...props 
 }) => {
   const { openModal } = useBookingModal();
@@ -17,6 +18,7 @@ export const BookConsultationButton = ({
   const buttonClasses = `
     ${styles.btn} 
     ${styles[variant]} 
+    ${fullWidth ? styles.fullWidth : ''}
     ${className}
   `.trim();
 

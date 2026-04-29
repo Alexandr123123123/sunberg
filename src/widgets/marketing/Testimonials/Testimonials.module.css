@@ -1,5 +1,7 @@
 .testimonials {
-  padding: 148px 0;
+  padding: 160px 0;
+  background: var(--color-surface);
+  overflow-x: hidden;
 }
 
 .header {
@@ -21,6 +23,7 @@
   position: relative;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  flex: 1;
 }
 
 .card:hover {
@@ -34,14 +37,6 @@
   opacity: 0.12;
   margin-bottom: -10px;
   font-family: serif;
-}
-
-.stars {
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  color: var(--color-primary);
-  margin-bottom: 20px;
-  opacity: 0.6;
 }
 
 .text {
@@ -96,23 +91,142 @@
   letter-spacing: 0.05em;
 }
 
-@media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+.sliderWrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliderMain {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sliderContainer {
+  overflow: hidden;
+  width: 100%;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  padding: 12px;
+  z-index: 10;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.navBtn svg {
+  width: 28px;
+  height: 28px;
+}
+
+.navBtn:hover {
+  color: var(--color-primary);
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prevBtn {
+  left: -60px;
+}
+
+.nextBtn {
+  right: -60px;
+}
+
+@media (max-width: 1400px) {
+  .prevBtn {
+    left: 10px;
+  }
+  .nextBtn {
+    right: 10px;
+  }
+  .navBtn {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.sliderTrack {
+  display: flex;
+}
+
+@media (max-width: 1199px) {
+  .testimonials {
+    padding: 100px 0;
   }
 }
 
 @media (max-width: 900px) {
-  .testimonials {
-    padding: 100px 0;
+  .navBtn svg {
+    width: 24px;
+    height: 24px;
   }
-  
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 80px 0;
   }
   
   .card {
-    padding: 24px 0; /* Уменьшаем отступы на мобилках */
+    padding: 32px;
   }
+}
+
+@media (max-width: 500px) {
+  .navBtn {
+    display: none;
+  }
+}
+
+.tabletSlide {
+  flex: 0 0 50%;
+  padding: 0 12px;
+  display: flex;
+}
+
+.mobileSlide {
+  flex: 0 0 100%;
+  padding: 0 10px;
+  display: flex;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-border);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dotActive {
+  width: 32px;
+  border-radius: 3px;
+  background: var(--color-primary);
 }

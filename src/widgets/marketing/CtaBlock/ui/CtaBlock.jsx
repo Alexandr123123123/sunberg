@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BookConsultationButton } from '../../../../shared/ui/BookConsultationButton';
+import { useMediaQuery } from '../../../../shared/lib/hooks/useMediaQuery';
 import styles from '../CtaBlock.module.css';
 
 export const CtaBlock = ({ 
@@ -10,6 +11,7 @@ export const CtaBlock = ({
   btnVariant = null,
   noWrapper = false 
 }) => {
+  const isMobile = useMediaQuery('(max-width: 600px)');
   const content = (
     <motion.div 
       className={`${styles.inner} ${styles[`variant_${variant}`]}`}
@@ -25,6 +27,7 @@ export const CtaBlock = ({
       
       <BookConsultationButton 
         variant={btnVariant || (variant === 'primary' || variant === 'dark' ? 'dark' : 'primary')} 
+        fullWidth={isMobile}
       />
     </motion.div>
   );

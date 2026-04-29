@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useMediaQuery } from '../../../../shared/lib/hooks/useMediaQuery';
+import { ServiceCardClassic } from './components/ServiceCardClassic';
+import { ServiceCardEditorial } from './components/ServiceCardEditorial';
 import designImg from '../../../../assets/service_design.png';
 import installImg from '../../../../assets/service_install.png';
 import maintainImg from '../../../../assets/service_maintain.png';
@@ -27,57 +29,59 @@ const services = [
   },
 ];
 
-const ArrowRight = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
+const Services = () => {
+  const isTablet = useMediaQuery('(min-width: 901px) and (max-width: 1024px)');
+  const isMobile = useMediaQuery('(min-width: 601px) and (max-width: 900px)');
+  const isVerySmallMobile = useMediaQuery('(max-width: 600px)');
 
-const Services = () => (
-  <section className={styles.services} id="services">
-    <div className="container">
-      <motion.div
-        className={styles.header}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <span className="section-label">What We Do</span>
-        <h2 className="section-title">Full-Cycle Solar Solutions</h2>
-        <p className="section-subtitle">
-          From the first sketch to proactive lifetime optimization — we handle every
-          step of your solar journey.
-        </p>
-      </motion.div>
-      <div className={styles.grid}>
-        {services.map((s, i) => (
-          <motion.div
-            className={styles.card}
-            key={s.num}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6, delay: i * 0.15 }}
-          >
-            <div className={styles.cardImage}>
-              <img src={s.image} alt={s.title} />
-              <div className={styles.cardOverlay}></div>
-            </div>
-            <div className={styles.cardBody}>
-              <div className={styles.cardWatermark}>{s.num}</div>
-              <h3 className={styles.cardTitle}>{s.title}</h3>
-              <p className={styles.cardText}>{s.text}</p>
-              <Link to="/services" className={styles.cardFooter} style={{ textDecoration: 'none' }}>
-                <span className={styles.cardLink}>Explore</span>
-                <span className={styles.cardIcon}><ArrowRight /></span>
-              </Link>
-            </div>
-          </motion.div>
-        ))}
+  return (
+    <section className={styles.services} id="services">
+      <div className="container">
+        <motion.div
+          className={styles.header}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <span className="section-label">What We Do</span>
+          <h2 className="section-title">Full-Cycle Solar Solutions</h2>
+          <p className="section-subtitle">
+            From the first sketch to proactive lifetime optimization — we handle every
+            step of your solar journey.
+          </p>
+        </motion.div>
+
+        <div className={styles.grid}>
+          {services.map((s, i) => {
+            // Very small mobile: All classic
+            if (isVerySmallMobile) {
+              return <ServiceCardClassic key={s.num} service={s} index={i} />;
+            }
+
+            // Mobile (601-900): Alternating layout
+            if (isMobile) {
+              if (i === 0) return <ServiceCardEditorial key={s.num} service={s} index={i} reverse={true} />;
+              if (i === 1) return <ServiceCardClassic key={s.num} service={s} index={i} />;
+              if (i === 2) return <ServiceCardEditorial key={s.num} service={s} index={i} />;
+            }
+
+            // Tablet: 3rd card becomes editorial and full-width
+            if (isTablet && i === 2) {
+              return (
+                <div key={s.num} className={styles.fullWidthCard}>
+                  <ServiceCardEditorial service={s} index={i} />
+                </div>
+              );
+            }
+
+            // Default classic card
+            return <ServiceCardClassic key={s.num} service={s} index={i} />;
+          })}
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default Services;

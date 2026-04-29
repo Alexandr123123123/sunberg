@@ -7,21 +7,26 @@
 
 .leafWrapper {
   position: absolute;
-  top: 60px;
+  top: 30px;
   right: 0;
-  width: 320px;
+  width: 360px;
   pointer-events: none;
   z-index: 1;
+  transition: width 0.3s ease, top 0.3s ease;
 }
 
 .leaf {
   width: 100%;
   height: auto;
   display: block;
+  opacity: 0.85;
 }
 
 .header {
+  margin-top: 70px;
   margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
 }
 
 .steps {
@@ -81,6 +86,33 @@
   font-size: 0.85rem;
   color: var(--color-text-muted);
   line-height: 1.75;
+}
+
+@media (max-width: 1400px) {
+  .leafWrapper {
+    width: 320px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .leafWrapper {
+    width: 280px;
+    top: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .leafWrapper {
+    width: 240px;
+    top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .leafWrapper {
+    width: 220px;
+    top: 60px;
+  }
 }
 
 @media (max-width: 900px) {
