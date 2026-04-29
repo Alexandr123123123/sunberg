@@ -5,8 +5,25 @@
 }
 
 .header {
-  margin-bottom: 72px;
+  text-align: left;
+  margin-bottom: 48px;
 }
+
+
+.header :global(.section-title) {
+  margin: 0 0 16px;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.header :global(.section-subtitle) {
+  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
 
 .grid {
   display: grid;
@@ -189,11 +206,8 @@
   }
 }
 
-@media (max-width: 500px) {
-  .navBtn {
-    display: none;
-  }
-}
+
+
 
 .tabletSlide {
   flex: 0 0 50%;
@@ -230,3 +244,30 @@
   border-radius: 3px;
   background: var(--color-primary);
 }
+
+@media (max-width: 400px) {
+  .text {
+    font-size: clamp(0.9rem, 4.8vw, 1rem);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .authorName {
+    font-size: clamp(0.85rem, 4.2vw, 0.95rem);
+  }
+
+  .role {
+    font-size: 0.65rem;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 0.7rem;
+  }
+}
+

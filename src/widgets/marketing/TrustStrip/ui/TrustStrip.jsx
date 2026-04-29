@@ -23,27 +23,53 @@ const TrustStrip = () => {
   const isTablet = useMediaQuery('(min-width: 601px) and (max-width: 1024px)');
   const isMobile = useMediaQuery('(max-width: 600px)');
   
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(stats.length);
+  const [isAnimating, setIsAnimating] = useState(false);
   const totalItems = stats.length;
   const visibleItems = isTablet ? 2 : 1;
-  const maxIndex = totalItems - visibleItems;
+  
+  // Triple the list for a truly seamless loop
+  const clonedStats = [...stats, ...stats, ...stats];
 
-  // Reset index when breakpoint changes
+  // Initial setup
   useEffect(() => {
-    setActiveIndex(0);
-  }, [isTablet, isMobile]);
+    setActiveIndex(totalItems);
+  }, [isTablet, isMobile, totalItems]);
 
   const handleDotClick = (index) => {
-    setActiveIndex(index);
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setActiveIndex(index + totalItems);
   };
 
   const nextSlide = () => {
-    setActiveIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setActiveIndex((prev) => prev + 1);
   };
 
   const prevSlide = () => {
-    setActiveIndex((prev) => (prev > 0 ? prev - 1 : maxIndex));
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setActiveIndex((prev) => prev - 1);
   };
+
+  // Handle seamless loop reset
+  useEffect(() => {
+    if (!isAnimating) return;
+
+    const timer = setTimeout(() => {
+      setIsAnimating(false);
+      // Reset if we go out of the middle set
+      if (activeIndex < totalItems) {
+        setActiveIndex(activeIndex + totalItems);
+      } else if (activeIndex >= totalItems * 2) {
+        setActiveIndex(activeIndex - totalItems);
+      }
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [activeIndex, isAnimating, totalItems]);
 
   return (
     <section className={styles.trustStrip}>
@@ -81,9 +107,9 @@ const TrustStrip = () => {
                 <motion.div 
                   className={styles.sliderTrack}
                   animate={{ x: `-${activeIndex * (100 / visibleItems)}%` }}
-                  transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                  transition={isAnimating ? { type: 'spring', stiffness: 300, damping: 30 } : { duration: 0 }}
                 >
-                  {stats.map((item, index) => (
+                  {clonedStats.map((item, index) => (
                     <div 
                       key={index} 
                       className={`${styles.item} ${isTablet ? styles.tabletItem : styles.mobileItem}`}
@@ -107,10 +133,13 @@ const TrustStrip = () => {
             </div>
 
             <div className={styles.pagination}>
-              {Array.from({ length: maxIndex + 1 }).map((_, i) => (
+              {stats.map((_, i) => (
                 <button
                   key={i}
-                  className={`${styles.dot} ${activeIndex === i ? styles.dotActive : ''}`}
+                  className={`${styles.dot} ${
+                    (activeIndex % totalItems === i) 
+                    ? styles.dotActive : ''
+                  }`}
                   onClick={() => handleDotClick(i)}
                   aria-label={`Go to slide ${i + 1}`}
                 />
@@ -118,6 +147,8 @@ const TrustStrip = () => {
             </div>
           </div>
         )}
+
+
       </div>
     </section>
   );

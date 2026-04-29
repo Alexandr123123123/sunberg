@@ -1,21 +1,33 @@
 .services {
-  padding: 64px 0;
+  padding: clamp(80px, 10vw, 160px) 0;
 }
 
 .header {
-  text-align: center;
-  margin-bottom: 38px;
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.header :global(.section-title) {
+  margin: 0 0 16px;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .header :global(.section-subtitle) {
-  margin: 0 auto;
+  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.7;
+  max-width: 600px;
 }
+
+
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  margin-top: 64px;
+  margin-top: 0;
 }
 
 .fullWidthCard {

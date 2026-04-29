@@ -1,8 +1,10 @@
 .about {
-  padding: 80px 0;
-  background: var(--color-bg);
+  padding: 0 0 80px;
+  background: var(--color-surface);
   overflow-x: hidden;
 }
+
+
 
 .headerArea {
   margin-bottom: 40px;
@@ -73,14 +75,14 @@
 
 .pointItem {
   position: relative;
-  grid-area: 1 / 1; /* Stack all points in the same grid cell */
+  grid-area: 1 / 1;
 }
 
 .pointItem strong,
 .pointPlaceholder strong {
   display: block;
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--color-text);
   margin-bottom: 8px;
@@ -103,10 +105,13 @@
 
 .pointItem p,
 .pointPlaceholder p {
-  font-size: 0.75rem;
+  font-size: 0.98rem;
   color: var(--color-text-muted);
   line-height: 1.5;
 }
+
+
+
 
 .milestones {
   display: grid;
@@ -189,9 +194,10 @@
 }
 
 .manifesto {
-  margin-top: 64px;
+  margin-top: 140px;
   text-align: center;
 }
+
 
 .manifestoText {
   font-family: var(--font-heading);
@@ -210,3 +216,13 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+
+@media (max-width: 400px) {
+  .manifestoText {
+    font-size: 1.1rem;
+  }
+  .signature {
+    font-size: 0.7rem;
+  }
+}
+

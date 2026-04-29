@@ -1,5 +1,6 @@
 .section {
-  padding: 100px 0 140px;
+  padding: 100px 0 200px;
+  background: var(--color-surface);
 }
 
 .inner {
@@ -14,12 +15,14 @@
   overflow: hidden;
 }
 
+
 /* Background Variants */
 .variant_surface {
-  background: var(--color-surface);
+  background: var(--color-bg);
   border: 1px solid var(--color-border);
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.03);
 }
+
 
 .variant_primary {
   background: var(--color-primary);
@@ -88,7 +91,7 @@
 /* Tablet Layout (601px - 1024px) */
 @media (max-width: 1024px) {
   .section {
-    padding: 80px 0 120px;
+    padding: 80px 0 160px;
   }
 
   .inner {
@@ -116,8 +119,9 @@
 /* Mobile Layout (<= 600px) */
 @media (max-width: 600px) {
   .section {
-    padding: 60px 0 100px;
+    padding: 60px 0 120px;
   }
+
 
   .inner {
     padding: 48px 24px;

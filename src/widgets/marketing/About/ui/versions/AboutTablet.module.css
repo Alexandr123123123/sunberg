@@ -1,8 +1,10 @@
 .about {
-  padding: 100px 0;
-  background: var(--color-bg);
+  padding: 0 0 100px;
+  background: var(--color-surface);
   overflow-x: hidden;
 }
+
+
 
 .headerArea {
   margin-bottom: 48px;
@@ -146,9 +148,10 @@
 }
 
 .manifesto {
-  margin-top: 80px;
+  margin-top: 140px;
   text-align: center;
 }
+
 
 .manifestoText {
   font-family: var(--font-heading);
@@ -166,3 +169,16 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+
+@media (max-width: 750px) {
+  .pointItem strong {
+    font-size: 1.15rem;
+  }
+  
+  .pointItem p {
+    font-size: 0.98rem;
+  }
+}
+
+
+

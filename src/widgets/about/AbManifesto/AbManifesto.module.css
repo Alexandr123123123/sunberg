@@ -40,3 +40,13 @@
   text-transform: uppercase;
   letter-spacing: 0.25em;
 }
+
+@media (max-width: 400px) {
+  .text {
+    font-size: 1.2rem;
+  }
+  .signature {
+    font-size: 0.75rem;
+  }
+}
+

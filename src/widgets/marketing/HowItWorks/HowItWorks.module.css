@@ -24,10 +24,27 @@
 
 .header {
   margin-top: 70px;
-  margin-bottom: 80px;
+  margin-bottom: clamp(64px, 10vw, 120px);
+  text-align: left;
   position: relative;
   z-index: 2;
 }
+
+.header :global(.section-title) {
+  margin: 0 0 16px;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.header :global(.section-subtitle) {
+  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+
 
 .steps {
   display: grid;

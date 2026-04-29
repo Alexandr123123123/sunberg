@@ -1,7 +1,8 @@
 .partners {
-  padding: 36px 0;
-  background: var(--color-bg);
+  padding: 200px 0;
+  background: var(--color-surface);
 }
+
 
 .inner {
   display: flex;
@@ -14,4 +15,22 @@
   font-style: italic;
   color: var(--color-text-muted);
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .partners {
+    padding: 160px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    padding: 120px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners {
+    padding: 100px 0;
+  }
 }

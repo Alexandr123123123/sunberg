@@ -119,11 +119,8 @@
   }
 }
 
-@media (max-width: 500px) {
-  .navBtn {
-    display: none;
-  }
-}
+
+
 
 .tabletItem {
   min-width: 50%;

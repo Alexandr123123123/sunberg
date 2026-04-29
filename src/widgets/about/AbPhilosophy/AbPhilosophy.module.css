@@ -90,7 +90,8 @@
   width: 56px;
   height: 56px;
   overflow: hidden;
-  border-radius: 50%; /* Optional: make it circular for a cleaner crop */
+  border-radius: 50%;
+  /* Optional: make it circular for a cleaner crop */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +102,8 @@
   height: 140%;
   object-fit: cover;
   mix-blend-mode: multiply;
-  transform: scale(1.1); /* Subtle extra scale if needed */
+  transform: scale(1.1);
+  /* Subtle extra scale if needed */
 }
 
 .principle:hover {
@@ -128,7 +130,7 @@
     grid-column: 1 / 13;
     margin-bottom: 60px;
   }
-  
+
   .principles {
     grid-column: 1 / 13;
   }
@@ -138,7 +140,7 @@
   .section {
     padding: 100px 0;
   }
-  
+
   .title {
     font-size: 2.2rem;
   }

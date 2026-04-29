@@ -24,13 +24,16 @@ export const ServiceCardClassic = ({ service, index }) => {
       </div>
       <div className={styles.body}>
         <div className={styles.watermark}>{service.num}</div>
-        <h3 className={styles.title}>{service.title}</h3>
-        <p className={styles.text}>{service.text}</p>
-        <Link to="/services" className={styles.footer}>
-          <span className={styles.linkText}>Explore</span>
-          <span className={styles.icon}><ArrowRight /></span>
-        </Link>
+        <div className={styles.content}>
+          <h3 className={styles.title}>{service.title}</h3>
+          <p className={styles.text}>{service.text}</p>
+          <Link to="/services" className={styles.footer}>
+            <span className={styles.linkText}>Explore</span>
+            <span className={styles.icon}><ArrowRight /></span>
+          </Link>
+        </div>
       </div>
+
     </motion.div>
   );
 };

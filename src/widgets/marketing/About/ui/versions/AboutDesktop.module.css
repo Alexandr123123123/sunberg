@@ -1,8 +1,10 @@
 .about {
-  padding: 160px 0;
-  background: var(--color-bg);
+  padding: 0 0 160px;
+  background: var(--color-surface);
   overflow-x: hidden;
 }
+
+
 
 .headerArea {
   margin-bottom: 64px;

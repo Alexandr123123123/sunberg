@@ -12,7 +12,7 @@ export const aboutContent = {
       text: "Delivering Tier-1 hardware and precise yield calculations for projects ranging from private residences to commercial facilities."
     }
   ],
-  milestones: ["Reliability", "Precision", "Innovation"],
+  milestones: ["Reliability", "Precision", "Vision"],
   manifesto: {
     text: "“The shift to solar isn't just about preserving the planet—it's about smart, long-term asset management. We are here to engineer that transition flawlessly.”",
     signature: "Aleksey Sunberg, Founder"

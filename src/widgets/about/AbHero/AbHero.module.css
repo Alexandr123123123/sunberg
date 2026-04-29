@@ -34,13 +34,13 @@
 
 .label {
   display: inline-block;
-  font-family: var(--font-accent, 'Outfit', sans-serif);
+  font-family: var(--font-heading);
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.25em;
   color: var(--color-primary, #5B7E5F);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .title {
@@ -85,7 +85,7 @@
   .hero {
     padding: 120px 0 60px;
   }
-  
+
   .bottom {
     justify-content: flex-start;
   }
@@ -102,16 +102,16 @@
     padding: 160px 0 80px;
     min-height: auto;
   }
-  
+
   .pineWrapper {
     display: none;
   }
-  
+
   .inner {
     align-items: flex-start;
     text-align: left;
   }
-  
+
   .title {
     font-size: 3.5rem;
   }

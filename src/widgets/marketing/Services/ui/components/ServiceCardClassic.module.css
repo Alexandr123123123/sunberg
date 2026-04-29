@@ -7,6 +7,8 @@
   flex-direction: column;
   height: 100%;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .card:hover {
@@ -18,6 +20,7 @@
   position: relative;
   height: 240px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .image {
@@ -44,6 +47,7 @@
   flex-direction: column;
   flex-grow: 1;
   position: relative;
+  z-index: 2;
 }
 
 .card:hover .watermark {
@@ -58,14 +62,20 @@
   font-family: var(--font-heading);
   font-size: 5.5rem;
   font-weight: 600;
-  color: var(--color-bg);
+  color: #F5F2EE;
   line-height: 1;
-  z-index: 0;
+  z-index: 1;
   transition: var(--transition);
   pointer-events: none;
 }
 
+.content {
+  position: relative;
+  z-index: 2;
+}
+
 .title {
+
   font-family: var(--font-heading);
   font-size: 1.4rem;
   font-weight: 600;
