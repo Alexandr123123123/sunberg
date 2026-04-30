@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useMediaQuery } from '../../../../shared/lib/hooks/useMediaQuery';
 import styles from '../Testimonials.module.css';
 
-const testimonials = [
+const defaultTestimonials = [
   {
     text: "Sunberg made going solar effortless. From the first call to flipping the switch, everything was handled professionally. Our energy bills dropped by 78% in the first quarter.",
     name: 'Sarah Mitchell',
@@ -24,7 +24,8 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+const Testimonials = ({ items = defaultTestimonials, showAvatar = true }) => {
+  const testimonials = items;
   const isDesktop = useMediaQuery('(min-width: 1200px)');
   const isTablet = useMediaQuery('(min-width: 769px) and (max-width: 1199px)');
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -124,9 +125,15 @@ const Testimonials = () => {
                 <div className={styles.quoteIcon}>“</div>
                 <blockquote className={styles.text}>{t.text}</blockquote>
                 <div className={styles.author}>
-                  <div className={styles.avatar}>
-                    {t.name.split(' ').map(n => n[0]).join('')}
-                  </div>
+                  {showAvatar && (
+                    <div className={styles.avatar}>
+                      {t.avatar ? (
+                        <img src={t.avatar} alt={t.name} />
+                      ) : (
+                        t.name.split(' ').map(n => n[0]).join('')
+                      )}
+                    </div>
+                  )}
                   <div className={styles.authorInfo}>
                     <span className={styles.authorName}>{t.name}</span>
                     <span className={styles.role}>{t.role}</span>
@@ -170,9 +177,15 @@ const Testimonials = () => {
                         <div className={styles.quoteIcon}>“</div>
                         <blockquote className={styles.text}>{t.text}</blockquote>
                         <div className={styles.author}>
-                          <div className={styles.avatar}>
-                            {t.name.split(' ').map(n => n[0]).join('')}
-                          </div>
+                          {showAvatar && (
+                            <div className={styles.avatar}>
+                              {t.avatar ? (
+                                <img src={t.avatar} alt={t.name} />
+                              ) : (
+                                t.name.split(' ').map(n => n[0]).join('')
+                              )}
+                            </div>
+                          )}
                           <div className={styles.authorInfo}>
                             <span className={styles.authorName}>{t.name}</span>
                             <span className={styles.role}>{t.role}</span>
@@ -211,5 +224,6 @@ const Testimonials = () => {
     </section>
   );
 };
+
 
 export default Testimonials;

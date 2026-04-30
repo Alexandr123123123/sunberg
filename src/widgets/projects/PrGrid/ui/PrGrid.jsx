@@ -97,22 +97,72 @@ const ProjectCard = ({ project }) => {
 
 const PrGrid = () => {
   const { activeCategory, setActiveCategory, filteredItems } = useProjectFilter(projects);
+  const [showLeftFade, setShowLeftFade] = useState(false);
+  const [showRightFade, setShowRightFade] = useState(true);
+  const scrollRef = React.useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleScroll = (e) => {
+    const { scrollLeft, scrollWidth, clientWidth } = e.target;
+    setShowLeftFade(scrollLeft > 10);
+    setShowRightFade(scrollLeft < scrollWidth - clientWidth - 10);
+  };
+
+  const onMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  };
+
+  const onMouseLeave = () => {
+    setIsDragging(false);
+  };
+
+  const onMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const onMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Scroll speed multiplier
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  };
 
   return (
     <section className={styles.section}>
       <div className="container">
         {/* Filter Controls */}
-        <div className={styles.filter}>
-          {projectCategories.map((cat) => (
-            <button
-              key={cat.id}
-              className={`${styles.filterBtn} ${activeCategory === cat.id ? styles.activeBtn : ''}`}
-              onClick={() => setActiveCategory(cat.id)}
-            >
-              {cat.label}
-            </button>
-          ))}
+        <div 
+          ref={scrollRef}
+          className={`${styles.filterScroll} ${showLeftFade ? styles.fadeLeft : ''} ${showRightFade ? styles.fadeRight : ''} ${isDragging ? styles.dragging : ''}`}
+          onScroll={handleScroll}
+          onMouseDown={onMouseDown}
+          onMouseLeave={onMouseLeave}
+          onMouseUp={onMouseUp}
+          onMouseMove={onMouseMove}
+        >
+          <div className={styles.filter}>
+            {projectCategories.map((cat) => (
+              <button
+                key={cat.id}
+                className={`${styles.filterBtn} ${activeCategory === cat.id ? styles.activeBtn : ''}`}
+                onClick={() => {
+                  if (!isDragging) setActiveCategory(cat.id);
+                }}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
         </div>
+
+
+
+
 
         {/* Masonry-like Grid */}
         <motion.div layout className={styles.grid}>

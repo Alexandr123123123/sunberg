@@ -94,15 +94,77 @@
   line-height: 1.4;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .card:last-child {
+    grid-column: span 2;
   }
 }
 
 @media (max-width: 768px) {
+  .section {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card:last-child {
+    grid-column: span 1;
+  }
+
   .card {
-    padding: 30px;
+    padding: clamp(16px, 5vw, 24px);
+    gap: clamp(12px, 4vw, 16px);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .icon {
+    width: clamp(40px, 12vw, 48px);
+    height: clamp(40px, 12vw, 48px);
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+
+  .value {
+    font-size: clamp(0.95rem, 4.2vw, 1.1rem);
+    word-break: break-all;
+    overflow-wrap: break-word;
+  }
+
+  .label {
+    font-size: clamp(0.75rem, 3vw, 0.85rem);
   }
 }
+
+@media (max-width: 500px) {
+  .card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .value {
+    /* Slight jump down at 500px then continues shrinking */
+    font-size: clamp(0.75rem, 4.8vw, 0.88rem);
+  }
+
+  .label {
+    font-size: clamp(0.6rem, 3.5vw, 0.72rem);
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+}
+
+
+

@@ -15,7 +15,7 @@
   right: 0;
   width: 525px;
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
 }
 
 .bird {
@@ -28,6 +28,8 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  position: relative;
+  z-index: 2;
 }
 
 .top {
@@ -37,7 +39,7 @@
 .label {
   display: inline-block;
   font-family: var(--font-accent, 'Outfit', sans-serif);
-  font-size: 14px;
+  font-size: clamp(10px, 1.5vw, 14px);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -47,7 +49,7 @@
 
 .title {
   font-family: var(--font-accent, 'Outfit', sans-serif);
-  font-size: clamp(40px, 7vw, 84px);
+  font-size: clamp(30px, 8vw, 84px);
   line-height: 1.1;
   font-weight: 700;
   color: #1a1a1a;
@@ -63,16 +65,16 @@
   max-width: 500px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 32px;
-  font-size: 18px;
+  font-size: clamp(14px, 2vw, 18px);
   line-height: 1.6;
   color: #666;
 }
 
 .accent {
   position: absolute;
-  top: -10%;
+  top: -5%;
   right: -5%;
-  font-size: 20vw;
+  font-size: clamp(60px, 16vw, 220px);
   font-weight: 900;
   color: rgba(91, 126, 95, 0.03);
   pointer-events: none;
@@ -82,7 +84,7 @@
 
 @media (max-width: 1024px) {
   .birdWrapper {
-    width: 220px;
+    width: 360px;
   }
 }
 
@@ -92,10 +94,22 @@
   }
   
   .birdWrapper {
-    display: none;
+    width: 300px;
+    top: 15%;
   }
-  
-  .bottom {
-    justify-content: flex-start;
+
+  .accent {
+    top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .birdWrapper {
+    width: 220px;
+    top: 18%;
+  }
+
+  .accent {
+    top: 60px;
   }
 }

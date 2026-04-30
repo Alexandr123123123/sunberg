@@ -11,10 +11,13 @@
 }
 
 .label {
-  font-size: 0.78rem;
+  font-size: clamp(0.65rem, 1.1vw, 0.78rem);
+  font-weight: 500;
   font-style: italic;
-  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
   text-align: center;
+  display: block;
 }
 
 @media (max-width: 1200px) {

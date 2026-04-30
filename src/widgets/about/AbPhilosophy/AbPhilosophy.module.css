@@ -1,6 +1,8 @@
 .section {
-  padding: 120px 0 60px;
+  padding: 120px 0 30px;
   background-color: var(--color-bg);
+  overflow: hidden;
+  position: relative;
 }
 
 .inner {
@@ -23,33 +25,33 @@
 }
 
 .label {
-  display: inline-block;
-  font-family: var(--font-accent, 'Outfit', sans-serif);
+  display: block;
   font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.02em;
   color: var(--color-primary);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .title {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 5vw, 3.8rem);
-  line-height: 1.05;
+  font-size: 2.6rem;
   font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
   color: var(--color-text);
-  letter-spacing: -0.04em;
   margin-bottom: 32px;
 }
 
 .desc {
-  font-size: 1.25rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.8;
   color: var(--color-text-muted);
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
   z-index: 2;
+  max-width: 520px;
 }
 
 .leafWrapper {
@@ -112,16 +114,17 @@
 
 .principleTitle {
   font-family: var(--font-heading);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: var(--color-text);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   margin-bottom: 0;
+  line-height: 1.2;
 }
 
 .principleText {
-  font-size: 0.95rem;
-  line-height: 1.7;
+  font-size: 0.98rem;
+  line-height: 1.85;
   color: var(--color-text-muted);
 }
 
@@ -138,10 +141,42 @@
 
 @media (max-width: 768px) {
   .section {
-    padding: 100px 0;
+    padding: 100px 0 40px;
   }
 
   .title {
     font-size: 2.2rem;
+  }
+
+  .leafWrapper {
+    width: 180%;
+    left: -40%;
+    top: 50px;
+    opacity: 0.15;
+  }
+}
+
+@media (max-width: 500px) {
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .principleHeader {
+    gap: 16px;
+  }
+
+  .principleIcon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .principleTitle {
+    font-size: 1.4rem;
   }
 }

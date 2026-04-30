@@ -2,7 +2,9 @@
   padding: 100px 0 120px;
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
+  overflow: hidden;
 }
+
 
 .grid {
   display: grid;
@@ -114,10 +116,39 @@
   transform: translateX(4px);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1150px) {
   .grid {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .card:last-child {
+    grid-column: span 2;
   }
 }
+
+@media (max-width: 768px) {
+  .sectors {
+    padding: 80px 0;
+  }
+
+  .card {
+    padding: clamp(24px, 6vw, 40px) clamp(20px, 5vw, 30px);
+  }
+
+  .title {
+    font-size: clamp(1.1rem, 4vw, 1.3rem);
+  }
+
+  .desc {
+    font-size: clamp(0.85rem, 3.5vw, 0.95rem);
+    margin-bottom: 16px;
+  }
+
+  .icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 24px;
+  }
+}
+

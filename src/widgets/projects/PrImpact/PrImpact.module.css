@@ -14,7 +14,7 @@
   height: 100%;
   pointer-events: none;
   opacity: 0.03;
-  background-image: 
+  background-image:
     linear-gradient(rgba(91, 126, 95, 0.2) 1px, transparent 1px),
     linear-gradient(90deg, rgba(91, 126, 95, 0.2) 1px, transparent 1px);
   background-size: 50px 50px;
@@ -76,7 +76,7 @@
   .grid {
     gap: 40px;
   }
-  
+
   .value {
     font-size: 3.5rem;
   }
@@ -87,16 +87,141 @@
     grid-template-columns: 1fr;
     gap: 60px;
   }
-  
+
   .statCard {
     text-align: center;
   }
-  
+
   .valueWrapper {
     justify-content: center;
   }
-  
+
   .desc {
     margin: 0 auto;
   }
+}
+
+/* Slider Styles */
+.sliderWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.sliderMain {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sliderContainer {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.sliderTrack {
+  display: flex;
+  gap: 0;
+  width: 100%;
+}
+
+.tabletItem {
+  min-width: 50%;
+  width: 50%;
+  flex-shrink: 0;
+  padding: 0 20px;
+}
+
+.mobileItem {
+  min-width: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  padding: 0 20px;
+}
+
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  z-index: 10;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sliderMain:hover .navBtn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.navBtn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.navBtn:hover {
+  color: var(--color-primary);
+  background-color: var(--color-bg-alt);
+}
+
+.prevBtn {
+  left: -22px;
+}
+
+.nextBtn {
+  right: -22px;
+}
+
+@media (max-width: 1100px) {
+  .navBtn {
+    opacity: 0.9;
+    pointer-events: auto;
+  }
+  .prevBtn {
+    left: -10px;
+  }
+  .nextBtn {
+    right: -10px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-border);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dotActive {
+  width: 24px;
+  border-radius: 3px;
+  background: var(--color-primary);
 }

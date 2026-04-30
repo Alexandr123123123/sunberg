@@ -18,9 +18,9 @@ export const AbTech = () => {
         <img src={techBg} alt="European nature with solar integration" />
       </motion.div>
       <div className={styles.overlay} />
-      
+
       <div className="container">
-        <motion.div 
+        <motion.div
           className={styles.content}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ export const AbTech = () => {
             <span className="section-label text-white">Engineering Focus</span>
             <h2 className={styles.title}>N-Type <span className="text-primary">TOPCon</span> Efficiency</h2>
             <p className={styles.desc}>
-              Next-generation Tunnel Oxide Passivated Contact modules achieving 
+              Next-generation Tunnel Oxide Passivated Contact modules achieving
               unmatched conversion rates and long-term stability.
             </p>
           </div>

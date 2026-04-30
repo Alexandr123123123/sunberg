@@ -30,12 +30,14 @@
   max-width: 900px;
   align-self: flex-end;
   text-align: right;
+  position: relative;
+  z-index: 2;
 }
 
 .label {
   display: inline-block;
   font-family: var(--font-heading);
-  font-size: 14px;
+  font-size: clamp(10px, 1.5vw, 14px);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -45,7 +47,7 @@
 
 .title {
   font-family: var(--font-accent, 'Outfit', sans-serif);
-  font-size: clamp(40px, 7vw, 84px);
+  font-size: clamp(30px, 8vw, 84px);
   line-height: 1.1;
   font-weight: 700;
   color: #1a1a1a;
@@ -64,14 +66,14 @@
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 32px;
-  font-size: 18px;
+  font-size: clamp(14px, 2vw, 18px);
   line-height: 1.6;
   color: #666;
 }
 
 .accent {
   position: absolute;
-  top: -10%;
+  top: -5%;
   right: -5%;
   font-size: 20vw;
   font-weight: 900;
@@ -88,31 +90,38 @@
 
   .bottom {
     justify-content: flex-start;
+    margin-left: 0;
   }
 }
 
 @media (max-width: 1200px) {
-  .pineWrapper {
+  .birdWrapper {
     width: 350px;
   }
 }
 
 @media (max-width: 900px) {
   .hero {
-    padding: 160px 0 80px;
+    padding: 180px 0 80px;
     min-height: auto;
   }
 
-  .pineWrapper {
-    display: none;
+  .birdWrapper {
+    width: 280px;
+    top: 15%;
   }
 
-  .inner {
-    align-items: flex-start;
-    text-align: left;
+  .accent {
+    top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    padding-top: 200px;
   }
 
-  .title {
-    font-size: 3.5rem;
+  .accent {
+    top: 60px;
   }
 }

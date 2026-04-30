@@ -1,28 +1,69 @@
 .section {
-  padding: 60px 0 120px;
+  padding: 0 0 120px;
 }
+
+.filterScroll {
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-bottom: clamp(32px, 6vw, 60px);
+  -webkit-overflow-scrolling: touch;
+  transition: mask-image 0.3s ease;
+  cursor: grab;
+  user-select: none;
+}
+
+.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto; /* Disable smooth scroll during drag */
+}
+
+
+.filterScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.fadeLeft {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 40px);
+  mask-image: linear-gradient(to right, transparent, black 40px);
+}
+
+.fadeRight {
+  -webkit-mask-image: linear-gradient(to left, transparent, black 40px);
+  mask-image: linear-gradient(to left, transparent, black 40px);
+}
+
+.fadeLeft.fadeRight {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 40px, black calc(100% - 40px), transparent);
+  mask-image: linear-gradient(to right, transparent, black 40px, black calc(100% - 40px), transparent);
+}
+
 
 .filter {
   display: inline-flex;
   justify-content: flex-start;
-  gap: 40px;
-  margin-bottom: 60px;
+  gap: clamp(16px, 3vw, 40px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 16px;
+  min-width: fit-content;
 }
+
 
 .filterBtn {
   background: none;
   border: none;
   font-family: var(--font-accent, 'Outfit', sans-serif);
-  font-size: 16px;
+  font-size: clamp(14px, 1.2vw, 16px);
   font-weight: 500;
   color: #666;
   cursor: pointer;
   padding: 8px 0;
   position: relative;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
+
 
 .filterBtn:hover {
   color: #1a1a1a;
@@ -220,15 +261,9 @@
 }
 
 @media (max-width: 768px) {
-
   .card.small,
   .card.medium,
   .card.large {
     grid-column: span 12;
-  }
-
-  .filter {
-    overflow-x: auto;
-    padding-bottom: 8px;
   }
 }
