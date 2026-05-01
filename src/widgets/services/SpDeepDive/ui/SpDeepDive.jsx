@@ -18,6 +18,97 @@ const getBlockClass = (id) => {
   }
 };
 
+const ScrollableTabs = ({ tabs, activeTabId, onTabChange, blockId }) => {
+  const tabsRef = React.useRef(null);
+  const [isDragging, setIsDragging] = React.useState(false);
+  const [startX, setStartX] = React.useState(0);
+  const [scrollLeft, setScrollLeft] = React.useState(0);
+  const [hasScroll, setHasScroll] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkScroll = () => {
+      if (tabsRef.current) {
+        setHasScroll(tabsRef.current.scrollWidth > tabsRef.current.clientWidth);
+      }
+    };
+    checkScroll();
+    window.addEventListener('resize', checkScroll);
+    return () => window.removeEventListener('resize', checkScroll);
+  }, [tabs]);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - tabsRef.current.offsetLeft);
+    setScrollLeft(tabsRef.current.scrollLeft);
+    if (tabsRef.current) {
+      tabsRef.current.dataset.dragged = 'false';
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    const x = e.pageX - tabsRef.current.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    if (Math.abs(walk) > 5) {
+      if (tabsRef.current) {
+        tabsRef.current.dataset.dragged = 'true';
+      }
+      e.preventDefault();
+      tabsRef.current.scrollLeft = scrollLeft - walk;
+    }
+  };
+
+  return (
+    <div
+      className={`${styles.tabs} ${hasScroll ? styles.hasScroll : ''}`}
+      ref={tabsRef}
+      onMouseDown={handleMouseDown}
+      onMouseLeave={handleMouseLeave}
+      onMouseUp={handleMouseUp}
+      onMouseMove={handleMouseMove}
+      style={{ cursor: isDragging ? 'grabbing' : 'grab', userSelect: 'none' }}
+    >
+      {tabs.map(tab => (
+        <button
+          key={tab.id}
+          className={`${styles.tabBtn} ${activeTabId === tab.id ? styles.active : ''}`}
+          onClick={(e) => {
+            if (tabsRef.current && tabsRef.current.dataset.dragged === 'true') {
+              e.preventDefault();
+              e.stopPropagation();
+            } else {
+              onTabChange(blockId, tab.id);
+
+              // Smoothly scroll clicked tab to the left edge
+              const btn = e.currentTarget;
+              const container = tabsRef.current;
+              if (btn && container) {
+                const rect = btn.getBoundingClientRect();
+                const parentRect = container.getBoundingClientRect();
+                const offsetLeft = rect.left - parentRect.left + container.scrollLeft;
+                container.scrollTo({
+                  left: offsetLeft,
+                  behavior: 'smooth'
+                });
+              }
+            }
+          }}
+        >
+          {tab.label}
+        </button>
+      ))}
+    </div>
+  );
+};
+
 const SpDeepDive = ({ fadeUp, activeTabs, handleTabChange }) => {
   const { t } = useTranslation();
   const rawDeepDive = t('servicesPage.deepDive', { returnObjects: true });
@@ -94,17 +185,12 @@ const SpDeepDive = ({ fadeUp, activeTabs, handleTabChange }) => {
                   {/* ── Sub-menu (Tabs) ── */}
                   <div className={styles.meta}>
                     <span className={styles.phase}>Phase {block.phase}</span>
-                    <div className={styles.tabs}>
-                      {block.tabs.map(tab => (
-                        <button
-                          key={tab.id}
-                          className={`${styles.tabBtn} ${activeTabId === tab.id ? styles.active : ''}`}
-                          onClick={() => handleTabChange(block.id, tab.id)}
-                        >
-                          {tab.label}
-                        </button>
-                      ))}
-                    </div>
+                    <ScrollableTabs 
+                      tabs={block.tabs}
+                      activeTabId={activeTabId}
+                      onTabChange={handleTabChange}
+                      blockId={block.id}
+                    />
                   </div>
 
                   <AnimatePresence mode="wait">
