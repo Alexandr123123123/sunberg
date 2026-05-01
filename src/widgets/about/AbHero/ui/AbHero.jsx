@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import styles from '../AbHero.module.css';
 import birdImg from '../../../../assets/images/ab-hero-bird.png';
 
 export const AbHero = () => {
+  const { t } = useTranslation();
   return (
     <section className={styles.hero}>
       <div className={styles.birdWrapper}>
@@ -26,7 +28,7 @@ export const AbHero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Our Mission
+              {t('aboutPage.hero.label')}
             </motion.span>
             
             <motion.h1 
@@ -35,8 +37,8 @@ export const AbHero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              Designing the Future <br />
-              of Solar Architecture.
+              <span dangerouslySetInnerHTML={{ __html: t('aboutPage.hero.title_pre') }} />
+              {t('aboutPage.hero.title_highlight')}
             </motion.h1>
           </div>
 
@@ -47,9 +49,7 @@ export const AbHero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <p className={styles.desc}>
-              Founded on the principles of technical rigor and environmental stewardship, 
-              Sunberg is more than a solar provider. We are architects of energy independence, 
-              bridging the gap between high-end engineering and sustainable living.
+              {t('aboutPage.hero.desc')}
             </p>
           </motion.div>
         </div>

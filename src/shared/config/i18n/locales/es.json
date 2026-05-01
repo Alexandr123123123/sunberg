@@ -1,0 +1,931 @@
+{
+  "home": {
+    "test_title": "Plataforma Sunberg (Español)"
+  },
+  "hero": {
+    "label": "Soluciones de Energía Solar",
+    "title": "Impulsando el futuro con energía limpia",
+    "desc": "Diseñamos, instalamos y mantenemos sistemas solares de alto rendimiento para hogares y empresas. Reduzca sus facturas mientras construye un mañana sostenible.",
+    "btn_start": "Inicia tu projecto",
+    "btn_services": "Nuestros servicios"
+  },
+  "about": {
+    "label": "Sobre Sunberg",
+    "title": "Ingeniería de un futuro más limpio",
+    "description": "combina ingeniería de alto rendimiento con diseño sostenible para construir la infraestructura de energía limpia del mañana. Creemos que la transición a la energía solar debería ser una evolución sin esfuerzo, donde la arquitectura del sistema profesional elimina los errores comunes de componentes desajustados y diseños ineficientes, garantizando un rendimiento absoluto desde el primer día.",
+    "points": [
+      {
+        "title": "Infraestructura solar llave en mano",
+        "text": "Gestionamos todo el ciclo de vida de forma interna, garantizando una arquitectura de sistema impecable y una ejecución precisa, para garantizar los más altos estándares de calidad técnica y rendimiento a largo plazo."
+      },
+      {
+        "title": "Escalabilidad basada en datos",
+        "text": "Suministro de hardware de nivel 1 y cálculos precisos de rendimiento para proyectos que van desde residencias privadas hasta instalaciones comerciales."
+      }
+    ],
+    "milestones": ["Fiabilidad", "Precisión", "Visión"],
+    "manifesto_text": "“El cambio a la energía solar no se trata solo de preservar el planeta, sino de una gestión inteligente de activos a largo plazo. Estamos aquí para diseñar esa transición sin problemas.”",
+    "manifesto_signature": "Aleksey Sunberg, Fundador"
+  },
+  "partners": {
+    "label": "Definiendo el estándar de excelencia técnica en infraestructura solar"
+  },
+  "ctaBlock": {
+    "title": "¿Listo para diseñar su independencia energética?",
+    "description": "Obtenga un pronóstico de rendimiento solar profesional y una arquitectura de sistema personalizada en 48 horas."
+  },
+  "trustStrip": {
+    "stats": [
+      {
+        "number": "2 TW",
+        "label": "Capacidad Global Acumulada"
+      },
+      {
+        "number": "55%",
+        "label": "Participación Solar Global de China"
+      },
+      {
+        "number": "90%",
+        "label": "Caída del Costo Solar Desde 2010"
+      }
+    ]
+  },
+  "howItWorks": {
+    "header_label": "Cómo funciona",
+    "header_title": "De la consulta a la energía limpia en 4 pasos",
+    "header_subtitle": "Hemos simplificado cada parte del proceso para que pueda concentrarse en lo que importa: ahorrar dinero y salvar el planeta.",
+    "steps": [
+      {
+        "title": "Consulta",
+        "desc": "Discutimos sus objetivos de eficiencia energética y proporcionamos una estimación de costos preliminar, de forma completamente gratuita."
+      },
+      {
+        "title": "Encuesta del sitio y diseño",
+        "desc": "Nuestros ingenieros visitan su propiedad, analizan la orientación del techo, el sombreado y la capacidad estructural. Luego creamos un diseño de sistema personalizado."
+      },
+      {
+        "title": "Instalación",
+        "desc": "Nuestro equipo certificado instala su sistema en 1 a 3 días. Nos encargamos de todos los permisos, inspecciones y trámites de conexión a la red."
+      },
+      {
+        "title": "Activación y soporte",
+        "desc": "Su sistema entra en funcionamiento y comienza a generar ahorros de inmediato. Brindamos mantenimiento continuo y soporte técnico."
+      }
+    ]
+  },
+  "projects": {
+    "p1_tag": "Innovación Agrícola",
+    "p1_title": "Agrovoltaica: El futuro de doble uso",
+    "p1_desc": "La agrovoltaica combina la agricultura y la energía solar en un sistema simbiótico. Al elevar los paneles sobre las tierras de cultivo, esta tecnología optimiza el uso de la tierra, mejora la humedad del suelo a través del sombreado y crea un microclima resiliente para la producción sostenible de alimentos.",
+    "p2_tag": "Infraestructura Acuática",
+    "p2_title": "Solar flotante: Potencial sin explotar",
+    "p2_desc": "La energía solar flotante, o flotovoltaica, instala módulos fotovoltaicos en cuerpos de agua. Estos sistemas reducen la evaporación, mitigan el crecimiento de algas y se benefician del enfriamiento natural del agua que mejora la eficiencia energética en comparación con las instalaciones terrestres."
+  },
+  "services": {
+    "header_label": "Qué hacemos",
+    "header_title": "Soluciones Solares de Ciclo Completo",
+    "header_subtitle": "Desde el primer boceto hasta la optimización proactiva de por vida, manejamos cada paso de su viaje solar.",
+    "items": [
+      {
+        "title": "Arquitectura e Ingeniería",
+        "text": "Diseño de sistema solar personalizado basado en la mecánica del sitio, los objetivos energéticos y el flujo arquitectónico. Gestionamos el análisis estructural y la obtención de permisos completos."
+      },
+      {
+        "title": "Implementación e Integración de Red",
+        "text": "Montaje de precisión de paneles, calibración de inversores y una integración de red perfecta. Priorizamos la velocidad operativa y el rigor técnico, manteniendo estándares de seguridad inflexibles en cada proyecto."
+      },
+      {
+        "title": "Resistencia y Optimización",
+        "text": "Monitoreo proactivo del sistema, diagnósticos automatizados y mantenimiento de respuesta rápida, asegurando que su activo funcione de manera óptima durante décadas."
+      }
+    ]
+  },
+  "testimonials": {
+    "header_label": "Historias de clientes",
+    "header_title": "Lo que dicen nuestros clientes",
+    "items": [
+      {
+        "text": "Sunberg hizo que cambiarse a la energía solar fuera sin esfuerzo. Desde la primera llamada hasta accionar el interruptor, todo se manejó de manera profesional. Nuestras facturas de energía cayeron un 78% en el primer trimestre.",
+        "name": "Sarah Mitchell",
+        "role": "Propietaria, Austin TX",
+        "rating": 5
+      },
+      {
+        "text": "Necesitábamos un socio confiable para la instalación de nuestro parque de oficinas. Sunberg entregó un sistema de 340 kW a tiempo y por debajo del presupuesto. Su plataforma de monitoreo es excepcional.",
+        "name": "Erik Johansson",
+        "role": "Director de Instalaciones, Lumina Estate Group",
+        "rating": 5
+      },
+      {
+        "text": "Lo que más me impresionó fue la transparencia. Sin costos ocultos, sin sorpresas. El sistema ha funcionado sin problemas durante dos años y su equipo de soporte siempre responde.",
+        "name": "Maria García",
+        "role": "Propietaria, Barcelona",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "label": "Preguntas frecuentes",
+    "title": "Dudas comunes",
+    "subtitle": "Todo lo que necesitas saber antes de pasarte a la energía solar.",
+    "items": [
+      {
+        "q": "¿Qué le sucede a la eficiencia de los paneles después de 10 años de operación?",
+        "a": "Nuestros módulos fotovoltaicos premium tienen una tasa de degradación de solo el 0,4% por año, significativamente por debajo del promedio de la industria del 0,7%. Después de 10 años, su sistema seguirá funcionando a aproximadamente el 96% de su capacidad original. Después de 25 años, garantizamos un rendimiento mínimo del 87,4%."
+      },
+      {
+        "q": "¿Cómo funciona el sistema durante un apagón total de la red?",
+        "a": "Los sistemas equipados con nuestro inversor híbrido y paquete de baterías cambian automáticamente al modo isla en 20 milisegundos, lo suficientemente rápido como para que la mayoría de los electrodomésticos ni siquiera registren el corte. Los sistemas estándar conectados a la red sin almacenamiento se apagarán según los requisitos reglamentarios."
+      },
+      {
+        "q": "¿Cómo funciona el sistema durante los días nublados o en invierno?",
+        "a": "Los modernos módulos de alta eficiencia son altamente sensibles a todo el espectro de luz, lo que significa que generan energía incluso en días nublados. Si bien la producción es menor en invierno debido a los días más cortos, la arquitectura de nuestro sistema está optimizada para la eficiencia con poca luz, lo que garantiza un flujo constante de energía durante todo el año."
+      },
+      {
+        "q": "¿Necesito limpiar manualmente los paneles o realizar algún mantenimiento?",
+        "a": "Los sistemas Sunberg están diseñados para un mantenimiento mínimo. En la mayoría de los climas, la lluvia es suficiente para mantener limpios los paneles. Sin embargo, nuestros programas de soporte técnico y modernización garantizan que su sistema se mantenga en óptimas condiciones con controles de estado periódicos por parte de expertos."
+      },
+      {
+        "q": "¿Puedo integrar la carga de mi vehículo eléctrico (EV) en el ecosistema solar?",
+        "a": "Absolutamente. Nuestra sincronización de energía para el hogar inteligente le permite priorizar la carga de vehículos eléctricos cuando la producción solar está en su punto máximo. Esta lógica \"Solar a EV\" garantiza que su automóvil funcione con la energía más limpia y económica disponible, maximizando sus ahorros."
+      },
+      {
+        "q": "¿Cómo calculan las proyecciones de ROI y qué suposiciones utilizan?",
+        "a": "Nuestras proyecciones utilizan datos de irradiancia localizada de 10 años de fuentes satelitales, tendencias reales de aumento de tarifas de servicios públicos (generalmente un 3-5% anual), curvas de degradación de paneles verificadas y su perfil de consumo real. Modelamos escenarios conservadores deliberadamente: nuestros clientes suelen superar las proyecciones en un 8-12%."
+      },
+      {
+        "q": "¿Qué garantías se proporcionan para los componentes del sistema?",
+        "a": "Solo nos asociamos con fabricantes de nivel 1, proporcionando una garantía de rendimiento lineal estándar de 25 años para módulos y garantías de 10 a 15 años para inversores y sistemas de almacenamiento. Además, Sunberg ofrece una garantía integral de integridad estructural para toda la instalación."
+      },
+      {
+        "q": "¿Es posible ampliar la capacidad del sistema en el futuro?",
+        "a": "Sí. Nuestra arquitectura modular está diseñada para la escalabilidad. Podemos agregar fácilmente más capacidad de almacenamiento o integrar paneles adicionales a medida que evolucionen sus necesidades energéticas, lo que garantiza que su inversión crezca con usted."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Ponte en contacto",
+    "title": "Construyamos tu futuro solar",
+    "desc": "Ya sea que estés explorando opciones o listo para comenzar, comunícate con nuestro equipo para la evaluación del proyecto.",
+    "email_label": "Correo electrónico",
+    "phone_label": "Teléfono",
+    "office_label": "Oficina",
+    "office_text": "201 Solar Way, Austin, TX 78701",
+    "form_name": "Tu nombre",
+    "form_email": "Dirección de correo electrónico",
+    "form_subject": "Asunto",
+    "form_message": "Cuéntanos sobre tu proyecto...",
+    "btn_send": "Enviar mensaje"
+  },
+  "aboutPage": {
+    "hero": {
+      "label": "Nuestra Misión",
+      "title_pre": "Diseñando el Futuro <br /> de la ",
+      "title_highlight": "Arquitectura Solar.",
+      "desc": "Fundada sobre los principios de rigor técnico y administración ambiental, Sunberg es más que un proveedor solar. Somos arquitectos de la independencia energética, cerrando la brecha entre la ingeniería de alto nivel y la vida sostenible."
+    },
+    "philosophy": {
+      "label": "Nuestra Filosofía",
+      "title_pre": "Más allá de la instalación: <br /> ",
+      "title_highlight": "Integridad arquitectónica.",
+      "desc": "Creemos que la energía solar debe mejorar, no comprometer, el valor estético y estructural de su propiedad. Nuestro enfoque combina un diseño minimalista refinado con rigurosos estándares de ingeniería.",
+      "principles": [
+        {
+          "title": "Respeto Estructural",
+          "text": "No solo montamos sistemas; los integramos. Cada diseño respeta la integridad arquitectónica y el flujo estético de su propiedad."
+        },
+        {
+          "title": "La Longevidad Primero",
+          "text": "Diseñamos para décadas, no para años. Nuestros sistemas están construidos para durar más que una generación utilizando los materiales y componentes más resistentes."
+        },
+        {
+          "title": "Libertad Estratégica",
+          "text": "Para Sunberg, la independencia energética es la máxima expresión de libertad. Diseñamos ecosistemas resilientes que le otorgan total soberanía sobre su producción de energía, proporcionando autonomía de las restricciones de la red y un camino claro hacia un futuro autosuficiente."
+        }
+      ]
+    },
+    "manifesto": {
+      "text": "“No nos limitamos a instalar paneles solares; diseñamos ecosistemas energéticos que empoderan a las comunidades y preservan el alma arquitectónica de nuestros paisajes.”",
+      "signature": "Erik Sundberg, Fundador"
+    },
+    "tech": {
+      "label": "Enfoque de Ingeniería",
+      "title_pre": "Eficiencia ",
+      "title_highlight": "TOPCon",
+      "title_post": " Tipo N",
+      "desc": "Módulos de contacto pasivado de óxido de túnel de próxima generación que logran tasas de conversión inigualables y estabilidad a largo plazo.",
+      "stats": [
+        {
+          "val": "22.5%",
+          "lab": "Eficiencia Máxima"
+        },
+        {
+          "val": "-0.4%",
+          "lab": "Degradación Anual"
+        },
+        {
+          "val": "30A",
+          "lab": "Garantía Lineal"
+        }
+      ]
+    },
+    "values": [
+      {
+        "title": "Respeto Estructural",
+        "desc": "Ingeniería que honra la arquitectura existente, asegurando una integración perfecta de la tecnología solar en los entornos construidos."
+      },
+      {
+        "title": "Administración Ambiental",
+        "desc": "Profundo compromiso con la preservación de los recursos naturales y la minimización de la huella de carbono de cada proyecto energético que emprendemos."
+      },
+      {
+        "title": "Ingeniería de Precisión",
+        "desc": "Estándares de ingeniería avanzados aplicados a cada cálculo, asegurando el máximo rendimiento y una longevidad del sistema inigualable."
+      },
+      {
+        "title": "Mentalidad de Ecosistema",
+        "desc": "Construyendo redes de energía inteligentes que funcionan como ecosistemas unificados, proporcionando estabilidad y autonomía durante décadas."
+      }
+    ],
+    "stats": [
+      {
+        "value": 500,
+        "unit": "MM$",
+        "label": "Cambio de Capital",
+        "desc": "La inversión mundial anual en energía solar ha superado los $500 mil millones, superando a todas las demás fuentes de generación."
+      },
+      {
+        "value": 600,
+        "unit": "GW",
+        "label": "Crecimiento Anual",
+        "desc": "Capacidad total de energía solar añadida a la red mundial en los últimos 12 meses."
+      },
+      {
+        "value": 64,
+        "unit": "%",
+        "label": "Aumento del Mercado",
+        "desc": "Tasa de crecimiento de las nuevas instalaciones solares a principios de 2025 en comparación con 2024."
+      },
+      {
+        "value": 100,
+        "unit": "%",
+        "label": "Motor de Demanda",
+        "desc": "La energía solar y eólica satisficieron la totalidad de la nueva demanda mundial de electricidad en 2025."
+      }
+    ],
+    "team": [
+      {
+        "name": "Erik Sundberg",
+        "role": "Fundador y CEO",
+        "quote": "La ingeniería es el puente entre la ambición humana y la administración planetaria."
+      },
+      {
+        "name": "Clara Lindberg",
+        "role": "Ingeniera Arquitectónica Principal",
+        "quote": "Los sistemas solares deben ser tan refinados estéticamente como precisos técnicamente."
+      },
+      {
+        "name": "Mikael Nilsson",
+        "role": "Director Técnico",
+        "quote": "No solo instalamos paneles; diseñamos independencia energética para generaciones."
+      }
+    ],
+    "testimonials": [
+      {
+        "text": "El enfoque arquitectónico de Sunberg hacia la energía solar era exactamente lo que necesitábamos para nuestra propiedad patrimonial. Respetaron el diseño mientras ofrecían una eficiencia de vanguardia.",
+        "name": "Lars Svensson",
+        "role": "Propietario Privado",
+        "rating": 5
+      },
+      {
+        "text": "El nivel de precisión en su ingeniería es inigualable. Nuestra instalación industrial ahora funciona con energía 100% limpia sin tiempo de inactividad durante la transición.",
+        "name": "Ingrid Berg",
+        "role": "Directora de Operaciones, EcoLogistics",
+        "rating": 5
+      },
+      {
+        "text": "Trabajar con Erik y su equipo fue una experiencia perfecta. No solo venden paneles; diseñan una independencia energética a largo plazo.",
+        "name": "Anders Holm",
+        "role": "Fundador, Alpine Heights",
+        "rating": 5
+      }
+    ]
+  },
+  "header": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "tech": "Tecnología Solar",
+    "contact": "Contáctanos"
+  },
+  "servicesPage": {
+    "hero": {
+      "watermark": "SERVICIOS",
+      "label": "Nuestras Capacidades",
+      "title": "Excelencia en ingeniería para un futuro sostenible",
+      "desc": "Trascendemos la instalación solar estándar. Nuestro enfoque es profundamente analítico, estructuralmente riguroso y sin disculpas premium. Descubra cómo construimos ecosistemas energéticos independientes."
+    },
+    "sectors": [
+      {
+        "title": "Arquitectura y Diseño",
+        "desc": "Análisis de sombreado, modelado 3D y diseño estructural para maximizar el potencial solar de su techo."
+      },
+      {
+        "title": "Implementación e Integración",
+        "desc": "Instalación profesional de módulos Tier-1 e inversores híbridos con sincronización completa a la red y al hogar inteligente."
+      },
+      {
+        "title": "Análisis y Gestión",
+        "desc": "El monitoreo y el mantenimiento proactivo garantizan la máxima eficiencia durante las próximas décadas."
+      }
+    ],
+    "sectorsBtn": "Saber más",
+    "techBanner": {
+      "label": "Enfoque de Ingeniería",
+      "title_pre": "Sinergia ",
+      "title_highlight": "Agrovoltaica",
+      "desc": "Uso simultáneo de la tierra para la generación solar y el cultivo de cultivos, reduciendo las necesidades de riego en un 30% y aumentando la productividad general de la tierra en un 60%.",
+      "stats": [
+        {
+          "val": "-30%",
+          "lab": "Demanda de riego"
+        },
+        {
+          "val": "+60%",
+          "lab": "Eficiencia de la tierra"
+        },
+        {
+          "val": "Doble Uso",
+          "lab": "Rendimiento Optimizado"
+        }
+      ]
+    },
+    "solutions": {
+      "label": "Especialización Sectorial",
+      "title": "Soluciones de Alto Rendimiento",
+      "items": [
+        {
+          "title": "Sistemas Residenciales",
+          "desc": "Ingeniería de independencia sostenible para hogares modernos con estética premium.",
+          "list": [
+            "BIPV de techo y modernizaciones",
+            "Sincronización de energía para el hogar inteligente",
+            "Sistemas de baterías de respaldo"
+          ]
+        },
+        {
+          "title": "Comercial e Industrial",
+          "desc": "Eficiencia energética a gran escala e infraestructura alineada con ESG para el futuro de los negocios.",
+          "list": [
+            "Estaciones de montaje en el suelo",
+            "Soluciones de reducción de picos",
+            "Informes de impacto ESG"
+          ]
+        },
+        {
+          "title": "Infraestructura y VE",
+          "desc": "Ecosistemas de baterías modulares y redes de carga de alta velocidad para el transporte de próxima generación.",
+          "list": [
+            "Centros de carga de flotas de vehículos eléctricos",
+            "Ingeniería de microrredes",
+            "Almacenamiento a escala de servicios públicos"
+          ]
+        }
+      ]
+    },
+    "deepDive": {
+      "label": "Viaje de Ingeniería",
+      "title": "Análisis Técnico",
+      "intro": "Explore las rigurosas fases de nuestro proceso de ingeniería, desde el modelado avanzado de diseño hasta el mantenimiento proactivo del sistema.",
+      "blocks": [
+        {
+          "phase": "01",
+          "tabs": [
+            {
+              "label": "Análisis",
+              "title": "Mapeo Avanzado del Sitio",
+              "text": "Cada proyecto de Sunberg comienza con un análisis exhaustivo del sitio. Nuestros ingenieros utilizan software de simulación avanzado para evaluar la dinámica de sombreado y los factores ambientales, optimizando el potencial solar de su techo con absoluta precisión.",
+              "stat": {
+                "value": "15+",
+                "label": "Parámetros de datos"
+              },
+              "features": [
+                "Análisis de terreno de alta precisión",
+                "Análisis de potencial de generación",
+                "Mapeo de radiancia solar"
+              ]
+            },
+            {
+              "label": "Diseño",
+              "title": "Concepto Arquitectónico",
+              "text": "Priorizamos la armonía estética, seleccionando componentes premium que complementan la arquitectura de su propiedad mientras maximizan la recolección de energía a través de geometría avanzada.",
+              "stat": {
+                "value": "Personalizado",
+                "label": "Estética de Diseño"
+              },
+              "features": [
+                "Selección de componentes a medida",
+                "Evaluación de impacto visual",
+                "Integración estructural perfecta"
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "02",
+          "tabs": [
+            {
+              "label": "Módulos",
+              "title": "Ingeniería de Módulos Premium",
+              "text": "Utilizamos módulos fotovoltaicos avanzados con una eficiencia líder en la industria, diseñados para un rendimiento superior y una degradación mínima a lo largo de su vida útil extendida.",
+              "stat": {
+                "value": "22.5%+",
+                "label": "Eficiencia Máxima"
+              },
+              "features": [
+                "Arquitectura de celdas de alta eficiencia",
+                "Sistemas fotovoltaicos avanzados",
+                "Resiliencia climática superior"
+              ]
+            },
+            {
+              "label": "Inversores",
+              "title": "Potencia de Conversión Híbrida",
+              "text": "Nuestros inversores híbridos son el cerebro de su sistema, capaces de una integración perfecta de la batería y transiciones de respaldo súper rápidas. La eficiencia se prioriza en cada etapa de la conversión de energía.",
+              "stat": {
+                "value": "97.8%",
+                "label": "Tasa de conversión"
+              },
+              "features": [
+                "Enlace de batería optimizado",
+                "Optimización inteligente de energía",
+                "Transición de respaldo perfecta"
+              ]
+            },
+            {
+              "label": "Montaje",
+              "title": "Integridad Clasificada para el Viento",
+              "text": "Nuestros sistemas de montaje de aluminio anodizado están diseñados para soportar condiciones extremas. Cada sujetador está diseñado para una máxima resistencia a la extracción y una integridad estructural a largo plazo.",
+              "stat": {
+                "value": "200km/h",
+                "label": "Resistencia al viento"
+              },
+              "features": [
+                "AL anodizado resistente a la corrosión",
+                "Fijaciones de techo no penetrantes",
+                "Sistema de alineación de montaje rápido"
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "03",
+          "tabs": [
+            {
+              "label": "Soporte",
+              "title": "Asociación Inquebrantable",
+              "text": "Nuestro compromiso con su independencia energética no termina con la instalación. Respaldamos nuestro trabajo, asegurándonos de que nunca se quede solo y de que la ayuda experta esté siempre a una llamada de distancia.",
+              "stat": {
+                "value": "Siempre",
+                "label": "Listo para ayudar"
+              },
+              "features": [
+                "Soporte telefónico experto",
+                "Entrenamiento integral del sistema",
+                "Respuesta técnica rápida"
+              ]
+            },
+            {
+              "label": "Evolución",
+              "title": "Ciclo de Vida Tecnológico",
+              "text": "Mantenemos un plano digital completo de la configuración de su sistema. A medida que avanza la tecnología solar, nos comunicamos proactivamente con opciones de modernización para mantener su inversión a la vanguardia.",
+              "stat": {
+                "value": "Futuro",
+                "label": "Preparado"
+              },
+              "features": [
+                "Libro mayor de configuración digital",
+                "Integración de tecnología de próxima generación",
+                "Evolución estratégica del sistema"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "floatBanner": {
+      "label": "Enfoque de Innovación",
+      "title_pre": "Innovación ",
+      "title_highlight": "Flotovoltaica",
+      "desc": "Instalación de parques solares flotantes en embalses. El agua enfría naturalmente los módulos, aumentando el rendimiento energético en un 5-10% mientras reduce la evaporación en un 70%.",
+      "stats": [
+        {
+          "value": "+10%",
+          "label": "Rendimiento Energético"
+        },
+        {
+          "value": "-70%",
+          "label": "Evaporación de agua"
+        },
+        {
+          "value": "Natural",
+          "label": "Efecto de enfriamiento"
+        }
+      ]
+    },
+    "hardware": {
+      "label": "Cuidado del Ecosistema",
+      "title": "Integridad del Hardware",
+      "intro": "Solo nos asociamos con fabricantes de Nivel 1 que comparten nuestra obsesión por la lógica estructural y la durabilidad a largo plazo.",
+      "partners": [
+        {
+          "name": "LONGi",
+          "tagline": "Módulos"
+        },
+        {
+          "name": "SMA",
+          "tagline": "Inversores"
+        },
+        {
+          "name": "SolarEdge",
+          "tagline": "Optimizadores"
+        },
+        {
+          "name": "Victron",
+          "tagline": "Almacenamiento"
+        },
+        {
+          "name": "K2 Systems",
+          "tagline": "Montaje"
+        },
+        {
+          "name": "Fronius",
+          "tagline": "Inversores"
+        },
+        {
+          "name": "BYD",
+          "tagline": "Almacenamiento"
+        },
+        {
+          "name": "Enphase",
+          "tagline": "Micro-Inversores"
+        },
+        {
+          "name": "Tesla",
+          "tagline": "Powerwall"
+        },
+        {
+          "name": "Trina Solar",
+          "tagline": "Módulos"
+        },
+        {
+          "name": "Meyer Burger",
+          "tagline": "Módulos"
+        },
+        {
+          "name": "Mounting Systems",
+          "tagline": "Montaje"
+        }
+      ]
+    }
+  },
+  "projectsPage": {
+    "intro": {
+      "accent": "SELECCIONADOS",
+      "label": "Nuestro Portafolio",
+      "title": "Ingeniería del <br />Paisaje Energético.",
+      "desc": "Una muestra de nuestra experiencia técnica en energía solar. Desde sistemas residenciales de alta eficiencia hasta versátiles implementaciones comerciales y de energía especializada."
+    },
+    "impactStats": [
+      {
+        "label": "Objetivo Net Zero",
+        "value": 6,
+        "unit": "TW",
+        "desc": "La capacidad solar global requerida para 2030 para alcanzar los hitos climáticos internacionales."
+      },
+      {
+        "label": "Reciclabilidad",
+        "value": 95,
+        "unit": "%",
+        "desc": "Los módulos premium modernos presentan una alta reciclabilidad, subrayando el compromiso ambiental de la industria."
+      },
+      {
+        "label": "Potencial Solar",
+        "value": 10000,
+        "unit": "x",
+        "desc": "La energía solar que llega a la Tierra cada hora supera el consumo anual global total, convirtiéndola en nuestro recurso más confiable."
+      }
+    ],
+    "featured": {
+      "title": "Sincronización de Datos Ártica",
+      "location": "Luleå, Suecia",
+      "quote": "Sunberg no solo instaló paneles; diseñaron un latido de cero emisiones para nuestra infraestructura más crítica.",
+      "author": "Erik Solberg, CTO",
+      "specs": [
+        {
+          "label": "Tamaño del Sistema",
+          "value": "2.4 MWp"
+        },
+        {
+          "label": "Tecnología",
+          "value": "Bifacial Tipo N"
+        },
+        {
+          "label": "Almacenamiento",
+          "value": "1.2 MWh"
+        }
+      ]
+    },
+    "trustDefault": "Calidad, Innovación, Sostenibilidad: Diseñando ecosistemas solares de alto rendimiento para un impacto energético duradero.",
+    "trustSecond": "Sosteniendo el Futuro: No solo instalamos tecnología; diseñamos una promesa de rendimiento de por vida y una asociación inquebrantable.",
+    "categories": [
+      {
+        "id": "all",
+        "label": "Todos los Proyectos"
+      },
+      {
+        "id": "residential",
+        "label": "Residencial"
+      },
+      {
+        "id": "commercial",
+        "label": "Comercial"
+      },
+      {
+        "id": "industrial",
+        "label": "Industrial"
+      }
+    ],
+    "projects": [
+      {
+        "category": "Residencial",
+        "title": "Ecosistema Villa Eriksson",
+        "location": "Archipiélago de Estocolmo",
+        "specs": "18.2 kWp | 30kWh Almacenamiento",
+        "aspects": [
+          {
+            "label": "Descripción general",
+            "content": "Un completo sistema residencial con capacidad aislada que integra módulos TOPCon de 18,2 kWp con un sistema de almacenamiento de 30 kWh."
+          },
+          {
+            "label": "Tecnología",
+            "content": "Paneles N-Type TOPCon, inversores Victron MultiPlus-II y baterías LFP de alta densidad para una máxima vida útil del ciclo."
+          },
+          {
+            "label": "Impacto",
+            "content": "100% de autonomía energética durante los meses de verano y una reducción anual del 85% en la dependencia de la red."
+          }
+        ]
+      },
+      {
+        "category": "Comercial",
+        "title": "Centro Logístico Metropark",
+        "location": "Gotemburgo",
+        "specs": "250 kWp | Sincronización de Red",
+        "aspects": [
+          {
+            "label": "Descripción general",
+            "content": "Instalación comercial a gran escala para un centro logístico."
+          },
+          {
+            "label": "Tecnología",
+            "content": "Inversores SMA Core 1 y montaje personalizado para techos de acero corrugado."
+          },
+          {
+            "label": "Impacto",
+            "content": "El período de recuperación de la inversión se redujo a 4,2 años con subsidios gubernamentales."
+          }
+        ]
+      },
+      {
+        "category": "Industrial",
+        "title": "Planta de Fabricación de Acero",
+        "location": "Kiruna",
+        "specs": "1.2 MWp | Reducción de Picos",
+        "aspects": [
+          {
+            "label": "Descripción general",
+            "content": "Implementación industrial de alta potencia para mitigar los costos máximos de energía."
+          },
+          {
+            "label": "Tecnología",
+            "content": "Configuración de inversor central con monitoreo SCADA integrado."
+          },
+          {
+            "label": "Impacto",
+            "content": "Carga máxima reducida en un 40%, ahorrando más de 50.000 € anuales."
+          }
+        ]
+      },
+      {
+        "category": "Residencial",
+        "title": "Casa del Lago Moderna",
+        "location": "Lago Mälaren",
+        "specs": "12.5 kWp | Techo BIPV",
+        "aspects": [
+          {
+            "label": "Descripción general",
+            "content": "Integración arquitectónica de células solares en un techo con juntas alzadas."
+          },
+          {
+            "label": "Tecnología",
+            "content": "Módulos BIPV (Building Integrated PV) con tapajuntas a medida."
+          },
+          {
+            "label": "Impacto",
+            "content": "Estética perfecta preservada al mismo tiempo que se generan 15 000 kWh por año."
+          }
+        ]
+      },
+      {
+        "category": "Comercial",
+        "title": "Complejo de Oficinas Ecológicas",
+        "location": "Oslo",
+        "specs": "85 kWp | Red Inteligente",
+        "aspects": [
+          {
+            "label": "Descripción general",
+            "content": "Gestión inteligente de la energía para un edificio de oficinas con mucho tráfico."
+          },
+          {
+            "label": "Tecnología",
+            "content": "Inversores preparados para Smart-Grid con respuesta a la demanda en tiempo real."
+          },
+          {
+            "label": "Impacto",
+            "content": "Certificación LEED Platinum obtenida con la ayuda de nuestro sistema solar."
+          }
+        ]
+      },
+      {
+        "category": "Industrial",
+        "title": "Refrigeración de Centro de Datos",
+        "location": "Luleå",
+        "specs": "500 kWp | Integración Térmica",
+        "aspects": [
+          {
+            "label": "Descripción general",
+            "content": "Alimentando infraestructura de refrigeración crítica con energía sostenible."
+          },
+          {
+            "label": "Tecnología",
+            "content": "Módulos de alta eficiencia optimizados para trayectoria solar de ángulo bajo."
+          },
+          {
+            "label": "Impacto",
+            "content": "Hitos de refrigeración sin emisiones de carbono alcanzados para nuestro cliente empresarial."
+          }
+        ]
+      }
+    ],
+    "testimonials": [
+      {
+        "text": "La precisión de Sunberg en el modelado y la instalación superó todo lo que habíamos visto. Nuestra independencia energética es ahora una realidad, no solo una meta.",
+        "name": "Elena Rossi",
+        "role": "Propietaria Privada, Toscana",
+        "rating": 5
+      },
+      {
+        "text": "La integración de la energía solar en la logística de nuestro almacén fue un desafío complejo. Sunberg manejó las limitaciones técnicas con facilidad y entregó a tiempo.",
+        "name": "Marc Werner",
+        "role": "Director de Logística, Hamburgo",
+        "rating": 5
+      },
+      {
+        "text": "La integración estética de los paneles fue crucial para nuestra propiedad histórica. El resultado es perfecto y altamente eficiente.",
+        "name": "Sarah Jenkins",
+        "role": "Administradora de Fincas, Oxford",
+        "rating": 5
+      }
+    ]
+  },
+  "techPage": {
+    "hero": {
+      "label": "Excelencia en ingeniería",
+      "title": "El futuro de la tecnología solar",
+      "desc": "En Sunberg, ampliamos los límites de la eficiencia energética a través de materiales avanzados, ingeniería de precisión e innovación técnica."
+    },
+    "milestones": [
+      {
+        "val": "1839",
+        "lab": "Edmond Becquerel descubre el efecto fotovoltaico."
+      },
+      {
+        "val": "1883",
+        "lab": "Charles Fritts construye la primera célula solar basada en selenio."
+      },
+      {
+        "val": "1958",
+        "lab": "El Vanguard I se convierte en el primer satélite impulsado por energía solar."
+      },
+      {
+        "val": "1954",
+        "lab": "Bell Labs crea la primera célula solar de silicio práctica."
+      },
+      {
+        "val": "1973",
+        "lab": "Construcción de la primera residencia con energía solar."
+      },
+      {
+        "val": "2023",
+        "lab": "La capacidad solar global alcanza un hito histórico de 1,5 TW."
+      }
+    ]
+  },
+  "about": {
+    "label": "Sobre Sunberg",
+    "title": "Diseñando un futuro más limpio",
+    "description": "une la ingeniería de alto rendimiento con el diseño sostenible para construir la infraestructura de energía limpia del mañana. Creemos que la transición a la energía solar debe ser una evolución sin esfuerzo, donde la arquitectura profesional de sistemas elimina los errores comunes de componentes incompatibles y diseños ineficientes, garantizando un rendimiento absoluto desde el primer día.",
+    "points": [
+      {
+        "title": "Infraestructura solar llave en mano",
+        "text": "Gestionamos todo el ciclo de vida internamente, asegurando una arquitectura de sistemas impecable y una ejecución precisa, para garantizar los más altos estándares de calidad técnica y rendimiento a largo plazo."
+      },
+      {
+        "title": "Escalabilidad basada en datos",
+        "text": "Entregando hardware de Nivel 1 y cálculos de rendimiento precisos para proyectos que van desde residencias privadas hasta instalaciones comerciales."
+      }
+    ],
+    "milestones": [
+      "Fiabilidad",
+      "Precisión",
+      "Visión"
+    ],
+    "manifesto_text": "“El cambio a la energía solar no se trata solo de preservar el planeta, se trata de una gestión inteligente de activos a largo plazo. Estamos aquí para diseñar esa transición a la perfección.”",
+    "manifesto_signature": "Aleksey Sunberg, Fundador"
+  },
+  "revolution": {
+    "header_label": "una nueva era de energía",
+    "header_title": "Dentro de la revolución solar",
+    "header_subtitle": "Los números hablan por sí mismos. La energía solar no es una posibilidad futura, es la realidad actual.",
+    "ch1_title": "Aparece un nuevo techo solar en Europa cada 30 segundos",
+    "ch1_text": "Mientras ha estado leyendo esta página, varias familias más han declarado su independencia energética. La escala de adopción no tiene precedentes, transformando vecindarios en plantas de energía autosuficientes.",
+    "ch2_title": "La generación solar superó al carbón en los EE. UU. por primera vez",
+    "ch2_text": "Una tecnología que dominó el panorama energético mundial durante más de un siglo está cediendo ante algo más limpio. Estamos presenciando un cambio tectónico: el fin de la era de los combustibles fósiles y el ascenso del sol como principal motor del mundo.",
+    "ch3_title": "Un panel ahorra 13 toneladas de carbón durante su vida útil",
+    "ch3_text": "Su techo no es solo espacio; es un recurso masivo sin explotar. Un solo panel de 500W evita que se extraiga y queme todo un camión de carbón.",
+    "ch4_title": "La mitad de toda la nueva capacidad eléctrica mundial es ahora solar",
+    "ch4_text": "En solo una década, la participación mundial de la energía solar creció del 0,5% al 6%. Las trayectorias actuales muestran que la energía solar dominará la red para 2030. Este es el único camino lógico a seguir para un sistema de energía resiliente.",
+    "ch4_text_mobile": "En solo una década, la participación mundial de la energía solar creció del 0,5% al 6%. Las trayectorias actuales muestran que la energía solar dominará la red para 2030.",
+    "ch5_title": "Su techo es su activo más valioso",
+    "ch5_text": "Las casas con paneles solares se venden en promedio por un 4,1-6,8% más. Es un doble beneficio: elimina pasivos mensuales mientras agrega decenas de miles a su patrimonio neto.",
+    "ch5_text_mobile": "Las casas con paneles solares se venden en promedio por un 4,1-6,8% más. Elimina pasivos mensuales mientras agrega decenas de miles a su patrimonio neto.",
+    "ch5_accent": "La energía solar le paga el doble: primero en sus facturas de servicios públicos y finalmente en la valoración de su propiedad."
+  },
+  "contactPage": {
+    "hero": {
+      "watermark": "Consulta",
+      "label": "Conéctate con Sunberg",
+      "title": "Diseñando tu <br /><span>Independencia Energética</span>",
+      "desc": "Ya sea que esté explorando soluciones residenciales o sistemas a escala industrial, nuestro equipo de ingeniería está listo para diseñar su camino hacia la energía sostenible."
+    },
+    "details": [
+      { "label": "Teléfono", "value": "+1 (512) 000-0000" },
+      { "label": "Correo", "value": "hello@sunberg.energy" },
+      { "label": "Oficina", "value": "201 Solar Way, Austin, TX 78701" }
+    ],
+    "copied": "¡Copiado!",
+    "trust": "Potenciando tu Futuro Sostenible: Únete a una comunidad de clientes con visión de futuro que logran la autonomía energética a través de nuestros ecosistemas solares diseñados con precisión.",
+    "form": {
+      "consultation": "Consulta",
+      "title": "Comienza tu auditoría de ingeniería",
+      "desc": "Cada proyecto de Sunberg comienza con una profunda comprensión técnica de sus necesidades energéticas. Comparta su visión y le brindaremos las bases para hacerla realidad.",
+      "benefits": [
+        { "title": "Auditoría preliminar", "desc": "Análisis de precisión del potencial solar de su sitio basado en el modelado de irradiación localizada." },
+        { "title": "Diseño técnico", "desc": "Un proyecto de arquitectura de sistema a medida diseñado para integrarse perfectamente con su propiedad." },
+        { "title": "Modelo financiero", "desc": "Proyecciones de retorno de la inversión y ahorros basadas en datos calculados utilizando las tarifas de energía locales actuales." }
+      ],
+      "fields": {
+        "name": "Nombre completo",
+        "namePlaceholder": "Erik Sundberg",
+        "email": "Correo electrónico",
+        "emailPlaceholder": "erik@ejemplo.com",
+        "phone": "Número de teléfono",
+        "phonePlaceholder": "+46 00 000 00 00",
+        "subject": "Asunto",
+        "subjectPlaceholder": "Proyecto Solar Residencial",
+        "details": "Detalles del proyecto",
+        "detailsPlaceholder": "Cuéntanos sobre tu proyecto o ubicación...",
+        "submit": "Enviar solicitud"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Soluciones integrales de energía solar — desde el diseño y la ingeniería hasta la instalación y el mantenimiento a largo plazo.",
+    "colCompany": "Compañía",
+    "colServices": "Servicios",
+    "rights": "© 2026 Sunberg. Todos los derechos reservados.",
+    "builtWith": "Construido con la energía limpia en mente.",
+    "links": {
+      "about": "Sobre nosotros",
+      "services": "Servicios",
+      "projects": "Proyectos",
+      "contact": "Contacto",
+      "design": "Diseño e ingeniería",
+      "installation": "Instalación",
+      "monitoring": "Monitoreo",
+      "maintenance": "Mantenimiento"
+    }
+  }
+}

@@ -1,12 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '../../../../../shared/lib/hooks/useMediaQuery';
 import aboutImg from '../../../../../assets/about.png';
-import { aboutContent } from '../../model/content';
 import styles from './AboutTablet.module.css';
 
 export const AboutTablet = ({ fadeUp }) => {
   const isSmallTablet = useMediaQuery('(max-width: 750px)');
+  const { t } = useTranslation();
+  const points = t('about.points', { returnObjects: true });
+  const milestones = t('about.milestones', { returnObjects: true });
 
   return (
     <section className={styles.about} id="about">
@@ -18,8 +21,8 @@ export const AboutTablet = ({ fadeUp }) => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <span className="section-label">{aboutContent.label}</span>
-          <h2 className="section-title">{aboutContent.title}</h2>
+          <span className="section-label">{t('about.label')}</span>
+          <h2 className="section-title">{t('about.title')}</h2>
         </motion.div>
 
         <div className={styles.grid}>
@@ -35,7 +38,7 @@ export const AboutTablet = ({ fadeUp }) => {
             </div>
 
             <div className={styles.milestones}>
-              {aboutContent.milestones.map((milestone, index) => (
+              {milestones.map((milestone, index) => (
                 <div key={index} className={styles.milestone}>
                   <span className={styles.milestoneNumber}>{milestone}</span>
                 </div>
@@ -53,11 +56,11 @@ export const AboutTablet = ({ fadeUp }) => {
             {isSmallTablet ? (
               <div className={styles.body}>
                 <p className={styles.text}>
-                  <strong>Sunberg</strong> {aboutContent.description}
+                  <strong>Sunberg</strong> {t('about.description')}
                 </p>
                 
                 <div className={styles.pointsGrid}>
-                  {aboutContent.points.map((point, index) => (
+                  {points.map((point, index) => (
                     <div key={index} className={styles.pointItem}>
                       <strong>{point.title}</strong>
                       <p>{point.text}</p>
@@ -69,11 +72,11 @@ export const AboutTablet = ({ fadeUp }) => {
               <div className={styles.largeTabletGrid}>
                 <div className={styles.mainText}>
                   <p className={styles.text}>
-                    <strong>Sunberg</strong> {aboutContent.description}
+                    <strong>Sunberg</strong> {t('about.description')}
                   </p>
                 </div>
                 <div className={styles.sidePoints}>
-                  {aboutContent.points.map((point, index) => (
+                  {points.map((point, index) => (
                     <div key={index} className={styles.pointItem}>
                       <strong>{point.title}</strong>
                       <p>{point.text}</p>
@@ -92,8 +95,8 @@ export const AboutTablet = ({ fadeUp }) => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <p className={styles.manifestoText}>{aboutContent.manifesto.text}</p>
-          <span className={styles.signature}>{aboutContent.manifesto.signature}</span>
+          <p className={styles.manifestoText}>{t('about.manifesto_text')}</p>
+          <span className={styles.signature}>{t('about.manifesto_signature')}</span>
         </motion.div>
       </div>
     </section>

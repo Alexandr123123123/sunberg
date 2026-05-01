@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Counter } from '../../../../shared/ui/Counter';
 import { useMediaQuery } from '../../../../shared/lib/hooks/useMediaQuery';
 import styles from '../AbStats.module.css';
 
-const stats = [
-  { value: 500, unit: 'B$', label: 'Capital Shift', desc: "Annual global investment in solar power has surpassed $500 billion, outstripping all other generation sources." },
-  { value: 600, unit: 'GW', label: 'Annual Growth', desc: 'Total solar power capacity added to the global grid in the last 12 months.' },
-  { value: 64, unit: '%', label: 'Market Surge', desc: 'Growth rate of new solar installations in early 2025 compared to 2024.' },
-  { value: 100, unit: '%', label: 'Demand Engine', desc: 'Solar and wind met the entirety of new global electricity demand in 2025.' }
-];
-
 export const AbStats = () => {
+  const { t } = useTranslation();
+  const stats = t('aboutPage.stats', { returnObjects: true });
+  
   const isMobile = useMediaQuery('(max-width: 600px)');
   const [activeIndex, setActiveIndex] = useState(stats.length);
   const [isAnimating, setIsAnimating] = useState(false);

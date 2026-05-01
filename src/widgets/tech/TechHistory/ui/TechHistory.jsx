@@ -1,23 +1,30 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import styles from '../TechHistory.module.css';
 import leafImg from '../../../../assets/images/ab-organic-accent.png';
 
-const milestones = [
-  { val: '1839', lab: 'Edmond Becquerel discovers the photovoltaic effect.', pos: { gridArea: '1 / 2 / 2 / 4' } },
-  { val: '1883', lab: 'Charles Fritts builds the first selenium-based solar cell.', pos: { gridArea: '1 / 9 / 2 / 11', marginTop: '20px' } },
-  { val: '1958', lab: 'Vanguard I becomes the first solar-powered satellite.', pos: { gridArea: '2 / 5 / 3 / 7' } },
-  { val: '1954', lab: 'Bell Labs creates the first practical silicon solar cell.', pos: { gridArea: '3 / 2 / 4 / 4' } },
-  { val: '1973', lab: 'Construction of the first solar-powered residence.', pos: { gridArea: '3 / 10 / 4 / 13', marginTop: '40px' } },
-  { val: '2023', lab: 'Global solar capacity reaches a historic 1.5 TW milestone.', pos: { gridArea: '4 / 5 / 5 / 7' } }
-];
-
 export const TechHistory = () => {
+  const { t } = useTranslation();
+  const rawMilestones = t('techPage.milestones', { returnObjects: true });
+
+  const milestonePositions = [
+    { gridArea: '1 / 2 / 2 / 4' },
+    { gridArea: '1 / 9 / 2 / 11', marginTop: '20px' },
+    { gridArea: '2 / 5 / 3 / 7' },
+    { gridArea: '3 / 2 / 4 / 4' },
+    { gridArea: '3 / 10 / 4 / 13', marginTop: '40px' },
+    { gridArea: '4 / 5 / 5 / 7' }
+  ];
+
+  const milestones = rawMilestones.map((m, i) => ({
+    ...m,
+    pos: milestonePositions[i] || {}
+  }));
+
   return (
     <section className={styles.section}>
       <div className="container">
-
-
         <div className={styles.grid}>
           {milestones.map((item, i) => (
             <motion.div

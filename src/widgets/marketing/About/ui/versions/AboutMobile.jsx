@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '../../../../../shared/lib/hooks/useMediaQuery';
 import aboutImg from '../../../../../assets/about.png';
-import { aboutContent } from '../../model/content';
 import styles from './AboutMobile.module.css';
 
 export const AboutMobile = ({ fadeUp }) => {
   const [activePoint, setActivePoint] = useState(0);
   const isCompactMobile = useMediaQuery('(max-width: 600px)');
+  const { t } = useTranslation();
+  const points = t('about.points', { returnObjects: true });
+  const milestones = t('about.milestones', { returnObjects: true });
 
   const togglePoint = () => {
     setActivePoint((prev) => (prev === 0 ? 1 : 0));
@@ -23,8 +26,8 @@ export const AboutMobile = ({ fadeUp }) => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <span className="section-label">{aboutContent.label}</span>
-          <h2 className="section-title">{aboutContent.title}</h2>
+          <span className="section-label">{t('about.label')}</span>
+          <h2 className="section-title">{t('about.title')}</h2>
         </motion.div>
 
         <div className={styles.stack}>
@@ -40,7 +43,7 @@ export const AboutMobile = ({ fadeUp }) => {
             </div>
 
             <div className={styles.milestones}>
-              {aboutContent.milestones.map((milestone, index) => (
+              {milestones.map((milestone, index) => (
                 <div key={index} className={styles.milestone}>
                   <span className={styles.milestoneNumber}>{milestone}</span>
                 </div>
@@ -57,7 +60,7 @@ export const AboutMobile = ({ fadeUp }) => {
           >
             <div className={styles.body}>
               <p className={styles.text}>
-                <strong>Sunberg</strong> {aboutContent.description}
+                <strong>Sunberg</strong> {t('about.description')}
               </p>
               
               <div className={styles.sliderContainer}>
@@ -65,7 +68,7 @@ export const AboutMobile = ({ fadeUp }) => {
                   <div className={styles.pointsStack}>
                     {/* Hidden placeholders to maintain stable height based on the tallest point */}
                     <div className={styles.heightStabilizer}>
-                      {aboutContent.points.map((point, index) => (
+                      {points.map((point, index) => (
                         <div key={index} className={styles.pointPlaceholder} aria-hidden="true">
                           <strong>{point.title}</strong>
                           <p>{point.text}</p>
@@ -82,8 +85,8 @@ export const AboutMobile = ({ fadeUp }) => {
                         exit={{ opacity: 0, x: 20 }}
                         transition={{ duration: 0.4, ease: "easeInOut" }}
                       >
-                        <strong>{aboutContent.points[activePoint].title}</strong>
-                        <p>{aboutContent.points[activePoint].text}</p>
+                        <strong>{points[activePoint].title}</strong>
+                        <p>{points[activePoint].text}</p>
                       </motion.div>
                     </AnimatePresence>
                   </div>
@@ -99,10 +102,6 @@ export const AboutMobile = ({ fadeUp }) => {
           </motion.div>
         </div>
 
-
-
-
-
         <motion.div 
           className={styles.manifesto}
           initial="hidden"
@@ -110,8 +109,8 @@ export const AboutMobile = ({ fadeUp }) => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <p className={styles.manifestoText}>{aboutContent.manifesto.text}</p>
-          <span className={styles.signature}>{aboutContent.manifesto.signature}</span>
+          <p className={styles.manifestoText}>{t('about.manifesto_text')}</p>
+          <span className={styles.signature}>{t('about.manifesto_signature')}</span>
         </motion.div>
       </div>
     </section>

@@ -1,36 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '../../../../shared/lib/hooks/useMediaQuery';
 import styles from '../AbTeam.module.css';
 import erikImg from '../../../../assets/images/team/erik.png';
 import claraImg from '../../../../assets/images/team/clara.png';
 import mikaelImg from '../../../../assets/images/team/mikael.png';
 
-const team = [
-  { 
-    id: '01', 
-    name: 'Erik Sundberg', 
-    role: 'Founder & CEO', 
-    img: erikImg,
-    quote: 'Engineering is the bridge between human ambition and planetary stewardship.'
-  },
-  { 
-    id: '02', 
-    name: 'Clara Lindberg', 
-    role: 'Lead Architectural Engineer', 
-    img: claraImg,
-    quote: 'Solar systems should be as aesthetically refined as they are technically precise.'
-  },
-  { 
-    id: '03', 
-    name: 'Mikael Nilsson', 
-    role: 'Technical Director', 
-    img: mikaelImg,
-    quote: 'We don’t just install panels; we design energy independence for generations.'
-  }
-];
+const images = [erikImg, claraImg, mikaelImg];
 
 export const AbTeam = () => {
+  const { t } = useTranslation();
+  const rawTeam = t('aboutPage.team', { returnObjects: true });
+  const team = rawTeam.map((m, i) => ({
+    ...m,
+    id: `0${i+1}`,
+    img: images[i]
+  }));
+
   const isSlider = useMediaQuery('(max-width: 1024px)');
   const isMobile = useMediaQuery('(max-width: 640px)');
   const [activeIndex, setActiveIndex] = useState(team.length);

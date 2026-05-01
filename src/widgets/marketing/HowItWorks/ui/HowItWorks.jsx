@@ -1,32 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import styles from '../HowItWorks.module.css';
 import leafImg from '../../../../assets/images/how-it-works-leaf.png';
 
-const steps = [
-  {
-    num: '01',
-    title: 'Consultation',
-    desc: 'We discuss your energy efficiency goals and provide a preliminary cost estimate — completely free of charge.',
-  },
-  {
-    num: '02',
-    title: 'Site Survey & Design',
-    desc: 'Our engineers visit your property, analyze roof orientation, shading, and structural capacity. We then create a custom system design.',
-  },
-  {
-    num: '03',
-    title: 'Installation',
-    desc: 'Our certified crew installs your system in 1–3 days. We handle all permitting, inspections, and grid connection paperwork.',
-  },
-  {
-    num: '04',
-    title: 'Activation & Support',
-    desc: 'Your system goes live and starts generating savings immediately. We provide ongoing maintenance and technical support.',
-  },
-];
-
 const HowItWorks = () => {
+  const { t } = useTranslation();
+  const rawSteps = t('howItWorks.steps', { returnObjects: true });
+  const steps = rawSteps.map((step, index) => ({
+    ...step,
+    num: `0${index + 1}`
+  }));
+
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -57,10 +42,10 @@ const HowItWorks = () => {
       </div>
       <div className="container">
         <div className={styles.header}>
-          <span className="section-label">How It Works</span>
-          <h2 className="section-title">From Inquiry to Clean Energy in 4 Steps</h2>
+          <span className="section-label">{t('howItWorks.header_label')}</span>
+          <h2 className="section-title">{t('howItWorks.header_title')}</h2>
           <p className="section-subtitle">
-            We've streamlined every part of the process so you can focus on what matters — saving money and the planet.
+            {t('howItWorks.header_subtitle')}
           </p>
         </div>
         <motion.div 

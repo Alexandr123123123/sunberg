@@ -1,32 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { IconDesign, IconIntegration, IconAnalytics, IconStorage } from '../../../../shared/ui/icon/Icons';
 import styles from '../AbValues.module.css';
 
-const values = [
-  {
-    title: 'Structural Respect',
-    desc: 'Engineering that honors the existing architecture, ensuring seamless integration of solar technology with built environments.',
-    icon: <IconDesign />
-  },
-  {
-    title: 'Environmental Stewardship',
-    desc: 'Deep commitment to preserving natural resources and minimizing the carbon footprint of every energy project we undertake.',
-    icon: <IconIntegration />
-  },
-  {
-    title: 'Precision Engineering',
-    desc: 'Advanced engineering standards applied to every calculation, ensuring maximum yield and unmatched system longevity.',
-    icon: <IconAnalytics />
-  },
-  {
-    title: 'Ecosystem Mindset',
-    desc: 'Building intelligent energy networks that function as unified ecosystems, providing stability and autonomy for decades.',
-    icon: <IconStorage />
-  }
-];
+const icons = [<IconDesign />, <IconIntegration />, <IconAnalytics />, <IconStorage />];
 
 export const AbValues = () => {
+  const { t } = useTranslation();
+  const rawValues = t('aboutPage.values', { returnObjects: true });
+  const values = rawValues.map((v, i) => ({
+    ...v,
+    icon: icons[i]
+  }));
+
   return (
     <section className={styles.section}>
       <div className="container">

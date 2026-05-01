@@ -1,17 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { BookConsultationButton } from '../../../../shared/ui/BookConsultationButton';
 import { useMediaQuery } from '../../../../shared/lib/hooks/useMediaQuery';
 import styles from '../CtaBlock.module.css';
 
 export const CtaBlock = ({ 
   variant = 'surface', 
-  title = 'Ready to engineer your energy independence?',
-  description = 'Get a professional solar performance forecast and custom system architecture within 48 hours.',
+  title,
+  description,
   btnVariant = null,
   noWrapper = false 
 }) => {
   const isMobile = useMediaQuery('(max-width: 600px)');
+  const { t } = useTranslation();
+  
+  const displayTitle = title || t('ctaBlock.title');
+  const displayDesc = description || t('ctaBlock.description');
+
   const content = (
     <motion.div 
       className={`${styles.inner} ${styles[`variant_${variant}`]}`}
@@ -21,8 +27,8 @@ export const CtaBlock = ({
       transition={{ duration: 0.6 }}
     >
       <div className={styles.content}>
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
+        <h3 className={styles.title}>{displayTitle}</h3>
+        <p className={styles.description}>{displayDesc}</p>
       </div>
       
       <BookConsultationButton 

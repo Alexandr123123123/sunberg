@@ -1,10 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import aboutImg from '../../../../../assets/about.png';
-import { aboutContent } from '../../model/content';
 import styles from './AboutDesktop.module.css';
 
 export const AboutDesktop = ({ fadeUp }) => {
+  const { t } = useTranslation();
+  const points = t('about.points', { returnObjects: true });
+  const milestones = t('about.milestones', { returnObjects: true });
+
   return (
     <section className={styles.about} id="about">
       <div className="container">
@@ -15,8 +19,8 @@ export const AboutDesktop = ({ fadeUp }) => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <span className="section-label">{aboutContent.label}</span>
-          <h2 className="section-title">{aboutContent.title}</h2>
+          <span className="section-label">{t('about.label')}</span>
+          <h2 className="section-title">{t('about.title')}</h2>
         </motion.div>
 
         <div className={styles.grid}>
@@ -30,10 +34,10 @@ export const AboutDesktop = ({ fadeUp }) => {
             <div className={styles.body}>
               <div className={styles.description}>
                 <p className={styles.text}>
-                  <strong>Sunberg</strong> {aboutContent.description}
+                  <strong>Sunberg</strong> {t('about.description')}
                 </p>
                 <ul className={styles.list}>
-                  {aboutContent.points.map((point, index) => (
+                  {points.map((point, index) => (
                     <li key={index} className={styles.listItem}>
                       <strong>{point.title}</strong>
                       {point.text}
@@ -56,7 +60,7 @@ export const AboutDesktop = ({ fadeUp }) => {
             </div>
 
             <div className={styles.milestones}>
-              {aboutContent.milestones.map((milestone, index) => (
+              {milestones.map((milestone, index) => (
                 <div key={index} className={styles.milestone}>
                   <span className={styles.milestoneNumber}>{milestone}</span>
                 </div>
@@ -72,8 +76,8 @@ export const AboutDesktop = ({ fadeUp }) => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <p className={styles.manifestoText}>{aboutContent.manifesto.text}</p>
-          <span className={styles.signature}>{aboutContent.manifesto.signature}</span>
+          <p className={styles.manifestoText}>{t('about.manifesto_text')}</p>
+          <span className={styles.signature}>{t('about.manifesto_signature')}</span>
         </motion.div>
       </div>
     </section>

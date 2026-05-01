@@ -1,31 +1,15 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '../../../../shared/lib/hooks/useMediaQuery';
 import styles from '../Testimonials.module.css';
 
-const defaultTestimonials = [
-  {
-    text: "Sunberg made going solar effortless. From the first call to flipping the switch, everything was handled professionally. Our energy bills dropped by 78% in the first quarter.",
-    name: 'Sarah Mitchell',
-    role: 'Homeowner, Austin TX',
-    rating: 5,
-  },
-  {
-    text: "We needed a reliable partner for our office park installation. Sunberg delivered a 340 kW system on schedule and under budget. Their monitoring platform is outstanding.",
-    name: 'Erik Johansson',
-    role: 'Facilities Director, Lumina Estate Group',
-    rating: 5,
-  },
-  {
-    text: "What impressed me most was the transparency. No hidden costs, no surprises. The system has been running flawlessly for two years now, and their support team is always responsive.",
-    name: 'Maria García',
-    role: 'Homeowner, Barcelona',
-    rating: 5,
-  },
-];
-
-const Testimonials = ({ items = defaultTestimonials, showAvatar = true }) => {
-  const testimonials = items;
+const Testimonials = ({ items, showAvatar = true }) => {
+  const { t } = useTranslation();
+  
+  // Use passed items or fallback to translation
+  const testimonials = items || t('testimonials.items', { returnObjects: true });
+  
   const isDesktop = useMediaQuery('(min-width: 1200px)');
   const isTablet = useMediaQuery('(min-width: 769px) and (max-width: 1199px)');
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -108,8 +92,8 @@ const Testimonials = ({ items = defaultTestimonials, showAvatar = true }) => {
     <section className={styles.testimonials} id="testimonials">
       <div className="container">
         <div className={styles.header}>
-          <span className="section-label">Client Stories</span>
-          <h2 className="section-title">What Our Clients Say</h2>
+          <span className="section-label">{t('testimonials.header_label')}</span>
+          <h2 className="section-title">{t('testimonials.header_title')}</h2>
         </div>
 
         {isDesktop ? (

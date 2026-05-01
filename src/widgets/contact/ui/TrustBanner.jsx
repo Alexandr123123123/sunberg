@@ -1,12 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import styles from './TrustBanner.module.css';
 
 export const TrustBanner = () => {
+  const { t } = useTranslation();
   return (
     <section className={styles.section}>
       <div className="container">
-        <motion.div 
+        <motion.div
           className={styles.content}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -14,7 +16,7 @@ export const TrustBanner = () => {
           transition={{ duration: 0.8 }}
         >
           <span className={styles.label}>
-            Empowering Your Sustainable Future: Join a community of forward-thinking clients achieving energy autonomy through our precision-engineered solar ecosystems.
+            {t('contactPage.trust')}
           </span>
         </motion.div>
       </div>

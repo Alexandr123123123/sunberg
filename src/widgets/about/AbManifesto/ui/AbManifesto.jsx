@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import styles from '../AbManifesto.module.css';
 
 export const AbManifesto = () => {
+  const { t } = useTranslation();
   return (
     <section className={styles.manifesto}>
       <div className="container">
@@ -14,10 +16,9 @@ export const AbManifesto = () => {
           transition={{ duration: 0.8 }}
         >
           <p className={styles.text}>
-            “We don't just install solar panels; we design energy ecosystems 
-            that empower communities and preserve the architectural soul of our landscapes.”
+            {t('aboutPage.manifesto.text')}
           </p>
-          <span className={styles.signature}>Erik Sundberg, Founder</span>
+          <span className={styles.signature}>{t('aboutPage.manifesto.signature')}</span>
         </motion.div>
       </div>
     </section>

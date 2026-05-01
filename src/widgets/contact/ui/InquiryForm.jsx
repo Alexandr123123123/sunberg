@@ -1,39 +1,37 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import styles from './InquiryForm.module.css';
 
 export const InquiryForm = () => {
+  const { t } = useTranslation();
+  const rawBenefits = t('contactPage.form.benefits', { returnObjects: true });
+  const benefits = Array.isArray(rawBenefits) ? rawBenefits : [];
+
   return (
     <section className={styles.section}>
       <div className="container">
         <div className={styles.grid}>
-          <motion.div 
+          <motion.div
             className={styles.info}
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="section-label">Consultation</span>
-            <h2 className={styles.title}>Start Your Engineering Audit</h2>
+            <span className="section-label">{t('contactPage.form.consultation')}</span>
+            <h2 className={styles.title}>{t('contactPage.form.title')}</h2>
             <p className={styles.desc}>
-              Every Sunberg project begins with a deep technical understanding of your energy needs. 
-              Share your vision, and we'll provide the foundation to make it a reality.
+              {t('contactPage.form.desc')}
             </p>
-            
+
             <ul className={styles.benefits}>
-              <li>
-                <strong>Preliminary Audit</strong>
-                <span>Precision analysis of your site’s solar potential based on localized irradiation modeling.</span>
-              </li>
-              <li>
-                <strong>Technical Design</strong>
-                <span>A bespoke system architecture project designed to integrate seamlessly with your property.</span>
-              </li>
-              <li>
-                <strong>Financial Model</strong>
-                <span>Data-driven ROI and savings projections calculated using current local energy tariffs.</span>
-              </li>
+              {benefits.map((b, i) => (
+                <li key={i}>
+                  <strong>{b.title}</strong>
+                  <span>{b.desc}</span>
+                </li>
+              ))}
             </ul>
           </motion.div>
 
@@ -47,35 +45,35 @@ export const InquiryForm = () => {
             <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
               <div className={styles.row}>
                 <div className={styles.field}>
-                  <label className={styles.label}>Full Name</label>
-                  <input type="text" placeholder="Erik Sundberg" className={styles.input} />
+                  <label className={styles.label}>{t('contactPage.form.fields.name')}</label>
+                  <input type="text" placeholder={t('contactPage.form.fields.namePlaceholder')} className={styles.input} />
                 </div>
                 <div className={styles.field}>
-                  <label className={styles.label}>Email</label>
-                  <input type="email" placeholder="erik@example.com" className={styles.input} />
+                  <label className={styles.label}>{t('contactPage.form.fields.email')}</label>
+                  <input type="email" placeholder={t('contactPage.form.fields.emailPlaceholder')} className={styles.input} />
                 </div>
               </div>
 
               <div className={styles.field}>
-                <label className={styles.label}>Phone Number</label>
-                <input type="tel" placeholder="+46 00 000 00 00" className={styles.input} />
+                <label className={styles.label}>{t('contactPage.form.fields.phone')}</label>
+                <input type="tel" placeholder={t('contactPage.form.fields.phonePlaceholder')} className={styles.input} />
               </div>
 
               <div className={styles.field}>
-                <label className={styles.label}>Subject</label>
-                <input type="text" placeholder="Residential Solar Project" className={styles.input} />
+                <label className={styles.label}>{t('contactPage.form.fields.subject')}</label>
+                <input type="text" placeholder={t('contactPage.form.fields.subjectPlaceholder')} className={styles.input} />
               </div>
 
               <div className={styles.field}>
-                <label className={styles.label}>Project Details</label>
-                <textarea 
-                  placeholder="Tell us about your project or location..." 
+                <label className={styles.label}>{t('contactPage.form.fields.details')}</label>
+                <textarea
+                  placeholder={t('contactPage.form.fields.detailsPlaceholder')}
                   className={styles.textarea}
                 ></textarea>
               </div>
 
               <button type="submit" className={styles.submit}>
-                Submit Request
+                {t('contactPage.form.fields.submit')}
               </button>
             </form>
           </motion.div>

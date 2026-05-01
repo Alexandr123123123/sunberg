@@ -1,9 +1,12 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import techBg from '../../../../assets/images/ab-tech-bg.png';
 import styles from '../AbTech.module.css';
 
 export const AbTech = () => {
+  const { t } = useTranslation();
+  const stats = t('aboutPage.tech.stats', { returnObjects: true });
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -28,27 +31,24 @@ export const AbTech = () => {
           transition={{ duration: 0.8 }}
         >
           <div className={styles.main}>
-            <span className="section-label text-white">Engineering Focus</span>
-            <h2 className={styles.title}>N-Type <span className="text-primary">TOPCon</span> Efficiency</h2>
+            <span className="section-label text-white">{t('aboutPage.tech.label')}</span>
+            <h2 className={styles.title}>
+              {t('aboutPage.tech.title_pre')}
+              <span className="text-primary">{t('aboutPage.tech.title_highlight')}</span>
+              {t('aboutPage.tech.title_post')}
+            </h2>
             <p className={styles.desc}>
-              Next-generation Tunnel Oxide Passivated Contact modules achieving
-              unmatched conversion rates and long-term stability.
+              {t('aboutPage.tech.desc')}
             </p>
           </div>
 
           <div className={styles.stats}>
-            <div className={styles.stat}>
-              <span className={styles.val}>22.5%</span>
-              <span className={styles.lab}>Peak Efficiency</span>
-            </div>
-            <div className={styles.stat}>
-              <span className={styles.val}>-0.4%</span>
-              <span className={styles.lab}>Yearly Degradation</span>
-            </div>
-            <div className={styles.stat}>
-              <span className={styles.val}>30Y</span>
-              <span className={styles.lab}>Linear Warranty</span>
-            </div>
+            {stats.map((s, i) => (
+              <div className={styles.stat} key={i}>
+                <span className={styles.val}>{s.val}</span>
+                <span className={styles.lab}>{s.lab}</span>
+              </div>
+            ))}
           </div>
         </motion.div>
       </div>

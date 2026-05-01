@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { projects, projectCategories } from '../../../../shared/config/projects/projectsData';
+import { useTranslation } from 'react-i18next';
+import { projects as baseProjects } from '../../../../shared/config/projects/projectsData';
 import { useProjectFilter } from '../../../../features/project-filter';
 import styles from '../PrGrid.module.css';
 
 const ProjectCard = ({ project }) => {
-  const [activeAspect, setActiveAspect] = useState(project.aspects[0].id);
+  const [activeAspect, setActiveAspect] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
-  const currentAspect = project.aspects.find(a => a.id === activeAspect) || project.aspects[0];
+  const currentAspect = project.aspects[activeAspect] || project.aspects[0];
 
   return (
     <motion.div
@@ -21,7 +22,7 @@ const ProjectCard = ({ project }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => {
         setIsHovered(false);
-        setActiveAspect(project.aspects[0].id); // Reset on leave
+        setActiveAspect(0); // Reset on leave
       }}
     >
       <div className={styles.imageWrapper}>
@@ -51,13 +52,13 @@ const ProjectCard = ({ project }) => {
                   transition={{ duration: 0.4, ease: "easeOut" }}
                 >
                   <div className={styles.aspectMenu}>
-                    {project.aspects.map(aspect => (
+                    {project.aspects.map((aspect, idx) => (
                       <button
-                        key={aspect.id}
-                        className={`${styles.aspectBtn} ${activeAspect === aspect.id ? styles.activeAspect : ''}`}
+                        key={idx}
+                        className={`${styles.aspectBtn} ${activeAspect === idx ? styles.activeAspect : ''}`}
                         onClick={(e) => {
                           e.stopPropagation();
-                          setActiveAspect(aspect.id);
+                          setActiveAspect(idx);
                         }}
                       >
                         {aspect.label}
@@ -96,7 +97,26 @@ const ProjectCard = ({ project }) => {
 };
 
 const PrGrid = () => {
-  const { activeCategory, setActiveCategory, filteredItems } = useProjectFilter(projects);
+  const { t } = useTranslation();
+  
+  const rawCategories = t('projectsPage.categories', { returnObjects: true });
+  const rawProjects = t('projectsPage.projects', { returnObjects: true });
+
+  const translatedProjects = useMemo(() => {
+    return baseProjects.map((bp, i) => {
+      const tp = rawProjects[i] || {};
+      return {
+        ...bp,
+        categoryName: tp.category || bp.category,
+        title: tp.title || bp.title,
+        location: tp.location || bp.location,
+        specs: tp.specs || bp.specs,
+        aspects: tp.aspects || bp.aspects
+      };
+    });
+  }, [rawProjects]);
+
+  const { activeCategory, setActiveCategory, filteredItems } = useProjectFilter(translatedProjects);
   const [showLeftFade, setShowLeftFade] = useState(false);
   const [showRightFade, setShowRightFade] = useState(true);
   const scrollRef = React.useRef(null);
@@ -146,7 +166,7 @@ const PrGrid = () => {
           onMouseMove={onMouseMove}
         >
           <div className={styles.filter}>
-            {projectCategories.map((cat) => (
+            {rawCategories.map((cat) => (
               <button
                 key={cat.id}
                 className={`${styles.filterBtn} ${activeCategory === cat.id ? styles.activeBtn : ''}`}
@@ -160,15 +180,11 @@ const PrGrid = () => {
           </div>
         </div>
 
-
-
-
-
         {/* Masonry-like Grid */}
         <motion.div layout className={styles.grid}>
           <AnimatePresence mode="popLayout">
             {filteredItems.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+              <ProjectCard key={project.id} project={{...project, category: project.categoryName}} />
             ))}
           </AnimatePresence>
         </motion.div>

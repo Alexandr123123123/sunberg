@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { hardwarePartners } from '../../../../shared/config/services/servicesData';
+import { useTranslation } from 'react-i18next';
 import styles from '../SpHardware.module.css';
 
 const SpHardware = ({ fadeUp }) => {
+  const { t } = useTranslation();
+  const hardware = t('servicesPage.hardware', { returnObjects: true });
   // Mapping partners to specific grid areas for a 4x4 frame
   // 1  2  3  4
   // 5  H  H  8
@@ -23,16 +25,15 @@ const SpHardware = ({ fadeUp }) => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <span className="section-label">Ecosystem Care</span>
-            <h2 className={styles.title}>Hardware Integrity</h2>
+            <span className="section-label">{hardware.label}</span>
+            <h2 className={styles.title}>{hardware.title}</h2>
             <p className={styles.intro}>
-              We only partner with Tier 1 manufacturers who share our obsession with 
-              structural logic and long-term durability.
+              {hardware.intro}
             </p>
           </motion.div>
 
           {/* Outer Partners */}
-          {hardwarePartners.map((partner, i) => (
+          {hardware.partners.map((partner, i) => (
             <motion.div
               className={styles.partner}
               key={i}

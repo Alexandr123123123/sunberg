@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, animate, useInView } from 'framer-motion';
-import { impactStats } from '../../../../shared/config/projects/projectsData';
+import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '../../../../shared/lib/hooks/useMediaQuery';
 import styles from '../PrImpact.module.css';
 
@@ -28,6 +28,9 @@ const Counter = ({ value, duration = 2 }) => {
 
 
 export const PrImpact = () => {
+  const { t } = useTranslation();
+  const impactStats = t('projectsPage.impactStats', { returnObjects: true });
+
   const isDesktop = useMediaQuery('(min-width: 1025px)');
   const isTablet = useMediaQuery('(min-width: 601px) and (max-width: 1024px)');
   const isMobile = useMediaQuery('(max-width: 600px)');
@@ -86,7 +89,7 @@ export const PrImpact = () => {
           <div className={styles.grid}>
             {impactStats.map((stat, i) => (
               <motion.div 
-                key={stat.id}
+                key={i}
                 className={styles.statCard}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -125,7 +128,7 @@ export const PrImpact = () => {
                 >
                   {clonedStats.map((stat, index) => (
                     <div 
-                      key={`${stat.id}-${index}`} 
+                      key={`${index}`} 
                       className={`${styles.statCard} ${isTablet ? styles.tabletItem : styles.mobileItem}`}
                     >
                       <span className={styles.label}>{stat.label}</span>

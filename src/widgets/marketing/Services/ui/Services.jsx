@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '../../../../shared/lib/hooks/useMediaQuery';
 import { ServiceCardClassic } from './components/ServiceCardClassic';
 import { ServiceCardEditorial } from './components/ServiceCardEditorial';
@@ -8,31 +9,20 @@ import installImg from '../../../../assets/service_install.png';
 import maintainImg from '../../../../assets/service_maintain.png';
 import styles from '../Services.module.css';
 
-const services = [
-  {
-    num: '01',
-    title: 'Architecture & Engineering',
-    text: 'Custom solar system design based on site mechanics, energy goals, and architectural flow. We manage structural analysis and complete permitting.',
-    image: designImg,
-  },
-  {
-    num: '02',
-    title: 'Deployment & Grid Integration',
-    text: 'Precision panel mounting, inverter calibration, and flawless grid integration. We prioritize operational speed and technical rigor, maintaining uncompromising safety standards across every project.',
-    image: installImg,
-  },
-  {
-    num: '03',
-    title: 'Endurance & Optimization',
-    text: 'Proactive system monitoring, automated diagnostics, and rapid-response maintenance, ensuring your asset performs optimally for decades.',
-    image: maintainImg,
-  },
-];
+const imageMap = [designImg, installImg, maintainImg];
 
 const Services = () => {
   const isTablet = useMediaQuery('(min-width: 901px) and (max-width: 1024px)');
   const isMobile = useMediaQuery('(min-width: 601px) and (max-width: 900px)');
   const isVerySmallMobile = useMediaQuery('(max-width: 600px)');
+  const { t } = useTranslation();
+
+  const items = t('services.items', { returnObjects: true });
+  const services = items.map((item, index) => ({
+    ...item,
+    num: `0${index + 1}`,
+    image: imageMap[index],
+  }));
 
   return (
     <section className={styles.services} id="services">
@@ -44,11 +34,10 @@ const Services = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <span className="section-label">What We Do</span>
-          <h2 className="section-title">Full-Cycle Solar Solutions</h2>
+          <span className="section-label">{t('services.header_label')}</span>
+          <h2 className="section-title">{t('services.header_title')}</h2>
           <p className="section-subtitle">
-            From the first sketch to proactive lifetime optimization — we handle every
-            step of your solar journey.
+            {t('services.header_subtitle')}
           </p>
         </motion.div>
 

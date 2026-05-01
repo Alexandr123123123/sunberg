@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { Header } from './widgets/layout/Header';
 import { Footer } from './widgets/layout/Footer';
 import Home from './pages/Home';
@@ -18,13 +18,12 @@ function ScrollToTop() {
 }
 
 import { BookingModalProvider } from './app/providers/BookingModalProvider';
-
+import { RegionProvider } from './app/providers/RegionProvider';
 import { ChatWidget } from './widgets/marketing/ChatWidget';
 
-function App() {
+function AppLayout() {
   return (
-    <BookingModalProvider>
-      <ScrollToTop />
+    <RegionProvider>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -36,6 +35,18 @@ function App() {
       </Routes>
       <Footer />
       <ChatWidget />
+    </RegionProvider>
+  );
+}
+
+function App() {
+  return (
+    <BookingModalProvider>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Navigate to="/be/nl" replace />} />
+        <Route path="/:region/:lang/*" element={<AppLayout />} />
+      </Routes>
     </BookingModalProvider>
   )
 }

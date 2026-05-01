@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import rev1 from '../../../../assets/rev1_natural.png';
 import rev2 from '../../../../assets/rev2_coal.png';
 import rev3 from '../../../../assets/rev3_gen.png';
@@ -9,6 +10,8 @@ import { BookConsultationButton } from '../../../../shared/ui/BookConsultationBu
 import styles from '../Revolution.module.css';
 
 const Revolution = () => {
+  const { t } = useTranslation();
+
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
@@ -24,10 +27,10 @@ const Revolution = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <span className="section-label">a new era of energy</span>
-          <h2 className="section-title">Inside the Solar Revolution</h2>
+          <span className="section-label">{t('revolution.header_label')}</span>
+          <h2 className="section-title">{t('revolution.header_title')}</h2>
           <p className="section-subtitle">
-            The numbers speak for themselves. Solar energy isn't a future possibility — it's the current reality.
+            {t('revolution.header_subtitle')}
           </p>
         </motion.div>
 
@@ -45,24 +48,22 @@ const Revolution = () => {
               <div className={styles.contentDesktop}>
                 <span className={styles.stat}>30s</span>
                 <div className={styles.titleGroup}>
-                  <h3 className={styles.title}>A new solar roof appears in Europe every 30 seconds</h3>
+                  <h3 className={styles.title}>{t('revolution.ch1_title')}</h3>
                   <div className={styles.divider}></div>
                 </div>
                 <p className={styles.text}>
-                  While you've been reading this page, several more families have declared their energy independence.
-                  The scale of adoption is unprecedented, transforming neighborhoods into self-sustaining power plants.
+                  {t('revolution.ch1_text')}
                 </p>
               </div>
 
               {/* Mobile version: separated title and text cards */}
               <div className={styles.mobileTitleBlock}>
-                <h3 className={styles.title}>A new solar roof appears in Europe every 30 seconds</h3>
+                <h3 className={styles.title}>{t('revolution.ch1_title')}</h3>
                 <div className={styles.divider}></div>
               </div>
               <div className={styles.mobileTextBlock}>
                 <p className={styles.text}>
-                  While you've been reading this page, several more families have declared their energy independence.
-                  The scale of adoption is unprecedented, transforming neighborhoods into self-sustaining power plants.
+                  {t('revolution.ch1_text')}
                 </p>
               </div>
             </div>
@@ -87,23 +88,21 @@ const Revolution = () => {
               <div className={styles.contentDesktop}>
                 <span className={styles.stat}>2024</span>
                 <div className={styles.titleGroup}>
-                  <h3 className={styles.title}>Solar generation surpassed coal in the US for the first time</h3>
+                  <h3 className={styles.title}>{t('revolution.ch2_title')}</h3>
                   <div className={styles.divider}></div>
                 </div>
                 <p className={styles.text}>
-                  A technology that dominated the global energy landscape for over a century is yielding to something cleaner.
-                  We are witnessing a tectonic shift: the end of the fossil fuel era and the rise of the sun as the world's primary engine.
+                  {t('revolution.ch2_text')}
                 </p>
               </div>
 
               <div className={styles.mobileTitleBlock}>
-                <h3 className={styles.title}>Solar generation surpassed coal in the US for the first time</h3>
+                <h3 className={styles.title}>{t('revolution.ch2_title')}</h3>
                 <div className={styles.divider}></div>
               </div>
               <div className={styles.mobileTextBlock}>
                 <p className={styles.text}>
-                  A technology that dominated the global energy landscape for over a century is yielding to something cleaner.
-                  We are witnessing a tectonic shift: the end of the fossil fuel era and the rise of the sun as the world's primary engine.
+                  {t('revolution.ch2_text')}
                 </p>
               </div>
             </div>
@@ -122,10 +121,9 @@ const Revolution = () => {
               <div className={styles.overlay}>
                 <div className={styles.overlayContent}>
                   <span className={styles.stat}>13 t</span>
-                  <h3 className={styles.title}>One panel saves 13 tons of coal over its life</h3>
+                  <h3 className={styles.title}>{t('revolution.ch3_title')}</h3>
                   <p className={styles.text}>
-                    Your roof isn't just space; it's a massive untapped resource. A single 500W panel prevents
-                    an entire truckload of coal from being mined and burned.
+                    {t('revolution.ch3_text')}
                   </p>
                 </div>
               </div>
@@ -145,23 +143,21 @@ const Revolution = () => {
               <div className={styles.contentDesktop}>
                 <span className={styles.stat}>50%</span>
                 <div className={styles.titleGroup}>
-                  <h3 className={styles.title}>Half of all new power capacity worldwide is now solar</h3>
+                  <h3 className={styles.title}>{t('revolution.ch4_title')}</h3>
                   <div className={styles.divider}></div>
                 </div>
                 <p className={styles.text}>
-                  In just a decade, solar's global share grew from 0.5% to 6%. Current trajectories show
-                  that solar will dominate the grid by 2030. This is the only logical path forward for a resilient power system.
+                  {t('revolution.ch4_text')}
                 </p>
               </div>
 
               <div className={styles.mobileTitleBlock}>
-                <h3 className={styles.title}>Half of all new power capacity worldwide is now solar</h3>
+                <h3 className={styles.title}>{t('revolution.ch4_title')}</h3>
                 <div className={styles.divider}></div>
               </div>
               <div className={styles.mobileTextBlock}>
                 <p className={styles.text}>
-                  In just a decade, solar's global share grew from 0.5% to 6%. Current trajectories show
-                  that solar will dominate the grid by 2030.
+                  {t('revolution.ch4_text_mobile')}
                 </p>
               </div>
             </div>
@@ -183,13 +179,12 @@ const Revolution = () => {
             </div>
             <div className={styles.content}>
               <div className={styles.contentDesktop}>
-                <h3 className={styles.title}>Your Roof Is Your Most Valuable Asset</h3>
+                <h3 className={styles.title}>{t('revolution.ch5_title')}</h3>
                 <p className={styles.text}>
-                  Homes with solar panels sell for 4.1–6.8% more on average. It's a dual benefit:
-                  you eliminate monthly liabilities while adding tens of thousands to your net worth.
+                  {t('revolution.ch5_text')}
                 </p>
                 <div className={styles.accent}>
-                  Solar pays you twice: first on your utility bills, and finally on your property valuation.
+                  {t('revolution.ch5_accent')}
                 </div>
                 <div className={styles.cta}>
                   <BookConsultationButton variant="dark" />
@@ -197,13 +192,12 @@ const Revolution = () => {
               </div>
 
               <div className={styles.mobileTitleBlock}>
-                <h3 className={styles.title}>Your Roof Is Your Most Valuable Asset</h3>
+                <h3 className={styles.title}>{t('revolution.ch5_title')}</h3>
                 <div className={styles.divider}></div>
               </div>
               <div className={styles.mobileTextBlock}>
                 <p className={styles.text}>
-                  Homes with solar panels sell for 4.1–6.8% more on average. You eliminate monthly liabilities
-                  while adding tens of thousands to your net worth.
+                  {t('revolution.ch5_text_mobile')}
                 </p>
                 <div className={styles.cta}>
                   <BookConsultationButton variant="dark" />

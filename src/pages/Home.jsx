@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Hero } from '../widgets/marketing/Hero';
 import { Revolution } from '../widgets/marketing/Revolution';
 import { About } from '../widgets/marketing/About';
@@ -12,21 +13,25 @@ import { Testimonials } from '../widgets/marketing/Testimonials';
 import { Faq } from '../widgets/support/Faq';
 import { Contact } from '../widgets/marketing/Contact';
 
-const Home = () => (
-  <main>
-    <Hero />
-    <Revolution />
-    <Partners />
-    <About />
-    <CtaBlock variant="surface" />
-    <Services />
-    <TrustStrip />
-    <HowItWorks />
-    <Projects />
-    <Testimonials />
-    <Faq />
-    <Contact />
-  </main>
-);
+const Home = () => {
+  const { t } = useTranslation();
+
+  return (
+    <main>
+      <Hero />
+      <Revolution />
+      <Partners />
+      <About />
+      <CtaBlock variant="surface" />
+      <Services />
+      <TrustStrip />
+      <HowItWorks />
+      <Projects />
+      <Testimonials />
+      <Faq />
+      <Contact />
+    </main>
+  );
+};
 
 export default Home;

@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import heroImg from '../../../../assets/hero_v2.png';
 import { Button } from '../../../../shared/ui/Button';
 import styles from '../Hero.module.css';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -39,18 +42,17 @@ const Hero = () => {
           variants={containerVariants}
         >
           <motion.span className={styles.label} variants={itemVariants}>
-            Solar Energy Solutions
+            {t('hero.label')}
           </motion.span>
           <motion.h1 className={styles.title} variants={itemVariants}>
-            Powering the Future with Clean Energy
+            {t('hero.title')}
           </motion.h1>
           <motion.p className={styles.desc} variants={itemVariants}>
-            We design, install, and maintain high-performance solar systems for
-            homes and businesses. Lower your bills while building a sustainable tomorrow.
+            {t('hero.desc')}
           </motion.p>
           <motion.div className={styles.actions} variants={itemVariants}>
-            <Button href="#contact" variant="primary">Start Your Project</Button>
-            <Button href="#services" variant="outline">Our Services</Button>
+            <Button href="#contact" variant="primary">{t('hero.btn_start')}</Button>
+            <Button href="#services" variant="outline">{t('hero.btn_services')}</Button>
           </motion.div>
         </motion.div>
       </div>

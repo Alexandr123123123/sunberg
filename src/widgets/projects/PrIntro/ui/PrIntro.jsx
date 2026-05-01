@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import styles from '../PrIntro.module.css';
 import birdImg from '../../../../assets/images/pr-intro-bird.png';
 
 const PrIntro = () => {
+  const { t } = useTranslation();
   return (
     <section className={styles.intro}>
       <div className={styles.birdWrapper}>
@@ -16,7 +18,7 @@ const PrIntro = () => {
           transition={{ duration: 1.2, delay: 0.4 }}
         />
       </div>
-      <div className={styles.accent}>SELECTED</div>
+      <div className={styles.accent}>{t('projectsPage.intro.accent')}</div>
       <div className="container">
         <div className={styles.inner}>
           <div className={styles.topWrapper}>
@@ -26,11 +28,11 @@ const PrIntro = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <span className={styles.label}>Our Portfolio</span>
-              <h1 className={styles.title}>
-                Engineering the <br />
-                Energy Landscape.
-              </h1>
+              <span className={styles.label}>{t('projectsPage.intro.label')}</span>
+              <h1 
+                className={styles.title} 
+                dangerouslySetInnerHTML={{ __html: t('projectsPage.intro.title') }} 
+              />
             </motion.div>
           </div>
           
@@ -41,9 +43,7 @@ const PrIntro = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <p className={styles.desc}>
-              A showcase of our technical expertise in solar energy. 
-              From high-efficiency residential systems to versatile 
-              commercial and specialized energy deployments.
+              {t('projectsPage.intro.desc')}
             </p>
           </motion.div>
         </div>

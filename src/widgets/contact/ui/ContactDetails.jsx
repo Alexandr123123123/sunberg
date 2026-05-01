@@ -1,27 +1,19 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import styles from './ContactDetails.module.css';
 
-const contactItems = [
-  {
-    icon: '✆',
-    label: 'Phone',
-    value: '+1 (512) 000-0000',
-  },
-  {
-    icon: '✉',
-    label: 'Email',
-    value: 'hello@sunberg.energy',
-  },
-  {
-    icon: '⌖',
-    label: 'Office',
-    value: '201 Solar Way, Austin, TX 78701',
-  }
-];
+const icons = ['✆', '✉', '⌖'];
 
 export const ContactDetails = () => {
+  const { t } = useTranslation();
   const [copiedIndex, setCopiedIndex] = useState(null);
+
+  const rawDetails = t('contactPage.details', { returnObjects: true });
+  const contactItems = Array.isArray(rawDetails) ? rawDetails.map((item, i) => ({
+    ...item,
+    icon: icons[i]
+  })) : [];
 
   const handleCopy = (value, index) => {
     navigator.clipboard.writeText(value);
@@ -34,7 +26,7 @@ export const ContactDetails = () => {
       <div className="container">
         <div className={styles.grid}>
           {contactItems.map((item, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className={styles.card}
               initial={{ opacity: 0, y: 20 }}
@@ -48,10 +40,10 @@ export const ContactDetails = () => {
                 <span className={styles.label}>{item.label}</span>
                 <div className={styles.value}>{item.value}</div>
               </div>
-              
+
               <div className={styles.copyIcon}>
                 {copiedIndex === index ? (
-                  <span className={styles.copiedText}>Copied!</span>
+                  <span className={styles.copiedText}>{t('contactPage.copied')}</span>
                 ) : (
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>

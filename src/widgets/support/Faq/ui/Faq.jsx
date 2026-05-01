@@ -1,12 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { faqItems as defaultItems } from '../../../../shared/config/services/servicesData';
+import { useTranslation } from 'react-i18next';
 import { IconChevron } from '../../../../shared/ui/icon';
 import { useFaqControl } from '../../../../features/faq-accordion-control';
 import styles from '../Faq.module.css';
 
-const Faq = ({ items = defaultItems, title = "Common questions", label = "Frequently asked", subtitle = "Everything you need to know before going solar.", fadeUp }) => {
+const Faq = ({ items, title, label, subtitle, fadeUp }) => {
   const { openId, toggleItem } = useFaqControl();
+  const { t } = useTranslation();
+
+  const displayItems = items || t('faq.items', { returnObjects: true });
+  const displayTitle = title || t('faq.title');
+  const displayLabel = label || t('faq.label');
+  const displaySubtitle = subtitle || t('faq.subtitle');
 
   return (
     <section className={styles.faq} id="faq">
@@ -18,12 +24,12 @@ const Faq = ({ items = defaultItems, title = "Common questions", label = "Freque
           whileInView={fadeUp ? "visible" : false}
           viewport={{ once: true }}
         >
-          <span className="section-label">{label}</span>
-          <h2 className="section-title">{title}</h2>
-          <p className="section-subtitle">{subtitle}</p>
+          <span className="section-label">{displayLabel}</span>
+          <h2 className="section-title">{displayTitle}</h2>
+          <p className="section-subtitle">{displaySubtitle}</p>
         </motion.div>
         <div className={styles.list}>
-          {items.map((item, i) => (
+          {displayItems.map((item, i) => (
             <div
               className={`${styles.item}${openId === i ? ` ${styles.itemOpen}` : ''}`}
               key={i}

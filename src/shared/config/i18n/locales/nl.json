@@ -1,0 +1,767 @@
+{
+  "home": {
+    "test_title": "Sunberg Platform (Dutch)"
+  },
+  "hero": {
+    "label": "Zonne-energieoplossingen",
+    "title": "De toekomst van stroom voorzien van schone energie",
+    "desc": "Wij ontwerpen, installeren en onderhouden hoogwaardige zonnesystemen voor woningen en bedrijven. Verlaag uw rekeningen terwijl u bouwt aan een duurzame toekomst.",
+    "btn_start": "Start uw project",
+    "btn_services": "Onze diensten"
+  },
+  "about": {
+    "label": "Over Sunberg",
+    "title": "Bouwen aan een schonere toekomst",
+    "description": "slaat een brug tussen hoogwaardige techniek en duurzaam ontwerp om de schone energie-infrastructuur van morgen te bouwen. Wij geloven dat de overgang naar zonne-energie een moeiteloze evolutie moet zijn - waarbij professionele systeemarchitectuur de veelvoorkomende valkuilen van niet-passende componenten en inefficiënt ontwerp elimineert, waardoor absolute prestaties vanaf de eerste dag worden gegarandeerd.",
+    "points": [
+      {
+        "title": "Turnkey zonne-energie-infrastructuur",
+        "text": "Wij beheren de volledige levenscyclus in eigen beheer - en zorgen voor een vlekkeloze systeemarchitectuur en nauwkeurige uitvoering - om de hoogste normen op het gebied van technische kwaliteit en prestaties op de lange termijn te garanderen."
+      },
+      {
+        "title": "Data-gedreven schaalbaarheid",
+        "text": "Levering van Tier-1 hardware en nauwkeurige opbrengstberekeningen voor projecten variërend van particuliere woningen tot commerciële faciliteiten."
+      }
+    ],
+    "milestones": [
+      "Betrouwbaarheid",
+      "Precisie",
+      "Visie"
+    ],
+    "manifesto_text": "“De overstap naar zonne-energie gaat niet alleen over het behoud van de planeet - het gaat over slim vermogensbeheer op de lange termijn. Wij zijn hier om die transitie vlekkeloos vorm te geven.”",
+    "manifesto_signature": "Aleksey Sunberg, Oprichter"
+  },
+  "partners": {
+    "label": "Het stellen van de norm voor technische uitmuntendheid in zonne-energie-infrastructuur"
+  },
+  "ctaBlock": {
+    "title": "Klaar om uw energie-onafhankelijkheid vorm te geven?",
+    "description": "Ontvang binnen 48 uur een professionele prognose voor zonneprestaties en een aangepaste systeemarchitectuur."
+  },
+  "services": {
+    "header_label": "Wat we doen",
+    "header_title": "Full-Cycle zonne-energieoplossingen",
+    "header_subtitle": "Van de eerste schets tot proactieve levenslange optimalisatie — we beheren elke stap van uw zonnereis.",
+    "items": [
+      {
+        "title": "Architectuur & Engineering",
+        "text": "Aangepast ontwerp van zonnestelsels op basis van locatiemechanica, energiedoelen en architectonische flow. We beheren de structurele analyse en de volledige vergunningverlening."
+      },
+      {
+        "title": "Inzet & Netwerkintegratie",
+        "text": "Nauwkeurige paneelmontage, omvormerkalibratie en vlekkeloze netwerkintegratie. We geven prioriteit aan operationele snelheid en technische nauwkeurigheid, waarbij we compromisloze veiligheidsnormen handhaven voor elk project."
+      },
+      {
+        "title": "Uithoudingsvermogen & Optimalisatie",
+        "text": "Proactieve systeembewaking, geautomatiseerde diagnostiek en snel reagerend onderhoud, zodat uw vermogen tientallen jaren optimaal presteert."
+      }
+    ]
+  },
+  "trustStrip": {
+    "stats": [
+      {
+        "number": "2 TW",
+        "label": "Cumulatieve wereldwijde capaciteit"
+      },
+      {
+        "number": "55%",
+        "label": "Wereldwijd aandeel zonne-energie van China"
+      },
+      {
+        "number": "90%",
+        "label": "Daling van de kosten voor zonne-energie sinds 2010"
+      }
+    ]
+  },
+  "howItWorks": {
+    "header_label": "Hoe het werkt",
+    "header_title": "Van aanvraag tot schone energie in 4 stappen",
+    "header_subtitle": "We hebben elk deel van het proces gestroomlijnd, zodat u zich kunt concentreren op wat belangrijk is: geld en de planeet besparen.",
+    "steps": [
+      {
+        "title": "Overleg",
+        "desc": "We bespreken uw doelen op het gebied van energie-efficiëntie en geven een voorlopige kostenraming — geheel kosteloos."
+      },
+      {
+        "title": "Systeemonderzoek & Ontwerp",
+        "desc": "Onze ingenieurs bezoeken uw eigendom, analyseren de dakoriëntatie, schaduw en structurele capaciteit. Vervolgens maken we een op maat gemaakt systeemontwerp."
+      },
+      {
+        "title": "Installatie",
+        "desc": "Onze gecertificeerde bemanning installeert uw systeem in 1-3 dagen. We regelen alle vergunningen, inspecties en papierwerk voor netaansluiting."
+      },
+      {
+        "title": "Activering & Ondersteuning",
+        "desc": "Uw systeem gaat live en begint onmiddellijk met het genereren van besparingen. Wij bieden continu onderhoud en technische ondersteuning."
+      }
+    ]
+  },
+  "projects": {
+    "p1_tag": "Landbouwinnovatie",
+    "p1_title": "Agrivoltaics: De toekomst van dubbel gebruik",
+    "p1_desc": "Agrivoltaics combineren landbouw en zonne-energie in een symbiotisch systeem. Door panelen boven landbouwgrond te plaatsen, optimaliseert deze technologie het landgebruik, verbetert het de bodemvochtigheid door schaduw en creëert het een veerkrachtig microklimaat voor duurzame voedselproductie.",
+    "p2_tag": "Aquatische infrastructuur",
+    "p2_title": "Drijvende zonne-energie: onbenut potentieel",
+    "p2_desc": "Drijvende zonne-energie, of floatovoltaics, installeert fotovoltaïsche modules op wateroppervlakken. Deze systemen verminderen verdamping, verminderen algengroei en profiteren van natuurlijke waterkoeling die de energie-efficiëntie verbetert in vergelijking met op land gebaseerde arrays."
+  },
+  "testimonials": {
+    "header_label": "Verhalen van klanten",
+    "header_title": "Wat onze klanten zeggen",
+    "items": [
+      {
+        "text": "Sunberg maakte de overstap naar zonne-energie moeiteloos. Vanaf het eerste telefoontje tot het aanzetten van de schakelaar werd alles professioneel afgehandeld. Onze energierekening daalde in het eerste kwartaal met 78%.",
+        "name": "Sarah Mitchell",
+        "role": "Huiseigenaar, Austin TX",
+        "rating": 5
+      },
+      {
+        "text": "We hadden een betrouwbare partner nodig voor de installatie van ons kantorenpark. Sunberg leverde een systeem van 340 kW op schema en binnen het budget. Hun monitoringplatform is uitstekend.",
+        "name": "Erik Johansson",
+        "role": "Directeur Facilitaire Zaken, Lumina Estate Group",
+        "rating": 5
+      },
+      {
+        "text": "Wat de meeste indruk op me maakte, was de transparantie. Geen verborgen kosten, geen verrassingen. Het systeem draait nu twee jaar feilloos en hun ondersteuningsteam reageert altijd snel.",
+        "name": "Maria García",
+        "role": "Huiseigenaar, Barcelona",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "label": "Veelgestelde vragen",
+    "title": "Algemene vragen",
+    "subtitle": "Alles wat u moet weten voordat u overstapt op zonne-energie.",
+    "items": [
+      {
+        "q": "Wat gebeurt er met de efficiëntie van panelen na 10 jaar gebruik?",
+        "a": "Onze premium fotovoltaïsche modules hebben een degradatiegraad van slechts 0,4% per jaar — aanzienlijk onder het branchegemiddelde van 0,7%. Na 10 jaar zal uw systeem nog steeds op ongeveer 96% van zijn oorspronkelijke capaciteit werken. Na 25 jaar garanderen wij een minimale output van 87,4%."
+      },
+      {
+        "q": "Hoe presteert het systeem tijdens een volledige stroomuitval van het elektriciteitsnet?",
+        "a": "Systemen die zijn uitgerust met ons hybride omvormer- en batterijpakket schakelen binnen 20 milliseconden automatisch over naar de eilandmodus — snel genoeg zodat de meeste apparaten de uitval niet eens merken. Standaard netgebonden systemen zonder opslag worden uitgeschakeld volgens de wettelijke vereisten."
+      },
+      {
+        "q": "Hoe presteert het systeem tijdens bewolkte dagen of in de winter?",
+        "a": "Moderne hoogrenderende modules zijn zeer gevoelig voor het volledige lichtspectrum, wat betekent dat ze zelfs op bewolkte dagen stroom genereren. Hoewel de productie in de winter lager is vanwege de kortere dagen, is onze systeemarchitectuur geoptimaliseerd voor efficiëntie bij weinig licht, waardoor het hele jaar door een gestage energiestroom wordt gegarandeerd."
+      },
+      {
+        "q": "Moet ik de panelen handmatig schoonmaken of onderhoud plegen?",
+        "a": "Sunberg systemen zijn ontworpen voor minimaal onderhoud. In de meeste klimaten is regenval voldoende om panelen schoon te houden. Onze technische ondersteuning en moderniseringsprogramma's zorgen er echter voor dat uw systeem in topconditie blijft met periodieke deskundige gezondheidscontroles."
+      },
+      {
+        "q": "Kan ik het opladen van mijn elektrische voertuig (EV) integreren in het zonne-ecosysteem?",
+        "a": "Absoluut. Met onze smart-home energiesynchronisatie kunt u prioriteit geven aan het opladen van uw EV wanneer de zonneproductie op zijn hoogtepunt is. Deze \"Solar-to-EV\"-logica zorgt ervoor dat uw auto wordt aangedreven door de schoonste en goedkoopste energie die beschikbaar is, waardoor uw besparingen worden gemaximaliseerd."
+      },
+      {
+        "q": "Hoe berekent u de ROI-prognoses en welke aannames gebruikt u?",
+        "a": "Onze projecties maken gebruik van 10-jarige gelokaliseerde instralingsgegevens van satellietbronnen, werkelijke trends in de stijging van de energietarieven (doorgaans 3-5% per jaar), geverifieerde degradatiecurves van panelen en uw werkelijke verbruiksprofiel. We modelleren bewust conservatieve scenario's — onze klanten presteren doorgaans 8-12% beter dan de prognoses."
+      },
+      {
+        "q": "Welke garanties worden geboden voor de systeemonderdelen?",
+        "a": "We werken alleen samen met Tier 1 fabrikanten en bieden een standaard 25-jarige lineaire prestatiegarantie voor modules and 10- tot 15-jarige garanties voor omvormers en opsragsystemen. Daarnaast biedt Sunberg een uitgebreide garantie op de structurele integriteit van de gehele installatie."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Neem contact op",
+    "title": "Laten we bouwen aan uw zonne-toekomst",
+    "desc": "Of u nu opties verkent of klaar bent om te beginnen — neem contact op met ons team voor een projectbeoordeling.",
+    "email_label": "E-mail",
+    "phone_label": "Telefoon",
+    "office_label": "Kantoor",
+    "office_text": "201 Solar Way, Austin, TX 78701",
+    "form_name": "Uw naam",
+    "form_email": "E-mailadres",
+    "form_subject": "Onderwerp",
+    "form_message": "Vertel ons over uw project...",
+    "btn_send": "Bericht versturen"
+  },
+  "aboutPage": {
+    "hero": {
+      "label": "Onze missie",
+      "title_pre": "De toekomst ontwerpen <br /> van ",
+      "title_highlight": "Zonne-architectuur.",
+      "desc": "Opgericht op basis van de principes van technische stritheid en milieubeheer, is Sunberg meer dan een leverancier van zonne-energie. Wij zijn architecten van energie-onafhankelijkheid en overbruggen de kloof tussen hoogwaardige techniek en duurzaam leven."
+    },
+    "philosophy": {
+      "label": "Onze filosofie",
+      "title_pre": "Verder dan installatie: <br /> ",
+      "title_highlight": "Architectonische integriteit.",
+      "desc": "Wij geloven dat zonne-energie de esthetische en structurele waarde van uw eigendom moet versterken en niet in gevaar mag brengen. Onze aanpak combineert verfijnd minimalistisch design met strenge technische normen.",
+      "principles": [
+        {
+          "title": "Structureel respect",
+          "text": "We monteren niet zomaar systemen; we integreren ze. Elk ontwerp respecteert de architectonische integriteit en de esthetische flow van uw eigendom."
+        },
+        {
+          "title": "Duurzaamheid eerst",
+          "text": "We bouwen voor de komende decennia, niet voor de jaren. Onze systemen zijn gebouwd om een generatie te overleven met behulp van de meest veerkrachtige materialen en componenten."
+        },
+        {
+          "title": "Strategische vrijheid",
+          "text": "Voor Sunberg is energie-onafhankelijkheid de ultieme uitdrukking van vrijheid. We ontwerpen veerkrachtige ecosystemen die u totale soevereiniteit geven over uw energieproductie, waardoor u onafhankelijk bent van netbeperkingen en een duidelijk pad hebt naar een zelfvoorzienende toekomst."
+        }
+      ]
+    },
+    "manifesto": {
+      "text": "“We installeren niet alleen zonnepanelen; we ontwerpen energie-ecosystemen die gemeenschappen versterken en de architectonische ziel van onze landschappen behouden.”",
+      "signature": "Erik Sundberg, Oprichter"
+    },
+    "tech": {
+      "label": "Engineering Focus",
+      "title_pre": "N-Type ",
+      "title_highlight": "TOPCon",
+      "title_post": " Efficiëntie",
+      "desc": "Volgende generatie Tunnel Oxide Passivated Contact-modules die ongeëvenaarde conversiepercentages en stabiliteit op de lange termijn bereiken.",
+      "stats": [
+        {
+          "val": "22.5%",
+          "lab": "Piek efficiëntie"
+        },
+        {
+          "val": "30 jaar",
+          "lab": "Prestatiegarantie"
+        },
+        {
+          "val": "0.4%",
+          "lab": "Jaarlijkse degradatie"
+        }
+      ]
+    },
+    "values": [
+      {
+        "title": "Structureel respect",
+        "desc": "Engineering die de bestaande architectuur eert, en zorgt voor een naadloze integratie van zonnetechnologie met de gebouwde omgeving."
+      },
+      {
+        "title": "Milieubeheer",
+        "desc": "Diepgaande toewijding aan het behoud van natuurlijke hulpbronnen en het minimaliseren van de CO2-voetafdruk van elk energieproject dat we ondernemen."
+      },
+      {
+        "title": "Precisie-engineering",
+        "desc": "Geavanceerde engineeringnormen toegepast op elke berekening, wat zorgt voor een maximale opbrengst en een ongeëvenaarde levensduur van het systeem."
+      },
+      {
+        "title": "Ecosysteem-mindset",
+        "desc": "Het bouwen van intelligente energienetwerken die functioneren als verenigde ecosystemen, en zorgen voor stabiliteit en autonomie gedurende decennia."
+      }
+    ],
+    "stats": [
+      {
+        "value": 500,
+        "unit": "B$",
+        "label": "Kapitaalverschuiving",
+        "desc": "De jaarlijkse wereldwijde investeringen in zonne-energie hebben de 500 miljard dollar overschreden, waarmee alle andere opwekkingsbronnen worden overtroffen."
+      },
+      {
+        "value": 600,
+        "unit": "GW",
+        "label": "Jaarlijkse groei",
+        "desc": "Totale zonne-energiecapaciteit toegevoegd aan het wereldwijde elektriciteitsnet in de afgelopen 12 maanden."
+      },
+      {
+        "value": 64,
+        "unit": "%",
+        "label": "Marktstijging",
+        "desc": "Groeisnelheid van nieuwe zonne-installaties begin 2025 vergeleken met 2024."
+      },
+      {
+        "value": 100,
+        "unit": "%",
+        "label": "Vraagmotor",
+        "desc": "Zonne- en windenergie voldeden in 2025 aan de gehele nieuwe wereldwijde vraag naar elektriciteit."
+      }
+    ],
+    "team": [
+      {
+        "name": "Erik Sundberg",
+        "role": "Oprichter & CEO",
+        "quote": "Engineering is de brug tussen menselijke ambitie en rentmeesterschap over onze planeet."
+      },
+      {
+        "name": "Clara Lindberg",
+        "role": "Lead Architectural Engineer",
+        "quote": "Zonnesystemen moeten esthetisch net zo verfijnd zijn als ze technisch nauwkeurig zijn."
+      },
+      {
+        "name": "Mikael Nilsson",
+        "role": "Technisch Directeur",
+        "quote": "We installeren niet zomaar panelen; we ontwerpen energie-onafhankelijkheid voor generaties."
+      }
+    ],
+    "testimonials": [
+      {
+        "text": "Sunbergs architectonische benadering van zonne-energie was precies what we nodig hadden voor ons monumentale pand. Ze respecteerden het ontwerp en leverden tegelijkertijd geavanceerde efficiëntie.",
+        "name": "Lars Svensson",
+        "role": "Particuliere Huiseigenaar",
+        "rating": 5
+      },
+      {
+        "text": "Het niveau van precisie in hun engineering is ongeëvenaard. Onze industriële faciliteit draait nu op 100% schone energie met nul downtime tijdens de transitie.",
+        "name": "Ingrid Berg",
+        "role": "Directeur Operaties, EcoLogistics",
+        "rating": 5
+      },
+      {
+        "text": "De samenwerking met Erik en zijn team was een naadloze ervaring. Ze verkopen niet alleen panelen; ze ontwerpen energie-onafhankelijkheid op de lange termijn.",
+        "name": "Anders Holm",
+        "role": "Oprichter, Alpine Heights",
+        "rating": 5
+      }
+    ]
+  },
+  "header": {
+    "home": "Home",
+    "about": "Over ons",
+    "services": "Diensten",
+    "projects": "Projecten",
+    "tech": "Zonnetechnologie",
+    "contact": "Contact"
+  },
+  "revolution": {
+    "header_label": "een nieuw tijdperk van energie",
+    "header_title": "Binnen de zonnerevolutie",
+    "header_subtitle": "De cijfers spreken voor zich. Zonne-energie is geen toekomstige mogelijkheid — het is de huidige realiteit.",
+    "ch1_title": "Elke 30 seconden verschijnt er een nieuw zonnedak in Europa",
+    "ch1_text": "Terwijl u deze pagina leest, hebben nog meer gezinnen hun energie-onafhankelijkheid uitgeroepen. De schaal van adoptie is ongekend en verandert buurten in zelfvoorzienende energiecentrales.",
+    "ch2_title": "Zonne-energie overtrof voor het eerst steenkool in de VS",
+    "ch2_text": "Een technologie die de wereldwijde energiemarkt meer dan een eeuw domineerde, maakt plaats voor iets schoners. We zijn getuige van een tektonische verschuiving: het einde van het tijdperk van fossiele brandstoffen en de opkomst van de zon als primaire motor ter wereld.",
+    "ch3_title": "Eén paneel bespaart tijdens zijn levensduur 13 ton steenkool",
+    "ch3_text": "Uw dak is niet zomaar ruimte; het is een enorme onbenutte bron. Een enkel paneel van 500 W voorkomt dat een hele vrachtwagenlading steenkool wordt gedolven en verbrand.",
+    "ch4_title": "De helft van alle nieuwe energiecapaciteit wereldwijd is nu zonne-energie",
+    "ch4_text": "In slechts tien jaar tijd groeide het wereldwijde aandeel van zonne-energie van 0,5% naar 6%. Huidige prognoses laten zien dat zonne-energie tegen 2030 het elektriciteitsnet zal domineren. Dit is het enige logische pad voorwaarts voor een veerkrachtig energiesysteem.",
+    "ch4_text_mobile": "In slechts tien jaar tijd groeide het wereldwijde aandeel van zonne-energie van 0,5% naar 6%. Huidige prognoses laten zien dat zonne-energie tegen 2030 het elektriciteitsnet zal domineren.",
+    "ch5_title": "Uw dak is uw meest waardevolle bezit",
+    "ch5_text": "Huizen met zonnepanelen verkopen gemiddeld voor 4,1–6,8% more. Het is een tweeledig voordeel: u elimineert maandelijkse verplichtingen en voegt tienduizenden euro's toe aan uw vermogen.",
+    "ch5_text_mobile": "Huizen met zonnepanelen verkopen gemiddeld voor 4,1–6,8% more. U elimineert maandelijkse verplichtingen en voegt tienduizenden euro's toe aan uw vermogen.",
+    "ch5_accent": "Zonne-energie betaalt u twee keer: eerst op uw energierekening, en tenslotte bij de waardebepaling van uw woning."
+  },
+  "servicesPage": {
+    "hero": {
+      "watermark": "DIENSTEN",
+      "label": "Onze mogelijkheden",
+      "title": "Uitmuntende techniek voor een duurzame toekomst",
+      "desc": "Wij gaan verder dan standaard zonne-installaties. Our aanpak is diepgaand analytisch, structureel rigoureus en onbeschaamd premium. Ontdek hoe we onafhankelijke energie-ecosystemen bouwen."
+    },
+    "sectors": [
+      {
+        "title": "Architectuur & Ontwerp",
+        "desc": "Schaduwanalyse, 3D-modellering en structureel ontwerp om het zonnepotentieel van uw dak te maximaliseren."
+      },
+      {
+        "title": "Inzet & Integratie",
+        "desc": "Professionele installatie van Tier-1 modules en hybride omvormers met volledige netwerk- en smart-home-synchronisatie."
+      },
+      {
+        "title": "Analytics & Beheer",
+        "desc": "Monitoring and proactief onderhoud zorgen voor maximale efficiëntie voor de komende decennia."
+      }
+    ],
+    "sectorsBtn": "Meer informatie",
+    "techBanner": {
+      "label": "Engineering Focus",
+      "title_pre": "Agrivoltaïsche ",
+      "title_highlight": "Synergie",
+      "desc": "Gelijktijdig landgebruik voor zonne-energie en gewas-teelt, waardoor de behoefte aan irrigatie met 30% afneemt en de algehele landproductiviteit met 60% toeneemt.",
+      "stats": [
+        {
+          "val": "-30%",
+          "lab": "Behoefte aan irrigatie"
+        },
+        {
+          "val": "+60%",
+          "lab": "Landefficiëntie"
+        },
+        {
+          "val": "Dubbel gebruik",
+          "lab": "Geoptimaliseerde opbrengst"
+        }
+      ]
+    },
+    "solutions": {
+      "label": "Sector Specialisatie",
+      "title": "Hoogwaardige oplossingen",
+      "items": [
+        {
+          "title": "Residentiële systemen",
+          "desc": "Het realiseren van duurzame onafhankelijkheid voor moderne woningen met een hoogwaardige esthetiek.",
+          "list": [
+            "BIPV op het dak & Retrofits",
+            "Smart-Home Energiesynchronisatie",
+            "Back-up batterijsystemen"
+          ]
+        },
+        {
+          "title": "Commercieel & Industrieel",
+          "desc": "Grootschalige energie-efficiëntie en ESG-afgestemde infrastructuur voor de toekomst van het bedrijfsleven.",
+          "list": [
+            "Grondgebonden stations",
+            "Peak Shaving Oplossingen",
+            "ESG Impact-rapportage"
+          ]
+        },
+        {
+          "title": "Infrastructuur & EV",
+          "desc": "Modulaire batterij-ecosystemen en snellaadnetwerken voor transport van de volgende generatie.",
+          "list": [
+            "Laadpunten voor EV-wagenparken",
+            "Microgrid-engineering",
+            "Opslag op nutsschaal"
+          ]
+        }
+      ]
+    },
+    "deepDive": {
+      "label": "Engineering Reis",
+      "title": "Technische Deep Dive",
+      "intro": "Verken de rigoureuze fasen van ons engineeringproces, van geavanceerde ontwerpmodellering tot proactief systeemonderhoud.",
+      "blocks": [
+        {
+          "phase": "01",
+          "tabs": [
+            {
+              "label": "Analyse",
+              "title": "Geavanceerde site mapping",
+              "text": "Elk Sunberg-project begint met een uitputtende analyse van de locatie. Onze ingenieurs gebruiken geavanceerde simulatiesoftware om de schaduwdynamiek en omgevingsfactoren te evalueren, waardoor het zonnepotentieel van uw dak met absolute precisie wordt geoptimaliseerd.",
+              "stat": {
+                "value": "15+",
+                "label": "Gegevensparameters"
+              },
+              "features": [
+                "Hoge precisie terreinanalyse",
+                "Analyse van het opwekkingspotentieel",
+                "In kaart brengen van de zonnestraling"
+              ]
+            },
+            {
+              "label": "Ontwerp",
+              "title": "Architectonisch concept",
+              "text": "We geven prioriteit aan esthetische harmonie en selecteren hoogwaardige componenten die de architectuur van uw eigendom aanvullen, terwijl de energieopbrengst wordt gemaximaliseerd door geavanceerde geometrie.",
+              "stat": {
+                "value": "Aangepast",
+                "label": "Ontwerpesthetiek"
+              },
+              "features": [
+                "Op maat gemaakte componentselectie",
+                "Beoordeling van de visuele impact",
+                "Naadloze structurele integratie"
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "02",
+          "tabs": [
+            {
+              "label": "Modules",
+              "title": "Premium module-engineering",
+              "text": "We maken gebruik van geavanceerde fotovoltaïsche modules met een toonaangevende efficiëntie, ontworpen voor superieure prestaties en minimale degradatie over hun verlengde levensduur.",
+              "stat": {
+                "value": "22.5%+",
+                "label": "Piek efficiëntie"
+              },
+              "features": [
+                "Hoge efficiëntie celarchitectuur",
+                "Geavanceerde fotovoltaïsche systemen",
+                "Superieure klimaatbestendigheid"
+              ]
+            },
+            {
+              "label": "Omvormers",
+              "title": "Hybride conversievermogen",
+              "text": "Onze hybride omvormers zijn het brein van uw systeem, in staat tot naadloze batterij-integratie en back-up-transities van milliseconden. Efficiëntie krijgt prioriteit bij elke fase van de stroomconversie.",
+              "stat": {
+                "value": "97.8%",
+                "label": "Conversiepercentage"
+              },
+              "features": [
+                "Geoptimaliseerde batterijlink",
+                "Slimme energie-optimalisatie",
+                "Naadloze back-up overgang"
+              ]
+            },
+            {
+              "label": "Montage",
+              "title": "Windbestendige integriteit",
+              "text": "Onze montagesystemen van geanodiseerd aluminium zijn ontworpen om extreme omstandigheden te weerstaan. Elke bevestiging is ontworpen voor maximale uittrekweerstand en structurele integriteit op de lange termijn.",
+              "stat": {
+                "value": "200km/u",
+                "label": "Windweerstand"
+              },
+              "features": [
+                "Corrosiebestendig geanodiseerd AL",
+                "Niet-penetrerende dakbevestigingen",
+                "Snelmontage uitlijnsysteem"
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "03",
+          "tabs": [
+            {
+              "label": "Ondersteuning",
+              "title": "Onwrikbare samenwerking",
+              "text": "Onze toewijding aan uw energie-onafhankelijkheid eindigt niet bij de installatie. Wij staan achter ons werk en zorgen ervoor dat u er nooit alleen voor staat en dat deskundige hulp altijd slechts een telefoontje verwijderd is.",
+              "stat": {
+                "value": "Altijd",
+                "label": "Klaar om te helpen"
+              },
+              "features": [
+                "Deskundige telefonische ondersteuning",
+                "Uitgebreide systeemtraining",
+                "Snelle technische reactie"
+              ]
+            },
+            {
+              "label": "Evolutie",
+              "title": "Technologische levenscyclus",
+              "text": "We houden een complete digitale blauwdruk bij van uw systeemconfiguratie. Naarmate de zonnetechnologie vordert, nemen we proactief contact op met moderniseringsopties om uw investering toonaangevend te houden.",
+              "stat": {
+                "value": "Toekomst",
+                "label": "Gereed"
+              },
+              "features": [
+                "Digitaal configuratielogboek",
+                "Volgende-gen technologie-integratie",
+                "Strategische systeemevolutie"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "floatBanner": {
+      "label": "Innovatiefocus",
+      "title_pre": "Floatovoltaïsche ",
+      "title_highlight": "Innovatie",
+      "desc": "Installatie van drijvende zonneparken op waterreservoirs. Water koelt de modules op natuurlijke wijze, waardoor de energieopbrengst met 5-10% toeneemt en de verdamping met 70% wordt verminderd.",
+      "stats": [
+        {
+          "value": "+10%",
+          "label": "Energieopbrengst"
+        },
+        {
+          "value": "-70%",
+          "label": "Waterverdamping"
+        },
+        {
+          "value": "Natuurlijk",
+          "label": "Koeleffect"
+        }
+      ]
+    },
+    "hardware": {
+      "label": "Zorg voor het ecosysteem",
+      "title": "Hardware Integriteit",
+      "intro": "We werken alleen samen met Tier 1-fabrikanten die onze obsessie met structurele logica en duurzaamheid op de lange termijn delen.",
+      "partners": [
+        {
+          "name": "LONGi",
+          "tagline": "Modules"
+        },
+        {
+          "name": "SMA",
+          "tagline": "Omvormers"
+        },
+        {
+          "name": "SolarEdge",
+          "tagline": "Optimizers"
+        },
+        {
+          "name": "Victron",
+          "tagline": "Opslag"
+        },
+        {
+          "name": "K2 Systems",
+          "tagline": "Montage"
+        },
+        {
+          "name": "Fronius",
+          "tagline": "Omvormers"
+        },
+        {
+          "name": "BYD",
+          "tagline": "Opslag"
+        },
+        {
+          "name": "Enphase",
+          "tagline": "Micro-omvormers"
+        },
+        {
+          "name": "Tesla",
+          "tagline": "Powerwall"
+        },
+        {
+          "name": "Trina Solar",
+          "tagline": "Modules"
+        },
+        {
+          "name": "Meyer Burger",
+          "tagline": "Modules"
+        },
+        {
+          "name": "Mounting Systems",
+          "tagline": "Montage"
+        }
+      ]
+    }
+  },
+  "projectsPage": {
+    "intro": {
+      "accent": "GESELECTEERD",
+      "label": "Ons portfolio",
+      "title": "Het energielandschap <br />vormgeven.",
+      "desc": "Een weergave van onze technische expertise in zonne-energie. Van hoogwaardige residentiële systemen tot veelzijdige commerciële en gespecialiseerde energie-installaties."
+    },
+    "impactStats": [
+      {
+        "label": "Net Zero Doel",
+        "value": 6,
+        "unit": "TW",
+        "desc": "De vereiste wereldwijde zonnecapaciteit tegen 2030 om internationale klimaatmijlpalen te bereiken."
+      },
+      {
+        "label": "Recyclebaarheid",
+        "value": 95,
+        "unit": "%",
+        "desc": "Moderne premium modules kenmerken zich door een hoge recyclebaarheid, wat de inzet van de sector voor het milieu onderstreept."
+      },
+      {
+        "label": "Zonnepotentieel",
+        "value": 10000,
+        "unit": "x",
+        "desc": "De zonne-energie die de aarde elk uur bereikt overtreft het totale wereldwijde jaarlijkse verbruik, waardoor het onze meest betrouwbare bron is."
+      }
+    ],
+    "featured": {
+      "title": "Arctic Data Sync",
+      "location": "Luleå, Zweden",
+      "quote": "Sunberg heeft niet zomaar panelen geïnstalleerd; ze hebben een emissievrije hartslag ontworpen voor onze meest kritieke infrastructuur.",
+      "author": "Erik Solberg, CTO",
+      "specs": [
+        {
+          "label": "Systeemgrootte",
+          "value": "2.4 MWp"
+        },
+        {
+          "label": "Technologie",
+          "value": "N-Type Bifacial"
+        },
+        {
+          "label": "Opslag",
+          "value": "1.2 MWh"
+        }
+      ]
+    },
+    "trustDefault": "Kwaliteit, innovatie, duurzaamheid: het ontwerpen van hoogwaardige zonne-ecosystemen voor een blijvende energie-impact.",
+    "trustSecond": "De toekomst ondersteunen: we installeren niet zomaar technologie; we ontwerpen een levenslange belofte van prestaties en onwrikbare samenwerking.",
+    "categories": [
+      {
+        "id": "all",
+        "label": "Alle projecten"
+      },
+      {
+        "id": "residential",
+        "label": "Residentieel"
+      },
+      {
+        "id": "commercial",
+        "label": "Commercieel"
+      },
+      {
+        "id": "industrial",
+        "label": "Industrieel"
+      }
+    ]
+  },
+  "techPage": {
+    "hero": {
+      "label": "Engineering Excellence",
+      "title": "De toekomst van zonnetechnologie",
+      "desc": "Bij Sunberg verleggen we de grenzen van energie-efficiëntie door middel van geavanceerde materialen, precisie-engineering en technische innovatie."
+    },
+    "milestones": [
+      {
+        "val": "1839",
+        "lab": "Edmond Becquerel ontdekt het fotovoltaïsche effect."
+      },
+      {
+        "val": "1883",
+        "lab": "Charles Fritts bouwt de eerste zonnecel op basis van selenium."
+      },
+      {
+        "val": "1958",
+        "lab": "Vanguard I wordt de eerste satelliet die op zonne-energie werkt."
+      },
+      {
+        "val": "1954",
+        "lab": "Bell Labs creëert de eerste praktische silicium zonnecel."
+      },
+      {
+        "val": "1973",
+        "lab": "Bouw van de eerste op zonne-energie werkende residentie."
+      },
+      {
+        "val": "2023",
+        "lab": "De wereldwijde zonnecapaciteit bereikt een historische mijlpaal van 1,5 TW."
+      }
+    ]
+  },
+  "contactPage": {
+    "hero": {
+      "watermark": "Aanvraag",
+      "label": "Neem contact op met Sunberg",
+      "title": "Het ontwerpen van uw <br /><span>Energie-onafhankelijkheid</span>",
+      "desc": "Of u nu residentiële oplossingen of systemen op industriële schaal verkent, ons engineeringteam staat klaar om uw pad naar duurzame energie te ontwerpen."
+    },
+    "details": [
+      { "label": "Telefoon", "value": "+1 (512) 000-0000" },
+      { "label": "E-mail", "value": "hello@sunberg.energy" },
+      { "label": "Kantoor", "value": "201 Solar Way, Austin, TX 78701" }
+    ],
+    "copied": "Gekopieerd!",
+    "trust": "Uw duurzame toekomst versterken: sluit u aan bij een gemeenschap van vooruitstrevende klanten die autonomie op het gebied van energie bereiken door onze met precisie ontworpen zonne-ecosystemen.",
+    "form": {
+      "consultation": "Consultatie",
+      "title": "Start uw Engineering Audit",
+      "desc": "Elk Sunberg-project begint met een diepgaand technisch inzicht in uw energiebehoeften. Deel uw visie en wij bieden u de basis om deze te realiseren.",
+      "benefits": [
+        { "title": "Voorlopige Audit", "desc": "Precisieanalyse van het zonnepotentieel van uw locatie op basis van lokale instralingsmodellering." },
+        { "title": "Technisch Ontwerp", "desc": "Een op maat gemaakt systeemarchitectuurproject dat is ontworpen om naadloos in uw eigendom te integreren." },
+        { "title": "Financieel Model", "desc": "Datagestuurde ROI- en besparingsprognoses berekend met behulp van huidige lokale energietarieven." }
+      ],
+      "fields": {
+        "name": "Volledige Naam",
+        "namePlaceholder": "Erik Sundberg",
+        "email": "E-mail",
+        "emailPlaceholder": "erik@voorbeeld.nl",
+        "phone": "Telefoonnummer",
+        "phonePlaceholder": "+31 00 000 00 00",
+        "subject": "Onderwerp",
+        "subjectPlaceholder": "Residentieel Zonneproject",
+        "details": "Projectdetails",
+        "detailsPlaceholder": "Vertel ons over uw project of locatie...",
+        "submit": "Aanvraag indienen"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Uitgebreide oplossingen voor zonne-energie — van ontwerp en engineering tot installatie en langdurig onderhoud.",
+    "colCompany": "Bedrijf",
+    "colServices": "Diensten",
+    "rights": "© 2026 Sunberg. Alle rechten voorbehouden.",
+    "builtWith": "Gebouwd met schone energie in gedachten.",
+    "links": {
+      "about": "Over ons",
+      "services": "Diensten",
+      "projects": "Projecten",
+      "contact": "Contact",
+      "design": "Ontwerp & Engineering",
+      "installation": "Installatie",
+      "monitoring": "Monitoring",
+      "maintenance": "Onderhoud"
+    }
+  }
+}

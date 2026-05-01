@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import styles from '../PrTrust.module.css';
 
 export const PrTrust = ({ children, paddingTop, paddingBottom }) => {
+  const { t } = useTranslation();
   const customStyle = {
     paddingTop: paddingTop !== undefined ? paddingTop : undefined,
     paddingBottom: paddingBottom !== undefined ? paddingBottom : undefined,
@@ -18,7 +20,7 @@ export const PrTrust = ({ children, paddingTop, paddingBottom }) => {
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
         >
-          {children || "Quality, Innovation, Sustainability: Engineering high-performance solar ecosystems for a lasting energy impact."}
+          {children || t('projectsPage.trustDefault')}
         </motion.p>
       </div>
     </section>

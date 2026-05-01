@@ -1,30 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import styles from '../AbPhilosophy.module.css';
 import leafImg from '../../../../assets/images/ab-organic-accent.png';
 import structuralImg from '../../../../assets/images/ab-philosophy-structural.png';
 import longevityImg from '../../../../assets/images/ab-philosophy-longevity.png';
 import ecosystemImg from '../../../../assets/images/ab-philosophy-ecosystem.png';
 
-const principles = [
-  {
-    title: 'Structural Respect',
-    text: 'We don’t just mount systems; we integrate them. Every design respects the architectural integrity and aesthetic flow of your property.',
-    image: structuralImg
-  },
-  {
-    title: 'Longevity First',
-    text: 'We engineer for the decades, not the years. Our systems are built to outlast a generation using the most resilient materials and components.',
-    image: longevityImg
-  },
-  {
-    title: 'Strategic Freedom',
-    text: 'For Sunberg, energy independence is the ultimate expression of freedom. We design resilient ecosystems that empower you with total sovereignty over your power production, providing autonomy from grid constraints and a clear path to a self-sufficient future.',
-    image: ecosystemImg
-  }
-];
+const images = [structuralImg, longevityImg, ecosystemImg];
 
 export const AbPhilosophy = () => {
+  const { t } = useTranslation();
+  
+  const rawPrinciples = t('aboutPage.philosophy.principles', { returnObjects: true });
+  const principles = rawPrinciples.map((p, i) => ({
+    ...p,
+    image: images[i]
+  }));
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -51,15 +44,13 @@ export const AbPhilosophy = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className={styles.label}>Our Philosophy</span>
+            <span className={styles.label}>{t('aboutPage.philosophy.label')}</span>
             <h2 className={styles.title}>
-              Beyond Installation: <br />
-              Architectural Integrity.
+              <span dangerouslySetInnerHTML={{ __html: t('aboutPage.philosophy.title_pre') }} />
+              {t('aboutPage.philosophy.title_highlight')}
             </h2>
             <p className={styles.desc}>
-              We believe that solar energy should enhance, not compromise, 
-              the aesthetic and structural value of your property. Our approach 
-              combines refined minimalist design with rigorous engineering standards.
+              {t('aboutPage.philosophy.desc')}
             </p>
             <div className={styles.leafWrapper}>
               <img src={leafImg} alt="" className={styles.leaf} />

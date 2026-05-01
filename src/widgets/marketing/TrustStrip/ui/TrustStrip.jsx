@@ -1,27 +1,16 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '../../../../shared/lib/hooks/useMediaQuery';
 import styles from '../TrustStrip.module.css';
-
-const stats = [
-  {
-    number: '2 TW',
-    label: 'Cumulative Global Capacity',
-  },
-  {
-    number: '55%',
-    label: "China's Global Solar Share",
-  },
-  {
-    number: '90%',
-    label: 'Solar Cost Drop Since 2010',
-  },
-];
 
 const TrustStrip = () => {
   const isDesktop = useMediaQuery('(min-width: 1025px)');
   const isTablet = useMediaQuery('(min-width: 601px) and (max-width: 1024px)');
   const isMobile = useMediaQuery('(max-width: 600px)');
+  const { t } = useTranslation();
+  
+  const stats = t('trustStrip.stats', { returnObjects: true });
   
   const [activeIndex, setActiveIndex] = useState(stats.length);
   const [isAnimating, setIsAnimating] = useState(false);
