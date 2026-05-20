@@ -763,5 +763,12 @@
       "monitoring": "Surveillance",
       "maintenance": "Maintenance"
     }
+  },
+  "chatWidget": {
+    "title": "Support Sunberg",
+    "status": "En ligne",
+    "welcomeMessage": "Bonjour ! Comment pouvons-nous vous aider aujourd'hui ?",
+    "operatorReply": "Merci pour votre message ! Notre expert sera avec vous sous peu.",
+    "placeholder": "Tapez votre message..."
   }
 }

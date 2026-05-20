@@ -927,5 +927,12 @@
       "monitoring": "Monitoreo",
       "maintenance": "Mantenimiento"
     }
+  },
+  "chatWidget": {
+    "title": "Soporte Sunberg",
+    "status": "En línea",
+    "welcomeMessage": "¡Hola! ¿Cómo podemos ayudarte hoy?",
+    "operatorReply": "¡Gracias por tu mensaje! Nuestro experto estará contigo en breve.",
+    "placeholder": "Escribe tu mensaje..."
   }
 }

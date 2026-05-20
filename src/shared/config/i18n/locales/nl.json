@@ -763,5 +763,12 @@
       "monitoring": "Monitoring",
       "maintenance": "Onderhoud"
     }
+  },
+  "chatWidget": {
+    "title": "Sunberg Ondersteuning",
+    "status": "Online",
+    "welcomeMessage": "Hallo! Hoe kunnen we u vandaag helpen?",
+    "operatorReply": "Bedankt voor uw bericht! Onze expert is zo bij u.",
+    "placeholder": "Typ uw bericht..."
   }
 }
