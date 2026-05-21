@@ -206,7 +206,7 @@ export const ChatWidget = () => {
     <div className={styles.wrapper}>
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
+          <motion.div
             className={styles.chatWindow}
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -222,20 +222,20 @@ export const ChatWidget = () => {
                       {t('chatWidget.status')}
                     </div>
                   </div>
-                  <button 
-                    onClick={() => setActiveView('none')} 
+                  <button
+                    onClick={() => setActiveView('none')}
                     style={{ background: 'none', border: 'none', color: '#fff', cursor: 'pointer', fontSize: '1.5rem' }}
                   >
                     &times;
                   </button>
                 </div>
-                
+
                 <div className={styles.selectorBody}>
                   <p className={styles.selectorIntro}>{t('chatWidget.chooseChannel')}</p>
-                  
+
                   <button onClick={handleSelectWhatsApp} className={styles.whatsappBtn}>
                     <svg className={styles.whatsappIcon} viewBox="0 0 24 24" width="20" height="20">
-                      <path fill="currentColor" d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.982L2 22l5.202-1.362a9.92 9.92 0 0 0 4.808 1.236h.005c5.507 0 9.99-4.478 9.99-9.987C22.005 6.479 17.52 2 12.012 2zm5.836 14.199c-.32.902-1.6 1.657-2.228 1.764-.539.092-1.24.168-3.61-.817-3.033-1.26-4.994-4.343-5.146-4.545-.152-.203-1.232-1.637-1.232-3.13 0-1.493.78-2.228 1.059-2.532.279-.304.609-.38.812-.38.203 0 .406.002.584.01.19.009.444-.073.697.538.26.627.888 2.167.964 2.32.076.152.127.33.025.533-.101.203-.152.33-.304.507-.152.177-.32.395-.457.532-.152.152-.31.317-.134.621.176.304.786 1.293 1.686 2.093.114.102.852.767 1.632 1.077.291.114.494.076.67-.127.177-.203.76-.887.964-1.191.203-.304.406-.253.67-.152.266.101 1.686.799 1.977.94.292.14.484.21.558.337.076.127.076.73-.244 1.632z"/>
+                      <path fill="currentColor" d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.982L2 22l5.202-1.362a9.92 9.92 0 0 0 4.808 1.236h.005c5.507 0 9.99-4.478 9.99-9.987C22.005 6.479 17.52 2 12.012 2zm5.836 14.199c-.32.902-1.6 1.657-2.228 1.764-.539.092-1.24.168-3.61-.817-3.033-1.26-4.994-4.343-5.146-4.545-.152-.203-1.232-1.637-1.232-3.13 0-1.493.78-2.228 1.059-2.532.279-.304.609-.38.812-.38.203 0 .406.002.584.01.19.009.444-.073.697.538.26.627.888 2.167.964 2.32.076.152.127.33.025.533-.101.203-.152.33-.304.507-.152.177-.32.395-.457.532-.152.152-.31.317-.134.621.176.304.786 1.293 1.686 2.093.114.102.852.767 1.632 1.077.291.114.494.076.67-.127.177-.203.76-.887.964-1.191.203-.304.406-.253.67-.152.266.101 1.686.799 1.977.94.292.14.484.21.558.337.076.127.076.73-.244 1.632z" />
                     </svg>
                     {t('chatWidget.chatOnWhatsApp')}
                   </button>
@@ -258,8 +258,8 @@ export const ChatWidget = () => {
                       {t('chatWidget.status')}
                     </div>
                   </div>
-                  <button 
-                    onClick={() => setActiveView('none')} 
+                  <button
+                    onClick={() => setActiveView('none')}
                     style={{ background: 'none', border: 'none', color: '#fff', cursor: 'pointer', fontSize: '1.5rem' }}
                   >
                     &times;
@@ -268,8 +268,8 @@ export const ChatWidget = () => {
 
                 <div className={styles.messages}>
                   {messages.map(msg => (
-                    <div 
-                      key={msg.id} 
+                    <div
+                      key={msg.id}
                       className={`${styles.message} ${msg.sender === 'user' ? styles.message_user : styles.message_operator} ${msg.status === 'error' ? styles.message_error : ''}`}
                     >
                       {msg.isTranslable ? t(msg.transKey) : msg.text}
@@ -290,9 +290,9 @@ export const ChatWidget = () => {
                 </div>
 
                 <form className={styles.inputArea} onSubmit={handleSend}>
-                  <input 
-                    type="text" 
-                    placeholder={t('chatWidget.placeholder')} 
+                  <input
+                    type="text"
+                    placeholder={t('chatWidget.placeholder')}
                     className={styles.input}
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}

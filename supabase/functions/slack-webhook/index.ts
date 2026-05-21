@@ -38,6 +38,26 @@ serve(async (req) => {
     if (messageType === 'consultation') {
       header = `*📞 ЗАЯВКА НА КОНСУЛЬТАЦИЮ (Форма обратной связи, Сессия ${sessionId}):*`;
     }
+
+    // Look up existing thread for this session in the database if threadTs is not provided
+    let resolvedThreadTs = threadTs;
+    if (!resolvedThreadTs && sessionId) {
+      try {
+        const { data: threadData } = await supabaseClient
+          .from("chat_threads")
+          .select("thread_ts")
+          .eq("session_id", sessionId)
+          .order("created_at", { ascending: false })
+          .limit(1)
+          .maybeSingle();
+        
+        if (threadData?.thread_ts) {
+          resolvedThreadTs = threadData.thread_ts;
+        }
+      } catch (e) {
+        console.error("Failed to look up thread from DB:", e);
+      }
+    }
     
     const slackBody: any = {
       channel: SLACK_CHANNEL_ID,
@@ -45,8 +65,9 @@ serve(async (req) => {
     };
     
     let threadReset = false;
-    if (threadTs) {
-      slackBody.thread_ts = threadTs;
+    if (resolvedThreadTs) {
+      slackBody.thread_ts = resolvedThreadTs;
+      slackBody.reply_broadcast = true;
     }
     
     try {
@@ -64,6 +85,7 @@ serve(async (req) => {
       if (!data.ok && slackBody.thread_ts) {
         console.log(`Slack error "${data.error}" with thread ${slackBody.thread_ts}. Retrying without thread_ts...`);
         delete slackBody.thread_ts;
+        delete slackBody.reply_broadcast;
         threadReset = true;
         
         res = await fetch("https://slack.com/api/chat.postMessage", {
@@ -77,8 +99,17 @@ serve(async (req) => {
         data = await res.json();
       }
 
+      // If the old thread was invalid, delete it from our mapping table
+      if (threadReset && resolvedThreadTs) {
+        try {
+          await supabaseClient.from("chat_threads").delete().eq("thread_ts", resolvedThreadTs);
+        } catch (e) {
+          console.error("Failed to delete stale thread mapping:", e);
+        }
+      }
+
       // Save thread mapping for new threads
-      const isNewThread = !threadTs || threadReset;
+      const isNewThread = !resolvedThreadTs || threadReset;
       if (data.ok && data.ts && isNewThread) {
         try {
           await supabaseClient.from("chat_threads").upsert(
