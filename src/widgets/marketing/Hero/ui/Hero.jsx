@@ -43,6 +43,9 @@ const Hero = () => {
           animate="visible"
           variants={containerVariants}
         >
+          <motion.div className={styles.versionBadge} variants={itemVariants}>
+            Version 1
+          </motion.div>
           <motion.span className={styles.label} variants={itemVariants}>
             {t('hero.label')}
           </motion.span>

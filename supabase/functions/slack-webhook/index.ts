@@ -25,6 +25,11 @@ serve(async (req) => {
     return new Response("Invalid JSON", { status: 400, headers: corsHeaders })
   }
 
+  // Create Supabase client for DB operations
+  const supabaseUrl = Deno.env.get("SUPABASE_URL") ?? "";
+  const supabaseKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
+  const supabaseClient = createClient(supabaseUrl, supabaseKey);
+
   // 1. From Website: Send to Slack
   if (payload.source === 'website') {
     const { sessionId, text, threadTs, messageType } = payload;
@@ -71,6 +76,19 @@ serve(async (req) => {
         });
         data = await res.json();
       }
+
+      // Save thread mapping for new threads
+      const isNewThread = !threadTs || threadReset;
+      if (data.ok && data.ts && isNewThread) {
+        try {
+          await supabaseClient.from("chat_threads").upsert(
+            { thread_ts: data.ts, session_id: sessionId },
+            { onConflict: 'thread_ts' }
+          );
+        } catch (e) {
+          console.error("Failed to save thread mapping:", e);
+        }
+      }
       
       return new Response(JSON.stringify({ 
         ok: data.ok, 
@@ -97,29 +115,45 @@ serve(async (req) => {
     
     if (event && event.type === "message" && !event.bot_id && event.thread_ts) {
       try {
-        const repliesRes = await fetch(`https://slack.com/api/conversations.replies?channel=${event.channel}&ts=${event.thread_ts}&limit=1`, {
-          headers: {
-            "Authorization": `Bearer ${SLACK_BOT_TOKEN}`,
-            "Content-Type": "application/x-www-form-urlencoded"
+        // 1. Look up session from chat_threads table
+        const { data: threadData } = await supabaseClient
+          .from("chat_threads")
+          .select("session_id")
+          .eq("thread_ts", event.thread_ts)
+          .single();
+
+        let resolvedSessionId = threadData?.session_id;
+
+        // 2. Fallback: parse from Slack message text (for legacy threads without DB mapping)
+        if (!resolvedSessionId) {
+          const repliesRes = await fetch(`https://slack.com/api/conversations.replies?channel=${event.channel}&ts=${event.thread_ts}&limit=1`, {
+            headers: {
+              "Authorization": `Bearer ${SLACK_BOT_TOKEN}`,
+              "Content-Type": "application/x-www-form-urlencoded"
+            }
+          });
+          const repliesData = await repliesRes.json();
+
+          if (repliesData.ok && repliesData.messages && repliesData.messages.length > 0) {
+            const match = repliesData.messages[0].text.match(/Сессия (session_[a-zA-Z0-9]+)/);
+            if (match && match[1]) {
+              resolvedSessionId = match[1];
+              // Save mapping for future lookups
+              try {
+                await supabaseClient.from("chat_threads").upsert(
+                  { thread_ts: event.thread_ts, session_id: resolvedSessionId },
+                  { onConflict: 'thread_ts' }
+                );
+              } catch (_) { /* best effort */ }
+            }
           }
-        });
-        
-        const repliesData = await repliesRes.json();
-        
-        if (repliesData.ok && repliesData.messages && repliesData.messages.length > 0) {
-          const parentMessage = repliesData.messages[0];
-          const match = parentMessage.text.match(/Сессия (session_[a-zA-Z0-9]+)/);
-          
-          if (match && match[1]) {
-            const sessionId = match[1];
-            const supabaseUrl = Deno.env.get("SUPABASE_URL") ?? "";
-            const supabaseKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
-            const supabase = createClient(supabaseUrl, supabaseKey);
-            
-            await supabase.from("chat_messages").insert([
-              { session_id: sessionId, text: event.text, sender: 'operator' }
-            ]);
-          }
+        }
+
+        // 3. Save operator message to DB
+        if (resolvedSessionId) {
+          await supabaseClient.from("chat_messages").insert([
+            { session_id: resolvedSessionId, text: event.text, sender: 'operator' }
+          ]);
         }
       } catch (err) {
         console.error("Error processing Slack event:", err);

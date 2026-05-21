@@ -189,6 +189,54 @@
   transform: translateX(3px);
 }
 
+/* Message status styles */
+
+.message_error {
+  opacity: 0.7;
+  border: 1px dashed #e74c3c;
+}
+
+.msgSending {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.75rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.msgErrorWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 0.8rem;
+}
+
+.msgErrorText {
+  color: #e74c3c;
+}
+
+.retryBtn {
+  background: none;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.retryBtn:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
 @media (max-width: 480px) {
   .chatWindow {
     width: calc(100vw - 40px);

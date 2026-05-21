@@ -5,6 +5,10 @@ import { useTranslation } from 'react-i18next';
 import { supabase } from '../../../../shared/api/supabase';
 import styles from '../ChatWidget.module.css';
 
+const MAX_RETRIES = 3;
+const RETRY_BASE_DELAY = 1000;
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 const isMobileDevice = () => {
   if (typeof window === 'undefined') return false;
   const uaMatch = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -92,6 +96,70 @@ export const ChatWidget = () => {
     };
   }, [sessionId]);
 
+  const sendMessageWithRetry = async (msgId, text, retryCount = 0) => {
+    setMessages(prev => prev.map(m =>
+      m.id === msgId ? { ...m, status: 'sending' } : m
+    ));
+
+    try {
+      const { error } = await supabase.from('chat_messages').insert([
+        { session_id: sessionId, text, sender: 'user' }
+      ]);
+      if (error) throw error;
+
+      // DB save succeeded — mark as sent
+      setMessages(prev => prev.map(m =>
+        m.id === msgId ? { ...m, status: 'sent' } : m
+      ));
+
+      // Notify Slack (non-critical — don't fail the message if this errors)
+      try {
+        const currentThreadTs = localStorage.getItem(`sunberg_chat_thread_${sessionId}`);
+
+        const { data, error: fnError } = await supabase.functions.invoke('slack-webhook', {
+          body: {
+            source: 'website',
+            sessionId: sessionId,
+            text,
+            threadTs: currentThreadTs
+          }
+        });
+
+        if (data && data.ts && (!currentThreadTs || data.threadReset)) {
+          localStorage.setItem(`sunberg_chat_thread_${sessionId}`, data.ts);
+        }
+
+        if (data && data.ok === false) {
+          console.warn('Slack API Error, clearing thread timestamp:', data.error);
+          localStorage.removeItem(`sunberg_chat_thread_${sessionId}`);
+        }
+
+        if (fnError) console.error('Edge Function Error:', fnError);
+      } catch (err) {
+        console.error('Failed to send message to Slack:', err);
+      }
+    } catch (err) {
+      console.error(`Send failed (attempt ${retryCount + 1}/${MAX_RETRIES}):`, err);
+
+      if (retryCount < MAX_RETRIES - 1) {
+        await sleep(RETRY_BASE_DELAY * Math.pow(2, retryCount));
+        return sendMessageWithRetry(msgId, text, retryCount + 1);
+      }
+
+      // All retries exhausted — mark as error
+      setMessages(prev => prev.map(m =>
+        m.id === msgId ? { ...m, status: 'error' } : m
+      ));
+    }
+  };
+
+  const handleRetry = (msgId) => {
+    const msg = messages.find(m => m.id === msgId);
+    if (msg?.text) {
+      sendMessageWithRetry(msgId, msg.text);
+    }
+  };
+
   const handleSend = async (e) => {
     e.preventDefault();
     if (!inputValue.trim() || !sessionId) return;
@@ -99,47 +167,11 @@ export const ChatWidget = () => {
     const textToSend = inputValue;
     setInputValue('');
 
-    // 1. Optimistic Update (Show instantly in UI)
-    const tempMessage = { id: Date.now().toString(), text: textToSend, sender: 'user' };
+    const tempId = Date.now().toString();
+    const tempMessage = { id: tempId, text: textToSend, sender: 'user', status: 'sending' };
     setMessages(prev => [...prev, tempMessage]);
 
-    // 2. Save to Supabase DB
-    try {
-      await supabase.from('chat_messages').insert([
-        { session_id: sessionId, text: textToSend, sender: 'user' }
-      ]);
-    } catch (err) {
-      console.error('Supabase DB Error:', err);
-    }
-
-    // 3. Notify Slack via Edge Function (handles threads automatically)
-    try {
-      const currentThreadTs = localStorage.getItem(`sunberg_chat_thread_${sessionId}`);
-      
-      const { data, error } = await supabase.functions.invoke('slack-webhook', {
-        body: {
-          source: 'website',
-          sessionId: sessionId,
-          text: textToSend,
-          threadTs: currentThreadTs
-        }
-      });
-
-      // Save the thread timestamp if this was the first message or if thread was reset
-      if (data && data.ts && (!currentThreadTs || data.threadReset)) {
-        localStorage.setItem(`sunberg_chat_thread_${sessionId}`, data.ts);
-      }
-
-      // If Slack explicitly returned an error, clear the thread so the next attempt starts fresh
-      if (data && data.ok === false) {
-        console.warn('Slack API Error, clearing thread timestamp:', data.error);
-        localStorage.removeItem(`sunberg_chat_thread_${sessionId}`);
-      }
-      
-      if (error) console.error('Edge Function Error:', error);
-    } catch (err) {
-      console.error('Failed to send message to Slack', err);
-    }
+    await sendMessageWithRetry(tempId, textToSend);
   };
 
   const handleToggle = () => {
@@ -238,9 +270,20 @@ export const ChatWidget = () => {
                   {messages.map(msg => (
                     <div 
                       key={msg.id} 
-                      className={`${styles.message} ${msg.sender === 'user' ? styles.message_user : styles.message_operator}`}
+                      className={`${styles.message} ${msg.sender === 'user' ? styles.message_user : styles.message_operator} ${msg.status === 'error' ? styles.message_error : ''}`}
                     >
                       {msg.isTranslable ? t(msg.transKey) : msg.text}
+                      {msg.sender === 'user' && msg.status === 'sending' && (
+                        <span className={styles.msgSending}>⏳</span>
+                      )}
+                      {msg.status === 'error' && (
+                        <div className={styles.msgErrorWrap}>
+                          <span className={styles.msgErrorText}>⚠ {t('chatWidget.sendError', { defaultValue: 'Ошибка отправки' })}</span>
+                          <button onClick={() => handleRetry(msg.id)} className={styles.retryBtn}>
+                            ↻ {t('chatWidget.retry', { defaultValue: 'Повторить' })}
+                          </button>
+                        </div>
+                      )}
                     </div>
                   ))}
                   <div ref={messagesEndRef} />
