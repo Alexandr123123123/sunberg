@@ -33,12 +33,6 @@ serve(async (req) => {
   // 1. From Website: Send to Slack
   if (payload.source === 'website') {
     const { sessionId, text, threadTs, messageType } = payload;
-    
-    let header = `*Сообщение с сайта (Сессия ${sessionId}):*`;
-    if (messageType === 'consultation') {
-      header = `*📞 ЗАЯВКА НА КОНСУЛЬТАЦИЮ (Форма обратной связи, Сессия ${sessionId}):*`;
-    }
-
     // Look up existing thread for this session in the database if threadTs is not provided
     let resolvedThreadTs = threadTs;
     if (!resolvedThreadTs && sessionId) {
@@ -59,6 +53,16 @@ serve(async (req) => {
       }
     }
     
+    let header = `*Сообщение с сайта (Сессия ${sessionId}):*`;
+    if (messageType === 'consultation') {
+      header = `*📞 ЗАЯВКА НА КОНСУЛЬТАЦИЮ (Форма обратной связи, Сессия ${sessionId}):*`;
+    }
+
+    // If posting to a thread, prepend <!here> to notify active operators and trigger Activity tab
+    if (resolvedThreadTs) {
+      header = `<!here> *Сообщение с сайта (Сессия ${sessionId}):*`;
+    }
+    
     const slackBody: any = {
       channel: SLACK_CHANNEL_ID,
       text: `${header}\n> ${text}`
@@ -67,7 +71,6 @@ serve(async (req) => {
     let threadReset = false;
     if (resolvedThreadTs) {
       slackBody.thread_ts = resolvedThreadTs;
-      slackBody.reply_broadcast = true;
     }
     
     try {
@@ -85,7 +88,13 @@ serve(async (req) => {
       if (!data.ok && slackBody.thread_ts) {
         console.log(`Slack error "${data.error}" with thread ${slackBody.thread_ts}. Retrying without thread_ts...`);
         delete slackBody.thread_ts;
-        delete slackBody.reply_broadcast;
+        
+        // Remove the <!here> mention since it is now starting a new main channel thread
+        const originalHeader = messageType === 'consultation'
+          ? `*📞 ЗАЯВКА НА КОНСУЛЬТАЦИЮ (Форма обратной связи, Сессия ${sessionId}):*`
+          : `*Сообщение с сайта (Сессия ${sessionId}):*`;
+        slackBody.text = `${originalHeader}\n> ${text}`;
+        
         threadReset = true;
         
         res = await fetch("https://slack.com/api/chat.postMessage", {

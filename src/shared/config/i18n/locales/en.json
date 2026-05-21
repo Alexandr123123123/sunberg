@@ -837,28 +837,6 @@
       }
     ]
   },
-  "about": {
-    "label": "About Sunberg",
-    "title": "Engineering a Cleaner Future",
-    "description": "bridges high-performance engineering with sustainable design to construct the clean energy infrastructure of tomorrow. We believe the transition to solar should be an effortless evolution—where professional system architecture eliminates the common pitfalls of mismatched components and inefficient design, ensuring absolute performance from day one.",
-    "points": [
-      {
-        "title": "Turnkey Solar Infrastructure",
-        "text": "We manage the entire lifecycle in-house—ensuring flawless system architecture and precision execution—to guarantee the highest standards of technical quality and long-term performance."
-      },
-      {
-        "title": "Data-Driven Scalability",
-        "text": "Delivering Tier-1 hardware and precise yield calculations for projects ranging from private residences to commercial facilities."
-      }
-    ],
-    "milestones": [
-      "Reliability",
-      "Precision",
-      "Vision"
-    ],
-    "manifesto_text": "“The shift to solar isn't just about preserving the planet—it's about smart, long-term asset management. We are here to engineer that transition flawlessly.”",
-    "manifesto_signature": "Aleksey Sunberg, Founder"
-  },
   "revolution": {
     "header_label": "a new era of energy",
     "header_title": "Inside the Solar Revolution",
@@ -887,7 +865,7 @@
     "details": [
       {
         "label": "Phone",
-        "value": "+1 (512) 000-0000"
+        "value": "+32 473 36 68 81"
       },
       {
         "label": "Email",
@@ -939,6 +917,8 @@
     "colServices": "Services",
     "rights": "© 2026 Sunberg. All rights reserved.",
     "builtWith": "Built with clean energy in mind.",
+    "middleText1": "SUN. ENERGY.",
+    "middleText2": "YOUR HOME.",
     "links": {
       "about": "About",
       "services": "Services",
@@ -956,5 +936,12 @@
     "welcomeMessage": "Hello! How can we help you today?",
     "operatorReply": "Thank you for your message! Our expert will be with you shortly.",
     "placeholder": "Type your message..."
+  },
+  "bookingModal": {
+    "title": "Book a Free Consultation",
+    "description": "Our engineers will call you back within 30 seconds to discuss your project.",
+    "submit": "Get My Call Now",
+    "successTitle": "Request Received!",
+    "successDesc": "We're connecting you with an engineer right now. Please keep your phone ready."
   }
 }

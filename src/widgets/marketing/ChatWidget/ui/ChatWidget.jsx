@@ -38,7 +38,7 @@ export const ChatWidget = () => {
   const [inputValue, setInputValue] = useState('');
   const messagesEndRef = useRef(null);
 
-  const whatsappNumber = t('chatWidget.whatsappNumber', { defaultValue: '15120000000' });
+  const whatsappNumber = t('chatWidget.whatsappNumber', { defaultValue: '32473366881' });
   const whatsappWelcome = t('chatWidget.whatsappWelcome', { defaultValue: 'Hi! I have a question about Sunberg solar systems.' });
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappWelcome)}`;
 
@@ -178,28 +178,8 @@ export const ChatWidget = () => {
     if (isOpen) {
       setActiveView('none');
     } else {
-      if (!isMobileDevice()) {
-        setActiveView('slack');
-      } else {
-        const preferred = sessionStorage.getItem('sunberg_preferred_chat');
-        if (preferred === 'slack') {
-          setActiveView('slack');
-        } else {
-          setActiveView('selector');
-        }
-      }
+      setActiveView('slack');
     }
-  };
-
-  const handleSelectSlack = () => {
-    sessionStorage.setItem('sunberg_preferred_chat', 'slack');
-    setActiveView('slack');
-  };
-
-  const handleSelectWhatsApp = () => {
-    sessionStorage.setItem('sunberg_preferred_chat', 'whatsapp');
-    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-    setActiveView('none');
   };
 
   return (
@@ -212,59 +192,21 @@ export const ChatWidget = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
           >
-            {activeView === 'selector' ? (
-              <>
-                <div className={styles.header}>
-                  <div>
-                    <div className={styles.headerTitle}>{t('chatWidget.title')}</div>
-                    <div className={styles.headerStatus}>
-                      <span className={styles.statusDot}></span>
-                      {t('chatWidget.status')}
-                    </div>
-                  </div>
-                  <button
-                    onClick={() => setActiveView('none')}
-                    style={{ background: 'none', border: 'none', color: '#fff', cursor: 'pointer', fontSize: '1.5rem' }}
-                  >
-                    &times;
-                  </button>
+            <div className={styles.header}>
+              <div>
+                <div className={styles.headerTitle}>{t('chatWidget.title')}</div>
+                <div className={styles.headerStatus}>
+                  <span className={styles.statusDot}></span>
+                  {t('chatWidget.status')}
                 </div>
-
-                <div className={styles.selectorBody}>
-                  <p className={styles.selectorIntro}>{t('chatWidget.chooseChannel')}</p>
-
-                  <button onClick={handleSelectWhatsApp} className={styles.whatsappBtn}>
-                    <svg className={styles.whatsappIcon} viewBox="0 0 24 24" width="20" height="20">
-                      <path fill="currentColor" d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.982L2 22l5.202-1.362a9.92 9.92 0 0 0 4.808 1.236h.005c5.507 0 9.99-4.478 9.99-9.987C22.005 6.479 17.52 2 12.012 2zm5.836 14.199c-.32.902-1.6 1.657-2.228 1.764-.539.092-1.24.168-3.61-.817-3.033-1.26-4.994-4.343-5.146-4.545-.152-.203-1.232-1.637-1.232-3.13 0-1.493.78-2.228 1.059-2.532.279-.304.609-.38.812-.38.203 0 .406.002.584.01.19.009.444-.073.697.538.26.627.888 2.167.964 2.32.076.152.127.33.025.533-.101.203-.152.33-.304.507-.152.177-.32.395-.457.532-.152.152-.31.317-.134.621.176.304.786 1.293 1.686 2.093.114.102.852.767 1.632 1.077.291.114.494.076.67-.127.177-.203.76-.887.964-1.191.203-.304.406-.253.67-.152.266.101 1.686.799 1.977.94.292.14.484.21.558.337.076.127.076.73-.244 1.632z" />
-                    </svg>
-                    {t('chatWidget.chatOnWhatsApp')}
-                  </button>
-
-                  <button onClick={handleSelectSlack} className={styles.liveChatBtn}>
-                    <svg className={styles.chatIcon} viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                    </svg>
-                    {t('chatWidget.chatOnSite')}
-                  </button>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className={styles.header}>
-                  <div>
-                    <div className={styles.headerTitle}>{t('chatWidget.title')}</div>
-                    <div className={styles.headerStatus}>
-                      <span className={styles.statusDot}></span>
-                      {t('chatWidget.status')}
-                    </div>
-                  </div>
-                  <button
-                    onClick={() => setActiveView('none')}
-                    style={{ background: 'none', border: 'none', color: '#fff', cursor: 'pointer', fontSize: '1.5rem' }}
-                  >
-                    &times;
-                  </button>
-                </div>
+              </div>
+              <button
+                onClick={() => setActiveView('none')}
+                style={{ background: 'none', border: 'none', color: '#fff', cursor: 'pointer', fontSize: '1.5rem' }}
+              >
+                &times;
+              </button>
+            </div>
 
                 <div className={styles.messages}>
                   {messages.map(msg => (
@@ -304,8 +246,6 @@ export const ChatWidget = () => {
                     </svg>
                   </button>
                 </form>
-              </>
-            )}
           </motion.div>
         )}
       </AnimatePresence>

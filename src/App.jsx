@@ -28,7 +28,7 @@ function AppLayout() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
+        {/* <Route path="/projects" element={<ProjectsPage />} /> */}
         <Route path="/about" element={<AboutPage />} />
         <Route path="/tech" element={<SolarTechPage />} />
         <Route path="/contact" element={<ContactPage />} />

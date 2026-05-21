@@ -22,7 +22,7 @@ const AboutPage = () => {
       <AbTech />
       <AbValues />
       <AbStats />
-      <AbTeam />
+      {/* <AbTeam /> */}
       {/* <AbTestimonials /> */}
       <Testimonials items={aboutTestimonials} />
       <CtaBlock variant="surface" />

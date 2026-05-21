@@ -25,8 +25,8 @@
 
 .leafContainer {
   position: absolute;
-  top: 52%; 
-  left: 34%; 
+  top: 52%;
+  left: 34%;
   transform: translate(-50%, -50%);
   width: 1100px;
   height: 1100px;
@@ -44,12 +44,29 @@
 }
 
 /* Unique rotations for each leaf as requested */
-.milestone:nth-child(1) .leaf { rotate: 20deg; }
-.milestone:nth-child(2) .leaf { rotate: -35deg; }
-.milestone:nth-child(3) .leaf { rotate: 85deg; }
-.milestone:nth-child(4) .leaf { rotate: 160deg; }
-.milestone:nth-child(5) .leaf { rotate: -15deg; }
-.milestone:nth-child(6) .leaf { rotate: 45deg; }
+.milestone:nth-child(1) .leaf {
+  rotate: 20deg;
+}
+
+.milestone:nth-child(2) .leaf {
+  rotate: -35deg;
+}
+
+.milestone:nth-child(3) .leaf {
+  rotate: 85deg;
+}
+
+.milestone:nth-child(4) .leaf {
+  rotate: 160deg;
+}
+
+.milestone:nth-child(5) .leaf {
+  rotate: -15deg;
+}
+
+.milestone:nth-child(6) .leaf {
+  rotate: 45deg;
+}
 
 .card {
   position: relative;
@@ -60,7 +77,8 @@
   -webkit-backdrop-filter: blur(16px);
   border-left: 2px solid var(--color-primary);
   border-radius: 1px;
-  width: 180px; /* Narrowed as requested */
+  width: 180px;
+  /* Narrowed as requested */
   transition: var(--transition);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
@@ -71,14 +89,11 @@
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
-.milestone:hover .leafContainer {
-  transform: translate(-50%, -50%) scale(1.03);
-  opacity: 1;
-}
+
 
 .val {
   font-family: var(--font-heading);
-  font-size: 0.95rem; 
+  font-size: 0.95rem;
   font-weight: 700;
   color: #ffffff;
   line-height: 1;
@@ -106,6 +121,31 @@
     min-height: auto;
   }
 
+  /* Add chaotic positioning */
+  .milestone:nth-child(1) {
+    left: -20%;
+  }
+
+  .milestone:nth-child(2) {
+    left: 25%;
+  }
+
+  .milestone:nth-child(3) {
+    left: -10%;
+  }
+
+  .milestone:nth-child(4) {
+    left: 15%;
+  }
+
+  .milestone:nth-child(5) {
+    left: -25%;
+  }
+
+  .milestone:nth-child(6) {
+    left: 10%;
+  }
+
   .leafContainer {
     width: 600px;
     height: 600px;
@@ -119,21 +159,199 @@
   }
 }
 
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .section {
-    padding: 80px 0;
-  }
-  
-  .leafContainer {
-    width: 450px;
-    height: 450px;
+@media (max-width: 800px) {
+  .milestone {
+    align-items: center;
   }
 
   .card {
+    width: 160px;
+    height: 160px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .leafContainer {
+    width: clamp(220px, 60vw, 450px);
+    height: clamp(220px, 60vw, 450px);
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    margin-bottom: 0;
+  }
+
+  /* Position leaves further out horizontally to increase distance from cards */
+  .milestone:nth-child(1) .leafContainer {
+    right: -25vw;
+    left: auto;
+    top: 30%;
+  }
+
+  .milestone:nth-child(2) .leafContainer {
+    left: -30vw;
+    right: auto;
+    top: 70%;
+  }
+
+  .milestone:nth-child(3) .leafContainer {
+    right: -20vw;
+    left: auto;
+    top: 60%;
+  }
+
+  .milestone:nth-child(4) .leafContainer {
+    left: -25vw;
+    right: auto;
+    top: 40%;
+  }
+
+  .milestone:nth-child(5) .leafContainer {
+    right: -30vw;
+    left: auto;
+    top: 80%;
+  }
+
+  .milestone:nth-child(6) .leafContainer {
+    left: -22vw;
+    right: auto;
+    top: 50%;
+  }
+
+  .milestone:nth-child(1) .leaf {
+    rotate: 45deg;
+  }
+
+  .milestone:nth-child(2) .leaf {
+    rotate: -30deg;
+  }
+
+  .milestone:nth-child(3) .leaf {
+    rotate: 85deg;
+  }
+
+  .milestone:nth-child(4) .leaf {
+    rotate: -60deg;
+  }
+
+  .milestone:nth-child(5) .leaf {
+    rotate: 120deg;
+  }
+
+  .milestone:nth-child(6) .leaf {
+    rotate: -45deg;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    gap: 40px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  /* Reduce chaos on smaller screens to prevent overflow */
+  .milestone:nth-child(1) {
+    left: -10%;
+  }
+
+  .milestone:nth-child(2) {
+    left: 15%;
+  }
+
+  .milestone:nth-child(3) {
+    left: -5%;
+  }
+
+  .milestone:nth-child(4) {
+    left: 10%;
+  }
+
+  .milestone:nth-child(5) {
+    left: -15%;
+  }
+
+  .milestone:nth-child(6) {
+    left: 5%;
+  }
+
+
+
+  .card {
     padding: 10px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .leafContainer {
+    /* Discretely increase size at 600px and let it scale down again */
+    width: clamp(280px, 80vw, 450px);
+    height: clamp(280px, 80vw, 450px);
+  }
+
+  /* Increase distance from cards at 600px due to larger leaf size */
+  .milestone:nth-child(1) .leafContainer {
+    right: -35vw;
+  }
+
+  .milestone:nth-child(2) .leafContainer {
+    left: -40vw;
+  }
+
+  .milestone:nth-child(3) .leafContainer {
+    right: -30vw;
+  }
+
+  .milestone:nth-child(4) .leafContainer {
+    left: -35vw;
+  }
+
+  .milestone:nth-child(5) .leafContainer {
+    right: -40vw;
+  }
+
+  .milestone:nth-child(6) .leafContainer {
+    left: -32vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    gap: 30px;
+  }
+
+  /* Even less chaos for very narrow screens */
+  .milestone:nth-child(1) {
+    left: -5%;
+  }
+
+  .milestone:nth-child(2) {
+    left: 8%;
+  }
+
+  .milestone:nth-child(3) {
+    left: -2%;
+  }
+
+  .milestone:nth-child(4) {
+    left: 6%;
+  }
+
+  .milestone:nth-child(5) {
+    left: -8%;
+  }
+
+  .milestone:nth-child(6) {
+    left: 4%;
+  }
+
+  .card {
+    width: 130px;
+    height: 130px;
+    padding: 10px;
   }
 }

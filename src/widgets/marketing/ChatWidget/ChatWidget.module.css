@@ -136,9 +136,9 @@
 
 .message {
   max-width: 80%;
-  padding: 12px 16px;
+  padding: 8px 12px;
   border-radius: 6px;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   line-height: 1.4;
 }
 

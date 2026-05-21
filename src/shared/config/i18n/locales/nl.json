@@ -719,7 +719,7 @@
     "details": [
       {
         "label": "Telefoon",
-        "value": "+1 (512) 000-0000"
+        "value": "+32 473 36 68 81"
       },
       {
         "label": "E-mail",
@@ -771,6 +771,8 @@
     "colServices": "Diensten",
     "rights": "© 2026 Sunberg. Alle rechten voorbehouden.",
     "builtWith": "Gebouwd met schone energie in gedachten.",
+    "middleText1": "ZON. ENERGIE.",
+    "middleText2": "JOUW THUIS.",
     "links": {
       "about": "Over ons",
       "services": "Diensten",
@@ -788,5 +790,12 @@
     "welcomeMessage": "Hallo! Hoe kunnen we u vandaag helpen?",
     "operatorReply": "Bedankt voor uw bericht! Onze expert is zo bij u.",
     "placeholder": "Typ uw bericht..."
+  },
+  "bookingModal": {
+    "title": "Boek een gratis consult",
+    "description": "Onze ingenieurs bellen u binnen 30 seconden terug om uw project te bespreken.",
+    "submit": "Bel me nu terug",
+    "successTitle": "Aanvraag ontvangen!",
+    "successDesc": "We verbinden u nu met een ingenieur. Houd uw telefoon bij de hand."
   }
 }

@@ -719,7 +719,7 @@
     "details": [
       {
         "label": "Téléphone",
-        "value": "+1 (512) 000-0000"
+        "value": "+32 473 36 68 81"
       },
       {
         "label": "E-mail",
@@ -771,6 +771,8 @@
     "colServices": "Services",
     "rights": "© 2026 Sunberg. Tous droits réservés.",
     "builtWith": "Construit en pensant à l'énergie propre.",
+    "middleText1": "SOLEIL. ÉNERGIE.",
+    "middleText2": "VOTRE MAISON.",
     "links": {
       "about": "À propos",
       "services": "Services",
@@ -784,9 +786,16 @@
   },
   "chatWidget": {
     "title": "Support Sunberg",
-    "status": "En ligne",
+    "status": "Online",
     "welcomeMessage": "Bonjour ! Comment pouvons-nous vous aider aujourd'hui ?",
     "operatorReply": "Merci pour votre message ! Notre expert sera avec vous sous peu.",
     "placeholder": "Tapez votre message..."
+  },
+  "bookingModal": {
+    "title": "Réservez une consultation gratuite",
+    "description": "Nos ingénieurs vous rappelleront dans les 30 secondes pour discuter de votre projet.",
+    "submit": "Être rappelé maintenant",
+    "successTitle": "Demande reçue !",
+    "successDesc": "Nous vous mettons en relation avec un ingénieur. Veuillez garder votre téléphone à portée de main."
   }
 }

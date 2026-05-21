@@ -18,9 +18,10 @@ export const TechHero = () => {
           transition={{ duration: 1.5, delay: 0.3 }}
         />
       </div>
+      <div className={styles.accent}>SUNBERG</div>
       <div className="container">
         <div className={styles.content}>
-          <span className="section-label">{t('techPage.hero.label')}</span>
+          <span className={styles.label}>{t('techPage.hero.label')}</span>
           <h1 className={styles.title}>{t('techPage.hero.title')}</h1>
           <p className={styles.desc}>
             {t('techPage.hero.desc')}

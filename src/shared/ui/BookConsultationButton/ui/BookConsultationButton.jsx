@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../BookConsultationButton.module.css';
 import { useBookingModal } from '../../../../app/providers/BookingModalProvider';
+import { useTranslation } from 'react-i18next';
 
 export const BookConsultationButton = ({ 
   variant = 'primary', 
@@ -9,6 +10,7 @@ export const BookConsultationButton = ({
   ...props 
 }) => {
   const { openModal } = useBookingModal();
+  const { t } = useTranslation();
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -29,7 +31,7 @@ export const BookConsultationButton = ({
       onClick={handleClick}
       {...props}
     >
-      Book a Consultation
+      {t('hero.btn_start')}
     </a>
   );
 };

@@ -47,6 +47,12 @@
   transition: var(--transition);
 }
 
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .link:hover {
   color: var(--color-text);
 }
@@ -61,6 +67,12 @@
 @media (max-width: 900px) {
   .nav {
     display: none;
+  }
+
+  .mobileControls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
   .burger {
@@ -195,7 +207,10 @@
 }
 
 @media (min-width: 901px) {
-  .burger, .mobileMenu {
+  .burger, .mobileMenu, .mobileControls {
+    display: none;
+  }
+  .mobileLangSwitcher {
     display: none;
   }
 }
@@ -209,7 +224,6 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-left: 10px;
 }
 
 .langBtn {

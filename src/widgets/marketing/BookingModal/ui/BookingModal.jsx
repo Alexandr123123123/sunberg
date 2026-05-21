@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import { IMaskInput } from 'react-imask';
 import { supabase } from '../../../../shared/api/supabase';
 import styles from '../BookingModal.module.css';
 
 export const BookingModal = ({ isOpen, onClose }) => {
-  const [phone, setPhone] = useState('');
+  const { t } = useTranslation();
+  const [phone, setPhone] = useState('+32 (');
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const maskPlaceholder = '+32 (470) 000-00-00';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -54,7 +58,7 @@ export const BookingModal = ({ isOpen, onClose }) => {
 
       setTimeout(() => {
         setIsSubmitted(false);
-        setPhone('');
+        setPhone('+32 (');
         onClose();
       }, 4000);
     }
@@ -87,26 +91,46 @@ export const BookingModal = ({ isOpen, onClose }) => {
             {!isSubmitted ? (
               <>
                 <div className={styles.header}>
-                  <h3 className={styles.title}>Book a Free Consultation</h3>
+                  <h3 className={styles.title}>{t('bookingModal.title')}</h3>
                   <p className={styles.description}>
-                    Our engineers will call you back within 30 seconds to discuss your project.
+                    {t('bookingModal.description')}
                   </p>
                 </div>
                 
                 <form className={styles.form} onSubmit={handleSubmit}>
                   <div className={styles.inputGroup}>
-                    <input 
-                      type="tel" 
-                      placeholder="+1 (555) 000-0000" 
+                    <div className={styles.inputOverlay} aria-hidden="true">
+                      <span className={styles.hiddenText}>{phone}</span>
+                      <span className={styles.visiblePlaceholder}>
+                        {maskPlaceholder.slice(phone.length).split('').map((char, index) => {
+                          const globalIndex = phone.length + index;
+                          const isDigitPlaceholder = globalIndex > 3 && /\d/.test(char);
+                          return (
+                            <span 
+                              key={index} 
+                              style={{ color: isDigitPlaceholder ? '#999' : 'var(--color-text)' }}
+                            >
+                              {char}
+                            </span>
+                          );
+                        })}
+                      </span>
+                    </div>
+                    <IMaskInput 
+                      mask="+32 (000) 000-00-00"
+                      lazy={true}
                       className={styles.input}
                       value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
+                      onAccept={(value) => setPhone(value)}
+                      onFocus={() => {
+                        if (phone.length < 5) setPhone('+32 (');
+                      }}
                       required
                       autoFocus
                     />
                   </div>
                   <button type="submit" className={styles.submit}>
-                    Get My Call Now
+                    {t('bookingModal.submit')}
                   </button>
                 </form>
               </>
@@ -117,8 +141,8 @@ export const BookingModal = ({ isOpen, onClose }) => {
                 animate={{ opacity: 1, scale: 1 }}
               >
                 <div className={styles.successIcon}>✓</div>
-                <h3>Request Received!</h3>
-                <p>We're connecting you with an engineer right now. Please keep your phone ready.</p>
+                <h3>{t('bookingModal.successTitle')}</h3>
+                <p>{t('bookingModal.successDesc')}</p>
               </motion.div>
             )}
           </motion.div>

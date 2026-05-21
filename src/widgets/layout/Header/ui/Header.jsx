@@ -43,10 +43,9 @@ const Header = () => {
   }, [isMenuOpen]);
 
   const navLinks = [
-    { to: `${basePath}`, label: t('header.home'), hideDesktop: true },
     { to: `${basePath}/about`, label: t('header.about') },
     { to: `${basePath}/services`, label: t('header.services') },
-    { to: `${basePath}/projects`, label: t('header.projects') },
+    // { to: `${basePath}/projects`, label: t('header.projects') },
     { to: `${basePath}/tech`, label: t('header.tech') }
   ];
 
@@ -90,18 +89,24 @@ const Header = () => {
           {navLinks.filter(l => !l.hideDesktop).map(link => (
             <Link key={link.to} to={link.to} className={styles.link}>{link.label}</Link>
           ))}
-          <Button to={`${basePath}/contact`} variant="primary" size="sm">{t('header.contact')}</Button>
-          <LangSwitcher currentLang={lang} supportedLangs={config?.supportedLangs} />
+          <div className={styles.actions}>
+            <Button to={`${basePath}/contact`} variant="primary" size="sm">{t('header.contact')}</Button>
+            <LangSwitcher currentLang={lang} supportedLangs={config?.supportedLangs} />
+          </div>
         </nav>
-
-        <button 
-          className={`${styles.burger} ${isMenuOpen ? styles.burgerOpen : ''}`}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span></span>
-          <span></span>
-        </button>
+        
+        <div className={styles.mobileControls}>
+          <LangSwitcher currentLang={lang} supportedLangs={config?.supportedLangs} />
+          
+          <button 
+            className={`${styles.burger} ${isMenuOpen ? styles.burgerOpen : ''}`}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
@@ -123,10 +128,6 @@ const Header = () => {
               <motion.div custom={navLinks.length} variants={linkVariants}>
                 <Button to={`${basePath}/contact`} variant="primary" size="lg" className={styles.mobileCta}>{t('header.contact')}</Button>
               </motion.div>
-
-              <motion.div custom={navLinks.length + 1} variants={linkVariants}>
-                <LangSwitcher currentLang={lang} supportedLangs={config?.supportedLangs} isMobile={true} />
-              </motion.div>
             </div>
 
             <motion.div 
@@ -137,12 +138,10 @@ const Header = () => {
             >
               <div className={styles.mobileContact}>
                 <p>hello@sunberg.energy</p>
-                <p>+1 (512) 000-0000</p>
+                <p>+32 473 36 68 81</p>
               </div>
               <div className={styles.socials}>
                 <span>LinkedIn</span>
-                <span>Instagram</span>
-                <span>Twitter</span>
               </div>
             </motion.div>
           </motion.div>
