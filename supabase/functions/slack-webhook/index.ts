@@ -27,19 +27,25 @@ serve(async (req) => {
 
   // 1. From Website: Send to Slack
   if (payload.source === 'website') {
-    const { sessionId, text, threadTs } = payload;
+    const { sessionId, text, threadTs, messageType } = payload;
+    
+    let header = `*Сообщение с сайта (Сессия ${sessionId}):*`;
+    if (messageType === 'consultation') {
+      header = `*📞 ЗАЯВКА НА КОНСУЛЬТАЦИЮ (Форма обратной связи, Сессия ${sessionId}):*`;
+    }
     
     const slackBody: any = {
       channel: SLACK_CHANNEL_ID,
-      text: `*Сообщение с сайта (Сессия ${sessionId}):*\n> ${text}`
+      text: `${header}\n> ${text}`
     };
     
+    let threadReset = false;
     if (threadTs) {
       slackBody.thread_ts = threadTs;
     }
     
     try {
-      const res = await fetch("https://slack.com/api/chat.postMessage", {
+      let res = await fetch("https://slack.com/api/chat.postMessage", {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${SLACK_BOT_TOKEN}`,
@@ -47,8 +53,31 @@ serve(async (req) => {
         },
         body: JSON.stringify(slackBody)
       });
-      const data = await res.json();
-      return new Response(JSON.stringify({ ok: data.ok, ts: data.ts, error: data.error }), {
+      let data = await res.json();
+      
+      // If thread not found, retry without thread_ts to auto-create a new thread
+      if (!data.ok && data.error === "thread_not_found" && slackBody.thread_ts) {
+        console.log(`Slack thread ${slackBody.thread_ts} not found. Retrying without thread_ts...`);
+        delete slackBody.thread_ts;
+        threadReset = true;
+        
+        res = await fetch("https://slack.com/api/chat.postMessage", {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${SLACK_BOT_TOKEN}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(slackBody)
+        });
+        data = await res.json();
+      }
+      
+      return new Response(JSON.stringify({ 
+        ok: data.ok, 
+        ts: data.ts, 
+        error: data.error,
+        threadReset: threadReset
+      }), {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
         status: 200
       });

@@ -6,7 +6,7 @@
     "label": "Zonne-energieoplossingen",
     "title": "De toekomst van stroom voorzien van schone energie",
     "desc": "Wij ontwerpen, installeren en onderhouden hoogwaardige zonnesystemen voor woningen en bedrijven. Verlaag uw rekeningen terwijl u bouwt aan een duurzame toekomst.",
-    "btn_start": "Start uw project",
+    "btn_start": "Boek een consultatie",
     "btn_services": "Onze diensten"
   },
   "about": {
@@ -717,9 +717,18 @@
       "desc": "Of u nu residentiële oplossingen of systemen op industriële schaal verkent, ons engineeringteam staat klaar om uw pad naar duurzame energie te ontwerpen."
     },
     "details": [
-      { "label": "Telefoon", "value": "+1 (512) 000-0000" },
-      { "label": "E-mail", "value": "hello@sunberg.energy" },
-      { "label": "Kantoor", "value": "201 Solar Way, Austin, TX 78701" }
+      {
+        "label": "Telefoon",
+        "value": "+1 (512) 000-0000"
+      },
+      {
+        "label": "E-mail",
+        "value": "hello@sunberg.energy"
+      },
+      {
+        "label": "Kantoor",
+        "value": "201 Solar Way, Austin, TX 78701"
+      }
     ],
     "copied": "Gekopieerd!",
     "trust": "Uw duurzame toekomst versterken: sluit u aan bij een gemeenschap van vooruitstrevende klanten die autonomie op het gebied van energie bereiken door onze met precisie ontworpen zonne-ecosystemen.",
@@ -728,9 +737,18 @@
       "title": "Start uw Engineering Audit",
       "desc": "Elk Sunberg-project begint met een diepgaand technisch inzicht in uw energiebehoeften. Deel uw visie en wij bieden u de basis om deze te realiseren.",
       "benefits": [
-        { "title": "Voorlopige Audit", "desc": "Precisieanalyse van het zonnepotentieel van uw locatie op basis van lokale instralingsmodellering." },
-        { "title": "Technisch Ontwerp", "desc": "Een op maat gemaakt systeemarchitectuurproject dat is ontworpen om naadloos in uw eigendom te integreren." },
-        { "title": "Financieel Model", "desc": "Datagestuurde ROI- en besparingsprognoses berekend met behulp van huidige lokale energietarieven." }
+        {
+          "title": "Voorlopige Audit",
+          "desc": "Precisieanalyse van het zonnepotentieel van uw locatie op basis van lokale instralingsmodellering."
+        },
+        {
+          "title": "Technisch Ontwerp",
+          "desc": "Een op maat gemaakt systeemarchitectuurproject dat is ontworpen om naadloos in uw eigendom te integreren."
+        },
+        {
+          "title": "Financieel Model",
+          "desc": "Datagestuurde ROI- en besparingsprognoses berekend met behulp van huidige lokale energietarieven."
+        }
       ],
       "fields": {
         "name": "Volledige Naam",

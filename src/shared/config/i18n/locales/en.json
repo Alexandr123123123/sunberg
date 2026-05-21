@@ -6,7 +6,7 @@
     "label": "Solar Energy Solutions",
     "title": "Powering the Future with Clean Energy",
     "desc": "We design, install, and maintain high-performance solar systems for homes and businesses. Lower your bills while building a sustainable tomorrow.",
-    "btn_start": "Start Your Project",
+    "btn_start": "Book a consultation",
     "btn_services": "Our Services"
   },
   "about": {
@@ -23,7 +23,11 @@
         "text": "Delivering Tier-1 hardware and precise yield calculations for projects ranging from private residences to commercial facilities."
       }
     ],
-    "milestones": ["Reliability", "Precision", "Vision"],
+    "milestones": [
+      "Reliability",
+      "Precision",
+      "Vision"
+    ],
     "manifesto_text": "“The shift to solar isn't just about preserving the planet—it's about smart, long-term asset management. We are here to engineer that transition flawlessly.”",
     "manifesto_signature": "Aleksey Sunberg, Founder"
   },
@@ -881,9 +885,18 @@
       "desc": "Whether you're exploring residential solutions or industrial-scale systems, our engineering team is ready to design your path to sustainable power."
     },
     "details": [
-      { "label": "Phone", "value": "+1 (512) 000-0000" },
-      { "label": "Email", "value": "hello@sunberg.energy" },
-      { "label": "Office", "value": "201 Solar Way, Austin, TX 78701" }
+      {
+        "label": "Phone",
+        "value": "+1 (512) 000-0000"
+      },
+      {
+        "label": "Email",
+        "value": "hello@sunberg.energy"
+      },
+      {
+        "label": "Office",
+        "value": "201 Solar Way, Austin, TX 78701"
+      }
     ],
     "copied": "Copied!",
     "trust": "Empowering Your Sustainable Future: Join a community of forward-thinking clients achieving energy autonomy through our precision-engineered solar ecosystems.",
@@ -892,9 +905,18 @@
       "title": "Start Your Engineering Audit",
       "desc": "Every Sunberg project begins with a deep technical understanding of your energy needs. Share your vision, and we'll provide the foundation to make it a reality.",
       "benefits": [
-        { "title": "Preliminary Audit", "desc": "Precision analysis of your site’s solar potential based on localized irradiation modeling." },
-        { "title": "Technical Design", "desc": "A bespoke system architecture project designed to integrate seamlessly with your property." },
-        { "title": "Financial Model", "desc": "Data-driven ROI and savings projections calculated using current local energy tariffs." }
+        {
+          "title": "Preliminary Audit",
+          "desc": "Precision analysis of your site’s solar potential based on localized irradiation modeling."
+        },
+        {
+          "title": "Technical Design",
+          "desc": "A bespoke system architecture project designed to integrate seamlessly with your property."
+        },
+        {
+          "title": "Financial Model",
+          "desc": "Data-driven ROI and savings projections calculated using current local energy tariffs."
+        }
       ],
       "fields": {
         "name": "Full Name",

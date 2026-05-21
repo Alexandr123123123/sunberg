@@ -1,15 +1,57 @@
 import React, { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
+import { supabase } from '../../../../shared/api/supabase';
 import styles from '../BookingModal.module.css';
 
 export const BookingModal = ({ isOpen, onClose }) => {
   const [phone, setPhone] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (phone.length > 5) {
       setIsSubmitted(true);
+
+      // Get or create session ID
+      let sessionId = localStorage.getItem('sunberg_chat_session');
+      if (!sessionId) {
+        sessionId = 'session_' + Math.random().toString(36).substr(2, 9);
+        localStorage.setItem('sunberg_chat_session', sessionId);
+      }
+
+      const textToSend = `📞 Запрос консультации: ${phone} (Форма обратной связи)`;
+
+      // 2. Notify Slack via Edge Function
+      try {
+        const currentThreadTs = localStorage.getItem(`sunberg_chat_thread_${sessionId}`);
+        
+        const { data, error } = await supabase.functions.invoke('slack-webhook', {
+          body: {
+            source: 'website',
+            sessionId: sessionId,
+            text: textToSend,
+            threadTs: currentThreadTs,
+            messageType: 'consultation'
+          }
+        });
+
+        // Save the thread timestamp if this was the first message or if thread was reset
+        if (data && data.ts && (!currentThreadTs || data.threadReset)) {
+          localStorage.setItem(`sunberg_chat_thread_${sessionId}`, data.ts);
+        }
+
+        // If Slack explicitly returned an error, clear the thread so the next attempt starts fresh
+        if (data && data.ok === false) {
+          console.warn('Slack API Error, clearing thread timestamp:', data.error);
+          localStorage.removeItem(`sunberg_chat_thread_${sessionId}`);
+        }
+        
+        if (error) console.error('Edge Function Error:', error);
+      } catch (err) {
+        console.error('Failed to send callback request to Slack', err);
+      }
+
       setTimeout(() => {
         setIsSubmitted(false);
         setPhone('');

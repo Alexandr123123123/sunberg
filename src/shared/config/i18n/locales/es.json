@@ -6,7 +6,7 @@
     "label": "Soluciones de Energía Solar",
     "title": "Impulsando el futuro con energía limpia",
     "desc": "Diseñamos, instalamos y mantenemos sistemas solares de alto rendimiento para hogares y empresas. Reduzca sus facturas mientras construye un mañana sostenible.",
-    "btn_start": "Inicia tu projecto",
+    "btn_start": "Reservar una consulta",
     "btn_services": "Nuestros servicios"
   },
   "about": {
@@ -23,7 +23,11 @@
         "text": "Suministro de hardware de nivel 1 y cálculos precisos de rendimiento para proyectos que van desde residencias privadas hasta instalaciones comerciales."
       }
     ],
-    "milestones": ["Fiabilidad", "Precisión", "Visión"],
+    "milestones": [
+      "Fiabilidad",
+      "Precisión",
+      "Visión"
+    ],
     "manifesto_text": "“El cambio a la energía solar no se trata solo de preservar el planeta, sino de una gestión inteligente de activos a largo plazo. Estamos aquí para diseñar esa transición sin problemas.”",
     "manifesto_signature": "Aleksey Sunberg, Fundador"
   },
@@ -881,9 +885,18 @@
       "desc": "Ya sea que esté explorando soluciones residenciales o sistemas a escala industrial, nuestro equipo de ingeniería está listo para diseñar su camino hacia la energía sostenible."
     },
     "details": [
-      { "label": "Teléfono", "value": "+1 (512) 000-0000" },
-      { "label": "Correo", "value": "hello@sunberg.energy" },
-      { "label": "Oficina", "value": "201 Solar Way, Austin, TX 78701" }
+      {
+        "label": "Teléfono",
+        "value": "+1 (512) 000-0000"
+      },
+      {
+        "label": "Correo",
+        "value": "hello@sunberg.energy"
+      },
+      {
+        "label": "Oficina",
+        "value": "201 Solar Way, Austin, TX 78701"
+      }
     ],
     "copied": "¡Copiado!",
     "trust": "Potenciando tu Futuro Sostenible: Únete a una comunidad de clientes con visión de futuro que logran la autonomía energética a través de nuestros ecosistemas solares diseñados con precisión.",
@@ -892,9 +905,18 @@
       "title": "Comienza tu auditoría de ingeniería",
       "desc": "Cada proyecto de Sunberg comienza con una profunda comprensión técnica de sus necesidades energéticas. Comparta su visión y le brindaremos las bases para hacerla realidad.",
       "benefits": [
-        { "title": "Auditoría preliminar", "desc": "Análisis de precisión del potencial solar de su sitio basado en el modelado de irradiación localizada." },
-        { "title": "Diseño técnico", "desc": "Un proyecto de arquitectura de sistema a medida diseñado para integrarse perfectamente con su propiedad." },
-        { "title": "Modelo financiero", "desc": "Proyecciones de retorno de la inversión y ahorros basadas en datos calculados utilizando las tarifas de energía locales actuales." }
+        {
+          "title": "Auditoría preliminar",
+          "desc": "Análisis de precisión del potencial solar de su sitio basado en el modelado de irradiación localizada."
+        },
+        {
+          "title": "Diseño técnico",
+          "desc": "Un proyecto de arquitectura de sistema a medida diseñado para integrarse perfectamente con su propiedad."
+        },
+        {
+          "title": "Modelo financiero",
+          "desc": "Proyecciones de retorno de la inversión y ahorros basadas en datos calculados utilizando las tarifas de energía locales actuales."
+        }
       ],
       "fields": {
         "name": "Nombre completo",

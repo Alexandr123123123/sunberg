@@ -6,7 +6,7 @@
     "label": "Solutions d'énergie solaire",
     "title": "Alimenter l'avenir avec de l'énergie propre",
     "desc": "Nous concevons, installons et entretenons des systèmes solaires haute performance pour les maisons et les entreprises. Réduisez vos factures tout en construisant un avenir durable.",
-    "btn_start": "Commencez votre projet",
+    "btn_start": "Réserver une consultation",
     "btn_services": "Nos services"
   },
   "about": {
@@ -717,9 +717,18 @@
       "desc": "Que vous exploriez des solutions résidentielles ou des systèmes à l'échelle industrielle, notre équipe d'ingénierie est prête à concevoir votre chemin vers une énergie durable."
     },
     "details": [
-      { "label": "Téléphone", "value": "+1 (512) 000-0000" },
-      { "label": "E-mail", "value": "hello@sunberg.energy" },
-      { "label": "Bureau", "value": "201 Solar Way, Austin, TX 78701" }
+      {
+        "label": "Téléphone",
+        "value": "+1 (512) 000-0000"
+      },
+      {
+        "label": "E-mail",
+        "value": "hello@sunberg.energy"
+      },
+      {
+        "label": "Bureau",
+        "value": "201 Solar Way, Austin, TX 78701"
+      }
     ],
     "copied": "Copié !",
     "trust": "Soutenir votre avenir durable : rejoignez une communauté de clients visionnaires accédant à l'autonomie énergétique grâce à nos écosystèmes solaires de haute précision.",
@@ -728,9 +737,18 @@
       "title": "Commencez votre audit d'ingénierie",
       "desc": "Chaque projet Sunberg commence par une compréhension technique approfondie de vos besoins en énergie. Partagez votre vision et nous vous fournirons les bases pour la concrétiser.",
       "benefits": [
-        { "title": "Audit préliminaire", "desc": "Analyse de précision du potentiel solaire de votre site basée sur une modélisation de l'irradiation locale." },
-        { "title": "Conception technique", "desc": "Un projet d'architecture système sur mesure conçu pour s'intégrer parfaitement à votre propriété." },
-        { "title": "Modèle financier", "desc": "Projections de retour sur investissement et d'économies basées sur les données calculées à l'aide des tarifs locaux actuels de l'énergie." }
+        {
+          "title": "Audit préliminaire",
+          "desc": "Analyse de précision du potentiel solaire de votre site basée sur une modélisation de l'irradiation locale."
+        },
+        {
+          "title": "Conception technique",
+          "desc": "Un projet d'architecture système sur mesure conçu pour s'intégrer parfaitement à votre propriété."
+        },
+        {
+          "title": "Modèle financier",
+          "desc": "Projections de retour sur investissement et d'économies basées sur les données calculées à l'aide des tarifs locaux actuels de l'énergie."
+        }
       ],
       "fields": {
         "name": "Nom complet",

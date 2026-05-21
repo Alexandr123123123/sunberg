@@ -3,10 +3,12 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import heroImg from '../../../../assets/hero_v2.png';
 import { Button } from '../../../../shared/ui/Button';
+import { useBookingModal } from '../../../../app/providers/BookingModalProvider';
 import styles from '../Hero.module.css';
 
 const Hero = () => {
   const { t } = useTranslation();
+  const { openModal } = useBookingModal();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -51,7 +53,16 @@ const Hero = () => {
             {t('hero.desc')}
           </motion.p>
           <motion.div className={styles.actions} variants={itemVariants}>
-            <Button href="#contact" variant="primary">{t('hero.btn_start')}</Button>
+            <Button 
+              href="#contact" 
+              variant="primary"
+              onClick={(e) => {
+                e.preventDefault();
+                openModal();
+              }}
+            >
+              {t('hero.btn_start')}
+            </Button>
             <Button href="#services" variant="outline">{t('hero.btn_services')}</Button>
           </motion.div>
         </motion.div>
