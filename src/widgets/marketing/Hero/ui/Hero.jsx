@@ -44,7 +44,7 @@ const Hero = () => {
           variants={containerVariants}
         >
           <motion.div className={styles.versionBadge} variants={itemVariants}>
-            Version 1
+            Version 2
           </motion.div>
           <motion.span className={styles.label} variants={itemVariants}>
             {t('hero.label')}
