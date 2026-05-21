@@ -60,9 +60,9 @@ serve(async (req) => {
       });
       let data = await res.json();
       
-      // If thread not found, retry without thread_ts to auto-create a new thread
-      if (!data.ok && data.error === "thread_not_found" && slackBody.thread_ts) {
-        console.log(`Slack thread ${slackBody.thread_ts} not found. Retrying without thread_ts...`);
+      // If Slack returned any error and we used a thread_ts, retry without it to start a fresh thread
+      if (!data.ok && slackBody.thread_ts) {
+        console.log(`Slack error "${data.error}" with thread ${slackBody.thread_ts}. Retrying without thread_ts...`);
         delete slackBody.thread_ts;
         threadReset = true;
         
