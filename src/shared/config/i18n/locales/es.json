@@ -11,16 +11,16 @@
   },
   "about": {
     "label": "Sobre Sunberg",
-    "title": "Ingeniería de un futuro más limpio",
-    "description": "combina ingeniería de alto rendimiento con diseño sostenible para construir la infraestructura de energía limpia del mañana. Creemos que la transición a la energía solar debería ser una evolución sin esfuerzo, donde la arquitectura del sistema profesional elimina los errores comunes de componentes desajustados y diseños ineficientes, garantizando un rendimiento absoluto desde el primer día.",
+    "title": "Diseñando un futuro más limpio",
+    "description": "une la ingeniería de alto rendimiento con el diseño sostenible para construir la infraestructura de energía limpia del mañana. Creemos que la transición a la energía solar debe ser una evolución sin esfuerzo, donde la arquitectura profesional de sistemas elimina los errores comunes de componentes incompatibles y diseños ineficientes, garantizando un rendimiento absoluto desde el primer día.",
     "points": [
       {
         "title": "Infraestructura solar llave en mano",
-        "text": "Gestionamos todo el ciclo de vida de forma interna, garantizando una arquitectura de sistema impecable y una ejecución precisa, para garantizar los más altos estándares de calidad técnica y rendimiento a largo plazo."
+        "text": "Gestionamos todo el ciclo de vida internamente, asegurando una arquitectura de sistemas impecable y una ejecución precisa, para garantizar los más altos estándares de calidad técnica y rendimiento a largo plazo."
       },
       {
         "title": "Escalabilidad basada en datos",
-        "text": "Suministro de hardware de nivel 1 y cálculos precisos de rendimiento para proyectos que van desde residencias privadas hasta instalaciones comerciales."
+        "text": "Entregando hardware de Nivel 1 y cálculos de rendimiento precisos para proyectos que van desde residencias privadas hasta instalaciones comerciales."
       }
     ],
     "milestones": [
@@ -28,7 +28,7 @@
       "Precisión",
       "Visión"
     ],
-    "manifesto_text": "“El cambio a la energía solar no se trata solo de preservar el planeta, sino de una gestión inteligente de activos a largo plazo. Estamos aquí para diseñar esa transición sin problemas.”",
+    "manifesto_text": "“El cambio a la energía solar no se trata solo de preservar el planeta, se trata de una gestión inteligente de activos a largo plazo. Estamos aquí para diseñar esa transición a la perfección.”",
     "manifesto_signature": "Aleksey Sunberg, Fundador"
   },
   "partners": {
@@ -586,12 +586,13 @@
         {
           "name": "Meyer Burger",
           "tagline": "Módulos"
-        },
-        {
-          "name": "Mounting Systems",
-          "tagline": "Montaje"
         }
       ]
+    },
+    "panelTypes": {
+      "label": "Módulos Fotovoltaicos",
+      "title": "El motor central de la independencia",
+      "desc": "No todos los paneles solares son iguales. El mercado actual ofrece un espectro de tecnologías avanzadas, cada una con sus propias fortalezas únicas, eficiencias y precios. Explore cómo las diferentes arquitecturas de celdas funcionan en condiciones del mundo real para tomar una decisión de ingeniería informada."
     }
   },
   "projectsPage": {
@@ -835,29 +836,29 @@
         "val": "2023",
         "lab": "La capacidad solar global alcanza un hito histórico de 1,5 TW."
       }
-    ]
-  },
-  "about": {
-    "label": "Sobre Sunberg",
-    "title": "Diseñando un futuro más limpio",
-    "description": "une la ingeniería de alto rendimiento con el diseño sostenible para construir la infraestructura de energía limpia del mañana. Creemos que la transición a la energía solar debe ser una evolución sin esfuerzo, donde la arquitectura profesional de sistemas elimina los errores comunes de componentes incompatibles y diseños ineficientes, garantizando un rendimiento absoluto desde el primer día.",
-    "points": [
-      {
-        "title": "Infraestructura solar llave en mano",
-        "text": "Gestionamos todo el ciclo de vida internamente, asegurando una arquitectura de sistemas impecable y una ejecución precisa, para garantizar los más altos estándares de calidad técnica y rendimiento a largo plazo."
-      },
-      {
-        "title": "Escalabilidad basada en datos",
-        "text": "Entregando hardware de Nivel 1 y cálculos de rendimiento precisos para proyectos que van desde residencias privadas hasta instalaciones comerciales."
-      }
     ],
-    "milestones": [
-      "Fiabilidad",
-      "Precisión",
-      "Visión"
-    ],
-    "manifesto_text": "“El cambio a la energía solar no se trata solo de preservar el planeta, se trata de una gestión inteligente de activos a largo plazo. Estamos aquí para diseñar esa transición a la perfección.”",
-    "manifesto_signature": "Aleksey Sunberg, Fundador"
+    "connectionSchemes": {
+      "label": "System Architecture",
+      "title": "How the Energy Flows",
+      "desc": "Understand how different system configurations distribute and manage power based on your unique goals.",
+      "schemes": [
+        {
+          "id": "grid-tied",
+          "name": "Grid-Tied",
+          "desc": "The most common setup. Your panels power your home, and excess energy is sent to the grid. No batteries required."
+        },
+        {
+          "id": "off-grid",
+          "name": "Off-Grid",
+          "desc": "Complete energy independence. You are disconnected from the utility grid entirely. Requires significant battery storage."
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "desc": "The best of both worlds. Connected to the grid for backup, but utilizes battery storage to capture excess solar power."
+        }
+      ]
+    }
   },
   "revolution": {
     "header_label": "una nueva era de energía",

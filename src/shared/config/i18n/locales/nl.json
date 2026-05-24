@@ -707,7 +707,96 @@
         "val": "2023",
         "lab": "De wereldwijde zonnecapaciteit bereikt een historische mijlpaal van 1,5 TW."
       }
-    ]
+    ],
+    "systemComponents": {
+      "label": "Kerntechnologie",
+      "title": "Systeemarchitectuur",
+      "desc": "Een modern zonne-energiesysteem is een geïntegreerd netwerk van precisiecomponenten. Ontdek de anatomie van onze krachtige energieoplossingen.",
+      "cards": {
+        "panel": {
+          "title": "Zonnepanelen",
+          "desc": "De energieverzamelaars. Wij maken gebruik van uiterst efficiënte N-Type modules om de opbrengst te maximaliseren."
+        },
+        "inverter": {
+          "title": "Omvormer",
+          "desc": "Het brein van het systeem. Zet gelijkstroom om in wisselstroom en beheert slimme netsynchronisatie."
+        },
+        "battery": {
+          "title": "Batterijopslag",
+          "desc": "Energieonafhankelijkheid. Slaat overtollige zonne-energie op voor gebruik 's nachts of bij stroomuitval."
+        },
+        "mounting": {
+          "title": "Montagesysteem",
+          "desc": "De structurele fundering. Geanodiseerd aluminium ontworpen voor extreme weersbestendigheid."
+        },
+        "fuses": {
+          "title": "Veiligheid & Zekeringen",
+          "desc": "Beschermingsmechanismen. Snelle uitschakelapparatuur en overspanningsbeveiligers voor absolute veiligheid."
+        }
+      }
+    },
+    "panelTypes": {
+      "label": "Fotovoltaïsche Panelen",
+      "title": "De Motor van Onafhankelijkheid",
+      "desc": "Niet alle zonnepanelen zijn gelijk. De huidige markt biedt een spectrum aan geavanceerde technologieën, elk met zijn eigen unieke sterke punten, efficiënties en prijzen. Ontdek hoe verschillende celarchitecturen presteren onder reële omstandigheden om een weloverwogen technische beslissing te nemen.",
+      "table": {
+        "headers": [
+          "Technologie",
+          "Piekrendement",
+          "Jaarlijkse Degradatie",
+          "Temp. Coëfficiënt",
+          "Beste Voor"
+        ],
+        "rows": [
+          {
+            "tech": "PERC",
+            "eff": "tot 21.0%",
+            "deg": "~ 0.55%",
+            "temp": "Gemiddeld (-0.35%/°C)",
+            "best": "Standaard Residentieel",
+            "isPremium": false
+          },
+          {
+            "tech": "TOPCon",
+            "eff": "tot 22.5%",
+            "deg": "~ 0.40%",
+            "temp": "Goed (-0.30%/°C)",
+            "best": "Premium Residentieel",
+            "isPremium": false
+          },
+          {
+            "tech": "HJT",
+            "eff": "23.0% +",
+            "deg": "~ 0.25%",
+            "temp": "Uitstekend (-0.24%/°C)",
+            "best": "Max Opbrengst / Warme Klimaten",
+            "isPremium": true
+          }
+        ]
+      }
+    },
+    "connectionSchemes": {
+      "label": "System Architecture",
+      "title": "How the Energy Flows",
+      "desc": "Understand how different system configurations distribute and manage power based on your unique goals.",
+      "schemes": [
+        {
+          "id": "grid-tied",
+          "name": "Grid-Tied",
+          "desc": "The most common setup. Your panels power your home, and excess energy is sent to the grid. No batteries required."
+        },
+        {
+          "id": "off-grid",
+          "name": "Off-Grid",
+          "desc": "Complete energy independence. You are disconnected from the utility grid entirely. Requires significant battery storage."
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "desc": "The best of both worlds. Connected to the grid for backup, but utilizes battery storage to capture excess solar power."
+        }
+      ]
+    }
   },
   "contactPage": {
     "hero": {

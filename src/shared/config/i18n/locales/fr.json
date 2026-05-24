@@ -707,7 +707,29 @@
         "val": "2023",
         "lab": "La capacité solaire mondiale atteint un jalon historique de 1,5 TW."
       }
-    ]
+    ],
+    "connectionSchemes": {
+      "label": "System Architecture",
+      "title": "How the Energy Flows",
+      "desc": "Understand how different system configurations distribute and manage power based on your unique goals.",
+      "schemes": [
+        {
+          "id": "grid-tied",
+          "name": "Grid-Tied",
+          "desc": "The most common setup. Your panels power your home, and excess energy is sent to the grid. No batteries required."
+        },
+        {
+          "id": "off-grid",
+          "name": "Off-Grid",
+          "desc": "Complete energy independence. You are disconnected from the utility grid entirely. Requires significant battery storage."
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "desc": "The best of both worlds. Connected to the grid for backup, but utilizes battery storage to capture excess solar power."
+        }
+      ]
+    }
   },
   "contactPage": {
     "hero": {
