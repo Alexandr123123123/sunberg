@@ -321,6 +321,7 @@
     "services": "Servicios",
     "projects": "Proyectos",
     "tech": "Tecnología Solar",
+    "electrical": "Servicios Eléctricos",
     "contact": "Contáctanos"
   },
   "servicesPage": {
@@ -804,6 +805,212 @@
         "rating": 5
       }
     ]
+  },
+  "electricalPage": {
+    "hero": {
+      "watermark": "ELÉCTRICO",
+      "label": "Más Allá de lo Solar",
+      "title": "Servicios Eléctricos Integrales",
+      "desc": "La energía solar es nuestra especialidad principal, pero nuestra experiencia técnica abarca cada rincón de su instalación eléctrica. Desde cableado y cuadros eléctricos hasta domótica, energía de respaldo y seguridad: un solo equipo, un mismo estándar de calidad."
+    },
+    "categoriesSection": {
+      "label": "Nuestra Experiencia",
+      "title": "Diez Disciplinas, Un Solo Equipo",
+      "desc": "Cada categoría a continuación es gestionada internamente por los mismos ingenieros que instalan su sistema solar: sin subcontratistas, sin vacíos de responsabilidad.",
+      "scrollHint": "Desplácese por la lista para explorar más",
+      "teamCard": {
+        "title": "Un Equipo. Responsabilidad Total.",
+        "desc": "Desde el diseño hasta la instalación y más allá: asumimos la responsabilidad de cada detalle.",
+        "btn": "Trabajemos juntos"
+      }
+    },
+    "categories": {
+      "wiring": {
+        "title": "Cableado",
+        "desc": "Tendido completo de cables e instalación eléctrica en obra gris según normas europeas, además de enchufes, interruptores y termostatos con un acabado perfecto.",
+        "mainDesc": "Servicios de cableado profesional para proyectos de cualquier envergadura. Nos encargamos de la distribución eléctrica completa: desde la acometida principal hasta los puntos finales de tomas, interruptores y redes. Utilizamos materiales fiables y diseñamos el cableado para que sea fácil de mantener.",
+        "g1": "Diseño del Sistema",
+        "g2": "Tendido de Cables",
+        "g3": "Fácil Mantenimiento",
+        "g4": "Precisión y Seguridad"
+      },
+      "switchboards": {
+        "title": "Cuadros Eléctricos",
+        "desc": "Diseño y montaje de cuadros de distribución principales con componentes premium, con protección moderna contra fugas de corriente, cortocircuitos y sobretensiones.",
+        "mainDesc": "Instalaciones profesionales de cuadros eléctricos diseñadas para hogares modernos de alta carga. Montamos cuadros meticulosamente organizados equipados con sistemas de protección avanzados para resguardar sus equipos electrónicos de sobretensiones y fallos eléctricos.",
+        "g1": "Protección Avanzada",
+        "g2": "Integración Inteligente",
+        "g3": "Diseño Profesional",
+        "g4": "Montaje Limpio"
+      },
+      "heating": {
+        "title": "Calefacción y Climatización",
+        "desc": "Esteras y cables de suelo radiante con termostatos inteligentes, sistemas antihielo para tejados y accesos, y cableado eléctrico de salas de calderas y bombas de calor.",
+        "mainDesc": "Soluciones integrales de calefacción para un confort absoluto en cualquier clima. Nos especializamos en calefacción por suelo radiante de alta eficiencia energética y control de climatización inteligente, garantizando que su hogar mantenga la temperatura perfecta durante todo el año.",
+        "g1": "Suelo Radiante",
+        "g2": "Integración de Caldera",
+        "g3": "Termostatos Inteligentes",
+        "g4": "Control por App"
+      },
+      "smartHome": {
+        "title": "Hogar Inteligente",
+        "desc": "Escenas de iluminación centralizadas y regulación de intensidad, control climático inteligente, y motorización de cortinas, portones y persianas desde una sola interfaz.",
+        "mainDesc": "Automatización completa del hogar para un control sin esfuerzo de su entorno. Sincronizamos su iluminación, sistemas de climatización y persianas motorizadas, creando una infraestructura estable que funciona exactamente como usted desea.",
+        "g1": "Iluminación Inteligente",
+        "g2": "Climatización de Precisión",
+        "g3": "Sombreado Automático",
+        "g4": "Control Centralizado"
+      },
+      "lighting": {
+        "title": "Sistemas de Iluminación",
+        "desc": "Iluminación de fachada y paisajismo con luminarias resistentes a la intemperie, además de iluminación arquitectónica interior con rieles magnéticos y perfiles LED ocultos.",
+        "mainDesc": "Soluciones de iluminación premium adaptadas a su espacio. Desde iluminación arquitectónica precisa hasta perfiles LED personalizados y controles de regulación suaves, ofrecemos una instalación impecable que aporta estética moderna y confort a su entorno.",
+        "g1": "Perfiles LED a Medida",
+        "g2": "Iluminación Inteligente",
+        "g3": "Sistemas de Rieles Magnéticos",
+        "g4": "Iluminación LED Oculta"
+      },
+      "spa": {
+        "title": "Zonas de Spa",
+        "desc": "Conexiones eléctricas seguras para piscinas, jacuzzis, saunas y generadores de vapor, con protección IP68 contra la humedad en entornos exigentes.",
+        "mainDesc": "Ingeniería eléctrica especializada para entornos húmedos y agresivos. Conectamos de forma segura sistemas de filtración de piscinas, generadores de vapor e iluminación especializada utilizando materiales resistentes al calor y totalmente impermeables.",
+        "g1": "Piscinas y Jacuzzis",
+        "g2": "Saunas y Baños Turcos",
+        "g3": "Protección IP68",
+        "g4": "Filtración de Bomba"
+      },
+      "backupPower": {
+        "title": "Energía de Respaldo",
+        "desc": "Generadores con conmutación automática, sistemas de alimentación ininterrumpida y baterías con inversor para una autonomía silenciosa y fiable.",
+        "mainDesc": "Integración profesional de fuentes de energía independientes adaptadas a las demandas energéticas de su hogar. Ofrecemos instalación completa de sistemas SAI (UPS) y generadores de emergencia, garantizando electricidad estable para sus sistemas más críticos.",
+        "g1": "Generadores de Emergencia",
+        "g2": "Almacenamiento y SAI",
+        "g3": "Transferencia Automática",
+        "g4": "Autonomía Total"
+      },
+      "alternativeEnergy": {
+        "title": "Integración de Energía Alternativa",
+        "desc": "Inversores de red y sincronización que conectan su instalación solar existente con generadores y baterías de respaldo en un solo sistema coherente.",
+        "mainDesc": "Integración profesional de sistemas de energía renovable. Instalamos con expertos paneles solares de alta eficiencia, inversores de red y cargadores de vehículos eléctricos domésticos, creando un ecosistema integrado que maximiza su producción y uso de energía.",
+        "g1": "Paneles Solares",
+        "g2": "Inversores de Red",
+        "g3": "Carga de Vehículos Eléctricos",
+        "g4": "Almacenamiento de Energía"
+      },
+      "evCharging": {
+        "title": "Carga de Vehículos Eléctricos",
+        "desc": "Estaciones wallbox rápidas para el garaje, balanceo inteligente de carga para que la recarga nunca sobrecargue la red del hogar, y puntos de carga exteriores protegidos.",
+        "mainDesc": "Cargue su vehículo de forma segura y eficiente desde la comodidad de su hogar. Instalamos estaciones de carga premium para vehículos eléctricos con equilibrio inteligente de carga, asegurando una carga rápida y fiable sin sobrecargar la red eléctrica de su hogar.",
+        "g1": "Cargadores Premium",
+        "g2": "Unidades Impermeables",
+        "g3": "Wallboxes Compactos",
+        "g4": "Equilibrio de Carga"
+      },
+      "security": {
+        "title": "Sistemas de Seguridad",
+        "desc": "Videovigilancia IP con acceso remoto, videoporteros y control de acceso para portones, y sensores de fuga o gas con corte automático.",
+        "mainDesc": "Protección integral de la propiedad basada en tecnologías inteligentes. Desde cámaras IP fiables e interfonos de vídeo hasta válvulas automáticas de cierre de agua, instalamos una red de seguridad robusta adaptada a sus necesidades específicas.",
+        "g1": "Videovigilancia",
+        "g2": "Control de Acceso",
+        "g3": "Detección de Fugas",
+        "g4": "Seguridad contra Gas y Fuego"
+      }
+    },
+    "portfolioSection": {
+      "label": "NUESTRO TRABAJO",
+      "title": "Nuestro portafolio eléctrico",
+      "desc": "Proyectos reales. Soluciones inteligentes. Impacto duradero. Explore una selección de instalaciones eléctricas realizadas con precisión y esmero.",
+      "stats": {
+        "completed": {
+          "val": "120+",
+          "lab": "Proyectos Completados"
+        },
+        "satisfaction": {
+          "val": "98%",
+          "lab": "Satisfacción del Cliente"
+        },
+        "experience": {
+          "val": "15+",
+          "lab": "Años de Experiencia"
+        },
+        "partners": {
+          "val": "50+",
+          "lab": "Socios de Confianza"
+        }
+      },
+      "categories": {
+        "all": "Todos los Proyectos",
+        "residential": "Residencial",
+        "commercial": "Comercial",
+        "industrial": "Industrial",
+        "solar": "Integración Solar"
+      },
+      "projects": {
+        "boudewijn": {
+          "title": "Instalación de Hogar Inteligente",
+          "desc": "Instalación eléctrica completa con iluminación inteligente, control de clima y monitoreo de energía."
+        },
+        "edegem": {
+          "title": "Modernización de Edificio de Oficinas",
+          "desc": "Actualización del sistema eléctrico que incluye nuevos tableros de distribución, iluminación y cableado de datos."
+        },
+        "heideland": {
+          "title": "Complejo de Apartamentos",
+          "desc": "Instalación eléctrica completa para un complejo residencial de 32 unidades."
+        },
+        "laureysstraat": {
+          "title": "Infraestructura de Carga de VE",
+          "desc": "Diseño e instalación de estaciones de carga de vehículos eléctricos para estacionamiento de oficinas."
+        },
+        "leksklyuze": {
+          "title": "Automatización de Apartamento",
+          "desc": "Control de clima inteligente e infraestructura de red."
+        },
+        "oogststraat": {
+          "title": "Integración de Sistema Solar Fotovoltaico",
+          "desc": "Integración de un sistema solar fotovoltaico de 50 kW con la infraestructura eléctrica existente."
+        },
+        "potter": {
+          "title": "Instalación de Manufactura",
+          "desc": "Diseño e instalación de distribución de energía para una nueva nave de producción."
+        },
+        "spoorweglaan": {
+          "title": "Seguridad en Finca de Lujo",
+          "desc": "Cimentación eléctrica y sistemas de seguridad para una finca de lujo."
+        }
+      },
+      "cta": {
+        "title": "¿Tiene un proyecto en mente?",
+        "desc": "Construyamos juntos algo seguro, eficiente y preparado para el futuro.",
+        "btn": "Póngase en contacto"
+      },
+      "viewCase": "Ver caso de estudio"
+    },
+    "reviewsSection": {
+      "label": "OPINIONES DE CLIENTES",
+      "title": "Lo que dicen nuestros clientes",
+      "desc": "Nos enorgullecemos de ofrecer soluciones eléctricas seguras, fiables y preparadas para el futuro. Esto es lo que dicen nuestros clientes sobre su experiencia con Sunberg.",
+      "stats": {
+        "rating": "Basado en 48 opiniones"
+      },
+      "reviews": {
+        "r1": {
+          "name": "Arthur De Smet",
+          "role": "Propietario",
+          "text": "Sunberg recableó por completo nuestra casa de los años 50. El equipo fue increíblemente profesional, limpio, y el tablero final parece una obra de arte. Duermo mucho mejor sabiendo que nuestro hogar es seguro."
+        },
+        "r2": {
+          "name": "Sophie Van den Berghe",
+          "role": "Arquitecta",
+          "text": "Como arquitecta, aprecio a los contratistas que entienden tanto la funcionalidad como la estética. La integración de hogar inteligente de Sunberg fue impecable. Muy recomendado para construcciones de lujo."
+        },
+        "r3": {
+          "name": "Laurent Dubois",
+          "role": "Dueño de Negocio",
+          "text": "Los contratamos para una instalación eléctrica y de iluminación personalizada en nuestro nuevo hogar inteligente. Terminaron exactamente a tiempo y pasaron todas las inspecciones de la ciudad en el primer intento."
+        }
+      }
+    }
   },
   "techPage": {
     "hero": {

@@ -317,6 +317,7 @@
     "services": "Services",
     "projects": "Projets",
     "tech": "Tech Solaire",
+    "electrical": "Services Électriques",
     "contact": "Contact"
   },
   "revolution": {
@@ -675,6 +676,212 @@
         "label": "Industriel"
       }
     ]
+  },
+  "electricalPage": {
+    "hero": {
+      "watermark": "ÉLECTRICITÉ",
+      "label": "Au-delà du Solaire",
+      "title": "Services Électriques Complets",
+      "desc": "Le solaire est notre cœur de métier, mais notre expertise technique couvre chaque aspect de votre installation électrique. Câblage, tableaux électriques, domotique, alimentation de secours et sécurité — une seule équipe, une seule exigence de qualité."
+    },
+    "categoriesSection": {
+      "label": "Notre Expertise",
+      "title": "Dix Domaines, Une Seule Équipe",
+      "desc": "Chaque catégorie ci-dessous est prise en charge en interne par les mêmes ingénieurs qui installent votre système solaire — aucun sous-traitant, aucune rupture de responsabilité.",
+      "scrollHint": "Faites défiler la liste pour en savoir plus",
+      "teamCard": {
+        "title": "Une Équipe. Responsabilité Totale.",
+        "desc": "De la conception à l'installation et au-delà — nous assumons la responsabilité de chaque détail.",
+        "btn": "Travaillons ensemble"
+      }
+    },
+    "categories": {
+      "wiring": {
+        "title": "Câblage",
+        "desc": "Cheminement complet des câbles et câblage de gros œuvre selon les normes européennes, ainsi que l'installation de prises, interrupteurs et thermostats parfaitement alignés.",
+        "mainDesc": "Services de câblage professionnels pour des projets de toute envergure. Nous gérons la distribution électrique complète : de l'entrée de service principale aux points finaux pour les prises, les interrupteurs et les réseaux. Nous utilisons des matériaux fiables et concevons le câblage pour qu'il soit facile à entretenir.",
+        "g1": "Conception du système",
+        "g2": "Cheminement des câbles",
+        "g3": "Entretien facile",
+        "g4": "Précision et sécurité"
+      },
+      "switchboards": {
+        "title": "Tableaux Électriques",
+        "desc": "Conception et assemblage de tableaux de distribution principaux avec des composants premium, dotés d'une protection moderne contre les fuites de courant, les courts-circuits et les surtensions.",
+        "mainDesc": "Installations de tableaux professionnels conçues pour les foyers modernes à forte charge. Nous construisons des panneaux méticuleusement organisés équipés de systèmes de protection avancés pour protéger vos appareils électroniques contre les surtensions et les défauts électriques.",
+        "g1": "Protection avancée",
+        "g2": "Intégration intelligente",
+        "g3": "Conception professionnelle",
+        "g4": "Montage soigné"
+      },
+      "heating": {
+        "title": "Chauffage & Climat",
+        "desc": "Nattes et câbles de chauffage au sol avec thermostats intelligents, systèmes de dégivrage pour toitures et allées, et câblage électrique des chaufferies et pompes à chaleur.",
+        "mainDesc": "Des solutions de chauffage complètes pour un confort absolu par tous les temps. Nous nous spécialisons dans le chauffage au sol économe en énergie et la régulation climatique intelligente, veillant à ce que votre maison maintienne une température parfaite tout au long de l'année.",
+        "g1": "Plancher chauffant",
+        "g2": "Intégration de la chaudière",
+        "g3": "Thermostats intelligents",
+        "g4": "Contrôle du climat par application"
+      },
+      "smartHome": {
+        "title": "Maison Connectée",
+        "desc": "Scénarios d'éclairage centralisés et variation d'intensité, régulation climatique intelligente, et motorisation des rideaux, portails et volets — depuis une seule interface.",
+        "mainDesc": "Domotique complète pour un contrôle sans effort de votre environnement. Nous synchronisons votre éclairage, vos systèmes de climatisation et vos stores motorisés, créant une infrastructure stable qui fonctionne exactement comme vous le souhaitez.",
+        "g1": "Éclairage intelligent",
+        "g2": "Climat de précision",
+        "g3": "Ombrage automatisé",
+        "g4": "Contrôle centralisé"
+      },
+      "lighting": {
+        "title": "Systèmes d'Éclairage",
+        "desc": "Éclairage de façade et paysager avec luminaires tous temps, ainsi qu'éclairage architectural intérieur avec rails magnétiques et profilés LED dissimulés.",
+        "mainDesc": "Des solutions d'éclairage haut de gamme adaptées à votre espace. De l'éclairage architectural précis aux profilés LED personnalisés et aux commandes de gradation douces, nous assurons une installation impeccable qui apporte esthétique moderne et confort à votre environnement.",
+        "g1": "Profilés LED sur Mesure",
+        "g2": "Éclairage Intelligent",
+        "g3": "Systèmes de Rails Magnétiques",
+        "g4": "Éclairage LED Invisible"
+      },
+      "spa": {
+        "title": "Espaces Bien-être",
+        "desc": "Raccordements électriques sécurisés pour piscines, jacuzzis, saunas et générateurs de vapeur, réalisés avec une protection IP68 contre l'humidité.",
+        "mainDesc": "Ingénierie électrique spécialisée pour les environnements humides et agressifs. Nous raccordons en toute sécurité les systèmes de filtration de piscine, les générateurs de vapeur et l'éclairage spécialisé à l'aide de matériaux résistants à la chaleur et entièrement étanches.",
+        "g1": "Piscines et Jacuzzis",
+        "g2": "Saunas et Hammams",
+        "g3": "Protection IP68",
+        "g4": "Filtration par pompe"
+      },
+      "backupPower": {
+        "title": "Alimentation de Secours",
+        "desc": "Groupes électrogènes avec commutation automatique, onduleurs, et systèmes de batteries pour une autonomie silencieuse et fiable.",
+        "mainDesc": "Intégration professionnelle de sources d'énergie indépendantes adaptées aux exigences énergétiques de votre maison. Nous proposons une installation complète de systèmes onduleurs (UPS) et de générateurs de secours, garantissant une électricité stable pour vos systèmes les plus critiques.",
+        "g1": "Générateurs de secours",
+        "g2": "Stockage sur batterie et ASI",
+        "g3": "Transfert automatique",
+        "g4": "Autonomie totale"
+      },
+      "alternativeEnergy": {
+        "title": "Intégration Énergies Alternatives",
+        "desc": "Onduleurs réseau et synchronisation reliant votre installation solaire existante aux groupes électrogènes et batteries de secours en un seul système cohérent.",
+        "mainDesc": "Intégration professionnelle de systèmes d'énergie renouvelable. Nous installons habilement des panneaux solaires à haute efficacité, des onduleurs réseau et des chargeurs pour VE domestiques, créant un écosystème transparent qui maximise votre production et utilisation d'énergie.",
+        "g1": "Panneaux solaires",
+        "g2": "Onduleurs réseau",
+        "g3": "Recharge VE",
+        "g4": "Stockage d'énergie"
+      },
+      "evCharging": {
+        "title": "Recharge Véhicules Électriques",
+        "desc": "Bornes wallbox rapides pour le garage, équilibrage intelligent de charge pour ne jamais surcharger le réseau domestique, et points de recharge extérieurs protégés.",
+        "mainDesc": "Rechargez votre véhicule en toute sécurité et efficacité dans le confort de votre maison. Nous installons des bornes de recharge pour VE premium avec équilibrage de charge intelligent, garantissant une charge rapide et fiable sans surcharger le réseau électrique de votre maison.",
+        "g1": "Chargeurs premium",
+        "g2": "Unités étanches",
+        "g3": "Boîtiers muraux compacts",
+        "g4": "Équilibrage de charge"
+      },
+      "security": {
+        "title": "Systèmes de Sécurité",
+        "desc": "Vidéosurveillance IP avec accès à distance, interphones vidéo et contrôle d'accès pour portails, et détecteurs de fuite ou de gaz avec coupure automatique.",
+        "mainDesc": "Protection complète de la propriété basée sur des technologies intelligentes. Des caméras IP fiables et interphones vidéo aux vannes d'arrêt d'eau automatisées, nous installons un réseau de sécurité robuste adapté à vos besoins spécifiques.",
+        "g1": "Vidéosurveillance",
+        "g2": "Contrôle d'accès",
+        "g3": "Détection de fuite",
+        "g4": "Sécurité gaz et incendie"
+      }
+    },
+    "portfolioSection": {
+      "label": "NOTRE TRAVAIL",
+      "title": "Notre portefeuille électrique",
+      "desc": "Projets réels. Solutions intelligentes. Impact durable. Explorez une sélection d'installations électriques réalisées avec précision et soin.",
+      "stats": {
+        "completed": {
+          "val": "120+",
+          "lab": "Projets Terminés"
+        },
+        "satisfaction": {
+          "val": "98%",
+          "lab": "Satisfaction Client"
+        },
+        "experience": {
+          "val": "15+",
+          "lab": "Années d'Expérience"
+        },
+        "partners": {
+          "val": "50+",
+          "lab": "Partenaires de Confiance"
+        }
+      },
+      "categories": {
+        "all": "Tous les Projets",
+        "residential": "Résidentiel",
+        "commercial": "Commercial",
+        "industrial": "Industriel",
+        "solar": "Intégration Solaire"
+      },
+      "projects": {
+        "boudewijn": {
+          "title": "Installation de Maison Intelligente",
+          "desc": "Installation électrique complète avec éclairage intelligent, contrôle climatique et surveillance énergétique."
+        },
+        "edegem": {
+          "title": "Modernisation de Bâtiment de Bureaux",
+          "desc": "Mise à niveau du système électrique, comprenant de nouveaux tableaux de distribution, l'éclairage et le câblage informatique."
+        },
+        "heideland": {
+          "title": "Complexe Résidentiel",
+          "desc": "Installation électrique complète pour un complexe résidentiel de 32 unités."
+        },
+        "laureysstraat": {
+          "title": "Infrastructure de Recharge pour VE",
+          "desc": "Conception et installation de bornes de recharge pour VE sur le parking d'un bureau."
+        },
+        "leksklyuze": {
+          "title": "Domotique d'Appartement",
+          "desc": "Contrôle climatique intelligent et infrastructure réseau."
+        },
+        "oogststraat": {
+          "title": "Intégration de Système Solaire PV",
+          "desc": "Intégration d'un système solaire PV de 50 kW à l'infrastructure électrique existante."
+        },
+        "potter": {
+          "title": "Site de Fabrication",
+          "desc": "Conception et installation de la distribution d'énergie pour un nouveau hall de production."
+        },
+        "spoorweglaan": {
+          "title": "Sécurité de Domaine de Luxe",
+          "desc": "Fondation électrique et systèmes de sécurité pour un domaine de luxe."
+        }
+      },
+      "cta": {
+        "title": "Un projet en tête ?",
+        "desc": "Bâtissons ensemble quelque chose de sûr, d'efficace et de prêt pour l'avenir.",
+        "btn": "Contactez-nous"
+      },
+      "viewCase": "Voir l'étude de cas"
+    },
+    "reviewsSection": {
+      "label": "RETOURS DE NOS CLIENTS",
+      "title": "Ce Que Disent Nos Clients",
+      "desc": "Nous sommes fiers de fournir des solutions électriques sûres, fiables et prêtes pour l'avenir. Voici ce que nos clients disent de leur collaboration avec Sunberg.",
+      "stats": {
+        "rating": "Basé sur 48 avis"
+      },
+      "reviews": {
+        "r1": {
+          "name": "Arthur De Smet",
+          "role": "Propriétaire",
+          "text": "Sunberg a entièrement recâblé notre maison des années 1950. L'équipe était incroyablement professionnelle, propre, et le tableau final ressemble à une œuvre d'art. Je dors beaucoup mieux en sachant que notre maison est en sécurité."
+        },
+        "r2": {
+          "name": "Sophie Van den Berghe",
+          "role": "Architecte",
+          "text": "En tant qu'architecte, j'apprécie les entrepreneurs qui comprennent à la fois la fonctionnalité et l'esthétique. L'intégration de la maison intelligente par Sunberg était impeccable. Fortement recommandé pour les constructions de luxe."
+        },
+        "r3": {
+          "name": "Laurent Dubois",
+          "role": "Chef d'entreprise",
+          "text": "Nous les avons engagés pour une installation électrique et un éclairage sur mesure dans notre nouvelle maison intelligente. Ils ont terminé exactement dans les délais et ont réussi toutes les inspections de la ville du premier coup."
+        }
+      }
+    }
   },
   "techPage": {
     "hero": {

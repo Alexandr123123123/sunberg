@@ -317,6 +317,7 @@
     "services": "Diensten",
     "projects": "Projecten",
     "tech": "Zonnetechnologie",
+    "electrical": "Elektrische Diensten",
     "contact": "Contact"
   },
   "revolution": {
@@ -675,6 +676,212 @@
         "label": "Industrieel"
       }
     ]
+  },
+  "electricalPage": {
+    "hero": {
+      "watermark": "ELEKTRICITEIT",
+      "label": "Meer dan Zonne-energie",
+      "title": "Elektrische Diensten in Volle Breedte",
+      "desc": "Zonne-energie is onze kernexpertise, maar onze technische kennis strekt zich uit tot elk onderdeel van uw elektrische installatie. Van bekabeling en schakelborden tot domotica, noodstroom en beveiliging — één team, één kwaliteitsstandaard."
+    },
+    "categoriesSection": {
+      "label": "Onze Expertise",
+      "title": "Tien Disciplines, Eén Team",
+      "desc": "Elke categorie hieronder wordt intern uitgevoerd door dezelfde ingenieurs die uw zonnesysteem installeren — geen onderaannemers, geen verlies van verantwoordelijkheid.",
+      "scrollHint": "Scroll door de lijst om meer te ontdekken",
+      "teamCard": {
+        "title": "Eén Team. Volledige Verantwoordelijkheid.",
+        "desc": "Van ontwerp tot installatie en daarna — wij nemen de verantwoordelijkheid voor elk detail.",
+        "btn": "Laten we samenwerken"
+      }
+    },
+    "categories": {
+      "wiring": {
+        "title": "Bekabeling",
+        "desc": "Volledige kabeltrajecten en ruwbouwbekabeling volgens Europese normen, plus installatie van stopcontacten, schakelaars en thermostaten met perfecte uitlijning.",
+        "mainDesc": "Professionele bedradingsdiensten voor projecten van elke omvang. Wij verzorgen de complete elektrische distributie: van de hoofdaansluiting tot de eindpunten voor stopcontacten, schakelaars en netwerken. Wij gebruiken betrouwbare materialen en ontwerpen de bedrading zodat deze eenvoudig te onderhouden is.",
+        "g1": "Systeemontwerp",
+        "g2": "Kabelroutering",
+        "g3": "Eenvoudig onderhoud",
+        "g4": "Precisie & Veiligheid"
+      },
+      "switchboards": {
+        "title": "Schakelborden",
+        "desc": "Ontwerp en montage van hoofdverdeelborden met premium componenten, met moderne bescherming tegen lekstroom, kortsluiting en overspanning.",
+        "mainDesc": "Professionele schakelbordinstallaties ontworpen voor moderne huishoudens met een hoge belasting. Wij bouwen zorgvuldig georganiseerde panelen uitgerust met geavanceerde beveiligingssystemen om uw elektronica te beschermen tegen stroompieken en elektrische storingen.",
+        "g1": "Geavanceerde bescherming",
+        "g2": "Slimme integratie",
+        "g3": "Professioneel ontwerp",
+        "g4": "Nette montage"
+      },
+      "heating": {
+        "title": "Verwarming & Klimaat",
+        "desc": "Vloerverwarmingsmatten en -kabels met slimme thermostaten, dooisystemen voor daken en opritten, en elektrische aansluiting van stookruimtes en warmtepompen.",
+        "mainDesc": "Uitgebreide verwarmingsoplossingen voor absoluut comfort onder alle weersomstandigheden. Wij zijn gespecialiseerd in energiezuinige vloerverwarming en slimme klimaatbeheersing, zodat uw huis het hele jaar door de perfecte temperatuur behoudt.",
+        "g1": "Vloerverwarming",
+        "g2": "Ketelintegratie",
+        "g3": "Slimme thermostaten",
+        "g4": "App-klimaatregeling"
+      },
+      "smartHome": {
+        "title": "Domotica",
+        "desc": "Gecentraliseerde lichtscenario's en dimming, intelligente klimaatregeling, en gemotoriseerde gordijnen, poorten en zonwering — alles vanuit één interface.",
+        "mainDesc": "Volledige huisautomatisering voor moeiteloze controle over uw omgeving. We synchroniseren uw verlichting, klimaatsystemen en gemotoriseerde zonwering en creëren een stabiele infrastructuur die precies werkt zoals u dat wilt.",
+        "g1": "Intelligente verlichting",
+        "g2": "Precisieklimaat",
+        "g3": "Geautomatiseerde zonwering",
+        "g4": "Gecentraliseerde bediening"
+      },
+      "lighting": {
+        "title": "Verlichtingssystemen",
+        "desc": "Gevel- en tuinverlichting met weerbestendige armaturen, plus architecturale binnenverlichting met magnetische rails en verborgen LED-profielen.",
+        "mainDesc": "Hoogwaardige verlichtingsoplossingen op maat van uw ruimte. Van nauwkeurige architecturale verlichting tot gepersonaliseerde LED-profielen en soepele dimregelingen, wij zorgen voor een vlekkeloze installatie die moderne esthetiek en comfort in uw omgeving brengt.",
+        "g1": "Gepersonaliseerde LED-profielen",
+        "g2": "Slimme Verlichting",
+        "g3": "Magnetische Railsystemen",
+        "g4": "Verborgen LED-verlichting"
+      },
+      "spa": {
+        "title": "Wellness Zones",
+        "desc": "Veilige elektrische aansluitingen voor zwembaden, jacuzzi's, sauna's en stoomgeneratoren, uitgevoerd met IP68-vochtbescherming voor natte omgevingen.",
+        "mainDesc": "Gespecialiseerde elektrotechniek voor natte en agressieve omgevingen. We sluiten zwembadfiltratiesystemen, stoomgeneratoren en gespecialiseerde verlichting veilig aan met behulp van hittebestendige en volledig waterdichte materialen.",
+        "g1": "Zwembaden & Jacuzzi's",
+        "g2": "Sauna's & Hammams",
+        "g3": "IP68-bescherming",
+        "g4": "Pompfiltratie"
+      },
+      "backupPower": {
+        "title": "Noodstroom",
+        "desc": "Generatoren met automatische omschakeling, ononderbroken stroomvoorzieningen en batterij-omvormersystemen voor stille, betrouwbare autonomie.",
+        "mainDesc": "Professionele integratie van onafhankelijke stroombronnen afgestemd op de energiebehoefte van uw huis. Wij bieden een volledige installatie van UPS-systemen en noodgeneratoren en garanderen stabiele elektriciteit voor uw meest kritieke systemen.",
+        "g1": "Noodgeneratoren",
+        "g2": "Batterijopslag & UPS",
+        "g3": "Automatische overdracht",
+        "g4": "Totale autonomie"
+      },
+      "alternativeEnergy": {
+        "title": "Integratie Alternatieve Energie",
+        "desc": "Omvormers en synchronisatie die uw bestaande zonnepanelen verbinden met generatoren en back-upbatterijen tot één samenhangend energiesysteem.",
+        "mainDesc": "Professionele integratie van hernieuwbare energiesystemen. Wij installeren vakkundig hoogrenderende zonnepanelen, netomvormers en EV-laders voor thuis, waardoor een naadloos ecosysteem ontstaat dat uw energieproductie en -gebruik maximaliseert.",
+        "g1": "Zonnepanelen",
+        "g2": "Netomvormers",
+        "g3": "EV-laden",
+        "g4": "Energieopslag"
+      },
+      "evCharging": {
+        "title": "EV-laden",
+        "desc": "Snelle wallbox-laadstations voor de garage, slimme lastbalancering zodat laden het huisnet nooit overbelast, en beschermde buitenlaadpunten.",
+        "mainDesc": "Laad uw voertuig veilig en efficiënt op vanuit het comfort van uw huis. Wij installeren premium EV-laadstations met slimme load balancing, zodat u snel en betrouwbaar kunt opladen zonder het elektriciteitsnet van uw huis te overbelasten.",
+        "g1": "Premium Laders",
+        "g2": "Weerbestendige units",
+        "g3": "Compacte Wallboxes",
+        "g4": "Load Balancing"
+      },
+      "security": {
+        "title": "Beveiligingssystemen",
+        "desc": "IP-videobewaking met externe toegang, videofoons en toegangscontrole voor poorten, en lek- of gasdetectoren met automatische afsluiting.",
+        "mainDesc": "Uitgebreide eigendomsbescherming gebouwd op slimme technologieën. Van betrouwbare IP-camera's en video-intercoms tot automatische waterafsluiters, wij installeren een robuust beveiligingsnetwerk afgestemd op uw specifieke behoeften.",
+        "g1": "Videobewaking",
+        "g2": "Toegangscontrole",
+        "g3": "Lekdetectie",
+        "g4": "Gas- en brandveiligheid"
+      }
+    },
+    "portfolioSection": {
+      "label": "ONS WERK",
+      "title": "Ons portfolio",
+      "desc": "Echte projecten. Slimme oplossingen. Blijvende impact. Ontdek een selectie van elektrische installaties geleverd met precisie en zorg.",
+      "stats": {
+        "completed": {
+          "val": "120+",
+          "lab": "Projecten Voltooid"
+        },
+        "satisfaction": {
+          "val": "98%",
+          "lab": "Klanttevredenheid"
+        },
+        "experience": {
+          "val": "15+",
+          "lab": "Jaren Ervaring"
+        },
+        "partners": {
+          "val": "50+",
+          "lab": "Betrouwbare Partners"
+        }
+      },
+      "categories": {
+        "all": "Alle Projecten",
+        "residential": "Residentieel",
+        "commercial": "Commercieel",
+        "industrial": "Industrieel",
+        "solar": "Zonne-integratie"
+      },
+      "projects": {
+        "boudewijn": {
+          "title": "Smart Home Installatie",
+          "desc": "Volledige elektrische installatie met slimme verlichting, klimaatregeling en energiemonitoring."
+        },
+        "edegem": {
+          "title": "Upgrade Kantoorgebouw",
+          "desc": "Elektrische systeemupgrade inclusief nieuwe verdeelkasten, verlichting en databekabeling."
+        },
+        "heideland": {
+          "title": "Appartementencomplex",
+          "desc": "Volledige elektrische installatie voor een residentieel complex met 32 units."
+        },
+        "laureysstraat": {
+          "title": "Infrastructuur voor EV-laden",
+          "desc": "Ontwerp en installatie van EV-laadstations voor parkeerplaatsen van kantoren."
+        },
+        "leksklyuze": {
+          "title": "Automatisering van Appartementen",
+          "desc": "Slimme klimaatregeling en netwerkinfrastructuur."
+        },
+        "oogststraat": {
+          "title": "Zonne-PV Systeem Integratie",
+          "desc": "Integratie van 50kW zonne-PV systeem met bestaande elektrische infrastructuur."
+        },
+        "potter": {
+          "title": "Productiefaciliteit",
+          "desc": "Ontwerp en installatie van stroomdistributie voor een nieuwe productiehal."
+        },
+        "spoorweglaan": {
+          "title": "Beveiliging van Luxe Landgoed",
+          "desc": "Elektrische fundering en beveiligingssystemen voor een luxe landgoed."
+        }
+      },
+      "cta": {
+        "title": "Heeft u een project in gedachten?",
+        "desc": "Laten we samen iets veiligs, efficiënts en toekomstbestendigs bouwen.",
+        "btn": "Neem contact op"
+      },
+      "viewCase": "Bekijk case study"
+    },
+    "reviewsSection": {
+      "label": "FEEDBACK VAN KLANTEN",
+      "title": "Wat Onze Klanten Zeggen",
+      "desc": "We zijn trots op het leveren van veilige, betrouwbare en toekomstbestendige elektrische oplossingen. Dit is wat onze klanten te zeggen hebben over de samenwerking met Sunberg.",
+      "stats": {
+        "rating": "Gebaseerd op 48 beoordelingen"
+      },
+      "reviews": {
+        "r1": {
+          "name": "Arthur De Smet",
+          "role": "Huiseigenaar",
+          "text": "Sunberg heeft ons huis uit de jaren 50 volledig opnieuw bedraad. Het team was ongelooflijk professioneel, netjes en het uiteindelijke paneel ziet eruit als een kunstwerk. Ik slaap een stuk beter in de wetenschap dat ons huis veilig is."
+        },
+        "r2": {
+          "name": "Sophie Van den Berghe",
+          "role": "Architect",
+          "text": "Als architect waardeer ik aannemers die zowel functionaliteit als esthetiek begrijpen. De smart home integratie van Sunberg was vlekkeloos. Ten zeerste aanbevolen voor luxe bouwprojecten."
+        },
+        "r3": {
+          "name": "Laurent Dubois",
+          "role": "Ondernemer",
+          "text": "We hebben ze ingehuurd voor een op maat gemaakte verlichting en elektrische installatie in ons nieuwe smart home. Ze waren precies op schema klaar en kwamen in één keer door alle stadsinspecties."
+        }
+      }
+    }
   },
   "techPage": {
     "hero": {

@@ -46,7 +46,8 @@ const Header = () => {
     { to: `${basePath}/about`, label: t('header.about') },
     { to: `${basePath}/services`, label: t('header.services') },
     // { to: `${basePath}/projects`, label: t('header.projects') },
-    { to: `${basePath}/tech`, label: t('header.tech') }
+    { to: `${basePath}/tech`, label: t('header.tech') },
+    { to: `${basePath}/electrical`, label: t('header.electrical') }
   ];
 
   const handleLangChange = (newLang) => {

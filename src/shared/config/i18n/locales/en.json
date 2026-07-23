@@ -321,6 +321,7 @@
     "services": "Services",
     "projects": "Projects",
     "tech": "Solar Tech",
+    "electrical": "Electrical Services",
     "contact": "Contact Us"
   },
   "servicesPage": {
@@ -804,6 +805,212 @@
       }
     ]
   },
+  "electricalPage": {
+    "hero": {
+      "watermark": "ELECTRICAL",
+      "label": "Beyond Solar",
+      "title": "Full-Spectrum Electrical Services",
+      "desc": "Solar is our core craft, but our engineering expertise extends to every corner of your electrical system. From wiring and switchboards to smart home automation, backup power, and security — one team, one standard of quality."
+    },
+    "categoriesSection": {
+      "label": "Our Expertise",
+      "title": "Ten Disciplines, One Team",
+      "desc": "Every category below is handled in-house by the same engineers who install your solar system — no subcontractors, no gaps in accountability.",
+      "scrollHint": "Scroll list to explore more",
+      "teamCard": {
+        "title": "One Team. Full Responsibility.",
+        "desc": "From design to installation and beyond — we take ownership of every detail.",
+        "btn": "Let's work together"
+      }
+    },
+    "categories": {
+      "wiring": {
+        "title": "Wiring & Cabling",
+        "desc": "Complete cable routing and rough-in wiring according to European standards, plus installation of sockets, switches, and thermostats with perfect alignment.",
+        "mainDesc": "Professional wiring services for projects of any scale. We handle complete electrical distribution: from the main service entrance to the final points for outlets, switches, and networking. We use reliable materials and design the wiring to be easy to maintain.",
+        "g1": "System Design",
+        "g2": "Cable Routing",
+        "g3": "Easy Maintenance",
+        "g4": "Precision & Safety"
+      },
+      "switchboards": {
+        "title": "Switchboards",
+        "desc": "Design and assembly of main distribution boards on premium components, with modern protection against leakage currents, short circuits, and surges.",
+        "mainDesc": "Professional switchboard installations designed for modern high-load households. We build meticulously organized panels equipped with advanced protection systems to safeguard your electronics from surges and electrical faults.",
+        "g1": "Advanced Protection",
+        "g2": "Smart Integration",
+        "g3": "Professional Design",
+        "g4": "Clean Assembly"
+      },
+      "heating": {
+        "title": "Heating & Climate",
+        "desc": "Underfloor heating mats and cables with smart thermostats, de-icing systems for roofs and driveways, and electrical wiring for boiler rooms and heat pumps.",
+        "mainDesc": "Comprehensive heating solutions for absolute comfort in any weather. We specialize in energy-efficient underfloor heating and smart climate control, ensuring your home maintains the perfect temperature all year round.",
+        "g1": "Underfloor Heating",
+        "g2": "Boiler Integration",
+        "g3": "Smart Thermostats",
+        "g4": "App Climate Control"
+      },
+      "smartHome": {
+        "title": "Smart Home",
+        "desc": "Centralized lighting scenarios and dimming, intelligent climate control, and motorized curtains, gates, and blinds — all from one interface.",
+        "mainDesc": "Complete home automation for effortless control over your environment. We synchronize your lighting, climate systems, and motorized blinds, creating a stable infrastructure that works exactly as you want it to.",
+        "g1": "Intelligent Lighting",
+        "g2": "Precision Climate",
+        "g3": "Automated Shading",
+        "g4": "Centralized Control"
+      },
+      "lighting": {
+        "title": "Lighting Systems",
+        "desc": "Facade and landscape illumination with all-weather fixtures, plus architectural interior lighting with magnetic tracks and hidden LED profiles.",
+        "mainDesc": "Premium lighting solutions tailored to your space. From precise architectural lighting to custom LED profiles and smooth dimming controls, we provide flawless installation that brings modern aesthetics and comfort to your environment.",
+        "g1": "Custom LED Profiles",
+        "g2": "Smart Lighting",
+        "g3": "Magnetic Track Systems",
+        "g4": "Hidden LED Lighting"
+      },
+      "spa": {
+        "title": "Spa Zones",
+        "desc": "Safe electrical connections for pools, jacuzzis, saunas, and steam generators, built with IP68 moisture protection for demanding wet environments.",
+        "mainDesc": "Specialized electrical engineering for wet and aggressive environments. We safely connect pool filtration systems, steam generators, and specialized lighting using heat-resistant and fully waterproof materials.",
+        "g1": "Pools & Jacuzzis",
+        "g2": "Saunas & Hammams",
+        "g3": "IP68 Protection",
+        "g4": "Pump Filtration"
+      },
+      "backupPower": {
+        "title": "Backup Power",
+        "desc": "Generators with automatic transfer switches, uninterruptible power supplies, and battery inverter systems for silent, reliable autonomy.",
+        "mainDesc": "Professional integration of independent power sources tailored to your home's energy demands. We provide full-cycle installation of UPS systems and standby generators, guaranteeing stable electricity for your most critical systems.",
+        "g1": "Standby Generators",
+        "g2": "Battery Storage & UPS",
+        "g3": "Automatic Transfer",
+        "g4": "Total Autonomy"
+      },
+      "alternativeEnergy": {
+        "title": "Alternative Energy Integration",
+        "desc": "Grid inverters and synchronization that connect your existing solar array with generators and backup batteries into one coherent energy system.",
+        "mainDesc": "Professional integration of renewable energy systems. We expertly install high-efficiency solar panels, grid inverters, and home EV chargers, creating a seamless ecosystem that maximizes your energy production and usage.",
+        "g1": "Solar Panels",
+        "g2": "Grid Inverters",
+        "g3": "EV Charging",
+        "g4": "Energy Storage"
+      },
+      "evCharging": {
+        "title": "EV Charging",
+        "desc": "Fast wallbox stations for the garage, smart load balancing so charging never overloads the home grid, and protected outdoor charging points.",
+        "mainDesc": "Power up your vehicle safely and efficiently from the comfort of your home. We install premium EV charging stations with smart load balancing, ensuring fast, reliable charging without overloading your home's electrical grid.",
+        "g1": "Premium Chargers",
+        "g2": "Weatherproof Units",
+        "g3": "Compact Wallboxes",
+        "g4": "Load Balancing"
+      },
+      "security": {
+        "title": "Security Systems",
+        "desc": "IP video surveillance with remote access, video intercoms and access control for gates, and leak or gas sensors with automatic shut-off.",
+        "mainDesc": "Comprehensive property protection built on smart technologies. From reliable IP cameras and video intercoms to automated water shut-off valves, we install a robust security network tailored to your specific needs.",
+        "g1": "Video Surveillance",
+        "g2": "Access Control",
+        "g3": "Leak Detection",
+        "g4": "Gas & Fire Safety"
+      }
+    },
+    "portfolioSection": {
+      "label": "OUR WORK",
+      "title": "Our Electrical Portfolio",
+      "desc": "Real projects. Smart solutions. Lasting impact. Explore a selection of electrical installations delivered with precision and care.",
+      "stats": {
+        "completed": {
+          "val": "120+",
+          "lab": "Projects Completed"
+        },
+        "satisfaction": {
+          "val": "98%",
+          "lab": "Client Satisfaction"
+        },
+        "experience": {
+          "val": "15+",
+          "lab": "Years of Experience"
+        },
+        "partners": {
+          "val": "50+",
+          "lab": "Trusted Partners"
+        }
+      },
+      "categories": {
+        "all": "All Projects",
+        "residential": "Residential",
+        "commercial": "Commercial",
+        "industrial": "Industrial",
+        "solar": "Solar Integration"
+      },
+      "projects": {
+        "boudewijn": {
+          "title": "Smart Home Installation",
+          "desc": "Complete electrical installation with smart lighting, climate control, and energy monitoring."
+        },
+        "edegem": {
+          "title": "Office Building Upgrade",
+          "desc": "Electrical system upgrade including new switchboards, lighting, and data cabling."
+        },
+        "heideland": {
+          "title": "Apartment Complex",
+          "desc": "Full electrical installation for 32-unit residential complex."
+        },
+        "laureysstraat": {
+          "title": "EV Charging Infrastructure",
+          "desc": "Design and installation of EV charging stations for office parking."
+        },
+        "leksklyuze": {
+          "title": "Apartment Automation",
+          "desc": "Smart climate control and network infrastructure."
+        },
+        "oogststraat": {
+          "title": "Solar PV System Integration",
+          "desc": "Integration of 50kW solar PV system with existing electrical infrastructure."
+        },
+        "potter": {
+          "title": "Manufacturing Facility",
+          "desc": "Power distribution design and installation for a new production hall."
+        },
+        "spoorweglaan": {
+          "title": "Luxury Estate Security",
+          "desc": "Luxury estate electrical foundation and security systems."
+        }
+      },
+      "cta": {
+        "title": "Have a project in mind?",
+        "desc": "Let's build something safe, efficient, and future-ready together.",
+        "btn": "Get in touch"
+      },
+      "viewCase": "View case study"
+    },
+    "reviewsSection": {
+      "label": "CLIENTS FEEDBACK",
+      "title": "What Our Clients Say",
+      "desc": "We take pride in delivering safe, reliable, and future-ready electrical solutions. Here's what our clients have to say about working with Sunberg.",
+      "stats": {
+        "rating": "Based on 48 reviews"
+      },
+      "reviews": {
+        "r1": {
+          "name": "Arthur De Smet",
+          "role": "Homeowner",
+          "text": "Sunberg completely rewired our 1950s house. The team was incredibly professional, clean, and the final panel looks like a work of art. I sleep much better knowing our home is safe."
+        },
+        "r2": {
+          "name": "Sophie Van den Berghe",
+          "role": "Architect",
+          "text": "As an architect, I appreciate contractors who understand both functionality and aesthetics. Sunberg's smart home integration was flawless. Highly recommended for luxury builds."
+        },
+        "r3": {
+          "name": "Laurent Dubois",
+          "role": "Business Owner",
+          "text": "We hired them for a custom lighting and electrical setup in our new smart home. They finished exactly on schedule and passed all city inspections on the very first try."
+        }
+      }
+    }
+  },
   "techPage": {
     "hero": {
       "label": "Engineering Excellence",
@@ -889,7 +1096,13 @@
         }
       ],
       "table": {
-        "headers": ["Technology", "Peak Efficiency", "Annual Degradation", "Temp. Coefficient", "Best For"],
+        "headers": [
+          "Technology",
+          "Peak Efficiency",
+          "Annual Degradation",
+          "Temp. Coefficient",
+          "Best For"
+        ],
         "rows": [
           {
             "tech": "PERC",
@@ -943,7 +1156,13 @@
         }
       ],
       "table": {
-        "headers": ["Technology", "Cost", "Shade Tolerance", "Battery Ready", "Best For"],
+        "headers": [
+          "Technology",
+          "Cost",
+          "Shade Tolerance",
+          "Battery Ready",
+          "Best For"
+        ],
         "rows": [
           {
             "tech": "String",
@@ -997,7 +1216,13 @@
         }
       ],
       "table": {
-        "headers": ["Chemistry", "Capacity Range", "Lifespan", "Thermal Stability", "Best For"],
+        "headers": [
+          "Chemistry",
+          "Capacity Range",
+          "Lifespan",
+          "Thermal Stability",
+          "Best For"
+        ],
         "rows": [
           {
             "tech": "NMC Storage",
@@ -1051,7 +1276,13 @@
         }
       ],
       "table": {
-        "headers": ["Component", "Primary Function", "Response Time", "Code Required", "Best For"],
+        "headers": [
+          "Component",
+          "Primary Function",
+          "Response Time",
+          "Code Required",
+          "Best For"
+        ],
         "rows": [
           {
             "tech": "Rapid Shutdown",
@@ -1105,7 +1336,13 @@
         }
       ],
       "table": {
-        "headers": ["System Type", "Roof Penetration", "Angle Optimization", "Cooling Efficiency", "Best For"],
+        "headers": [
+          "System Type",
+          "Roof Penetration",
+          "Angle Optimization",
+          "Cooling Efficiency",
+          "Best For"
+        ],
         "rows": [
           {
             "tech": "Pitched Roof",
