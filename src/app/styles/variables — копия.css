@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #5B7E5F;
+  --color-secondary: #8BA88E;
+  --color-bg: #FAF8F5;
+  --color-surface: #FFFFFF;
+  --color-text: #1A1A1A;
+  --color-text-muted: #7A7A7A;
+  --color-border: #ECEAE6;
+  --color-accent: #1A1A1A;
+  --color-accent-hover: #333333;
+  --color-coral: #C4785B;
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --max-width: 1200px;
+  --header-height: 72px;
+  --radius: 6px;
+  --transition: 0.35s ease;
+}

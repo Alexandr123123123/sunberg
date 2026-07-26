@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import styles from '../ElCategories.module.css';
 import decorImg from '../../../../assets/images/el-expertise-decoration.png';
+import { useBookingModal } from '../../../../app/providers/BookingModalProvider';
 
 import wiringImg from '../../../../assets/electrical/wiring.png';
 import switchboardsImg from '../../../../assets/electrical/switchboards.png';
@@ -125,6 +126,7 @@ const categoryDefs = [
 
 export const ElCategories = () => {
   const { t } = useTranslation();
+  const { openModal } = useBookingModal();
   const [activeIndex, setActiveIndex] = useState(0);
   const [showTopArrow, setShowTopArrow] = useState(false);
   const [showBottomArrow, setShowBottomArrow] = useState(true);
@@ -504,8 +506,12 @@ export const ElCategories = () => {
               <h4 className={styles.teamCardTitle}>{t('electricalPage.categoriesSection.teamCard.title')}</h4>
               <p className={styles.teamCardDesc}>{t('electricalPage.categoriesSection.teamCard.desc')}</p>
               <button className={styles.teamCardButton} onClick={() => {
-                const contactBtn = document.querySelector('[class*="BookConsultationButton"]');
-                if (contactBtn) contactBtn.click();
+                if (openModal) {
+                  openModal();
+                } else {
+                  const contactBtn = document.querySelector('[class*="BookConsultationButton"]');
+                  if (contactBtn) contactBtn.click();
+                }
               }}>
                 {t('electricalPage.categoriesSection.teamCard.btn')} &rarr;
               </button>

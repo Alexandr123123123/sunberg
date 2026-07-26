@@ -1,0 +1,1504 @@
+{
+  "home": {
+    "test_title": "Sunberg Platform (English)"
+  },
+  "hero": {
+    "label": "Solar Energy Solutions",
+    "title": "Powering the Future with Clean Energy",
+    "desc": "We design, install, and maintain high-performance solar systems for homes and businesses. Lower your bills while building a sustainable tomorrow.",
+    "btn_start": "Book a consultation",
+    "btn_services": "Our Services"
+  },
+  "about": {
+    "label": "About Sunberg",
+    "title": "Engineering a Cleaner Future",
+    "description": "bridges high-performance engineering with sustainable design to construct the clean energy infrastructure of tomorrow. We believe the transition to solar should be an effortless evolution—where professional system architecture eliminates the common pitfalls of mismatched components and inefficient design, ensuring absolute performance from day one.",
+    "points": [
+      {
+        "title": "Turnkey Solar Infrastructure",
+        "text": "We manage the entire lifecycle in-house—ensuring flawless system architecture and precision execution—to guarantee the highest standards of technical quality and long-term performance."
+      },
+      {
+        "title": "Data-Driven Scalability",
+        "text": "Delivering Tier-1 hardware and precise yield calculations for projects ranging from private residences to commercial facilities."
+      }
+    ],
+    "milestones": [
+      "Reliability",
+      "Precision",
+      "Vision"
+    ],
+    "manifesto_text": "“The shift to solar isn't just about preserving the planet—it's about smart, long-term asset management. We are here to engineer that transition flawlessly.”",
+    "manifesto_signature": "Aleksey Sunberg, Founder"
+  },
+  "partners": {
+    "label": "Defining the standard for technical excellence in solar infrastructure"
+  },
+  "ctaBlock": {
+    "title": "Ready to engineer your energy independence?",
+    "description": "Get a professional solar performance forecast and custom system architecture within 48 hours."
+  },
+  "trustStrip": {
+    "stats": [
+      {
+        "number": "2 TW",
+        "label": "Cumulative Global Capacity"
+      },
+      {
+        "number": "55%",
+        "label": "China's Global Solar Share"
+      },
+      {
+        "number": "90%",
+        "label": "Solar Cost Drop Since 2010"
+      }
+    ]
+  },
+  "howItWorks": {
+    "header_label": "How It Works",
+    "header_title": "From Inquiry to Clean Energy in 4 Steps",
+    "header_subtitle": "We've streamlined every part of the process so you can focus on what matters — saving money and the planet.",
+    "steps": [
+      {
+        "title": "Consultation",
+        "desc": "We discuss your energy efficiency goals and provide a preliminary cost estimate — completely free of charge."
+      },
+      {
+        "title": "Site Survey & Design",
+        "desc": "Our engineers visit your property, analyze roof orientation, shading, and structural capacity. We then create a custom system design."
+      },
+      {
+        "title": "Installation",
+        "desc": "Our certified crew installs your system in 1–3 days. We handle all permitting, inspections, and grid connection paperwork."
+      },
+      {
+        "title": "Activation & Support",
+        "desc": "Your system goes live and starts generating savings immediately. We provide ongoing maintenance and technical support."
+      }
+    ]
+  },
+  "projects": {
+    "p1_tag": "Agricultural Innovation",
+    "p1_title": "Agrivoltaics: The Dual-Use Future",
+    "p1_desc": "Agrivoltaics combine agriculture and solar energy in a symbiotic system. By elevating panels above farmland, this technology optimizes land use, improves soil moisture through shading, and creates a resilient microclimate for sustainable food production.",
+    "p2_tag": "Aquatic Infrastructure",
+    "p2_title": "Floating Solar: Untapped Potential",
+    "p2_desc": "Floating solar, or floatovoltaics, installs photovoltaic modules on bodies of water. These systems reduce evaporation, mitigate algae growth, and benefit from natural water cooling that enhances energy efficiency compared to land-based arrays."
+  },
+  "services": {
+    "header_label": "What We Do",
+    "header_title": "Full-Cycle Solar Solutions",
+    "header_subtitle": "From the first sketch to proactive lifetime optimization — we handle every step of your solar journey.",
+    "items": [
+      {
+        "title": "Architecture & Engineering",
+        "text": "Custom solar system design based on site mechanics, energy goals, and architectural flow. We manage structural analysis and complete permitting."
+      },
+      {
+        "title": "Deployment & Grid Integration",
+        "text": "Precision panel mounting, inverter calibration, and flawless grid integration. We prioritize operational speed and technical rigor, maintaining uncompromising safety standards across every project."
+      },
+      {
+        "title": "Endurance & Optimization",
+        "text": "Proactive system monitoring, automated diagnostics, and rapid-response maintenance, ensuring your asset performs optimally for decades."
+      }
+    ]
+  },
+  "testimonials": {
+    "header_label": "Client Stories",
+    "header_title": "What Our Clients Say",
+    "items": [
+      {
+        "text": "Sunberg made going solar effortless. From the first call to flipping the switch, everything was handled professionally. Our energy bills dropped by 78% in the first quarter.",
+        "name": "Sarah Mitchell",
+        "role": "Homeowner, Austin TX",
+        "rating": 5
+      },
+      {
+        "text": "We needed a reliable partner for our office park installation. Sunberg delivered a 340 kW system on schedule and under budget. Their monitoring platform is outstanding.",
+        "name": "Erik Johansson",
+        "role": "Facilities Director, Lumina Estate Group",
+        "rating": 5
+      },
+      {
+        "text": "What impressed me most was the transparency. No hidden costs, no surprises. The system has been running flawlessly for two years now, and their support team is always responsive.",
+        "name": "Maria García",
+        "role": "Homeowner, Barcelona",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "label": "Frequently asked",
+    "title": "Common questions",
+    "subtitle": "Everything you need to know before going solar.",
+    "items": [
+      {
+        "q": "What happens to panel efficiency after 10 years of operation?",
+        "a": "Our premium photovoltaic modules have a degradation rate of just 0.4% per year — significantly below the industry average of 0.7%. After 10 years, your system will still operate at approximately 96% of its original capacity. After 25 years, we guarantee a minimum of 87.4% output."
+      },
+      {
+        "q": "How does the system perform during a full grid blackout?",
+        "a": "Systems equipped with our hybrid inverter and battery package automatically switch to island mode within 20 milliseconds — fast enough that most appliances won't even register the outage. Standard grid-tied systems without storage will shut down per regulatory requirements."
+      },
+      {
+        "q": "How does the system perform during cloudy days or in winter?",
+        "a": "Modern high-efficiency modules are highly sensitive to the full light spectrum, meaning they generate power even on overcast days. While production is lower in winter due to shorter days, our system architecture is optimized for low-light efficiency, ensuring a steady energy flow year-round."
+      },
+      {
+        "q": "Do I need to manually clean the panels or perform any maintenance?",
+        "a": "Sunberg systems are designed for minimal maintenance. In most climates, rainfall is sufficient to keep panels clean. However, our technical support and modernization programs ensure that your system remains in peak condition with periodic expert health checks."
+      },
+      {
+        "q": "Can I integrate my electric vehicle (EV) charging into the solar ecosystem?",
+        "a": "Absolutely. Our smart-home energy sync allows you to prioritize EV charging when solar production is at its peak. This \"Solar-to-EV\" logic ensures your car is powered by the cleanest and cheapest energy available, maximizing your savings."
+      },
+      {
+        "q": "How do you calculate ROI projections and what assumptions do you use?",
+        "a": "Our projections use 10-year localized irradiance data from satellite sources, actual utility rate escalation trends (typically 3–5% annually), verified panel degradation curves, and your real consumption profile. We deliberately model conservative scenarios — our clients typically outperform projections by 8–12%."
+      },
+      {
+        "q": "What warranties are provided for the system components?",
+        "a": "We only partner with Tier 1 manufacturers, providing a standard 25-year linear performance warranty for modules and 10-to-15 year warranties for inverters and storage systems. Additionally, Sunberg provides a comprehensive structural integrity guarantee for the entire installation."
+      },
+      {
+        "q": "Is it possible to expand the system capacity in the future?",
+        "a": "Yes. Our modular architecture is designed for scalability. We can easily add more storage capacity or integrate additional panels as your energy needs evolve, ensuring your investment grows with you."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Get In Touch",
+    "title": "Let's Build Your Solar Future",
+    "desc": "Whether you're exploring options or ready to start — reach out to our team for project assessment.",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "office_label": "Office",
+    "office_text": "201 Solar Way, Austin, TX 78701",
+    "form_name": "Your name",
+    "form_email": "Email address",
+    "form_subject": "Subject",
+    "form_message": "Tell us about your project...",
+    "btn_send": "Send Message"
+  },
+  "aboutPage": {
+    "hero": {
+      "label": "Our Mission",
+      "title_pre": "Designing the Future <br /> of ",
+      "title_highlight": "Solar Architecture.",
+      "desc": "Founded on the principles of technical rigor and environmental stewardship, Sunberg is more than a solar provider. We are architects of energy independence, bridging the gap between high-end engineering and sustainable living."
+    },
+    "philosophy": {
+      "label": "Our Philosophy",
+      "title_pre": "Beyond Installation: <br /> ",
+      "title_highlight": "Architectural Integrity.",
+      "desc": "We believe that solar energy should enhance, not compromise, the aesthetic and structural value of your property. Our approach combines refined minimalist design with rigorous engineering standards.",
+      "principles": [
+        {
+          "title": "Structural Respect",
+          "text": "We don’t just mount systems; we integrate them. Every design respects the architectural integrity and aesthetic flow of your property."
+        },
+        {
+          "title": "Longevity First",
+          "text": "We engineer for the decades, not the years. Our systems are built to outlast a generation using the most resilient materials and components."
+        },
+        {
+          "title": "Strategic Freedom",
+          "text": "For Sunberg, energy independence is the ultimate expression of freedom. We design resilient ecosystems that empower you with total sovereignty over your power production, providing autonomy from grid constraints and a clear path to a self-sufficient future."
+        }
+      ]
+    },
+    "manifesto": {
+      "text": "“We don't just install solar panels; we design energy ecosystems that empower communities and preserve the architectural soul of our landscapes.”",
+      "signature": "Erik Sundberg, Founder"
+    },
+    "tech": {
+      "label": "Engineering Focus",
+      "title_pre": "N-Type ",
+      "title_highlight": "TOPCon",
+      "title_post": " Efficiency",
+      "desc": "Next-generation Tunnel Oxide Passivated Contact modules achieving unmatched conversion rates and long-term stability.",
+      "stats": [
+        {
+          "val": "22.5%",
+          "lab": "Peak Efficiency"
+        },
+        {
+          "val": "-0.4%",
+          "lab": "Yearly Degradation"
+        },
+        {
+          "val": "30Y",
+          "lab": "Linear Warranty"
+        }
+      ]
+    },
+    "values": [
+      {
+        "title": "Structural Respect",
+        "desc": "Engineering that honors the existing architecture, ensuring seamless integration of solar technology with built environments."
+      },
+      {
+        "title": "Environmental Stewardship",
+        "desc": "Deep commitment to preserving natural resources and minimizing the carbon footprint of every energy project we undertake."
+      },
+      {
+        "title": "Precision Engineering",
+        "desc": "Advanced engineering standards applied to every calculation, ensuring maximum yield and unmatched system longevity."
+      },
+      {
+        "title": "Ecosystem Mindset",
+        "desc": "Building intelligent energy networks that function as unified ecosystems, providing stability and autonomy for decades."
+      }
+    ],
+    "stats": [
+      {
+        "value": 500,
+        "unit": "B$",
+        "label": "Capital Shift",
+        "desc": "Annual global investment in solar power has surpassed $500 billion, outstripping all other generation sources."
+      },
+      {
+        "value": 600,
+        "unit": "GW",
+        "label": "Annual Growth",
+        "desc": "Total solar power capacity added to the global grid in the last 12 months."
+      },
+      {
+        "value": 64,
+        "unit": "%",
+        "label": "Market Surge",
+        "desc": "Growth rate of new solar installations in early 2025 compared to 2024."
+      },
+      {
+        "value": 100,
+        "unit": "%",
+        "label": "Demand Engine",
+        "desc": "Solar and wind met the entirety of new global electricity demand in 2025."
+      }
+    ],
+    "team": [
+      {
+        "name": "Erik Sundberg",
+        "role": "Founder & CEO",
+        "quote": "Engineering is the bridge between human ambition and planetary stewardship."
+      },
+      {
+        "name": "Clara Lindberg",
+        "role": "Lead Architectural Engineer",
+        "quote": "Solar systems should be as aesthetically refined as they are technically precise."
+      },
+      {
+        "name": "Mikael Nilsson",
+        "role": "Technical Director",
+        "quote": "We don’t just install panels; we design energy independence for generations."
+      }
+    ],
+    "testimonials": [
+      {
+        "text": "Sunberg's architectural approach to solar was exactly what we needed for our heritage property. They respected the design while delivering cutting-edge efficiency.",
+        "name": "Lars Svensson",
+        "role": "Private Homeowner",
+        "rating": 5
+      },
+      {
+        "text": "The level of precision in their engineering is unmatched. Our industrial facility now runs on 100% clean energy with zero downtime during the transition.",
+        "name": "Ingrid Berg",
+        "role": "Operations Director, EcoLogistics",
+        "rating": 5
+      },
+      {
+        "text": "Working with Erik and his team was a seamless experience. They don't just sell panels; they design long-term energy independence.",
+        "name": "Anders Holm",
+        "role": "Founder, Alpine Heights",
+        "rating": 5
+      }
+    ]
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "tech": "Solar Tech",
+    "electrical": "Electrical Services",
+    "contact": "Contact Us"
+  },
+  "servicesPage": {
+    "hero": {
+      "watermark": "SERVICES",
+      "label": "Our Capabilities",
+      "title": "Engineering Excellence for a Sustainable Future",
+      "desc": "We transcend standard solar installation. Our approach is deeply analytical, structurally rigorous, and unapologetically premium. Discover how we construct independent energy ecosystems."
+    },
+    "sectors": [
+      {
+        "title": "Architecture & Design",
+        "desc": "Shading analysis, 3D modeling, and structural design to maximize your roof's solar potential."
+      },
+      {
+        "title": "Deployment & Integration",
+        "desc": "Professional installation of Tier-1 modules and hybrid inverters with full grid and smart-home synchronization."
+      },
+      {
+        "title": "Analytics & Management",
+        "desc": "Monitoring and proactive maintenance ensure peak efficiency for decades to come."
+      }
+    ],
+    "sectorsBtn": "Learn more",
+    "techBanner": {
+      "label": "Engineering Focus",
+      "title_pre": "Agrivoltaic ",
+      "title_highlight": "Synergy",
+      "desc": "Simultaneous land use for solar generation and crop cultivation, reducing irrigation needs by 30% and increasing overall land productivity by 60%.",
+      "stats": [
+        {
+          "val": "-30%",
+          "lab": "Irrigation Demand"
+        },
+        {
+          "val": "+60%",
+          "lab": "Land Efficiency"
+        },
+        {
+          "val": "Dual-Use",
+          "lab": "Optimized Yield"
+        }
+      ]
+    },
+    "solutions": {
+      "label": "Sector Specialization",
+      "title": "High-Performance Solutions",
+      "items": [
+        {
+          "title": "Residential Systems",
+          "desc": "Engineering sustainable independence for modern homes with premium aesthetics.",
+          "list": [
+            "Rooftop BIPV & Retrofits",
+            "Smart-Home Energy Sync",
+            "Backup Battery Systems"
+          ]
+        },
+        {
+          "title": "Commercial & Industrial",
+          "desc": "Large-scale energy efficiency and ESG-aligned infrastructure for the future of business.",
+          "list": [
+            "Ground-Mount Stations",
+            "Peak Shaving Solutions",
+            "ESG Impact Reporting"
+          ]
+        },
+        {
+          "title": "Infrastructure & EV",
+          "desc": "Modular battery ecosystems and high-speed charging networks for next-gen transport.",
+          "list": [
+            "EV Fleet Charging Hubs",
+            "Microgrid Engineering",
+            "Utility-Scale Storage"
+          ]
+        }
+      ]
+    },
+    "deepDive": {
+      "label": "Engineering Journey",
+      "title": "Technical Deep Dive",
+      "intro": "Explore the rigorous phases of our engineering process, from advanced design modeling to proactive system maintenance.",
+      "blocks": [
+        {
+          "phase": "01",
+          "tabs": [
+            {
+              "label": "Analysis",
+              "title": "Advanced Site Mapping",
+              "text": "Every Sunberg project begins with an exhaustive site analysis. Our engineers utilize advanced simulation software to evaluate shading dynamics and environmental factors, optimizing your roof's solar potential with absolute precision.",
+              "stat": {
+                "value": "15+",
+                "label": "Data Parameters"
+              },
+              "features": [
+                "High-precision terrain analysis",
+                "Generation potential analysis",
+                "Solar radiance mapping"
+              ]
+            },
+            {
+              "label": "Design",
+              "title": "Architectural Concept",
+              "text": "We prioritize aesthetic harmony, selecting premium components that complement your property's architecture while maximizing energy harvest through advanced geometry.",
+              "stat": {
+                "value": "Custom",
+                "label": "Design Aesthetic"
+              },
+              "features": [
+                "Bespoke component selection",
+                "Visual impact assessment",
+                "Seamless structural integration"
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "02",
+          "tabs": [
+            {
+              "label": "Modules",
+              "title": "Premium Module Engineering",
+              "text": "We utilize advanced photovoltaic modules with industry-leading efficiency, designed for superior performance and minimal degradation over their extended lifespan.",
+              "stat": {
+                "value": "22.5%+",
+                "label": "Peak Efficiency"
+              },
+              "features": [
+                "High-Efficiency Cell Architecture",
+                "Advanced Photovoltaic Systems",
+                "Superior Climate Resilience"
+              ]
+            },
+            {
+              "label": "Inverters",
+              "title": "Hybrid Conversion Power",
+              "text": "Our hybrid inverters are the brains of your system, capable of seamless battery integration and millisecond-fast backup transitions. Efficiency is prioritized at every stage of power conversion.",
+              "stat": {
+                "value": "97.8%",
+                "label": "Conversion rate"
+              },
+              "features": [
+                "Optimized Battery Link",
+                "Smart Energy Optimization",
+                "Seamless Backup Transition"
+              ]
+            },
+            {
+              "label": "Mounting",
+              "title": "Wind-Rated Integrity",
+              "text": "Our anodized aluminum mounting systems are engineered to withstand extreme conditions. Every fastener is designed for maximum pull-out resistance and long-term structural integrity.",
+              "stat": {
+                "value": "200km/h",
+                "label": "Wind resistance"
+              },
+              "features": [
+                "Corrosion-resistant anodized AL",
+                "Non-penetrative roof attachments",
+                "Quick-mount alignment system"
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "03",
+          "tabs": [
+            {
+              "label": "Support",
+              "title": "Unwavering Partnership",
+              "text": "Our commitment to your energy independence doesn't end with installation. We stand by our work, ensuring you're never left alone and that expert help is always just a call away.",
+              "stat": {
+                "value": "Always",
+                "label": "Ready to Help"
+              },
+              "features": [
+                "Expert Phone Support",
+                "Comprehensive system training",
+                "Rapid Technical Response"
+              ]
+            },
+            {
+              "label": "Evolution",
+              "title": "Technological Lifecycle",
+              "text": "We maintain a complete digital blueprint of your system configuration. As solar technology advances, we proactively reach out with modernization options to keep your investment at the cutting edge.",
+              "stat": {
+                "value": "Future",
+                "label": "Ready"
+              },
+              "features": [
+                "Digital Configuration Ledger",
+                "Next-Gen Tech Integration",
+                "Strategic System Evolution"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "floatBanner": {
+      "label": "Innovation Focus",
+      "title_pre": "Floatovoltaic ",
+      "title_highlight": "Innovation",
+      "desc": "Installation of floating solar farms on reservoirs. Water naturally cools the modules, increasing energy output by 5-10% while reducing evaporation by 70%.",
+      "stats": [
+        {
+          "value": "+10%",
+          "label": "Energy Yield"
+        },
+        {
+          "value": "-70%",
+          "label": "Water Evaporation"
+        },
+        {
+          "value": "Natural",
+          "label": "Cooling Effect"
+        }
+      ]
+    },
+    "hardware": {
+      "label": "Ecosystem Care",
+      "title": "Hardware Integrity",
+      "intro": "We only partner with Tier 1 manufacturers who share our obsession with structural logic and long-term durability.",
+      "partners": [
+        {
+          "name": "LONGi",
+          "tagline": "Modules"
+        },
+        {
+          "name": "SMA",
+          "tagline": "Inverters"
+        },
+        {
+          "name": "SolarEdge",
+          "tagline": "Optimizers"
+        },
+        {
+          "name": "Victron",
+          "tagline": "Storage"
+        },
+        {
+          "name": "K2 Systems",
+          "tagline": "Mounting"
+        },
+        {
+          "name": "Fronius",
+          "tagline": "Inverters"
+        },
+        {
+          "name": "BYD",
+          "tagline": "Storage"
+        },
+        {
+          "name": "Enphase",
+          "tagline": "Micro-Inverters"
+        },
+        {
+          "name": "Tesla",
+          "tagline": "Powerwall"
+        },
+        {
+          "name": "Trina Solar",
+          "tagline": "Modules"
+        },
+        {
+          "name": "Meyer Burger",
+          "tagline": "Modules"
+        },
+        {
+          "name": "Mounting Systems",
+          "tagline": "Mounting"
+        }
+      ]
+    }
+  },
+  "projectsPage": {
+    "intro": {
+      "accent": "SELECTED",
+      "label": "Our Portfolio",
+      "title": "Engineering the <br />Energy Landscape.",
+      "desc": "A showcase of our technical expertise in solar energy. From high-efficiency residential systems to versatile commercial and specialized energy deployments."
+    },
+    "impactStats": [
+      {
+        "label": "Net Zero Target",
+        "value": 6,
+        "unit": "TW",
+        "desc": "The required global solar capacity by 2030 to achieve international climate milestones."
+      },
+      {
+        "label": "Recyclability",
+        "value": 95,
+        "unit": "%",
+        "desc": "Modern premium modules feature high recyclability, underscoring the industry's environmental commitment."
+      },
+      {
+        "label": "Solar Potential",
+        "value": 10000,
+        "unit": "x",
+        "desc": "The solar energy reaching Earth every hour exceeds total global annual consumption, making it our most reliable resource."
+      }
+    ],
+    "featured": {
+      "title": "Arctic Data Sync",
+      "location": "Luleå, Sweden",
+      "quote": "Sunberg didn't just install panels; they engineered a zero-emission heartbeat for our most critical infrastructure.",
+      "author": "Erik Solberg, CTO",
+      "specs": [
+        {
+          "label": "System Size",
+          "value": "2.4 MWp"
+        },
+        {
+          "label": "Technology",
+          "value": "N-Type Bifacial"
+        },
+        {
+          "label": "Storage",
+          "value": "1.2 MWh"
+        }
+      ]
+    },
+    "trustDefault": "Quality, Innovation, Sustainability: Engineering high-performance solar ecosystems for a lasting energy impact.",
+    "trustSecond": "Sustaining the Future: We don’t just install technology; we engineer a lifelong promise of performance and unwavering partnership.",
+    "categories": [
+      {
+        "id": "all",
+        "label": "All Projects"
+      },
+      {
+        "id": "residential",
+        "label": "Residential"
+      },
+      {
+        "id": "commercial",
+        "label": "Commercial"
+      },
+      {
+        "id": "industrial",
+        "label": "Industrial"
+      }
+    ],
+    "projects": [
+      {
+        "category": "Residential",
+        "title": "Villa Eriksson Ecosystem",
+        "location": "Stockholm Archipelago",
+        "specs": "18.2 kWp | 30kWh Storage",
+        "aspects": [
+          {
+            "label": "Overview",
+            "content": "A complete off-grid capable residential system integrating 18.2 kWp TOPCon modules with a 30kWh storage system."
+          },
+          {
+            "label": "Tech",
+            "content": "N-Type TOPCon panels, Victron MultiPlus-II inverters, and high-density LFP batteries for maximum cycle life."
+          },
+          {
+            "label": "Impact",
+            "content": "100% energy autonomy during summer months and 85% yearly reduction in grid dependence."
+          }
+        ]
+      },
+      {
+        "category": "Commercial",
+        "title": "Metropark Logistics Hub",
+        "location": "Gothenburg",
+        "specs": "250 kWp | Grid Sync",
+        "aspects": [
+          {
+            "label": "Overview",
+            "content": "Large-scale commercial installation for a logistics center."
+          },
+          {
+            "label": "Tech",
+            "content": "SMA Core 1 inverters and custom mounting for corrugated steel roofs."
+          },
+          {
+            "label": "Impact",
+            "content": "Payback period reduced to 4.2 years with government subsidies."
+          }
+        ]
+      },
+      {
+        "category": "Industrial",
+        "title": "Steel Fabrication Plant",
+        "location": "Kiruna",
+        "specs": "1.2 MWp | Peak Shaving",
+        "aspects": [
+          {
+            "label": "Overview",
+            "content": "High-power industrial deployment to mitigate peak energy costs."
+          },
+          {
+            "label": "Tech",
+            "content": "Central inverter configuration with integrated SCADA monitoring."
+          },
+          {
+            "label": "Impact",
+            "content": "Reduced peak load by 40%, saving over €50k annually."
+          }
+        ]
+      },
+      {
+        "category": "Residential",
+        "title": "Modern Lakehouse",
+        "location": "Lake Mälaren",
+        "specs": "12.5 kWp | BIPV Roof",
+        "aspects": [
+          {
+            "label": "Overview",
+            "content": "Architectural integration of solar cells into a standing-seam roof."
+          },
+          {
+            "label": "Tech",
+            "content": "BIPV (Building Integrated PV) modules with custom flashing."
+          },
+          {
+            "label": "Impact",
+            "content": "Perfect aesthetic preserved while generating 15,000 kWh per year."
+          }
+        ]
+      },
+      {
+        "category": "Commercial",
+        "title": "Eco-Office Complex",
+        "location": "Oslo",
+        "specs": "85 kWp | Smart-Grid",
+        "aspects": [
+          {
+            "label": "Overview",
+            "content": "Intelligent energy management for a high-traffic office building."
+          },
+          {
+            "label": "Tech",
+            "content": "Smart-Grid ready inverters with real-time demand response."
+          },
+          {
+            "label": "Impact",
+            "content": "LEED Platinum certification achieved with the help of our solar system."
+          }
+        ]
+      },
+      {
+        "category": "Industrial",
+        "title": "Data Center Cooling",
+        "location": "Luleå",
+        "specs": "500 kWp | Thermal Integration",
+        "aspects": [
+          {
+            "label": "Overview",
+            "content": "Powering critical cooling infrastructure with sustainable energy."
+          },
+          {
+            "label": "Tech",
+            "content": "High-efficiency modules optimized for low-angle solar trajectory."
+          },
+          {
+            "label": "Impact",
+            "content": "Zero-carbon cooling milestones reached for our enterprise client."
+          }
+        ]
+      }
+    ],
+    "testimonials": [
+      {
+        "text": "Sunberg's precision in modeling and installation was beyond anything we've seen. Our energy independence is now a reality, not just a goal.",
+        "name": "Elena Rossi",
+        "role": "Private Homeowner, Tuscany",
+        "rating": 5
+      },
+      {
+        "text": "Integrating solar into our warehouse logistics was a complex challenge. Sunberg handled the technical constraints with ease and delivered on time.",
+        "name": "Marc Werner",
+        "role": "Logistics Director, Hamburg",
+        "rating": 5
+      },
+      {
+        "text": "The aesthetic integration of the panels was crucial for our historic property. The result is seamless and highly efficient.",
+        "name": "Sarah Jenkins",
+        "role": "Estate Manager, Oxford",
+        "rating": 5
+      }
+    ]
+  },
+  "electricalPage": {
+    "hero": {
+      "watermark": "ELECTRICAL",
+      "label": "Electrical Solutions",
+      "title": "Full-Spectrum Electrical Services",
+      "desc": "A complete range of professional electrical services for residential and commercial properties. From cabling design and distribution board assembly to smart home automation and backup power systems."
+    },
+    "categoriesSection": {
+      "label": "Our Expertise",
+      "title": "Full-Cycle Electrical",
+      "desc": "A full range of electrical competencies implemented by a single team of certified Sunberg specialists without outsourcing.",
+      "scrollHint": "Scroll list to explore more",
+      "teamCard": {
+        "title": "One Team. Full Responsibility.",
+        "desc": "From design to installation and beyond — we take ownership of every detail.",
+        "btn": "Let's work together"
+      }
+    },
+    "categories": {
+      "wiring": {
+        "title": "Wiring & Cabling",
+        "desc": "Complete cable routing and rough-in wiring according to European standards, plus installation of sockets, switches, and thermostats with perfect alignment.",
+        "mainDesc": "Professional wiring services for projects of any scale. We handle complete electrical distribution: from the main service entrance to the final points for outlets, switches, and networking. We use reliable materials and design the wiring to be easy to maintain.",
+        "g1": "System Design",
+        "g2": "Cable Routing",
+        "g3": "Easy Maintenance",
+        "g4": "Precision & Safety"
+      },
+      "switchboards": {
+        "title": "Switchboards",
+        "desc": "Design and assembly of main distribution boards on premium components, with modern protection against leakage currents, short circuits, and surges.",
+        "mainDesc": "Professional switchboard installations designed for modern high-load households. We build meticulously organized panels equipped with advanced protection systems to safeguard your electronics from surges and electrical faults.",
+        "g1": "Advanced Protection",
+        "g2": "Smart Integration",
+        "g3": "Professional Design",
+        "g4": "Clean Assembly"
+      },
+      "heating": {
+        "title": "Heating & Climate",
+        "desc": "Underfloor heating mats and cables with smart thermostats, de-icing systems for roofs and driveways, and electrical wiring for boiler rooms and heat pumps.",
+        "mainDesc": "Comprehensive heating solutions for absolute comfort in any weather. We specialize in energy-efficient underfloor heating and smart climate control, ensuring your home maintains the perfect temperature all year round.",
+        "g1": "Underfloor Heating",
+        "g2": "Boiler Integration",
+        "g3": "Smart Thermostats",
+        "g4": "App Climate Control"
+      },
+      "smartHome": {
+        "title": "Smart Home",
+        "desc": "Centralized lighting scenarios and dimming, intelligent climate control, and motorized curtains, gates, and blinds — all from one interface.",
+        "mainDesc": "Complete home automation for effortless control over your environment. We synchronize your lighting, climate systems, and motorized blinds, creating a stable infrastructure that works exactly as you want it to.",
+        "g1": "Intelligent Lighting",
+        "g2": "Precision Climate",
+        "g3": "Automated Shading",
+        "g4": "Centralized Control"
+      },
+      "lighting": {
+        "title": "Lighting Systems",
+        "desc": "Facade and landscape illumination with all-weather fixtures, plus architectural interior lighting with magnetic tracks and hidden LED profiles.",
+        "mainDesc": "Premium lighting solutions tailored to your space. From precise architectural lighting to custom LED profiles and smooth dimming controls, we provide flawless installation that brings modern aesthetics and comfort to your environment.",
+        "g1": "Custom LED Profiles",
+        "g2": "Smart Lighting",
+        "g3": "Magnetic Track Systems",
+        "g4": "Hidden LED Lighting"
+      },
+      "spa": {
+        "title": "Spa Zones",
+        "desc": "Safe electrical connections for pools, jacuzzis, saunas, and steam generators, built with IP68 moisture protection for demanding wet environments.",
+        "mainDesc": "Specialized electrical engineering for wet and aggressive environments. We safely connect pool filtration systems, steam generators, and specialized lighting using heat-resistant and fully waterproof materials.",
+        "g1": "Pools & Jacuzzis",
+        "g2": "Saunas & Hammams",
+        "g3": "IP68 Protection",
+        "g4": "Pump Filtration"
+      },
+      "backupPower": {
+        "title": "Backup Power",
+        "desc": "Generators with automatic transfer switches, uninterruptible power supplies, and battery inverter systems for silent, reliable autonomy.",
+        "mainDesc": "Professional integration of independent power sources tailored to your home's energy demands. We provide full-cycle installation of UPS systems and standby generators, guaranteeing stable electricity for your most critical systems.",
+        "g1": "Standby Generators",
+        "g2": "Battery Storage & UPS",
+        "g3": "Automatic Transfer",
+        "g4": "Total Autonomy"
+      },
+      "alternativeEnergy": {
+        "title": "Alternative Energy Integration",
+        "desc": "Grid inverters and synchronization that connect your existing solar array with generators and backup batteries into one coherent energy system.",
+        "mainDesc": "Professional integration of renewable energy systems. We expertly install high-efficiency solar panels, grid inverters, and home EV chargers, creating a seamless ecosystem that maximizes your energy production and usage.",
+        "g1": "Solar Panels",
+        "g2": "Grid Inverters",
+        "g3": "EV Charging",
+        "g4": "Energy Storage"
+      },
+      "evCharging": {
+        "title": "EV Charging",
+        "desc": "Fast wallbox stations for the garage, smart load balancing so charging never overloads the home grid, and protected outdoor charging points.",
+        "mainDesc": "Power up your vehicle safely and efficiently from the comfort of your home. We install premium EV charging stations with smart load balancing, ensuring fast, reliable charging without overloading your home's electrical grid.",
+        "g1": "Premium Chargers",
+        "g2": "Weatherproof Units",
+        "g3": "Compact Wallboxes",
+        "g4": "Load Balancing"
+      },
+      "security": {
+        "title": "Security Systems",
+        "desc": "IP video surveillance with remote access, video intercoms and access control for gates, and leak or gas sensors with automatic shut-off.",
+        "mainDesc": "Comprehensive property protection built on smart technologies. From reliable IP cameras and video intercoms to automated water shut-off valves, we install a robust security network tailored to your specific needs.",
+        "g1": "Video Surveillance",
+        "g2": "Access Control",
+        "g3": "Leak Detection",
+        "g4": "Gas & Fire Safety"
+      }
+    },
+    "portfolioSection": {
+      "label": "OUR WORK",
+      "title": "Our Electrical Portfolio",
+      "desc": "Real projects. Smart solutions. Lasting impact. Explore a selection of electrical installations delivered with precision and care.",
+      "stats": {
+        "completed": {
+          "val": "120+",
+          "lab": "Projects Completed"
+        },
+        "satisfaction": {
+          "val": "98%",
+          "lab": "Client Satisfaction"
+        },
+        "experience": {
+          "val": "15+",
+          "lab": "Years of Experience"
+        },
+        "partners": {
+          "val": "50+",
+          "lab": "Trusted Partners"
+        }
+      },
+      "categories": {
+        "all": "All Projects",
+        "residential": "Residential",
+        "commercial": "Commercial",
+        "industrial": "Industrial",
+        "solar": "Solar Integration"
+      },
+      "projects": {
+        "boudewijn": {
+          "title": "Smart Home Installation",
+          "desc": "Complete electrical installation with smart lighting, climate control, and energy monitoring."
+        },
+        "edegem": {
+          "title": "Office Building Upgrade",
+          "desc": "Electrical system upgrade including new switchboards, lighting, and data cabling."
+        },
+        "heideland": {
+          "title": "Apartment Complex",
+          "desc": "Full electrical installation for 32-unit residential complex."
+        },
+        "laureysstraat": {
+          "title": "EV Charging Infrastructure",
+          "desc": "Design and installation of EV charging stations for office parking."
+        },
+        "leksklyuze": {
+          "title": "Apartment Automation",
+          "desc": "Smart climate control and network infrastructure."
+        },
+        "oogststraat": {
+          "title": "Solar PV System Integration",
+          "desc": "Integration of 50kW solar PV system with existing electrical infrastructure."
+        },
+        "potter": {
+          "title": "Manufacturing Facility",
+          "desc": "Power distribution design and installation for a new production hall."
+        },
+        "spoorweglaan": {
+          "title": "Luxury Estate Security",
+          "desc": "Luxury estate electrical foundation and security systems."
+        }
+      },
+      "cta": {
+        "title": "Have a project in mind?",
+        "desc": "Let's build something safe, efficient, and future-ready together.",
+        "btn": "Get in touch"
+      },
+      "viewCase": "View case study"
+    },
+    "reviewsSection": {
+      "label": "CLIENTS FEEDBACK",
+      "title": "What Our Clients Say",
+      "desc": "We take pride in delivering safe, reliable, and future-ready electrical solutions. Here's what our clients have to say about working with Sunberg.",
+      "stats": {
+        "rating": "Based on 48 reviews"
+      },
+      "reviews": {
+        "r1": {
+          "name": "Arthur De Smet",
+          "role": "Homeowner",
+          "text": "Sunberg completely rewired our 1950s house. The team was incredibly professional, clean, and the final panel looks like a work of art. I sleep much better knowing our home is safe."
+        },
+        "r2": {
+          "name": "Sophie Van den Berghe",
+          "role": "Architect",
+          "text": "As an architect, I appreciate contractors who understand both functionality and aesthetics. Sunberg's smart home integration was flawless. Highly recommended for luxury builds."
+        },
+        "r3": {
+          "name": "Laurent Dubois",
+          "role": "Business Owner",
+          "text": "We hired them for a custom lighting and electrical setup in our new smart home. They finished exactly on schedule and passed all city inspections on the very first try."
+        }
+      }
+    }
+  },
+  "techPage": {
+    "hero": {
+      "label": "Engineering Excellence",
+      "title": "The Future of Solar Technology",
+      "desc": "At Sunberg, we push the boundaries of energy efficiency through advanced materials, precision engineering, and technical innovation."
+    },
+    "milestones": [
+      {
+        "val": "1839",
+        "lab": "Edmond Becquerel discovers the photovoltaic effect."
+      },
+      {
+        "val": "1883",
+        "lab": "Charles Fritts builds the first selenium-based solar cell."
+      },
+      {
+        "val": "1958",
+        "lab": "Vanguard I becomes the first solar-powered satellite."
+      },
+      {
+        "val": "1954",
+        "lab": "Bell Labs creates the first practical silicon solar cell."
+      },
+      {
+        "val": "1973",
+        "lab": "Construction of the first solar-powered residence."
+      },
+      {
+        "val": "2023",
+        "lab": "Global solar capacity reaches a historic 1.5 TW milestone."
+      }
+    ],
+    "systemComponents": {
+      "label": "Core Engineering",
+      "title": "System Architecture",
+      "desc": "A modern solar power system is an integrated network of precision components. Explore the anatomy of our high-performance energy solutions.",
+      "cards": {
+        "panel": {
+          "title": "Solar Panels",
+          "desc": "The energy collectors. We utilize high-efficiency N-Type modules to maximize yield per square meter."
+        },
+        "inverter": {
+          "title": "Inverter",
+          "desc": "The brain of the system. Converts DC power to AC and manages smart grid synchronization."
+        },
+        "battery": {
+          "title": "Battery Storage",
+          "desc": "Energy independence. Stores surplus daylight energy for use during nighttime or grid outages."
+        },
+        "mounting": {
+          "title": "Mounting System",
+          "desc": "The structural foundation. Anodized aluminum engineered for extreme weather resistance."
+        },
+        "fuses": {
+          "title": "Safety & Fuses",
+          "desc": "Protection mechanisms. Rapid shutdown devices and surge protectors ensuring absolute safety."
+        }
+      }
+    },
+    "panelTypes": {
+      "label": "Photovoltaic Modules",
+      "title": "The Core Engine of Independence",
+      "desc": "Not all solar panels are created equal. Today's market offers a spectrum of advanced technologies, each with its own unique strengths, efficiencies, and price points. Explore how different cell architectures perform under real-world conditions to make an informed engineering decision.",
+      "introText": "While there are many solar cell variations, the industry currently relies on three core technologies, each representing a different stage of photovoltaic evolution. Understanding the difference between PERC, TOPCon, and HJT is crucial for selecting the right system for your property.",
+      "technologies": [
+        {
+          "id": "perc",
+          "name": "PERC",
+          "desc": "Passivated Emitter and Rear Cell (PERC) has been the industry standard for the past decade. It introduced a reflective layer on the back of the cell to capture unabsorbed light. While highly reliable and cost-effective, it is gradually reaching its theoretical efficiency limit.",
+          "image": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "topcon",
+          "name": "TOPCon",
+          "desc": "Tunnel Oxide Passivated Contact (TOPCon) represents the current sweet spot between cost and high performance. By adding an ultra-thin oxide layer, it significantly reduces electron recombination, offering higher efficiency and better performance in hot climates compared to PERC.",
+          "image": "https://images.unsplash.com/photo-1592833159155-c62df1b65634?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "hjt",
+          "name": "HJT",
+          "desc": "Heterojunction Technology (HJT) is the premium tier of solar engineering. It combines crystalline silicon with layers of thin-film amorphous silicon, resulting in unparalleled efficiency, the lowest degradation rates, and the best temperature coefficient on the market. Ideal for maximizing yield in limited spaces.",
+          "image": "https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?q=80&w=1200&auto=format&fit=crop"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Technology",
+          "Peak Efficiency",
+          "Annual Degradation",
+          "Temp. Coefficient",
+          "Best For"
+        ],
+        "rows": [
+          {
+            "tech": "PERC",
+            "eff": "up to 21.0%",
+            "deg": "~ 0.55%",
+            "temp": "Average (-0.35%/°C)",
+            "best": "Standard Residential",
+            "isPremium": false
+          },
+          {
+            "tech": "TOPCon",
+            "eff": "up to 22.5%",
+            "deg": "~ 0.40%",
+            "temp": "Good (-0.30%/°C)",
+            "best": "Premium Residential",
+            "isPremium": false
+          },
+          {
+            "tech": "HJT",
+            "eff": "23.0% +",
+            "deg": "~ 0.25%",
+            "temp": "Excellent (-0.24%/°C)",
+            "best": "Max Yield / Hot Climates",
+            "isPremium": true
+          }
+        ]
+      }
+    },
+    "inverterTypes": {
+      "label": "Power Inverters",
+      "title": "The Brains of the System",
+      "desc": "An inverter is essential for converting the DC power generated by your panels into usable AC power. Explore the different inverter architectures to find the best match for your energy goals.",
+      "technologies": [
+        {
+          "id": "string",
+          "name": "String Inverters",
+          "desc": "String inverters are a cost-effective standard for systems with uniform sunlight exposure. All panels are connected in a series, making it highly efficient for unshaded roofs.",
+          "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "micro",
+          "name": "Microinverters",
+          "desc": "Microinverters are installed on each individual panel. They optimize performance panel-by-panel, ensuring that shading on one module doesn't affect the rest of the system.",
+          "image": "https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid Inverters",
+          "desc": "Hybrid inverters can manage both solar power and battery storage simultaneously. They are the ideal choice if you plan to add energy storage for nighttime use or backup power.",
+          "image": "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1200&auto=format&fit=crop"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Technology",
+          "Cost",
+          "Shade Tolerance",
+          "Battery Ready",
+          "Best For"
+        ],
+        "rows": [
+          {
+            "tech": "String",
+            "cost": "Low",
+            "shade": "Poor",
+            "battery": "No",
+            "best": "Unshaded Roofs",
+            "isPremium": false
+          },
+          {
+            "tech": "Micro",
+            "cost": "High",
+            "shade": "Excellent",
+            "battery": "No",
+            "best": "Complex Roofs",
+            "isPremium": true
+          },
+          {
+            "tech": "Hybrid",
+            "cost": "Medium-High",
+            "shade": "Average",
+            "battery": "Yes",
+            "best": "Energy Storage Systems",
+            "isPremium": true
+          }
+        ]
+      }
+    },
+    "batteryStorage": {
+      "label": "Battery Storage",
+      "title": "Power Through the Night",
+      "desc": "Battery storage allows you to achieve true energy independence by storing excess solar power during the day to use at night or during grid outages. Discover the most advanced energy storage solutions available today.",
+      "technologies": [
+        {
+          "id": "lfp",
+          "name": "LFP (Lithium Iron Phosphate)",
+          "desc": "LFP batteries are the industry gold standard for stationary storage. They offer an incredible lifespan, superior thermal stability, and deep discharge capabilities, making them incredibly safe and reliable over decades of daily use.",
+          "image": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "nmc",
+          "name": "NMC (Nickel Manganese Cobalt)",
+          "desc": "NMC batteries provide higher energy density, meaning they pack more power into a smaller physical footprint. Ideal for installations where space is severely limited, though they typically have a slightly shorter cycle life than LFP.",
+          "image": "https://images.unsplash.com/photo-1505672678657-cc7037095e60?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "modular",
+          "name": "Modular Racks",
+          "desc": "Modular rack systems allow for effortless scalability. You can start with a basic capacity and easily add more battery modules later as your home's energy consumption grows or you purchase an electric vehicle.",
+          "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Chemistry",
+          "Capacity Range",
+          "Lifespan",
+          "Thermal Stability",
+          "Best For"
+        ],
+        "rows": [
+          {
+            "tech": "NMC Storage",
+            "capacity": "5 - 13.5 kWh",
+            "lifespan": "~4,000 Cycles",
+            "chemistry": "NMC",
+            "best": "Compact Spaces",
+            "isPremium": false
+          },
+          {
+            "tech": "LFP Storage",
+            "capacity": "10 - 20 kWh+",
+            "lifespan": "6,000+ Cycles",
+            "chemistry": "LFP",
+            "best": "Max Longevity",
+            "isPremium": true
+          },
+          {
+            "tech": "Modular LFP",
+            "capacity": "Scalable",
+            "lifespan": "6,000+ Cycles",
+            "chemistry": "LFP",
+            "best": "Future Expansion",
+            "isPremium": true
+          }
+        ]
+      }
+    },
+    "safetyAndFuses": {
+      "label": "Safety & Fuses",
+      "title": "Absolute Protection",
+      "desc": "Solar systems generate high voltages. Our protection mechanisms ensure absolute safety for your home, the grid, and first responders in case of an emergency.",
+      "technologies": [
+        {
+          "id": "rapid",
+          "name": "Rapid Shutdown",
+          "desc": "Rapid shutdown devices instantly drop the system voltage to safe levels in case of a grid outage or emergency. This is a critical safety feature required by modern electrical codes to protect firefighters.",
+          "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "surge",
+          "name": "Surge Protection",
+          "desc": "Surge Protection Devices (SPDs) shield your delicate solar inverters and home appliances from sudden voltage spikes caused by nearby lightning strikes or grid fluctuations.",
+          "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "dc_breakers",
+          "name": "DC Isolators",
+          "desc": "High-quality DC isolator switches allow for safe manual disconnection of the solar arrays from the inverter during maintenance or troubleshooting, preventing electrical arcing.",
+          "image": "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=1200&auto=format&fit=crop"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Component",
+          "Primary Function",
+          "Response Time",
+          "Code Required",
+          "Best For"
+        ],
+        "rows": [
+          {
+            "tech": "Rapid Shutdown",
+            "feature1": "Voltage Drop",
+            "feature2": "< 10 Seconds",
+            "feature3": "Yes (NEC 2017+)",
+            "best": "First Responder Safety",
+            "isPremium": true
+          },
+          {
+            "tech": "Surge Protection",
+            "feature1": "Spike Divert",
+            "feature2": "Nanoseconds",
+            "feature3": "Recommended",
+            "best": "Lightning Protection",
+            "isPremium": true
+          },
+          {
+            "tech": "DC Isolators",
+            "feature1": "Manual Disconnect",
+            "feature2": "Instant",
+            "feature3": "Yes",
+            "best": "System Maintenance",
+            "isPremium": false
+          }
+        ]
+      }
+    },
+    "mountingSystems": {
+      "label": "Mounting Systems",
+      "title": "The Foundation",
+      "desc": "A solar installation is only as reliable as the structure that holds it. We use premium, weather-resistant mounting hardware engineered for decades of stability, ensuring your panels stay secure in any climate.",
+      "technologies": [
+        {
+          "id": "pitched",
+          "name": "Pitched Roof Mounts",
+          "desc": "Designed to perfectly integrate with the existing angle of your roof. These low-profile mounts provide excellent structural integrity while maintaining the aesthetic appeal of your home.",
+          "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "flat",
+          "name": "Flat Roof Ballasted",
+          "desc": "For flat roofs, we utilize ballasted mounting systems. Instead of penetrating the roof membrane, these mounts use heavy concrete blocks to secure the panels, eliminating the risk of leaks.",
+          "image": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop"
+        },
+        {
+          "id": "ground",
+          "name": "Ground Mounts",
+          "desc": "When roof space is limited or shaded, ground mounts are the perfect alternative. They can be optimally angled and positioned anywhere on your property for maximum solar yield.",
+          "image": "https://images.unsplash.com/photo-1592833159155-c62df1b65634?q=80&w=1200&auto=format&fit=crop"
+        }
+      ],
+      "table": {
+        "headers": [
+          "System Type",
+          "Roof Penetration",
+          "Angle Optimization",
+          "Cooling Efficiency",
+          "Best For"
+        ],
+        "rows": [
+          {
+            "tech": "Pitched Roof",
+            "feature1": "Yes (Sealed)",
+            "feature2": "Fixed to Roof",
+            "feature3": "Good",
+            "best": "Standard Homes",
+            "isPremium": false
+          },
+          {
+            "tech": "Flat Roof",
+            "feature1": "No (Ballasted)",
+            "feature2": "Adjustable",
+            "feature3": "Excellent",
+            "best": "Commercial / Flat Roofs",
+            "isPremium": true
+          },
+          {
+            "tech": "Ground Mount",
+            "feature1": "N/A",
+            "feature2": "Fully Custom",
+            "feature3": "Maximum",
+            "best": "Large Properties",
+            "isPremium": true
+          }
+        ]
+      }
+    },
+    "connectionSchemes": {
+      "label": "System Architecture",
+      "title": "How the Energy Flows",
+      "desc": "Understand how different system configurations distribute and manage power based on your unique goals.",
+      "schemes": [
+        {
+          "id": "grid-tied",
+          "name": "Grid-Tied",
+          "desc": "The most common setup. Your panels power your home, and excess energy is sent to the grid. No batteries required."
+        },
+        {
+          "id": "off-grid",
+          "name": "Off-Grid",
+          "desc": "Complete energy independence. You are disconnected from the utility grid entirely. Requires significant battery storage."
+        },
+        {
+          "id": "hybrid",
+          "name": "Hybrid",
+          "desc": "The best of both worlds. Connected to the grid for backup, but utilizes battery storage to capture excess solar power."
+        }
+      ]
+    }
+  },
+  "revolution": {
+    "header_label": "a new era of energy",
+    "header_title": "Inside the Solar Revolution",
+    "header_subtitle": "The numbers speak for themselves. Solar energy isn't a future possibility — it's the current reality.",
+    "ch1_title": "A new solar roof appears in Europe every 30 seconds",
+    "ch1_text": "While you've been reading this page, several more families have declared their energy independence. The scale of adoption is unprecedented, transforming neighborhoods into self-sustaining power plants.",
+    "ch2_title": "Solar generation surpassed coal in the US for the first time",
+    "ch2_text": "A technology that dominated the global energy landscape for over a century is yielding to something cleaner. We are witnessing a tectonic shift: the end of the fossil fuel era and the rise of the sun as the world's primary engine.",
+    "ch3_title": "One panel saves 13 tons of coal over its life",
+    "ch3_text": "Your roof isn't just space; it's a massive untapped resource. A single 500W panel prevents an entire truckload of coal from being mined and burned.",
+    "ch4_title": "Half of all new power capacity worldwide is now solar",
+    "ch4_text": "In just a decade, solar's global share grew from 0.5% to 6%. Current trajectories show that solar will dominate the grid by 2030. This is the only logical path forward for a resilient power system.",
+    "ch4_text_mobile": "In just a decade, solar's global share grew from 0.5% to 6%. Current trajectories show that solar will dominate the grid by 2030.",
+    "ch5_title": "Your Roof Is Your Most Valuable Asset",
+    "ch5_text": "Homes with solar panels sell for 4.1–6.8% more on average. It's a dual benefit: you eliminate monthly liabilities while adding tens of thousands to your net worth.",
+    "ch5_text_mobile": "Homes with solar panels sell for 4.1–6.8% more on average. You eliminate monthly liabilities while adding tens of thousands to your net worth.",
+    "ch5_accent": "Solar pays you twice: first on your utility bills, and finally on your property valuation."
+  },
+  "contactPage": {
+    "hero": {
+      "watermark": "Inquiry",
+      "label": "Connect with Sunberg",
+      "title": "Engineering Your <br /><span>Energy Independence</span>",
+      "desc": "Whether you're exploring residential solutions or industrial-scale systems, our engineering team is ready to design your path to sustainable power."
+    },
+    "details": [
+      {
+        "label": "Phone",
+        "value": "+32 473 36 68 81"
+      },
+      {
+        "label": "Email",
+        "value": "hello@sunberg.energy"
+      },
+      {
+        "label": "Office",
+        "value": "201 Solar Way, Austin, TX 78701"
+      }
+    ],
+    "copied": "Copied!",
+    "trust": "Empowering Your Sustainable Future: Join a community of forward-thinking clients achieving energy autonomy through our precision-engineered solar ecosystems.",
+    "form": {
+      "consultation": "Consultation",
+      "title": "Start Your Engineering Audit",
+      "desc": "Every Sunberg project begins with a deep technical understanding of your energy needs. Share your vision, and we'll provide the foundation to make it a reality.",
+      "benefits": [
+        {
+          "title": "Preliminary Audit",
+          "desc": "Precision analysis of your site’s solar potential based on localized irradiation modeling."
+        },
+        {
+          "title": "Technical Design",
+          "desc": "A bespoke system architecture project designed to integrate seamlessly with your property."
+        },
+        {
+          "title": "Financial Model",
+          "desc": "Data-driven ROI and savings projections calculated using current local energy tariffs."
+        }
+      ],
+      "fields": {
+        "name": "Full Name",
+        "namePlaceholder": "Erik Sundberg",
+        "email": "Email",
+        "emailPlaceholder": "erik@example.com",
+        "phone": "Phone Number",
+        "phonePlaceholder": "+46 00 000 00 00",
+        "subject": "Subject",
+        "subjectPlaceholder": "Residential Solar Project",
+        "details": "Project Details",
+        "detailsPlaceholder": "Tell us about your project or location...",
+        "submit": "Submit Request"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Comprehensive solar energy solutions — from design and engineering through installation and long-term maintenance.",
+    "colCompany": "Company",
+    "colServices": "Services",
+    "rights": "© 2026 Sunberg. All rights reserved.",
+    "builtWith": "Built with clean energy in mind.",
+    "middleText1": "SUN. ENERGY.",
+    "middleText2": "YOUR HOME.",
+    "links": {
+      "about": "About",
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact",
+      "design": "Design & Engineering",
+      "installation": "Installation",
+      "monitoring": "Monitoring",
+      "maintenance": "Maintenance"
+    }
+  },
+  "chatWidget": {
+    "title": "Sunberg Support",
+    "status": "Online",
+    "welcomeMessage": "Hello! How can we help you today?",
+    "operatorReply": "Thank you for your message! Our expert will be with you shortly.",
+    "placeholder": "Type your message..."
+  },
+  "bookingModal": {
+    "title": "Book a Free Consultation",
+    "description": "Our engineers will call you back within 30 seconds to discuss your project.",
+    "submit": "Get My Call Now",
+    "successTitle": "Request Received!",
+    "successDesc": "We're connecting you with an engineer right now. Please keep your phone ready."
+  }
+}

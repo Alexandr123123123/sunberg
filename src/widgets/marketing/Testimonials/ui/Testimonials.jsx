@@ -4,7 +4,13 @@ import { useTranslation } from 'react-i18next';
 import { useMediaQuery } from '../../../../shared/lib/hooks/useMediaQuery';
 import styles from '../Testimonials.module.css';
 
-const Testimonials = ({ items, showAvatar = true }) => {
+const Testimonials = ({ 
+  items, 
+  showAvatar = true,
+  hideHeader = false,
+  asSection = true,
+  className = ''
+}) => {
   const { t } = useTranslation();
   
   // Use passed items or fallback to translation
@@ -88,13 +94,17 @@ const Testimonials = ({ items, showAvatar = true }) => {
 
   const slideWidth = containerWidth / visibleItems;
 
+  const Component = asSection ? 'section' : 'div';
+
   return (
-    <section className={styles.testimonials} id="testimonials">
-      <div className="container">
-        <div className={styles.header}>
-          <span className="section-label">{t('testimonials.header_label')}</span>
-          <h2 className="section-title">{t('testimonials.header_title')}</h2>
-        </div>
+    <Component className={`${styles.testimonials} ${className}`} id={asSection ? "testimonials" : undefined}>
+      <div className={asSection ? "container" : ""}>
+        {!hideHeader && (
+          <div className={styles.header}>
+            <span className="section-label">{t('testimonials.header_label')}</span>
+            <h2 className="section-title">{t('testimonials.header_title')}</h2>
+          </div>
+        )}
 
         {isDesktop ? (
           <motion.div 
@@ -205,7 +215,7 @@ const Testimonials = ({ items, showAvatar = true }) => {
           </div>
         )}
       </div>
-    </section>
+    </Component>
   );
 };
 

@@ -1,0 +1,292 @@
+.panelTypes {
+  padding: 120px 0;
+  background-color: var(--color-bg); /* Standard page background */
+  border-top: 1px solid var(--color-border);
+}
+
+.header {
+  max-width: 800px;
+  margin: 0 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.header h2,
+.header p,
+.header span {
+  text-align: left;
+}
+
+/* Alternating rows container with a central vertical line */
+.alternatingRows {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-bottom: 120px;
+}
+
+/* Central vertical divider line */
+.alternatingRows::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: var(--color-border, #ECEAE6);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+/* Row-by-row layout */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: relative;
+}
+
+/* Columns styling and padding around the central divider */
+.leftCol {
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.rightCol {
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Text alignment depending on which side it falls */
+.normalRow .textBlock {
+  text-align: left;
+}
+
+.reverseRow .textBlock {
+  text-align: left;
+}
+
+/* Schematic Image Container */
+.imageBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.schematicImg {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  mix-blend-mode: multiply; /* Blends light background of generated images with page background */
+  filter: contrast(1.02);
+  transition: transform 0.4s ease;
+}
+
+.schematicImg:hover {
+  transform: scale(1.02);
+}
+
+/* Text block styling */
+.textBlock {
+  max-width: 440px;
+}
+
+.techTitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-text, #1C1B1A);
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.techDesc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text-secondary, #666);
+  margin: 0;
+}
+
+/* Table Section Styling */
+.tableSection {
+  margin-top: 100px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 80px;
+}
+
+.tableTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text, #1C1B1A);
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.comparisonTable {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  text-align: left;
+  background: var(--color-surface, #FFFFFF);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.comparisonTable th,
+.comparisonTable td {
+  padding: 24px;
+  border-bottom: 1px solid var(--color-border, #ECEAE6);
+}
+
+.comparisonTable th {
+  background: var(--color-bg-alt, #F8F8F8);
+  font-weight: 500;
+  color: var(--color-text-secondary, #666);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.comparisonTable tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.comparisonTable tbody tr:hover {
+  background: var(--color-bg-alt, #F8F8F8);
+}
+
+.techName {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.highlightCol {
+  font-weight: 600;
+  color: var(--color-primary, #2A5A3B);
+}
+
+.premiumRow {
+  background: rgba(42, 90, 59, 0.02);
+}
+
+.premiumBadge {
+  font-size: 11px;
+  background: var(--color-primary, #2A5A3B);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 100px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 800px) {
+  .alternatingRows::after {
+    display: none; /* Hide vertical line on mobile */
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .leftCol, .rightCol {
+    padding: 0;
+    width: 100%;
+  }
+
+  /* Force image to show first on mobile if order reverse is needed */
+  .reverseRow {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* Align the microinverter image to the right on mobile */
+  .reverseRow .imageBlock {
+    justify-content: flex-end;
+  }
+
+  .reverseRow .schematicImg {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .techTitle {
+    font-size: 24px;
+  }
+
+  .normalRow .textBlock {
+    text-align: left;
+    margin: 0;
+  }
+
+  .reverseRow .textBlock {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .row:not(:last-child) {
+    border-bottom: 1px solid var(--color-border, #ECEAE6);
+    padding-bottom: 40px;
+  }
+
+  .header :global(.section-title) {
+    font-size: 2.1rem;
+  }
+
+  .header :global(.section-subtitle) {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .schematicImg {
+    max-width: 240px;
+  }
+
+  .techTitle {
+    font-size: 20px;
+  }
+
+  .techDesc {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .panelTypes {
+    padding: 80px 0;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+}

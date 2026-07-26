@@ -1,0 +1,23 @@
+.section {
+  padding: 36px 0;
+  background-color: var(--color-bg);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}

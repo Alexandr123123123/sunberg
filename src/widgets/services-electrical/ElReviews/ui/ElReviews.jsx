@@ -1,53 +1,33 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
+import Testimonials from '../../../marketing/Testimonials/ui/Testimonials';
 import styles from '../ElReviews.module.css';
-
-// Avatars from Unsplash
-const reviewsData = [
-  {
-    id: 'r1',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150',
-    location: 'Antwerp',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-      </svg>
-    )
-  },
-  {
-    id: 'r2',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150',
-    location: 'Ghent',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-      </svg>
-    )
-  },
-  {
-    id: 'r3',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150&h=150',
-    location: 'Brussels',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M22 21H2V3l7 4 5-4 8 4v18z" />
-      </svg>
-    )
-  }
-];
+import { useBookingModal } from '../../../../app/providers/BookingModalProvider';
 
 const ElReviews = () => {
   const { t } = useTranslation();
-  const [activeSlide, setActiveSlide] = useState(0);
+  const { openModal } = useBookingModal();
 
-  const handleNext = () => {
-    setActiveSlide((prev) => (prev + 1) % reviewsData.length);
-  };
-
-  const handlePrev = () => {
-    setActiveSlide((prev) => (prev - 1 + reviewsData.length) % reviewsData.length);
-  };
+  const electricalReviews = [
+    {
+      id: 'r1',
+      name: t('electricalPage.reviewsSection.reviews.r1.name'),
+      role: `${t('electricalPage.reviewsSection.reviews.r1.role')} • Antwerp`,
+      text: t('electricalPage.reviewsSection.reviews.r1.text')
+    },
+    {
+      id: 'r2',
+      name: t('electricalPage.reviewsSection.reviews.r2.name'),
+      role: `${t('electricalPage.reviewsSection.reviews.r2.role')} • Ghent`,
+      text: t('electricalPage.reviewsSection.reviews.r2.text')
+    },
+    {
+      id: 'r3',
+      name: t('electricalPage.reviewsSection.reviews.r3.name'),
+      role: `${t('electricalPage.reviewsSection.reviews.r3.role')} • Brussels`,
+      text: t('electricalPage.reviewsSection.reviews.r3.text')
+    }
+  ];
 
   return (
     <section className={styles.section} id="reviews">
@@ -56,9 +36,9 @@ const ElReviews = () => {
         {/* Header with Stats */}
         <div className={styles.headerBlock}>
           <div className={styles.headerLeft}>
-            <span className={styles.tag}>{t('electricalPage.reviewsSection.label')}</span>
-            <h2 className={styles.title}>{t('electricalPage.reviewsSection.title')}</h2>
-            <p className={styles.desc}>{t('electricalPage.reviewsSection.desc')}</p>
+            <span className="section-label">{t('electricalPage.reviewsSection.label')}</span>
+            <h2 className="section-title">{t('electricalPage.reviewsSection.title')}</h2>
+            <p className="section-subtitle">{t('electricalPage.reviewsSection.desc')}</p>
           </div>
 
           {/* Ratings Summary Card */}
@@ -145,91 +125,13 @@ const ElReviews = () => {
           </div>
         </div>
 
-        {/* Carousel Grid */}
-        <div className={styles.carouselContainer}>
-          <div className={styles.sliderTrack} style={{ transform: `translateX(-${activeSlide * 100}%)` }}>
-            {reviewsData.map((rev) => {
-              const name = t(`electricalPage.reviewsSection.reviews.${rev.id}.name`);
-              const role = t(`electricalPage.reviewsSection.reviews.${rev.id}.role`);
-              const text = t(`electricalPage.reviewsSection.reviews.${rev.id}.text`);
-              
-              return (
-                <div key={rev.id} className={styles.slide}>
-                  <div className={styles.reviewCard}>
-                    <div className={styles.quoteMark}>&ldquo;</div>
-                    <p className={styles.reviewText}>{text}</p>
-                    <div className={styles.userProfile}>
-                      <img src={rev.avatar} alt={name} className={styles.avatar} />
-                      <div className={styles.userInfo}>
-                        <h4 className={styles.userName}>{name}</h4>
-                        <span className={styles.userRole}>{role}</span>
-                        <div className={styles.userLocation}>
-                          {rev.icon}
-                          <span>{rev.location}</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Carousel Controls */}
-        <div className={styles.carouselControls}>
-          <button className={styles.arrowBtn} onClick={handlePrev} aria-label="Previous review">
-            &larr;
-          </button>
-          
-          {/* Pagination Dots */}
-          <div className={styles.paginationDots}>
-            {reviewsData.map((_, idx) => (
-              <button
-                key={idx}
-                className={`${styles.dot} ${activeSlide === idx ? styles.activeDot : ''}`}
-                onClick={() => setActiveSlide(idx)}
-                aria-label={`Go to slide ${idx + 1}`}
-              />
-            ))}
-          </div>
-
-          <button className={styles.arrowBtn} onClick={handleNext} aria-label="Next review">
-            &rarr;
-          </button>
-        </div>
-
-        {/* Partners Logos Bar */}
-        <div className={styles.partnersBar}>
-          <h4 className={styles.partnersTitle}>TRUSTED BY BUSINESSES AND HOMEOWNERS</h4>
-          <div className={styles.logosGrid}>
-            <div className={styles.logoItem}>
-              <svg viewBox="0 0 120 30" fill="currentColor">
-                <text x="0" y="22" fontFamily="var(--font-heading)" fontSize="20" fontWeight="bold" letterSpacing="0.05em">TechSpace</text>
-              </svg>
-            </div>
-            <div className={styles.logoItem}>
-              <svg viewBox="0 0 130 30" fill="currentColor">
-                <text x="0" y="22" fontFamily="var(--font-heading)" fontSize="20" fontWeight="bold" letterSpacing="0.05em">GreenLeaf</text>
-              </svg>
-            </div>
-            <div className={styles.logoItem}>
-              <svg viewBox="0 0 120 30" fill="currentColor">
-                <text x="0" y="22" fontFamily="var(--font-heading)" fontSize="20" fontWeight="bold" letterSpacing="0.05em">DriveHub</text>
-              </svg>
-            </div>
-            <div className={styles.logoItem}>
-              <svg viewBox="0 0 120 30" fill="currentColor">
-                <text x="0" y="22" fontFamily="var(--font-heading)" fontSize="20" fontWeight="bold" letterSpacing="0.05em">BuildCo</text>
-              </svg>
-            </div>
-            <div className={styles.logoItem}>
-              <svg viewBox="0 0 130 30" fill="currentColor">
-                <text x="0" y="22" fontFamily="var(--font-heading)" fontSize="20" fontWeight="bold" letterSpacing="0.05em">SolarFuture</text>
-              </svg>
-            </div>
-          </div>
-        </div>
+        {/* Testimonials Slider (Same structure as About page) */}
+        <Testimonials 
+          items={electricalReviews} 
+          hideHeader={true} 
+          asSection={false} 
+          className={styles.embeddedSlider} 
+        />
 
         {/* CTA Banner */}
         <div className={styles.ctaBanner}>
@@ -245,10 +147,14 @@ const ElReviews = () => {
             </div>
           </div>
           <button className={styles.ctaButton} onClick={() => {
-            const contactBtn = document.querySelector('[class*="BookConsultationButton"]');
-            if (contactBtn) contactBtn.click();
+            if (openModal) {
+              openModal();
+            } else {
+              const contactBtn = document.querySelector('[class*="BookConsultationButton"]');
+              if (contactBtn) contactBtn.click();
+            }
           }}>
-            Get in touch &rarr;
+            {t('hero.btn_start')} &rarr;
           </button>
         </div>
 

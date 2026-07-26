@@ -1,13 +1,24 @@
 import React from 'react';
-import { TechHero, TechHistory, SystemComponents, ConnectionSchemes, PanelTypes, InverterTypes, BatteryStorage, SafetyAndFuses, MountingSystems } from '../widgets/tech';
+import { TechHero, TechHistory, TechGallery, TechGalleryMobile, TechGalleryMobileXS, PanelTypes, InverterTypes, BatteryStorage, SafetyAndFuses, MountingSystems } from '../widgets/tech';
 
 const SolarTechPage = () => {
   return (
     <main className="tech-page">
       <TechHero />
       <TechHistory />
-      <SystemComponents />
-      <ConnectionSchemes />
+      
+      <div className="desktop-only-gallery">
+        <TechGallery />
+      </div>
+      
+      <div className="tablet-only-gallery">
+        <TechGalleryMobile />
+      </div>
+
+      <div className="mobile-small-gallery">
+        <TechGalleryMobileXS />
+      </div>
+
       <PanelTypes />
       <InverterTypes />
       <BatteryStorage />
@@ -18,3 +29,4 @@ const SolarTechPage = () => {
 };
 
 export default SolarTechPage;
+

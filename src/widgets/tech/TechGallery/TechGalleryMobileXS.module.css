@@ -1,0 +1,301 @@
+.techGalleryMobileXSSection {
+  padding: 40px 0;
+  background-color: var(--color-bg, #F9F7F2);
+  overflow: hidden;
+}
+
+.headerArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.sectionLabel {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgb(188, 168, 143);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.sectionTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #2B2620;
+  margin: 0 0 8px 0;
+}
+
+.sectionSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #8A8275;
+  margin: 0;
+}
+
+.splitInverterContainer {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 15px;
+  width: 100%;
+  align-items: stretch;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.leftPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.leftPart .headerArea {
+  margin-bottom: 15px;
+}
+
+.leftPart .sectionTitle {
+  font-size: 21px;
+  line-height: 1.2;
+  margin-top: 4px;
+}
+
+.leftPart .sectionSubtitle {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.inverterWhiteCardXS {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border, #ECEAE6);
+  border-radius: 14px;
+  padding: 16px 14px;
+  box-shadow: 0 4px 15px rgba(43, 38, 32, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+  margin-right: -35px;
+  /* Overlaps the gap and about 10% of the photo width */
+}
+
+.rightPart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.rightPart .imageWrapper {
+  width: 100%;
+  height: 90%;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.rightPart .cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cardsStack {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+
+.stackCard {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border, #ECEAE6);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(43, 38, 32, 0.04);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.infoCard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cardTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2B2620;
+  margin: 0 0 6px 0;
+}
+
+.cardSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #8A8275;
+  margin: 0 0 14px 0;
+  line-height: 1.4;
+}
+
+.bgBlobContainer {
+  position: absolute;
+  top: 60px;
+  left: 85px;
+  width: 340px;
+  height: 250px;
+  z-index: -1;
+  pointer-events: none;
+  animation: floatBlob 12s ease-in-out infinite alternate;
+}
+
+.bgBlobSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.learnMoreBtn {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: rgb(188, 168, 143);
+  padding: 6px 14px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(188, 168, 143, 0.15);
+}
+
+.learnMoreBtn:hover {
+  background-color: rgb(168, 148, 123);
+  transform: translateY(-1px);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.learnMoreBtn:hover .arrow {
+  transform: translateX(2px);
+}
+
+.specialWideCard {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 73 / 36;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--color-border, #ECEAE6);
+  box-shadow: 0 4px 15px rgba(43, 38, 32, 0.04);
+  display: flex;
+  flex-direction: row;
+}
+
+.imageWrapperFull {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.specialWideCardImageWrapper {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.flushRightCard {
+  width: 40%;
+  height: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.marginLeftCard {
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 12px;
+  width: 40%;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.specialWideCardPadded {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 73 / 36;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(43, 38, 32, 0.04);
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: rgb(188, 168, 143);
+  gap: 8px;
+}
+
+.specialWideCardImageWrapperRounded {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.flushRightCardRounded {
+  width: 40%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px;
+  box-sizing: border-box;
+}

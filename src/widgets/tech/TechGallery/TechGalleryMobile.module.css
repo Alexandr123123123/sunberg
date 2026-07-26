@@ -1,0 +1,313 @@
+.techGalleryMobileSection {
+  padding: 40px 0;
+  background-color: var(--color-bg, #F9F7F2);
+  overflow: hidden;
+}
+
+.mobileGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.leftCol,
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.headerArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.sectionLabel {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgb(188, 168, 143);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.sectionTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #2B2620;
+  margin: 0 0 8px 0;
+}
+
+.sectionSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #8A8275;
+  margin: 0;
+}
+
+/* CARD WITH BACKGROUND PLATE (LFP / Battery) */
+.cardWithPlate {
+  background-color: rgb(188, 168, 143);
+  /* Background plate color same as Learn More button */
+  border: 1px solid transparent;
+  border-radius: 18px;
+  padding: 0;
+  /* Removed padding so photo touches edges */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(43, 38, 32, 0.08);
+  box-sizing: border-box;
+  aspect-ratio: 73 / 100;
+  /* Height is determined relative to width (73% width of height) */
+  overflow: hidden;
+  /* Clips image at top rounded corners */
+  position: relative;
+  /* Crucial for absolute positioning of the floating card */
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 75%;
+  /* Photo occupies 75% of height */
+  overflow: hidden;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.floatingWhiteCard {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  padding: 22px 16px; /* Increased vertical padding to make it taller/higher */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  z-index: 10;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.cardTitleDark {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2B2620;
+  margin: 0 0 4px 0;
+}
+
+.cardSubtitleDark {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #8A8275;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+
+.floatingWhiteCard .learnMoreBtn {
+  background-color: rgb(188, 168, 143);
+  color: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(188, 168, 143, 0.15);
+}
+
+.floatingWhiteCard .learnMoreBtn:hover {
+  background-color: rgb(168, 148, 123);
+  color: #FFFFFF;
+}
+
+/* PLAIN CARD (Safety & Fuses) */
+.plainCard {
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  aspect-ratio: 73 / 60;
+  /* Height is exactly 60% of the top card's height */
+  position: relative;
+  /* Crucial for absolute positioning of the floating card */
+  /* Removed overflow: hidden so the white card can overflow the bottom */
+}
+
+.plainCard .imageWrapperFull {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 0;
+  /* Straight corner as requested */
+}
+
+.alignLeftCard {
+  left: 0 !important;
+  /* Align exactly to the left edge of the photo */
+  right: auto !important;
+  width: 80% !important;
+  /* Occupies 80% of the card width */
+  bottom: -60px !important;
+  /* Lowered further by another 10% of card height */
+  border-top-left-radius: 0 !important;
+  /* Straight top-left corner */
+}
+
+/* RIGHT COLUMN CARDS (Mounting, Inverter, Panels) */
+.rightColumnCard {
+  background-color: transparent;
+  border: 1px solid var(--color-border, #ECEAE6);
+  border-radius: 18px;
+  padding: 0; /* Remove padding so image/insert touch edges */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(43, 38, 32, 0.04);
+  box-sizing: border-box;
+  aspect-ratio: 73 / 80; /* Height is exactly 80% of the top-left card's height */
+  overflow: hidden; /* Clips image/insert at rounded corners */
+  position: relative;
+  flex: none;
+}
+
+.rightImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Image wrapper fills the card */
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.firstRightCard {
+  width: 100%;
+  aspect-ratio: 73 / 80; /* Height is exactly 80% of the top-left card's height */
+  display: flex;
+  flex-direction: row;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: transparent !important;
+  position: relative;
+  flex: none;
+}
+
+.firstRightCard .floatingWhiteCard {
+  padding: 46px 20px; /* Increased padding to make the white card even taller */
+}
+
+.inverterWhiteCard {
+  right: -1px !important;
+  left: auto !important;
+  width: 80% !important;
+  bottom: -1px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 18px !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.inverterSubtitle {
+  font-size: 10.5px !important;
+  line-height: 1.3 !important;
+}
+
+.solarPanelsCardContainer {
+  overflow: visible !important;
+  margin-bottom: 60px; /* Space for the overflowing card */
+}
+
+.panelsWhiteCard {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  width: 80% !important;
+  bottom: -60px !important;
+}
+
+.leftColumn {
+  width: 30%;
+  height: 100%;
+  position: relative;
+  background-color: transparent;
+}
+
+.brownInsert {
+  position: absolute;
+  left: 0;
+  right: 0; /* Fills the 30% left column */
+  top: 0;
+  bottom: 0;
+  background-color: rgba(188, 168, 143, 0.25); /* Semi-transparent brown */
+  clip-path: url(#waveClip);
+  -webkit-clip-path: url(#waveClip); /* Safari prefix */
+}
+
+.rightColumn {
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 0; /* Straight bottom-left corner */
+}
+
+.rightColumn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* BUTTONS */
+.learnMoreBtn {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: rgb(188, 168, 143);
+  padding: 6px 12px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(188, 168, 143, 0.15);
+}
+
+.learnMoreBtn:hover {
+  background-color: rgb(168, 148, 123);
+  transform: translateY(-1px);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.learnMoreBtn:hover .arrow {
+  transform: translateX(2px);
+}
+
+/* MOBILE MEDIA QUERY */
+@media (max-width: 600px) {
+  .mobileGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

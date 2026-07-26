@@ -1,0 +1,39 @@
+.partners {
+  padding: 200px 0;
+  background: var(--color-surface);
+}
+
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  font-size: clamp(0.65rem, 1.1vw, 0.78rem);
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .partners {
+    padding: 160px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    padding: 120px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners {
+    padding: 100px 0;
+  }
+}

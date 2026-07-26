@@ -8,3 +8,4 @@ export { BatteryStorage } from './BatteryStorage';
 export { SafetyAndFuses } from './SafetyAndFuses';
 export { MountingSystems } from './MountingSystems';
 export { ConnectionSchemes } from './ConnectionSchemes';
+export { TechGallery, TechGalleryMobile, TechGalleryMobileXS } from './TechGallery';

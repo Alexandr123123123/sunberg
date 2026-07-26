@@ -1,0 +1,261 @@
+.ourApplicationsSection {
+  padding: 140px 0;
+  background: linear-gradient(135deg, #F0EAE0 0%, #E8E1D3 100%);
+  overflow: visible;
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* MASONRY GRID */
+.masonryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 240px; /* Shifted down by about half a card */
+}
+
+/* HEADER BLOCK */
+.headerBlock {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #2B2620;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
+}
+
+.sectionSubtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #8A8275;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* PHOTO CARDS */
+.photoCard {
+  position: relative;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+  background-color: #ECEAE6;
+  overflow: visible; /* Crucial for overlay overlap */
+  margin-bottom: 36px;
+}
+
+.photoCardWithLeaf {
+  position: relative;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+  background-color: #ECEAE6;
+  overflow: visible;
+  margin-bottom: 36px;
+}
+
+.photoImg {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  display: block;
+  object-fit: cover;
+  min-height: 300px;
+  max-height: 480px;
+}
+
+/* OVERLAY BADGES (overlapping bottom edge) */
+.overlayBadge {
+  position: absolute;
+  bottom: -36px;
+  left: 24px;
+  right: 24px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 10px 25px rgba(43, 38, 32, 0.06);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.badgeIconCircle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #F3EFE7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2B2620;
+  flex-shrink: 0;
+}
+
+.badgeIconCircle svg {
+  width: 18px;
+  height: 18px;
+}
+
+.badgeText {
+  text-align: left;
+}
+
+.badgeTitle {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2B2620;
+  margin: 0 0 4px 0;
+}
+
+.badgeDesc {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #8A8275;
+  margin: 0;
+}
+
+/* PANELS CALLOUT BADGE (overlapping bottom edge of Photo 3) */
+.overlayBadgePanels {
+  position: absolute;
+  bottom: -36px;
+  left: 24px;
+  right: 24px;
+  background-color: #FFFFFF;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(43, 38, 32, 0.06);
+  z-index: 10;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.badgeTitlePanels {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #2B2620;
+  margin: 12px 0 8px 0;
+}
+
+.badgeDescPanels {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #8A8275;
+  margin: 0 0 16px 0;
+}
+
+.badgeBtnPanels {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2B2620;
+  text-decoration: none;
+  background-color: #F3EFE7;
+  padding: 8px 18px;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.badgeBtnPanels:hover {
+  background-color: #2B2620;
+  color: #FFFFFF;
+}
+
+.arrow {
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+/* EUCALYPTUS LEAF */
+.eucalyptusLeafWrapper {
+  position: absolute;
+  right: -36px;
+  bottom: -36px;
+  width: 140px;
+  height: 140px;
+  z-index: 25;
+  filter: drop-shadow(8px 12px 18px rgba(43, 38, 32, 0.16));
+  pointer-events: none;
+}
+
+.eucalyptusLeaf {
+  width: 100%;
+  height: 100%;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 991px) {
+  .rightColumn {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ourApplicationsSection {
+    padding: 80px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .masonryGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .rightColumn {
+    margin-top: 0;
+    gap: 60px;
+  }
+
+  .leftColumn {
+    gap: 60px;
+  }
+
+  .eucalyptusLeafWrapper {
+    right: -10px;
+    bottom: -10px;
+    width: 100px;
+    height: 100px;
+  }
+}

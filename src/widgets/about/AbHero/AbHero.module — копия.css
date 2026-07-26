@@ -1,0 +1,127 @@
+.hero {
+  padding: 140px 0 120px;
+  background-color: var(--color-bg, #fff);
+  position: relative;
+  overflow: hidden;
+}
+
+.birdWrapper {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 420px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bird {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.top {
+  max-width: 900px;
+  align-self: flex-end;
+  text-align: right;
+  position: relative;
+  z-index: 2;
+}
+
+.label {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: clamp(10px, 1.5vw, 14px);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--color-primary, #5B7E5F);
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: var(--font-accent, 'Outfit', sans-serif);
+  font-size: clamp(30px, 8vw, 84px);
+  line-height: 1.1;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.03em;
+}
+
+.bottom {
+  max-width: 500px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+}
+
+.desc {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 32px;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.6;
+  color: #666;
+}
+
+.accent {
+  position: absolute;
+  top: -5%;
+  right: -5%;
+  font-size: 20vw;
+  font-weight: 900;
+  color: rgba(91, 126, 95, 0.03);
+  pointer-events: none;
+  user-select: none;
+  font-family: var(--font-accent, 'Outfit', sans-serif);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 0 60px;
+  }
+
+  .bottom {
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .birdWrapper {
+    width: 350px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 180px 0 80px;
+    min-height: auto;
+  }
+
+  .birdWrapper {
+    width: 280px;
+    top: 15%;
+  }
+
+  .accent {
+    top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    padding-top: 200px;
+  }
+
+  .accent {
+    top: 60px;
+  }
+}

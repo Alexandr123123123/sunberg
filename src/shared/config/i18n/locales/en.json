@@ -808,19 +808,19 @@
   "electricalPage": {
     "hero": {
       "watermark": "ELECTRICAL",
-      "label": "Beyond Solar",
+      "label": "Electrical Solutions",
       "title": "Full-Spectrum Electrical Services",
-      "desc": "Solar is our core craft, but our engineering expertise extends to every corner of your electrical system. From wiring and switchboards to smart home automation, backup power, and security — one team, one standard of quality."
+      "desc": "A complete range of professional electrical services for residential and commercial properties. From cabling design and distribution board assembly to smart home automation and backup power systems."
     },
     "categoriesSection": {
       "label": "Our Expertise",
-      "title": "Ten Disciplines, One Team",
-      "desc": "Every category below is handled in-house by the same engineers who install your solar system — no subcontractors, no gaps in accountability.",
+      "title": "Full-Cycle Electrical",
+      "desc": "A full range of electrical competencies implemented by a single team of certified Sunberg specialists without outsourcing.",
       "scrollHint": "Scroll list to explore more",
       "teamCard": {
         "title": "One Team. Full Responsibility.",
         "desc": "From design to installation and beyond — we take ownership of every detail.",
-        "btn": "Let's work together"
+        "btn": "Book a consultation"
       }
     },
     "categories": {
@@ -986,7 +986,7 @@
       "viewCase": "View case study"
     },
     "reviewsSection": {
-      "label": "CLIENTS FEEDBACK",
+      "label": "Clients Feedback",
       "title": "What Our Clients Say",
       "desc": "We take pride in delivering safe, reliable, and future-ready electrical solutions. Here's what our clients have to say about working with Sunberg.",
       "stats": {

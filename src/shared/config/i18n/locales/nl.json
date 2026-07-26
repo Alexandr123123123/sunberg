@@ -680,19 +680,19 @@
   "electricalPage": {
     "hero": {
       "watermark": "ELEKTRICITEIT",
-      "label": "Meer dan Zonne-energie",
+      "label": "Elektrische Oplossingen",
       "title": "Elektrische Diensten in Volle Breedte",
-      "desc": "Zonne-energie is onze kernexpertise, maar onze technische kennis strekt zich uit tot elk onderdeel van uw elektrische installatie. Van bekabeling en schakelborden tot domotica, noodstroom en beveiliging — één team, één kwaliteitsstandaard."
+      "desc": "Een compleet scala aan professionele elektrotechnische diensten voor residentiële en commerciële panden. Van bekabelingsontwerp en verdeelkastmontage tot domotica en noodstroomsystemen."
     },
     "categoriesSection": {
       "label": "Onze Expertise",
-      "title": "Tien Disciplines, Eén Team",
-      "desc": "Elke categorie hieronder wordt intern uitgevoerd door dezelfde ingenieurs die uw zonnesysteem installeren — geen onderaannemers, geen verlies van verantwoordelijkheid.",
+      "title": "Full-Cycle Elektrotechniek",
+      "desc": "Een volledig scala aan elektrotechnische competenties uitgevoerd door één team van gecertificeerde Sunberg-specialisten zonder uitbesteding.",
       "scrollHint": "Scroll door de lijst om meer te ontdekken",
       "teamCard": {
         "title": "Eén Team. Volledige Verantwoordelijkheid.",
         "desc": "Van ontwerp tot installatie en daarna — wij nemen de verantwoordelijkheid voor elk detail.",
-        "btn": "Laten we samenwerken"
+        "btn": "Boek een consultatie"
       }
     },
     "categories": {
@@ -858,7 +858,7 @@
       "viewCase": "Bekijk case study"
     },
     "reviewsSection": {
-      "label": "FEEDBACK VAN KLANTEN",
+      "label": "Feedback Van Klanten",
       "title": "Wat Onze Klanten Zeggen",
       "desc": "We zijn trots op het leveren van veilige, betrouwbare en toekomstbestendige elektrische oplossingen. Dit is wat onze klanten te zeggen hebben over de samenwerking met Sunberg.",
       "stats": {

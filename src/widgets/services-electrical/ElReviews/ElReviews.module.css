@@ -9,6 +9,12 @@
 /* ==========================================================================
    Header Section and Info
    ========================================================================== */
+.embeddedSlider {
+  padding: 0 !important;
+  background: transparent !important;
+  margin-bottom: 60px;
+}
+
 .headerBlock {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -21,32 +27,20 @@
   max-width: 580px;
 }
 
-.tag {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-primary);
-  margin-bottom: 12px;
-}
-
+.headerLeft :global(.section-title),
 .title {
-  font-family: var(--font-heading);
-  font-size: 48px;
-  line-height: 1.15;
-  font-weight: 700;
-  color: var(--color-text);
-  margin-bottom: 24px;
+  margin: 0 0 24px 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
+.headerLeft :global(.section-subtitle),
 .desc {
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--color-text-muted);
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  line-height: 1.8;
+  max-width: 600px;
 }
 
 .carouselControls {
@@ -493,7 +487,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .section {
     padding: 60px 0;
   }
@@ -510,6 +504,34 @@
   .ctaLeft {
     flex-direction: column;
     gap: 16px;
+  }
+  .ctaTitle {
+    font-size: 20px;
+  }
+  .ctaDesc {
+    font-size: 14px;
+  }
+  .ctaButton {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ctaBanner {
+    padding: 20px 16px !important;
+    gap: 16px !important;
+  }
+  .ctaTitle {
+    font-size: 18px !important;
+  }
+  .ctaDesc {
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+  }
+  .ctaButton {
+    font-size: 13px !important;
+    padding: 10px 20px !important;
   }
 }
 
@@ -533,5 +555,29 @@
   }
   .ratingCard {
     margin: 0 auto;
+  }
+  .headerLeft :global(.section-label) {
+    font-size: 0.75rem !important;
+  }
+  .headerLeft :global(.section-title),
+  .title {
+    font-size: 1.65rem !important;
+    margin-bottom: 12px !important;
+  }
+  .headerLeft :global(.section-subtitle),
+  .desc {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .headerLeft :global(.section-title),
+  .title {
+    font-size: 1.45rem !important;
+  }
+  .headerLeft :global(.section-subtitle),
+  .desc {
+    font-size: 0.82rem !important;
   }
 }

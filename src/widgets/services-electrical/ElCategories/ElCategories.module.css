@@ -411,7 +411,8 @@
     display: none;
   }
 
-  .listItemActive {
+  .listItemActive,
+  .listItemActive:first-child {
     border-color: var(--color-primary, #5B7E5F) !important;
     box-shadow: 0 8px 20px rgba(91, 126, 95, 0.08) !important;
   }
@@ -493,6 +494,20 @@
 }
 
 @media (max-width: 500px) {
+  .header :global(.section-label) {
+    font-size: 0.75rem !important;
+  }
+
+  .header :global(.section-title) {
+    font-size: 1.65rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  .header :global(.section-subtitle) {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+  }
+
   .list {
     gap: 8px;
   }
@@ -533,11 +548,17 @@
   }
 
   .teamCardTitle {
-    font-size: 15px;
+    font-size: 14.5px !important;
   }
 
   .teamCardDesc {
-    font-size: 12px;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+  }
+
+  .teamCardButton {
+    font-size: 13px !important;
+    padding: 9px 16px !important;
   }
 }
 
@@ -604,6 +625,7 @@
 .termsGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
   gap: 16px;
   margin-top: 32px;
   padding-top: 24px;
@@ -614,6 +636,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  height: 100%;
   background-color: var(--color-surface, #FFFFFF);
   padding: 14px 20px;
   border-radius: 8px;

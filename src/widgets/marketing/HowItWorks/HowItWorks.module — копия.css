@@ -1,0 +1,159 @@
+.process {
+  padding: 148px 0;
+  background: var(--color-surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.leafWrapper {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 360px;
+  pointer-events: none;
+  z-index: 1;
+  transition: width 0.3s ease, top 0.3s ease;
+}
+
+.leaf {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.85;
+}
+
+.header {
+  margin-top: 70px;
+  margin-bottom: clamp(64px, 10vw, 120px);
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.header :global(.section-title) {
+  margin: 0 0 16px;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.header :global(.section-subtitle) {
+  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+.step {
+  text-align: center;
+  padding: 0 28px;
+  position: relative;
+}
+
+.stepNum {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-surface); /* Добавляю фон, чтобы линия не просвечивала */
+  border: 1.5px solid var(--color-text);
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.stepLine {
+  position: absolute;
+  top: 24px;
+  left: calc(50% + 24px);
+  right: calc(-50% + 24px);
+  height: 1px;
+  background: var(--color-border);
+  z-index: 1;
+}
+
+.step:last-child .stepLine {
+  display: none;
+}
+
+.stepTitle {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 10px;
+}
+
+.stepDesc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+@media (max-width: 1400px) {
+  .leafWrapper {
+    width: 320px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .leafWrapper {
+    width: 280px;
+    top: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .leafWrapper {
+    width: 240px;
+    top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .leafWrapper {
+    width: 220px;
+    top: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .process {
+    padding: 100px 0;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 0;
+  }
+
+  .stepLine {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .step {
+    padding: 0;
+  }
+}

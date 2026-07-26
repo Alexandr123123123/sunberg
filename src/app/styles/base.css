@@ -86,3 +86,25 @@ img {
   max-width: 520px;
   line-height: 1.8;
 }
+
+/* Gallery Responsive Toggle */
+@media (min-width: 951px) {
+  .tablet-only-gallery,
+  .mobile-small-gallery {
+    display: none !important;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 601px) {
+  .desktop-only-gallery,
+  .mobile-small-gallery {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .desktop-only-gallery,
+  .tablet-only-gallery {
+    display: none !important;
+  }
+}

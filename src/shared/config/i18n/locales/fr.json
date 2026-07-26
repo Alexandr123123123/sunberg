@@ -680,19 +680,19 @@
   "electricalPage": {
     "hero": {
       "watermark": "ÉLECTRICITÉ",
-      "label": "Au-delà du Solaire",
+      "label": "Solutions Électriques",
       "title": "Services Électriques Complets",
-      "desc": "Le solaire est notre cœur de métier, mais notre expertise technique couvre chaque aspect de votre installation électrique. Câblage, tableaux électriques, domotique, alimentation de secours et sécurité — une seule équipe, une seule exigence de qualité."
+      "desc": "Une gamme complète de services électriques professionnels pour les propriétés résidentielles et commerciales. De la conception du câblage et de l'assemblage des tableaux de distribution à la domotique et aux systèmes d'alimentation de secours."
     },
     "categoriesSection": {
       "label": "Notre Expertise",
-      "title": "Dix Domaines, Une Seule Équipe",
-      "desc": "Chaque catégorie ci-dessous est prise en charge en interne par les mêmes ingénieurs qui installent votre système solaire — aucun sous-traitant, aucune rupture de responsabilité.",
+      "title": "Électricité de Cycle Complet",
+      "desc": "Une gamme complète de compétences électriques mise en œuvre par une seule équipe de spécialistes certifiés Sunberg, sans sous-traitance.",
       "scrollHint": "Faites défiler la liste pour en savoir plus",
       "teamCard": {
         "title": "Une Équipe. Responsabilité Totale.",
         "desc": "De la conception à l'installation et au-delà — nous assumons la responsabilité de chaque détail.",
-        "btn": "Travaillons ensemble"
+        "btn": "Réserver une consultation"
       }
     },
     "categories": {
@@ -858,7 +858,7 @@
       "viewCase": "Voir l'étude de cas"
     },
     "reviewsSection": {
-      "label": "RETOURS DE NOS CLIENTS",
+      "label": "Retours De Nos Clients",
       "title": "Ce Que Disent Nos Clients",
       "desc": "Nous sommes fiers de fournir des solutions électriques sûres, fiables et prêtes pour l'avenir. Voici ce que nos clients disent de leur collaboration avec Sunberg.",
       "stats": {

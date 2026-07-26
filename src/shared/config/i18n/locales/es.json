@@ -809,19 +809,19 @@
   "electricalPage": {
     "hero": {
       "watermark": "ELÉCTRICO",
-      "label": "Más Allá de lo Solar",
+      "label": "Soluciones Eléctricas",
       "title": "Servicios Eléctricos Integrales",
-      "desc": "La energía solar es nuestra especialidad principal, pero nuestra experiencia técnica abarca cada rincón de su instalación eléctrica. Desde cableado y cuadros eléctricos hasta domótica, energía de respaldo y seguridad: un solo equipo, un mismo estándar de calidad."
+      "desc": "Una gama completa de servicios eléctricos profesionales para propiedades residenciales y comerciales. Desde el diseño de cableado y el ensamblaje de cuadros de distribución hasta la domótica y los sistemas de energía de respaldo."
     },
     "categoriesSection": {
       "label": "Nuestra Experiencia",
-      "title": "Diez Disciplinas, Un Solo Equipo",
-      "desc": "Cada categoría a continuación es gestionada internamente por los mismos ingenieros que instalan su sistema solar: sin subcontratistas, sin vacíos de responsabilidad.",
+      "title": "Servicios Eléctricos de Ciclo Completo",
+      "desc": "Una gama completa de competencias eléctricas implementadas por un único equipo de especialistas certificados de Sunberg sin subcontratación.",
       "scrollHint": "Desplácese por la lista para explorar más",
       "teamCard": {
         "title": "Un Equipo. Responsabilidad Total.",
         "desc": "Desde el diseño hasta la instalación y más allá: asumimos la responsabilidad de cada detalle.",
-        "btn": "Trabajemos juntos"
+        "btn": "Reservar una consulta"
       }
     },
     "categories": {
@@ -987,7 +987,7 @@
       "viewCase": "Ver caso de estudio"
     },
     "reviewsSection": {
-      "label": "OPINIONES DE CLIENTES",
+      "label": "Opiniones De Clientes",
       "title": "Lo que dicen nuestros clientes",
       "desc": "Nos enorgullecemos de ofrecer soluciones eléctricas seguras, fiables y preparadas para el futuro. Esto es lo que dicen nuestros clientes sobre su experiencia con Sunberg.",
       "stats": {

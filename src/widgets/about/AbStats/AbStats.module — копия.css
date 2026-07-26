@@ -1,0 +1,152 @@
+.section {
+  padding: 120px 0 160px;
+  background-color: var(--color-surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.stat {
+  text-align: left;
+}
+
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  font-weight: 600;
+  display: block;
+}
+
+.valueWrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.value {
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.unit {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.subLabel {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .valueWrapper {
+    justify-content: center;
+  }
+}
+
+.sliderWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.sliderMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.sliderContainer {
+  flex: 1;
+  overflow: hidden;
+  max-width: 320px;
+}
+
+.sliderTrack {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.navBtn {
+  background: none;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.navBtn:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.navBtn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-border);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.activeDot {
+  background: var(--color-primary);
+  transform: scale(1.4);
+}

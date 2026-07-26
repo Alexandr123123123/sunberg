@@ -1,0 +1,141 @@
+.section {
+  padding: 100px 0 200px;
+  background: var(--color-surface);
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+  padding: 56px 72px;
+  border-radius: var(--radius);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+
+/* Background Variants */
+.variant_surface {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.03);
+}
+
+
+.variant_primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.variant_dark {
+  background: #111;
+  color: white;
+}
+
+.variant_alt {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+}
+
+/* Watermark Effect */
+.inner::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+  background: url('../../../../assets/bird-white.svg') no-repeat center/contain;
+  opacity: 0.03;
+  pointer-events: none;
+  transform: rotate(-15deg);
+}
+
+.variant_surface::after {
+  opacity: 0.05;
+  filter: invert(1);
+}
+
+/* Text Styles */
+.content {
+  flex: 1;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.description {
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 580px;
+  color: var(--color-text-muted);
+}
+
+.variant_primary .description,
+.variant_dark .description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Tablet Layout (601px - 1024px) */
+@media (max-width: 1024px) {
+  .section {
+    padding: 80px 0 160px;
+  }
+
+  .inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 56px 40px;
+  }
+  
+  .content {
+    text-align: center;
+  }
+
+  .description {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Mid-tablet refinement (max-width: 800px) */
+@media (max-width: 800px) {
+  /* Font size is handled by clamp() */
+}
+
+/* Mobile Layout (<= 600px) */
+@media (max-width: 600px) {
+  .section {
+    padding: 60px 0 120px;
+  }
+
+
+  .inner {
+    padding: 48px 24px;
+    gap: 32px;
+  }
+
+  .title {
+    margin-bottom: 12px;
+  }
+  
+  .inner::after {
+    width: 250px;
+    height: 250px;
+    right: -10%;
+    top: -10%;
+  }
+}
